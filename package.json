@@ -144,6 +144,7 @@
     "@emotion/css": "^11.0.0",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
+    "@leafygreen-ui/palette": "^3.4.4",
     "@mdb/consistent-nav": "^1.2.16",
     "@mdb/flora": "^0.20.5",
     "@mdx-js/react": "^1.6.22",
