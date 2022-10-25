@@ -1,7 +1,8 @@
 import * as PropTypes from 'prop-types';
 import * as React from 'react';
+import { UnifiedFooter, UnifiedNav } from '@mdb/consistent-nav';
 
-import { ThemeProvider } from '../../styled-components';
+import styled, { ThemeProvider } from '../../styled-components';
 import { OptionsProvider } from '../OptionsProvider';
 
 import { AppStore } from '../../services';
@@ -18,6 +19,12 @@ import { StoreProvider } from '../StoreBuilder';
 export interface RedocProps {
   store: AppStore;
 }
+
+const StyledHeader = styled.header`
+  position: relative;
+  width: 100%;
+  z-index: 99;
+`;
 
 export class Redoc extends React.Component<RedocProps> {
   static propTypes = {
@@ -41,6 +48,9 @@ export class Redoc extends React.Component<RedocProps> {
       <ThemeProvider theme={options.theme}>
         <StoreProvider value={store}>
           <OptionsProvider value={options}>
+            <StyledHeader>
+              <UnifiedNav position="relative" property={{ name: 'DOCS', searchParams: [] }} />
+            </StyledHeader>
             <RedocWrap className="redoc-wrap">
               <StickyResponsiveSidebar menu={menu} className="menu-content">
                 <ApiLogo info={spec.info} />
@@ -61,6 +71,7 @@ export class Redoc extends React.Component<RedocProps> {
               </ApiContentWrap>
               <BackgroundStub />
             </RedocWrap>
+            <UnifiedFooter hideLocale={true} />
           </OptionsProvider>
         </StoreProvider>
       </ThemeProvider>

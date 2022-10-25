@@ -84,10 +84,6 @@ export const MenuItemUl = styled.ul<{ expanded: boolean }>`
   margin: 0;
   padding: 0;
 
-  &:first-child {
-    padding-bottom: 32px;
-  }
-
   & & {
     font-size: 0.929em;
   }
@@ -177,7 +173,7 @@ export const RedocAttribution = styled.div`
     font-size: 0.8em;
     margin-top: ${theme.spacing.unit * 2}px;
     text-align: center;
-    position: fixed;
+    position: sticky;
     width: ${theme.sidebar.width};
     bottom: 0;
     background: ${theme.sidebar.backgroundColor};
