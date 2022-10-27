@@ -1,4 +1,6 @@
 import styled from '../../styled-components';
+// import { HTTPBadgeColors } from '../../theme';
+import { getBadgeStyles } from '../../utils/styling';
 
 export const OperationEndpointWrap = styled.div`
   cursor: pointer;
@@ -47,12 +49,14 @@ export const HttpVerb = styled.span.attrs((props: { type: string; compact?: bool
 }))<{ type: string; compact?: boolean }>`
   font-size: ${props => (props.compact ? '0.8em' : '0.929em')};
   line-height: ${props => (props.compact ? '18px' : '20px')};
-  background-color: ${props => props.theme.colors.http[props.type] || '#999999'};
   color: #ffffff;
   padding: ${props => (props.compact ? '2px 8px' : '3px 10px')};
   text-transform: uppercase;
   font-family: ${props => props.theme.typography.headings.fontFamily};
   margin: 0;
+  border: ${props => props.theme.badges.border};
+  border-radius: ${props => props.theme.badges.borderRadius};
+  ${props => getBadgeStyles(props.theme.colors.http[props.type], 'dark')}
 `;
 
 export const ServersOverlay = styled.div<{ expanded: boolean }>`

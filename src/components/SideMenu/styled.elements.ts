@@ -3,6 +3,7 @@ import { darken } from 'polished';
 
 import { deprecatedCss, ShelfIcon } from '../../common-elements';
 import styled, { css, media, ResolvedThemeInterface } from '../../styled-components';
+import { getBadgeStyles } from '../../utils/styling';
 
 export const OperationBadge = styled.span.attrs((props: { type: string }) => ({
   className: `operation-type ${props.type}`,
@@ -12,11 +13,12 @@ export const OperationBadge = styled.span.attrs((props: { type: string }) => ({
   height: ${props => props.theme.typography.code.fontSize};
   line-height: ${props => props.theme.typography.code.fontSize};
   background-color: #333;
-  border-radius: 3px;
+  border: ${props => props.theme.badges.border};
+  border-radius: ${props => props.theme.badges.borderRadius};
   background-repeat: no-repeat;
   background-position: 6px 4px;
   font-size: 7px;
-  font-family: Verdana, sans-serif; // web-safe
+  font-family: ${props => props.theme.typography.fontFamily};
   color: white;
   text-transform: uppercase;
   text-align: center;
@@ -25,45 +27,7 @@ export const OperationBadge = styled.span.attrs((props: { type: string }) => ({
   margin-right: 6px;
   margin-top: 2px;
 
-  &.get {
-    background-color: ${props => props.theme.colors.http.get};
-  }
-
-  &.post {
-    background-color: ${props => props.theme.colors.http.post};
-  }
-
-  &.put {
-    background-color: ${props => props.theme.colors.http.put};
-  }
-
-  &.options {
-    background-color: ${props => props.theme.colors.http.options};
-  }
-
-  &.patch {
-    background-color: ${props => props.theme.colors.http.patch};
-  }
-
-  &.delete {
-    background-color: ${props => props.theme.colors.http.delete};
-  }
-
-  &.basic {
-    background-color: ${props => props.theme.colors.http.basic};
-  }
-
-  &.link {
-    background-color: ${props => props.theme.colors.http.link};
-  }
-
-  &.head {
-    background-color: ${props => props.theme.colors.http.head};
-  }
-
-  &.hook {
-    background-color: ${props => props.theme.colors.primary.main};
-  }
+  ${props => getBadgeStyles(props.theme.colors.http[props.type], 'light')}
 `;
 
 function menuItemActive(

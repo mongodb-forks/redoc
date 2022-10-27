@@ -77,12 +77,67 @@ const defaultTheme: ThemeInterface = {
       },
     },
     http: {
-      get: palette.blue.dark2,
-      post: palette.green.dark3,
-      put: palette.yellow.dark3,
+      get: {
+        light: {
+          backgroundColor: palette.blue.light3,
+          borderColor: palette.blue.light2,
+          color: palette.blue.dark1,
+        },
+        dark: {
+          backgroundColor: palette.blue.dark2,
+          borderColor: palette.blue.dark1,
+          color: palette.blue.light2,
+        },
+      },
+      post: {
+        light: {
+          backgroundColor: palette.green.light3,
+          borderColor: palette.green.light2,
+          color: palette.green.dark2,
+        },
+        dark: {
+          backgroundColor: palette.green.dark3,
+          borderColor: palette.green.dark2,
+          color: palette.green.base,
+        },
+      },
+      put: {
+        light: {
+          backgroundColor: palette.yellow.light3,
+          borderColor: palette.yellow.light2,
+          color: palette.yellow.dark2,
+        },
+        dark: {
+          backgroundColor: palette.yellow.dark3,
+          borderColor: palette.yellow.dark2,
+          color: palette.yellow.light2,
+        },
+      },
       options: '#947014',
-      patch: palette.yellow.dark3,
-      delete: palette.red.dark3,
+      patch: {
+        light: {
+          backgroundColor: palette.yellow.light3,
+          borderColor: palette.yellow.light2,
+          color: palette.yellow.dark2,
+        },
+        dark: {
+          backgroundColor: palette.yellow.dark3,
+          borderColor: palette.yellow.dark2,
+          color: palette.yellow.light2,
+        },
+      },
+      delete: {
+        light: {
+          backgroundColor: palette.red.light3,
+          borderColor: palette.red.light2,
+          color: palette.red.dark2,
+        },
+        dark: {
+          backgroundColor: palette.red.dark3,
+          borderColor: palette.red.dark2,
+          color: palette.red.light2,
+        },
+      },
       basic: '#707070',
       link: '#07818F',
       head: '#A23DAD',
@@ -179,6 +234,10 @@ const defaultTheme: ThemeInterface = {
     backgroundColor: '#f2f2f2',
     color: '#0065FB',
   },
+  badges: {
+    border: '1px solid',
+    borderRadius: '5px',
+  },
 };
 
 export default defaultTheme;
@@ -228,6 +287,17 @@ export interface HTTPResponseColos {
   color: string;
   backgroundColor: string;
   tabTextColor: string;
+}
+
+export interface HTTPBadgeOptions {
+  backgroundColor: string;
+  borderColor: string;
+  color: string;
+}
+
+export interface HTTPBadgeColors {
+  light: HTTPBadgeOptions;
+  dark: HTTPBadgeOptions;
 }
 
 export interface FontSettings {
@@ -284,12 +354,12 @@ export interface ResolvedThemeInterface {
       info: HTTPResponseColos;
     };
     http: {
-      get: string;
-      post: string;
-      put: string;
+      get: HTTPBadgeColors;
+      post: HTTPBadgeColors;
+      put: HTTPBadgeColors;
       options: string;
-      patch: string;
-      delete: string;
+      patch: HTTPBadgeColors;
+      delete: HTTPBadgeColors;
       basic: string;
       link: string;
       head: string;
@@ -375,6 +445,10 @@ export interface ResolvedThemeInterface {
   fab: {
     backgroundColor: string;
     color: string;
+  };
+  badges: {
+    border: string;
+    borderRadius: string;
   };
 
   extensionsHook?: (name: string, props: any) => string;
