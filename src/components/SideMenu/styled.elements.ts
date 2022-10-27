@@ -1,3 +1,4 @@
+import { palette } from '@leafygreen-ui/palette';
 import { default as classnames } from 'classnames';
 import { darken } from 'polished';
 
@@ -67,12 +68,12 @@ export const menuItemDepth = {
   0: css`
     opacity: 0.7;
     text-transform: ${({ theme }) => theme.sidebar.groupItems.textTransform};
-    font-size: 0.8em;
+    font-size: 13px;
     padding-bottom: 0;
     cursor: default;
   `,
   1: css`
-    font-size: 0.929em;
+    font-size: 13px;
     text-transform: ${({ theme }) => theme.sidebar.level1Items.textTransform};
   `,
 };
@@ -112,7 +113,7 @@ export const MenuItemLabel = styled.label.attrs((props: MenuItemLabelType) => ({
 
   &:hover {
     color: ${props => menuItemActive(props.depth, props, 'activeTextColor')};
-    background-color: ${props => menuItemActive(props.depth, props, 'activeBackgroundColor')};
+    background-color: ${palette.gray.light2};
   }
 
   ${ShelfIcon} {
