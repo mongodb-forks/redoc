@@ -12,6 +12,7 @@ export const ApiHeader = styled(H1)`
   color: ${palette.green.dark2};
   font-family: 'MongoDB Value Serif';
   font-size: 32px;
+  font-weight: 400;
   line-height: 40px;
 
   ${extensionsHook('ApiHeader')};
