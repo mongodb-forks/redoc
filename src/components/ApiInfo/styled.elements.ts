@@ -1,3 +1,4 @@
+import { palette } from '@leafygreen-ui/palette';
 import { H1, MiddlePanel } from '../../common-elements';
 import styled, { extensionsHook } from '../../styled-components';
 
@@ -8,6 +9,10 @@ export const ApiInfoWrap = MiddlePanel;
 export const ApiHeader = styled(H1)`
   margin-top: 0;
   margin-bottom: 0.5em;
+  color: ${palette.green.dark2};
+  font-family: 'MongoDB Value Serif';
+  font-size: 32px;
+  line-height: 40px;
 
   ${extensionsHook('ApiHeader')};
 `;
