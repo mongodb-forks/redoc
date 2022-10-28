@@ -11,6 +11,40 @@
 **This is the README for the `2.x` version of Redoc (React-based).**
 **The README for the `1.x` version is on the [v1.x](https://github.com/Redocly/redoc/tree/v1.x) branch.**
 
+## Forked Redoc
+
+**This includes information about this fork of Redoc. Proceed to the next section for original information about Redoc.**
+
+This is a fork of Redoc for the purpose of customizing the component for MongoDB documentation.
+Both the CLI and React component are used for the team's build process for static site generation.
+
+### Installation
+
+Below are the instructions to work with Redoc locally with custom MongoDB components, such as the Consistent Nav:
+
+1) In `redoc`/root folder of this fork, run `npm install`.
+2) In `redoc/cli` folder, run `npm install`.
+3) In `redoc/cli` folder, run: `npm link ../ ../node_modules/react/ ../node_modules/styled-components/`. This will link certain CLI dependencies to be compatible with the local instance and fork of Redoc.
+   - `../` is for `redoc`.
+   - `../node_modules/react/` is to fix React hook errors.
+   - `../node_modules/styled-components/` is to fix styling issues.
+4) In `redoc`/root folder, ensure you have a `.npmrc` file. This will be used for Artifactory stuff. The `.npmrc` included in this fork is the same as what Snooty uses, so just reuse the same variables that you use for Snooty.
+5) In `redoc`/root folder, run the command below to install dependencies needed for the consistent nav. Some of the versions are the same as [Snooty's](https://github.com/mongodb/snooty) for the sake of reference and consistency across docs pages, but these versions can be changed accordingly.
+```
+npm install @mdx-js/react@1.6.22 theme-ui@0.13.1 @emotion/react@11.10.4 @emotion/styled@11.10.4 @emotion/css@11.0.0 @mdb/flora@0.20.5 @mdb/consistent-nav@1.2.16
+```
+6) In `redoc`/root folder, run: `npm run bundle`. This will create bundled files needed by the CLI / needed to run the CLI.
+
+### Running the CLI
+
+Make sure to run `npm run bundle` on the root folder of this repo before running the CLI.
+
+With `node` installed, run by doing the following:
+
+```
+node <path/to/redoc/cli/index.js> build <path/to/spec/file/or/url> --options=<path/to/options.json> --output=<path/to/custom/output/file/name.html>
+```
+
 ## About Redoc
 
 Redoc is an open-source tool for generating documentation from OpenAPI (fka Swagger) definitions.
