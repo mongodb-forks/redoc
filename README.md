@@ -28,8 +28,8 @@ Below are the instructions to work with Redoc locally with custom MongoDB compon
    - `../` is for `redoc`.
    - `../node_modules/react/` is to fix React hook errors.
    - `../node_modules/styled-components/` is to fix styling issues.
-4) In `redoc`/root folder, ensure you have a `.npmrc` file. This will be used for Artifactory stuff. The `.npmrc` included in this fork is the same as what Snooty uses, so just reuse the same variables that you use for Snooty.
-5) In `redoc`/root folder, run the command below to install dependencies needed for the consistent nav. Some of the versions are the same as [Snooty's](https://github.com/mongodb/snooty) for the sake of reference and consistency across docs pages, but these versions can be changed accordingly.
+4) In `redoc`/root folder, ensure you have a `.npmrc` file. This will be used for access to Artifactory. The `.npmrc` included in this fork is the same as what [Snooty](https://github.com/mongodb/snooty) uses to keep setup consistent.
+5) In `redoc`/root folder, run the command below to install dependencies needed for the consistent nav. Some of the versions are the same as Snooty's for the sake of reference and consistency across docs pages, but these versions can be changed accordingly.
 ```
 npm install @mdx-js/react@1.6.22 theme-ui@0.13.1 @emotion/react@11.10.4 @emotion/styled@11.10.4 @emotion/css@11.0.0 @mdb/flora@0.20.5 @mdb/consistent-nav@1.2.16
 ```
