@@ -26,6 +26,13 @@ const StyledHeader = styled.header`
   z-index: 99;
 `;
 
+const SideMenuTitle = styled.div`
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+  margin: 24px 16px;
+`;
+
 export class Redoc extends React.Component<RedocProps> {
   static propTypes = {
     store: PropTypes.instanceOf(AppStore).isRequired,
@@ -44,6 +51,7 @@ export class Redoc extends React.Component<RedocProps> {
       store: { spec, menu, options, search, marker },
     } = this.props;
     const store = this.props.store;
+
     return (
       <ThemeProvider theme={options.theme}>
         <StoreProvider value={store}>
@@ -54,6 +62,7 @@ export class Redoc extends React.Component<RedocProps> {
             <RedocWrap className="redoc-wrap">
               <StickyResponsiveSidebar menu={menu} className="menu-content">
                 <ApiLogo info={spec.info} />
+                <SideMenuTitle>{store.spec.info.title}</SideMenuTitle>
                 {(!options.disableSearch && (
                   <SearchBox
                     search={search!}
