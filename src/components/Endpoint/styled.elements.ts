@@ -53,6 +53,7 @@ export const HttpVerb = styled.span.attrs((props: { type: string; compact?: bool
   padding: ${props => (props.compact ? '2px 8px' : '3px 10px')};
   text-transform: uppercase;
   font-family: ${props => props.theme.typography.headings.fontFamily};
+  font-weight: bold;
   margin: 0;
   border: ${props => props.theme.badges.border};
   border-radius: ${props => props.theme.badges.borderRadius};
