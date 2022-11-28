@@ -1,6 +1,5 @@
 describe('Search', () => {
-  // Redoc's search input should be the last one in the DOM. The others should be MongoDB's.
-  const getSearchInput = () => cy.get('[role="search"] input').last();
+  const getSearchInput = () => cy.get('[data-role="redoc-search"] input');
   const getSearchResults = () => cy.get('[data-role="search:results"]');
   const getResult = i => cy.get('[role=search] [role=menuitem]').eq(i);
 
