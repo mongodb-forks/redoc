@@ -20,20 +20,15 @@ Both the CLI and React component are used for the team's build process for stati
 
 ### Installation
 
-Below are the instructions to work with Redoc locally with custom MongoDB components, such as the Consistent Nav:
+Ensure [Artifactory](https://artifactory.corp.mongodb.com/ui/packages) credentials are set up and set to `NPM_BASE_64_AUTH` and `NPM_EMAIL` env variables. This should be similar to the setup on [Snooty](https://github.com/mongodb/snooty/#installation). Below are the instructions to work with Redoc locally with custom MongoDB components, such as the Consistent Nav:
 
 1) In `redoc`/root folder of this fork, run `npm install`.
 2) In `redoc/cli` folder, run `npm install`.
 3) In `redoc/cli` folder, run: `npm link ../ ../node_modules/react/ ../node_modules/styled-components/`. This will link certain CLI dependencies to be compatible with the local instance and fork of Redoc.
-   - `../` is for `redoc`.
-   - `../node_modules/react/` is to fix React hook errors.
-   - `../node_modules/styled-components/` is to fix styling issues.
-4) In `redoc`/root folder, ensure you have a `.npmrc` file. This will be used for access to Artifactory. The `.npmrc` included in this fork is the same as what [Snooty](https://github.com/mongodb/snooty) uses to keep setup consistent.
-5) In `redoc`/root folder, run the command below to install dependencies needed for the consistent nav. Some of the versions are the same as Snooty's for the sake of reference and consistency across docs pages, but these versions can be changed accordingly.
-```
-npm install @mdx-js/react@1.6.22 theme-ui@0.13.1 @emotion/react@11.10.4 @emotion/styled@11.10.4 @emotion/css@11.0.0 @mdb/flora@0.20.5 @mdb/consistent-nav@1.2.16
-```
-6) In `redoc`/root folder, run: `npm run bundle`. This will create bundled files needed by the CLI / needed to run the CLI.
+  - `../` is for `redoc`.
+  - `../node_modules/react/` is to fix React hook errors.
+  - `../node_modules/styled-components/` is to fix styling issues.
+4) In `redoc`/root folder, run: `npm run bundle`. This will create bundled files needed by the CLI / needed to run the CLI.
 
 ### Running the CLI
 
