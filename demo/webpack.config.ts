@@ -46,6 +46,7 @@ export default (env: { playground?: boolean; bench?: boolean } = {}, { mode }) =
     extensions: ['.ts', '.tsx', '.js', '.json'],
     fallback: {
       path: require.resolve('path-browserify'),
+      stream: require.resolve('stream-browserify'),
       buffer: require.resolve('buffer'),
       http: false,
       fs: false,
@@ -117,6 +118,7 @@ export default (env: { playground?: boolean; bench?: boolean } = {}, { mode }) =
     }),
     new webpack.ProvidePlugin({
       Buffer: ['buffer', 'Buffer'],
+      process: 'process/browser',
     }),
     new ForkTsCheckerWebpackPlugin({ logger: { infrastructure: 'silent', issues: 'console' } }),
     webpackIgnore(/js-yaml\/dumper\.js$/),

@@ -14,6 +14,7 @@ import { ApiContentWrap, BackgroundStub, RedocWrap } from './styled.elements';
 
 import { SearchBox } from '../SearchBox/SearchBox';
 import { StoreProvider } from '../StoreBuilder';
+import { SideNavBackButton } from '../SideNavBackButton/SideNavBackButton';
 
 export interface RedocProps {
   store: AppStore;
@@ -44,6 +45,7 @@ export class Redoc extends React.Component<RedocProps> {
             <RedocWrap className="redoc-wrap">
               <StickyResponsiveSidebar menu={menu} className="menu-content">
                 <ApiLogo info={spec.info} />
+                <SideNavBackButton />
                 {(!options.disableSearch && (
                   <SearchBox
                     search={search!}

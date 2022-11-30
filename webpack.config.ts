@@ -51,6 +51,7 @@ export default (env: { standalone?: boolean; browser?: boolean } = {}) => ({
     extensions: ['.ts', '.tsx', '.js', '.mjs', '.json'],
     fallback: {
       path: require.resolve('path-browserify'),
+      stream: require.resolve('stream-browserify'),
       buffer: require.resolve('buffer'),
       http: false,
       fs: path.resolve(__dirname, 'src/empty.js'),
@@ -117,6 +118,7 @@ export default (env: { standalone?: boolean; browser?: boolean } = {}) => ({
     new webpack.BannerPlugin(BANNER),
     new webpack.ProvidePlugin({
       Buffer: ['buffer', 'Buffer'],
+      process: 'process/browser',
     }),
     webpackIgnore(/js-yaml\/dumper\.js$/),
     env.standalone ? webpackIgnore(/^\.\/SearchWorker\.worker$/) : undefined,
