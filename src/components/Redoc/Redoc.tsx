@@ -1,6 +1,6 @@
 import * as PropTypes from 'prop-types';
 import * as React from 'react';
-import { UnifiedFooter, UnifiedNav } from '@mdb/consistent-nav';
+// import { UnifiedFooter, UnifiedNav } from '@mdb/consistent-nav';
 
 import styled, { ThemeProvider } from '../../styled-components';
 import { OptionsProvider } from '../OptionsProvider';
@@ -20,11 +20,11 @@ export interface RedocProps {
   store: AppStore;
 }
 
-const StyledHeader = styled.header`
-  position: relative;
-  width: 100%;
-  z-index: 99;
-`;
+// const StyledHeader = styled.header`
+//   position: relative;
+//   width: 100%;
+//   z-index: 99;
+// `;
 
 const SideMenuTitle = styled.div`
   font-size: 13px;
@@ -56,9 +56,9 @@ export class Redoc extends React.Component<RedocProps> {
       <ThemeProvider theme={options.theme}>
         <StoreProvider value={store}>
           <OptionsProvider value={options}>
-            <StyledHeader>
+            {/* <StyledHeader>
               <UnifiedNav position="relative" property={{ name: 'DOCS', searchParams: [] }} />
-            </StyledHeader>
+            </StyledHeader> */}
             <RedocWrap className="redoc-wrap">
               <StickyResponsiveSidebar menu={menu} className="menu-content">
                 <ApiLogo info={spec.info} />
@@ -80,7 +80,7 @@ export class Redoc extends React.Component<RedocProps> {
               </ApiContentWrap>
               <BackgroundStub />
             </RedocWrap>
-            <UnifiedFooter hideLocale={true} />
+            {/* <UnifiedFooter hideLocale={true} /> */}
           </OptionsProvider>
         </StoreProvider>
       </ThemeProvider>
