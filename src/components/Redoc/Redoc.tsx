@@ -10,6 +10,7 @@ import { ApiInfo } from '../ApiInfo/';
 import { ApiLogo } from '../ApiLogo/ApiLogo';
 import { ContentItems } from '../ContentItems/ContentItems';
 import { SideMenu } from '../SideMenu/SideMenu';
+import { SideMenuBackButton } from '../SideMenu/SideMenuBackButton';
 import { StickyResponsiveSidebar } from '../StickySidebar/StickyResponsiveSidebar';
 import {
   ApiContentWrap,
@@ -55,6 +56,7 @@ export class Redoc extends React.Component<RedocProps> {
             <RedocWrap className="redoc-wrap">
               <StickyResponsiveSidebar menu={menu} className="menu-content">
                 <ApiLogo info={spec.info} />
+                <SideMenuBackButton backNavigationPath={'https://mongodb.com/docs/atlas/'} />
                 <SideMenuTitle>{store.spec.info.title}</SideMenuTitle>
                 {(!options.disableSearch && (
                   <SearchBox

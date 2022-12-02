@@ -56,6 +56,9 @@ export interface RedocRawOptions {
   hideFab?: boolean;
   minCharacterLengthToInitSearch?: number;
   showWebhookVerb?: boolean;
+
+  // Custom options specific to DOP's use case:
+  backNavigationPath?: string;
 }
 
 export function argValueToBoolean(val?: string | boolean, defaultValue?: boolean): boolean {
@@ -258,6 +261,9 @@ export class RedocNormalizedOptions {
   showWebhookVerb: boolean;
 
   nonce?: string;
+
+  // Custom options specific to DOP's use case:
+  backNavigationPath?: string;
 
   constructor(raw: RedocRawOptions, defaults: RedocRawOptions = {}) {
     raw = { ...defaults, ...raw };
