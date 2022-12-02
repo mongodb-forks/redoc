@@ -2,7 +2,7 @@ import * as PropTypes from 'prop-types';
 import * as React from 'react';
 import { UnifiedFooter, UnifiedNav } from '@mdb/consistent-nav';
 
-import styled, { ThemeProvider } from '../../styled-components';
+import { ThemeProvider } from '../../styled-components';
 import { OptionsProvider } from '../OptionsProvider';
 
 import { AppStore } from '../../services';
@@ -11,7 +11,13 @@ import { ApiLogo } from '../ApiLogo/ApiLogo';
 import { ContentItems } from '../ContentItems/ContentItems';
 import { SideMenu } from '../SideMenu/SideMenu';
 import { StickyResponsiveSidebar } from '../StickySidebar/StickyResponsiveSidebar';
-import { ApiContentWrap, BackgroundStub, RedocWrap } from './styled.elements';
+import {
+  ApiContentWrap,
+  BackgroundStub,
+  RedocWrap,
+  SideMenuTitle,
+  StyledHeader,
+} from './styled.elements';
 
 import { SearchBox } from '../SearchBox/SearchBox';
 import { StoreProvider } from '../StoreBuilder';
@@ -19,19 +25,6 @@ import { StoreProvider } from '../StoreBuilder';
 export interface RedocProps {
   store: AppStore;
 }
-
-const StyledHeader = styled.header`
-  position: relative;
-  width: 100%;
-  z-index: 99;
-`;
-
-const SideMenuTitle = styled.div`
-  font-size: 13px;
-  font-weight: bold;
-  line-height: 20px;
-  margin: 24px 16px;
-`;
 
 export class Redoc extends React.Component<RedocProps> {
   static propTypes = {
