@@ -4,6 +4,7 @@ import * as React from 'react';
 import * as updateNotifier from 'update-notifier';
 import { renderToString } from 'react-dom/server';
 import { ServerStyleSheet } from 'styled-components';
+import { renderStylesToString } from '@leafygreen-ui/emotion';
 
 import { compile } from 'handlebars';
 import { createServer, IncomingMessage, ServerResponse } from 'http';
@@ -345,6 +346,9 @@ async function getPageHTML(
     const sheet = new ServerStyleSheet();
     // @ts-ignore
     html = renderToString(sheet.collectStyles(React.createElement(Redoc, { store })));
+    // const html = renderStylesToString(renderToString(<App />));
+    html = renderStylesToString(html);
+    console.log(html);
     css = sheet.getStyleTags();
     state = await store.toJS();
 

@@ -1,5 +1,6 @@
 import * as PropTypes from 'prop-types';
 import * as React from 'react';
+import LeafyGreenProvider from '@leafygreen-ui/leafygreen-provider';
 
 import { ThemeProvider } from '../../styled-components';
 import { OptionsProvider } from '../OptionsProvider';
@@ -42,27 +43,29 @@ export class Redoc extends React.Component<RedocProps> {
       <ThemeProvider theme={options.theme}>
         <StoreProvider value={store}>
           <OptionsProvider value={options}>
-            <RedocWrap className="redoc-wrap">
-              <StickyResponsiveSidebar menu={menu} className="menu-content">
-                <ApiLogo info={spec.info} />
-                <SideNavBackButton />
-                {(!options.disableSearch && (
-                  <SearchBox
-                    search={search!}
-                    marker={marker}
-                    getItemById={menu.getItemById}
-                    onActivate={menu.activateAndScroll}
-                  />
-                )) ||
-                  null}
-                <SideMenu menu={menu} />
-              </StickyResponsiveSidebar>
-              <ApiContentWrap className="api-content">
-                <ApiInfo store={store} />
-                <ContentItems items={menu.items as any} />
-              </ApiContentWrap>
-              <BackgroundStub />
-            </RedocWrap>
+            <LeafyGreenProvider>
+              <RedocWrap className="redoc-wrap">
+                <StickyResponsiveSidebar menu={menu} className="menu-content">
+                  <ApiLogo info={spec.info} />
+                  <SideNavBackButton />
+                  {(!options.disableSearch && (
+                    <SearchBox
+                      search={search!}
+                      marker={marker}
+                      getItemById={menu.getItemById}
+                      onActivate={menu.activateAndScroll}
+                    />
+                  )) ||
+                    null}
+                  <SideMenu menu={menu} />
+                </StickyResponsiveSidebar>
+                <ApiContentWrap className="api-content">
+                  <ApiInfo store={store} />
+                  <ContentItems items={menu.items as any} />
+                </ApiContentWrap>
+                <BackgroundStub />
+              </RedocWrap>
+            </LeafyGreenProvider>
           </OptionsProvider>
         </StoreProvider>
       </ThemeProvider>
