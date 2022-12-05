@@ -9,18 +9,21 @@ import {
 } from './styled.elements';
 
 interface SideMenuBackButtonProps {
-  backNavigationPath: string;
+  backNavigationPath?: string;
 }
+
+const DEFAULT_NAVIGATION_PATH = 'https://mongodb.com/docs/';
 
 export const SideMenuBackButton = ({ backNavigationPath }: SideMenuBackButtonProps) => {
   // Depth of menu item can dictate the styling of the component
   const depth = 1;
+  const href = backNavigationPath ?? DEFAULT_NAVIGATION_PATH;
 
   return (
     <>
       <MenuItemUl expanded={true}>
         <MenuItemLi depth={depth}>
-          <MenuLink href={backNavigationPath}>
+          <MenuLink href={href}>
             <MenuItemLabel depth={depth} active={false} isBackButton={true}>
               <MenuItemTitle>&#8592; Hello world</MenuItemTitle>
             </MenuItemLabel>
