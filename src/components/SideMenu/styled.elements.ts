@@ -50,7 +50,7 @@ function selectMenuLabelColor(
   props: MenuItemLabelType & { theme: ResolvedThemeInterface },
 ): string {
   const { active, depth, isBackButton, theme } = props;
-  if (isBackButton) return 'red';
+  if (isBackButton) return palette.gray.dark1;
   return active ? menuItemActive(depth, props, 'activeTextColor') : theme.sidebar.textColor;
 }
 
@@ -124,7 +124,9 @@ export const MenuItemLabel = styled.label.attrs((props: MenuItemLabelType) => ({
 
   &:hover {
     color: ${props =>
-      props.isBackButton ? 'red' : menuItemActive(props.depth, props, 'activeTextColor')};
+      props.isBackButton
+        ? palette.gray.dark1
+        : menuItemActive(props.depth, props, 'activeTextColor')};
     background-color: ${palette.gray.light2};
   }
 
@@ -135,6 +137,12 @@ export const MenuItemLabel = styled.label.attrs((props: MenuItemLabelType) => ({
       fill: ${({ theme }) => theme.sidebar.arrow.color};
     }
   }
+`;
+
+export const MenuBreak = styled.hr`
+  border: unset;
+  border-bottom: 1px solid ${palette.gray.light2};
+  width: 100%;
 `;
 
 export const MenuItemTitle = styled.span<{ width?: string }>`

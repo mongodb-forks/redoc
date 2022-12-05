@@ -45,6 +45,7 @@ export class Redoc extends React.Component<RedocProps> {
       store: { spec, menu, options, search, marker },
     } = this.props;
     const store = this.props.store;
+    const { backNavigationPath } = options;
 
     return (
       <ThemeProvider theme={options.theme}>
@@ -56,7 +57,9 @@ export class Redoc extends React.Component<RedocProps> {
             <RedocWrap className="redoc-wrap">
               <StickyResponsiveSidebar menu={menu} className="menu-content">
                 <ApiLogo info={spec.info} />
-                <SideMenuBackButton backNavigationPath={'https://mongodb.com/docs/atlas/'} />
+                {backNavigationPath && (
+                  <SideMenuBackButton backNavigationPath={backNavigationPath} />
+                )}
                 <SideMenuTitle>{store.spec.info.title}</SideMenuTitle>
                 {(!options.disableSearch && (
                   <SearchBox
