@@ -10,14 +10,16 @@ import {
 
 interface SideMenuBackButtonProps {
   backNavigationPath?: string;
+  siteTitle?: string;
 }
 
 const DEFAULT_NAVIGATION_PATH = 'https://mongodb.com/docs/';
 
-export const SideMenuBackButton = ({ backNavigationPath }: SideMenuBackButtonProps) => {
+export const SideMenuBackButton = ({ backNavigationPath, siteTitle }: SideMenuBackButtonProps) => {
   // Depth of menu item can dictate the styling of the component
   const depth = 1;
   const href = backNavigationPath ?? DEFAULT_NAVIGATION_PATH;
+  const text = `Back to ${siteTitle ?? ''} Docs`;
 
   return (
     <>
@@ -25,7 +27,7 @@ export const SideMenuBackButton = ({ backNavigationPath }: SideMenuBackButtonPro
         <MenuItemLi depth={depth}>
           <MenuLink href={href}>
             <MenuItemLabel depth={depth} active={false} isBackButton={true}>
-              <MenuItemTitle>&#8592; Hello world</MenuItemTitle>
+              <MenuItemTitle>&#8592; {text}</MenuItemTitle>
             </MenuItemLabel>
           </MenuLink>
         </MenuItemLi>

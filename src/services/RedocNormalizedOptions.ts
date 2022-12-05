@@ -59,6 +59,7 @@ export interface RedocRawOptions {
 
   // Custom options specific to DOP's use case:
   backNavigationPath?: string;
+  siteTitle?: string;
 }
 
 export function argValueToBoolean(val?: string | boolean, defaultValue?: boolean): boolean {
@@ -264,6 +265,7 @@ export class RedocNormalizedOptions {
 
   // Custom options specific to DOP's use case:
   backNavigationPath?: string;
+  siteTitle?: string;
 
   constructor(raw: RedocRawOptions, defaults: RedocRawOptions = {}) {
     raw = { ...defaults, ...raw };
@@ -341,5 +343,9 @@ export class RedocNormalizedOptions {
     this.hideFab = argValueToBoolean(raw.hideFab);
     this.minCharacterLengthToInitSearch = argValueToNumber(raw.minCharacterLengthToInitSearch) || 3;
     this.showWebhookVerb = argValueToBoolean(raw.showWebhookVerb);
+
+    // Custom options specific to DOP's use case
+    this.backNavigationPath = raw.backNavigationPath;
+    this.siteTitle = raw.siteTitle;
   }
 }
