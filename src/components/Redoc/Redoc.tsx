@@ -9,8 +9,7 @@ import { AppStore } from '../../services';
 import { ApiInfo } from '../ApiInfo/';
 import { ApiLogo } from '../ApiLogo/ApiLogo';
 import { ContentItems } from '../ContentItems/ContentItems';
-import { SideMenu } from '../SideMenu/SideMenu';
-import { SideMenuBackButton } from '../SideMenu/SideMenuBackButton';
+import { SideMenu, SideMenuBackButton } from '../SideMenu';
 import { StickyResponsiveSidebar } from '../StickySidebar/StickyResponsiveSidebar';
 import {
   ApiContentWrap,
