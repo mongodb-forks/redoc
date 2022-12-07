@@ -1,6 +1,5 @@
 import { palette } from '@leafygreen-ui/palette';
 import styled from '../../styled-components';
-// import { HTTPBadgeColors } from '../../theme';
 import { getBadgeStyles } from '../../utils/styling';
 
 export const OperationEndpointWrap = styled.div`
