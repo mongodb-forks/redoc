@@ -108,6 +108,7 @@ export const MenuItemLabel = styled.label.attrs((props: MenuItemLabelType) => ({
   cursor: pointer;
   color: ${props => selectMenuLabelColor(props)};
   margin: 0;
+  ${props => props.isBackButton && 'margin-top: 16px;'}
   padding: 6px 16px;
   ${({ depth, type, theme }) =>
     (type === 'section' && depth > 1 && 'padding-left: ' + theme.spacing.unit * 8 + 'px;') || ''}
@@ -142,6 +143,7 @@ export const MenuItemLabel = styled.label.attrs((props: MenuItemLabelType) => ({
 export const MenuBreak = styled.hr`
   border: unset;
   border-bottom: 1px solid ${palette.gray.light2};
+  margin: 16px 0;
   width: 100%;
 `;
 
