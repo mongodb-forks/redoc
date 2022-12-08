@@ -108,7 +108,7 @@ export const MenuItemLabel = styled.label.attrs((props: MenuItemLabelType) => ({
   cursor: pointer;
   color: ${props => selectMenuLabelColor(props)};
   margin: 0;
-  padding: 12.5px ${props => props.theme.spacing.unit * 4}px;
+  padding: 6px 16px;
   ${({ depth, type, theme }) =>
     (type === 'section' && depth > 1 && 'padding-left: ' + theme.spacing.unit * 8 + 'px;') || ''}
   display: flex;
