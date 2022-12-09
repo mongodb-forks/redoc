@@ -10,10 +10,10 @@ import {
 } from './styled.elements';
 import { useStore } from '../StoreBuilder';
 import { SecurityHeader } from './SecurityHeader';
-import { RequiredScopesRow } from './RequiredScopesRow';
+// import { RequiredScopesRow } from './RequiredScopesRow';
 import { AUTH_TYPES } from '../SecuritySchemes/SecuritySchemes';
 import { Markdown } from '../Markdown/Markdown';
-import { SecurityDetails } from './SecurityDetails';
+// import { SecurityDetails } from './SecurityDetails';
 import { ShelfIcon } from '../../common-elements';
 
 export interface SecurityRequirementsProps {
@@ -61,13 +61,13 @@ export function SecurityRequirements(props: SecurityRequirementsProps) {
               <LockIcon /> {AUTH_TYPES[scheme.type] || scheme.type}: {scheme.id}
             </h5>
             <Markdown source={scheme.description || ''} />
-            <SecurityDetails
+            {/* <SecurityDetails
               key={scheme.id}
               scheme={scheme}
               RequiredScopes={
                 <RequiredScopesRow scopes={getRequiredScopes(scheme.id, securities)} />
               }
-            />
+            /> */}
           </SecurityDetailsStyle>
         ))}
     </>
@@ -83,20 +83,20 @@ const LockIcon = () => (
   </svg>
 );
 
-function getRequiredScopes(id: string, securities: SecurityRequirementModel[]): string[] {
-  const allScopes: string[] = [];
-  let securitiesLength = securities.length;
+// function getRequiredScopes(id: string, securities: SecurityRequirementModel[]): string[] {
+//   const allScopes: string[] = [];
+//   let securitiesLength = securities.length;
 
-  while (securitiesLength--) {
-    const security = securities[securitiesLength];
-    let schemesLength = security.schemes.length;
-    while (schemesLength--) {
-      const scheme = security.schemes[schemesLength];
-      if (scheme.id === id && Array.isArray(scheme.scopes)) {
-        allScopes.push(...scheme.scopes);
-      }
-    }
-  }
+//   while (securitiesLength--) {
+//     const security = securities[securitiesLength];
+//     let schemesLength = security.schemes.length;
+//     while (schemesLength--) {
+//       const scheme = security.schemes[schemesLength];
+//       if (scheme.id === id && Array.isArray(scheme.scopes)) {
+//         allScopes.push(...scheme.scopes);
+//       }
+//     }
+//   }
 
-  return Array.from(new Set(allScopes));
-}
+//   return Array.from(new Set(allScopes));
+// }

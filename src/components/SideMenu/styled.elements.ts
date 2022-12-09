@@ -2,11 +2,12 @@ import { default as classnames } from 'classnames';
 import { darken } from 'polished';
 
 import { deprecatedCss, ShelfIcon } from '../../common-elements';
-import styled, { css, media, ResolvedThemeInterface } from '../../styled-components';
+import styled, { css, ResolvedThemeInterface } from '../../styled-components';
 
-export const OperationBadge = styled.span.attrs((props: { type: string }) => ({
-  className: `operation-type ${props.type}`,
-}))<{ type: string }>`
+// .attrs((props: { type: string }) => ({
+//   className: `operation-type ${props.type}`,
+// }))
+export const OperationBadge = styled.span<{ type: string }>`
   width: 9ex;
   display: inline-block;
   height: ${props => props.theme.typography.code.fontSize};
@@ -106,17 +107,17 @@ export const MenuItemLi = styled.li<{ depth: number }>`
 export const menuItemDepth = {
   0: css`
     opacity: 0.7;
-    text-transform: ${({ theme }) => theme.sidebar.groupItems.textTransform};
     font-size: 0.8em;
     padding-bottom: 0;
     cursor: default;
   `,
   1: css`
     font-size: 0.929em;
-    text-transform: ${({ theme }) => theme.sidebar.level1Items.textTransform};
   `,
 };
 
+// text-transform: ${({ theme }) => theme.sidebar.groupItems.textTransform};
+// text-transform: ${({ theme }) => theme.sidebar.level1Items.textTransform};
 export interface MenuItemLabelType {
   depth: number;
   active: boolean;
@@ -124,12 +125,13 @@ export interface MenuItemLabelType {
   type?: string;
 }
 
-export const MenuItemLabel = styled.label.attrs((props: MenuItemLabelType) => ({
-  role: 'menuitem',
-  className: classnames('-depth' + props.depth, {
-    active: props.active,
-  }),
-}))<MenuItemLabelType>`
+// .attrs((props: MenuItemLabelType) => ({
+//   role: 'menuitem',
+//   className: classnames('-depth' + props.depth, {
+//     active: props.active,
+//   }),
+// }))
+export const MenuItemLabel = styled.label<MenuItemLabelType>`
   cursor: pointer;
   color: ${props =>
     props.active
@@ -198,8 +200,8 @@ export const RedocAttribution = styled.div`
     width: 15px;
     margin-right: 5px;
   }
-
-  ${media.lessThan('small')`
-    width: 100%;
-  `};
 `;
+
+// ${media.lessThan('small')`
+// width: 100%;
+// `};

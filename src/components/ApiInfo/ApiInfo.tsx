@@ -96,7 +96,10 @@ export class ApiInfo extends React.Component<ApiInfoProps> {
                 </DownloadButton>
               </p>
             )}
-            <StyledMarkdownBlock>
+            <StyledMarkdownBlock
+              compact={false}
+              inline={false} // both added to avoid error
+            >
               {((info.license || info.contact || info.termsOfService) && (
                 <InfoSpanBoxWrap>
                   <InfoSpanBox>

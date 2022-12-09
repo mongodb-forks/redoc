@@ -1,4 +1,5 @@
-import styled, { media } from '../../styled-components';
+import styled from '../../styled-components';
+// { media }
 
 export const RedocWrap = styled.div`
   ${({ theme }) => `
@@ -30,12 +31,13 @@ export const ApiContentWrap = styled.div`
   position: relative;
   overflow: hidden;
   width: calc(100% - ${props => props.theme.sidebar.width});
-  ${media.lessThan('small', true)`
-    width: 100%;
-  `};
 
   contain: layout;
 `;
+
+// ${media.lessThan('small', true)`
+//     width: 100%;
+//   `};
 
 export const BackgroundStub = styled.div`
   background: ${({ theme }) => theme.rightPanel.backgroundColor};
@@ -51,7 +53,8 @@ export const BackgroundStub = styled.div`
       return theme.rightPanel.width;
     }
   }};
-  ${media.lessThan('medium', true)`
-    display: none;
-  `};
 `;
+
+// ${media.lessThan('medium', true)`
+// display: none;
+// `};

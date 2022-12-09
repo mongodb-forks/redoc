@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { linksCss } from '../Markdown/styled.elements';
+// import { linksCss } from '../Markdown/styled.elements';
 import { media } from '../../styled-components';
 import { UnderlinedHeader } from '../../common-elements';
 
@@ -51,9 +51,8 @@ export const SecurityRequirementAndWrap = styled.span`
   &:last-child:after {
     content: none;
   }
-
-  ${linksCss};
 `;
+// ${linksCss};
 
 export const SecurityRequirementOrWrap = styled.span<{ expanded?: boolean }>`
   ${p => !p.expanded && `white-space: nowrap;`}
@@ -67,9 +66,8 @@ export const SecurityRequirementOrWrap = styled.span<{ expanded?: boolean }>`
   &:only-child:after {
     content: none;
   }
-
-  ${linksCss};
 `;
+// ${linksCss};
 
 export const AuthHeaderColumn = styled.div`
   flex: 1 1 auto;

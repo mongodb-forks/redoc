@@ -42,9 +42,10 @@ export const EndpointInfo = styled.button<{ expanded?: boolean; inverted?: boole
   }
 `;
 
-export const HttpVerb = styled.span.attrs((props: { type: string; compact?: boolean }) => ({
-  className: `http-verb ${props.type}`,
-}))<{ type: string; compact?: boolean }>`
+// .attrs((props: { type: string; compact?: boolean }) => ({
+//   className: `http-verb ${props.type}`,
+// }))
+export const HttpVerb = styled.span<{ type: string; compact?: boolean }>`
   font-size: ${props => (props.compact ? '0.8em' : '0.929em')};
   line-height: ${props => (props.compact ? '18px' : '20px')};
   background-color: ${props => props.theme.colors.http[props.type] || '#999999'};

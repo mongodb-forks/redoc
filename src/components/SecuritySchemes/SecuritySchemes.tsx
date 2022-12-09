@@ -3,7 +3,7 @@ import * as React from 'react';
 import { SecuritySchemesModel } from '../../services';
 import { H2, Row, ShareLink, MiddlePanel, Section } from '../../common-elements';
 import { Markdown } from '../Markdown/Markdown';
-import { SecurityDetails } from '../SecurityRequirement/SecurityDetails';
+// import { SecurityDetails } from '../SecurityRequirement/SecurityDetails';
 import { SecurityDetailsStyle, SecurityRow } from '../SecurityRequirement/styled.elements';
 
 export const AUTH_TYPES = {
@@ -33,7 +33,7 @@ export class SecurityDefs extends React.PureComponent<SecurityDefsProps> {
                 <b>Security Scheme Type: </b>
                 <span>{AUTH_TYPES[scheme.type] || scheme.type}</span>
               </SecurityRow>
-              <SecurityDetails scheme={scheme} />
+              {/* <SecurityDetails scheme={scheme} /> */}
             </SecurityDetailsStyle>
           </MiddlePanel>
         </Row>

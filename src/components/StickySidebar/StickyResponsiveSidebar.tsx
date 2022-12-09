@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import { MenuStore } from '../../services/MenuStore';
 import { RedocNormalizedOptions, RedocRawOptions } from '../../services/RedocNormalizedOptions';
-import styled, { media } from '../../styled-components';
+import styled from '../../styled-components';
 import { IS_BROWSER } from '../../utils/index';
 import { OptionsContext } from '../OptionsProvider';
 import { AnimatedChevronButton } from './ChevronSvg';
@@ -40,18 +40,18 @@ const StyledStickySidebar = styled.div<{ open?: boolean }>`
   position: -webkit-sticky;
   top: 0;
 
-  ${media.lessThan('small')`
-    position: fixed;
-    z-index: 20;
-    width: 100%;
-    background: ${({ theme }) => theme.sidebar.backgroundColor};
-    display: ${props => (props.open ? 'flex' : 'none')};
-  `};
-
   @media print {
     display: none;
   }
 `;
+
+// ${media.lessThan('small')`
+//     position: fixed;
+//     z-index: 20;
+//     width: 100%;
+//     background: ${({ theme }) => theme.sidebar.backgroundColor};
+//     display: ${props => (props.open ? 'flex' : 'none')};
+//   `};
 
 const FloatingButton = styled.div`
   outline: none;
@@ -65,9 +65,6 @@ const FloatingButton = styled.div`
   z-index: 100;
   border-radius: 50%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  ${media.lessThan('small')`
-    display: flex;
-  `};
 
   bottom: 44px;
 
@@ -82,6 +79,10 @@ const FloatingButton = styled.div`
     display: none;
   }
 `;
+
+// ${media.lessThan('small')`
+//     display: flex;
+//   `};
 
 @observer
 export class StickyResponsiveSidebar extends React.Component<

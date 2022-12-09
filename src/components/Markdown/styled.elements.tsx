@@ -1,32 +1,41 @@
-import { headerCommonMixin, linkifyMixin } from '../../common-elements';
-import { PrismDiv } from '../../common-elements/PrismDiv';
-import styled, { css, extensionsHook, ResolvedThemeInterface } from '../../styled-components';
+import {
+  // headerCommonMixin,
+  linkifyMixin,
+} from '../../common-elements';
+// import { PrismDiv } from '../../common-elements/PrismDiv';
+import styled, {
+  //  css,
+  extensionsHook,
+  //  ResolvedThemeInterface
+} from '../../styled-components';
 
-import { StyledComponent } from 'styled-components';
+// import { StyledComponent } from 'styled-components';
 
-export const linksCss = css`
-  a {
-    text-decoration: ${props => props.theme.typography.links.textDecoration};
-    color: ${props => props.theme.typography.links.color};
+// export const linksCss = css`
+//   a {
+//     text-decoration: ${props => props.theme.typography.links.textDecoration};
+//     color: ${props => props.theme.typography.links.color};
 
-    &:visited {
-      color: ${props => props.theme.typography.links.visited};
-    }
+//     &:visited {
+//       color: ${props => props.theme.typography.links.visited};
+//     }
 
-    &:hover {
-      color: ${props => props.theme.typography.links.hover};
-      text-decoration: ${props => props.theme.typography.links.hoverTextDecoration};
-    }
-  }
-`;
+//     &:hover {
+//       color: ${props => props.theme.typography.links.hover};
+//       text-decoration: ${props => props.theme.typography.links.hoverTextDecoration};
+//     }
+//   }
+// `;
 
-export const StyledMarkdownBlock = styled(
-  PrismDiv as StyledComponent<
-    'div',
-    ResolvedThemeInterface,
-    { compact?: boolean; inline?: boolean }
-  >,
-)`
+// export const StyledMarkdownBlock = styled(
+//   PrismDiv as StyledComponent<
+//     'div',
+//     ResolvedThemeInterface,
+//     { compact?: boolean; inline?: boolean }
+//   >,
+// )`
+
+export const StyledMarkdownBlock = styled('div')<{ compact?: boolean; inline?: boolean }>`
   font-family: ${props => props.theme.typography.fontFamily};
   font-weight: ${props => props.theme.typography.fontWeightRegular};
   line-height: ${props => props.theme.typography.lineHeight};
@@ -55,13 +64,11 @@ export const StyledMarkdownBlock = styled(
   }`}
 
   h1 {
-    ${headerCommonMixin(1)};
     color: ${props => props.theme.colors.primary.main};
     margin-top: 0;
   }
 
   h2 {
-    ${headerCommonMixin(2)};
     color: ${props => props.theme.colors.text.primary};
   }
 
@@ -162,7 +169,9 @@ export const StyledMarkdownBlock = styled(
 
   ${linkifyMixin('.share-link')};
 
-  ${linksCss}
-
   ${extensionsHook('Markdown')};
 `;
+
+// ${headerCommonMixin(1)};
+// ${headerCommonMixin(2)};
+// ${linksCss}

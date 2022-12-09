@@ -6,10 +6,6 @@ export const jsonStyles = css`
     pointer-events: none;
   }
 
-  font-family: ${props => props.theme.typography.code.fontFamily};
-  font-size: ${props => props.theme.typography.code.fontSize};
-
-  white-space: ${({ theme }) => (theme.typography.code.wrap ? 'pre-wrap' : 'pre')};
   contain: content;
   overflow-x: auto;
 
@@ -51,8 +47,6 @@ export const jsonStyles = css`
     background-color: transparent;
     border: 0;
     color: #fff;
-    font-family: ${props => props.theme.typography.code.fontFamily};
-    font-size: ${props => props.theme.typography.code.fontSize};
     padding-right: 6px;
     padding-left: 6px;
     padding-top: 0;
@@ -109,3 +103,11 @@ export const jsonStyles = css`
     display: inherit;
   }
 `;
+
+// font-family: ${props => props.theme.typography.code.fontFamily};
+// font-size: ${props => props.theme.typography.code.fontSize};
+
+// white-space: ${({ theme }) => (theme.typography.code.wrap ? 'pre-wrap' : 'pre')};
+
+// font-family: ${props => props.theme.typography.code.fontFamily};
+// font-size: ${props => props.theme.typography.code.fontSize};

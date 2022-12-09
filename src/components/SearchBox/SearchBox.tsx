@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Theme } from '@emotion/react';
 
 import type { IMenuItem, SearchResult } from '../../services/types';
 import type { SearchStore } from '../../services/SearchStore';
@@ -7,22 +8,22 @@ import type { MarkerService } from '../../services/MarkerService';
 import { MenuItem } from '../SideMenu/MenuItem';
 import { OptionsContext } from '../OptionsProvider';
 import { bind, debounce } from 'decko';
-import { PerfectScrollbarWrap } from '../../common-elements/perfect-scrollbar';
+// import { PerfectScrollbarWrap } from '../../common-elements/perfect-scrollbar';
 import {
   ClearIcon,
   SearchIcon,
   SearchInput,
-  SearchResultsBox,
+  // SearchResultsBox,
   SearchWrap,
 } from './styled.elements';
-import { l } from '../../services/Labels';
+// import { l } from '../../services/Labels';
 
 export interface SearchBoxProps {
   search: SearchStore<string>;
   marker: MarkerService;
   getItemById: (id: string) => IMenuItem | undefined;
   onActivate: (item: IMenuItem) => void;
-
+  theme: Theme;
   className?: string;
 }
 
@@ -131,14 +132,15 @@ export class SearchBox extends React.PureComponent<SearchBoxProps, SearchBoxStat
   };
 
   render() {
-    const { activeItemIdx } = this.state;
-    const results = this.state.results
-      .filter(res => this.props.getItemById(res.meta))
-      .map(res => ({
-        item: this.props.getItemById(res.meta)!,
-        score: res.score,
-      }))
-      .sort((a, b) => b.score - a.score);
+    console.log('search box ', this.props);
+    // const { activeItemIdx } = this.state;
+    // const results = this.state.results
+    // .filter(res => this.props.getItemById(res.meta))
+    // .map(res => ({
+    //   item: this.props.getItemById(res.meta)!,
+    //   score: res.score,
+    // }))
+    // .sort((a, b) => b.score - a.score);
 
     return (
       <SearchWrap role="search">
@@ -152,7 +154,7 @@ export class SearchBox extends React.PureComponent<SearchBoxProps, SearchBoxStat
           type="text"
           onChange={this.search}
         />
-        {results.length > 0 && (
+        {/* {results.length > 0 && (
           <PerfectScrollbarWrap
             options={{
               wheelPropagation: false,
@@ -177,7 +179,7 @@ export class SearchBox extends React.PureComponent<SearchBoxProps, SearchBoxStat
         )}
         {this.state.term && this.state.noResults ? (
           <SearchResultsBox data-role="search:results">{l('noResultsFound')}</SearchResultsBox>
-        ) : null}
+        ) : null} */}
       </SearchWrap>
     );
   }

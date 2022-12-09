@@ -1,29 +1,38 @@
 import * as styledComponents from 'styled-components';
+import { css } from '@emotion/react';
+import emotionStyled from '@emotion/styled';
 
 import type { ResolvedThemeInterface } from './theme';
 
 export type { ResolvedThemeInterface };
 
+// const { css as emotionCss } = emotion;
+const styled = emotionStyled;
+
 const {
-  default: styled,
-  css,
+  // default: styled,
+  css: styledCss,
   createGlobalStyle,
   keyframes,
   ThemeProvider,
 } = styledComponents as unknown as styledComponents.ThemedStyledComponentsModule<ResolvedThemeInterface>;
 
+declare module '@emotion/react' {
+  export interface Theme extends ResolvedThemeInterface {}
+}
+
 export const media = {
   lessThan(breakpoint, print?: boolean, extra?: string) {
-    return (...args) => css`
+    return (...args) => styledCss`
       @media ${print ? 'print, ' : ''} screen and (max-width: ${props =>
-          props.theme.breakpoints[breakpoint]}) ${extra || ''} {
+      props.theme.breakpoints[breakpoint]}) ${extra || ''} {
         ${(css as any)(...args)};
       }
     `;
   },
 
   greaterThan(breakpoint) {
-    return (...args) => css`
+    return (...args) => styledCss`
       @media (min-width: ${props => props.theme.breakpoints[breakpoint]}) {
         ${(css as any)(...args)};
       }
@@ -31,10 +40,10 @@ export const media = {
   },
 
   between(firstBreakpoint, secondBreakpoint) {
-    return (...args) => css`
+    return (...args) => styledCss`
       @media (min-width: ${props =>
-          props.theme.breakpoints[firstBreakpoint]}) and (max-width: ${props =>
-          props.theme.breakpoints[secondBreakpoint]}) {
+        props.theme.breakpoints[firstBreakpoint]}) and (max-width: ${props =>
+      props.theme.breakpoints[secondBreakpoint]}) {
         ${(css as any)(...args)};
       }
     `;

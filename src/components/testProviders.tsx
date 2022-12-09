@@ -1,13 +1,16 @@
 import * as React from 'react';
 import { ThemeProvider } from 'styled-components';
+import { ThemeProvider as EmotionThemeProvider } from '@emotion/react';
 import defaultTheme, { resolveTheme } from '../theme';
 
 export default class TestThemeProvider extends React.Component {
   render() {
     return (
-      <ThemeProvider theme={resolveTheme(defaultTheme)}>
-        {React.Children.only(this.props.children as any)}
-      </ThemeProvider>
+      <EmotionThemeProvider theme={resolveTheme(defaultTheme)}>
+        <ThemeProvider theme={resolveTheme(defaultTheme)}>
+          {React.Children.only(this.props.children as any)}
+        </ThemeProvider>
+      </EmotionThemeProvider>
     );
   }
 }
