@@ -18,7 +18,7 @@ const {
 } = styledComponents as unknown as styledComponents.ThemedStyledComponentsModule<ResolvedThemeInterface>;
 
 declare module '@emotion/react' {
-  export interface Theme extends ResolvedThemeInterface {}
+  export type Theme = ResolvedThemeInterface;
 }
 
 export const media = {
