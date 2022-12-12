@@ -1,6 +1,7 @@
 import { observer } from 'mobx-react';
 import * as React from 'react';
 
+import { default as classnames } from 'classnames';
 import { ShelfIcon } from '../../common-elements/shelfs';
 import { OperationModel } from '../../services';
 import { shortenHTTPVerb } from '../../utils/openapi';
@@ -48,7 +49,16 @@ export class MenuItem extends React.Component<MenuItemProps> {
         {item.type === 'operation' ? (
           <OperationMenuItemContent {...this.props} item={item as OperationModel} />
         ) : (
-          <MenuItemLabel depth={item.depth} active={item.active} type={item.type} ref={this.ref}>
+          <MenuItemLabel
+            depth={item.depth}
+            active={item.active}
+            type={item.type}
+            ref={this.ref}
+            role="menuitem"
+            className={classnames('-depth' + item.depth, {
+              active: item.active,
+            })}
+          >
             <MenuItemTitle title={item.sidebarLabel}>
               {item.sidebarLabel}
               {this.props.children}
@@ -90,11 +100,13 @@ export const OperationMenuItemContent = observer((props: OperationMenuItemConten
   return (
     <MenuItemLabel depth={item.depth} active={item.active} deprecated={item.deprecated} ref={ref}>
       {item.isWebhook ? (
-        <OperationBadge type="hook">
+        <OperationBadge type="hook" className={`operation-type hook`}>
           {showWebhookVerb ? item.httpVerb : l('webhook')}
         </OperationBadge>
       ) : (
-        <OperationBadge type={item.httpVerb}>{shortenHTTPVerb(item.httpVerb)}</OperationBadge>
+        <OperationBadge type={item.httpVerb} className={`operation-type ${item.httpVerb}`}>
+          {shortenHTTPVerb(item.httpVerb)}
+        </OperationBadge>
       )}
       <MenuItemTitle width="calc(100% - 38px)">
         {item.sidebarLabel}

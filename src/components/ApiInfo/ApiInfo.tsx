@@ -15,6 +15,7 @@ import {
   InfoSpanBoxWrap,
 } from './styled.elements';
 import { l } from '../../services/Labels';
+// import { SECTION_ATTR } from '../../../typings';
 
 export interface ApiInfoProps {
   store: AppStore;

@@ -1,6 +1,7 @@
-import styled from 'styled-components';
+// import styled from 'styled-components';
+import styled from '../../styled-components';
 // import { linksCss } from '../Markdown/styled.elements';
-import { media } from '../../styled-components';
+// import { media } from '../../styled-components';
 import { UnderlinedHeader } from '../../common-elements';
 
 export const Header = styled.div`
@@ -86,10 +87,10 @@ export const SecuritiesColumn = styled.div<{ expanded?: boolean }>`
      margin: 20px 0;
      width: 100%;
     `};
-  ${media.lessThan('small')`
-    margin-top: 10px;
-  `}
 `;
+// ${media.lessThan('small')`
+//     margin-top: 10px;
+//   `}
 
 export const AuthHeader = styled(UnderlinedHeader)`
   display: inline-block;
@@ -101,10 +102,10 @@ export const Wrap = styled.div<{ expanded?: boolean }>`
   display: flex;
   margin: 1em 0;
   flex-direction: ${p => (p.expanded ? 'column' : 'row')};
-  ${media.lessThan('small')`
-    flex-direction: column;
-  `}
 `;
+// ${media.lessThan('small')`
+//     flex-direction: column;
+//   `}
 
 export const SecurityRow = styled.div`
   margin: 0.5em 0;

@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { SecuritySchemesModel } from '../../services';
+import { SECTION_ATTR, SecuritySchemesModel } from '../../services';
 import { H2, Row, ShareLink, MiddlePanel, Section } from '../../common-elements';
 import { Markdown } from '../Markdown/Markdown';
 // import { SecurityDetails } from '../SecurityRequirement/SecurityDetails';
@@ -20,7 +20,7 @@ export interface SecurityDefsProps {
 export class SecurityDefs extends React.PureComponent<SecurityDefsProps> {
   render() {
     return this.props.securitySchemes.schemes.map(scheme => (
-      <Section id={scheme.sectionId} key={scheme.id}>
+      <Section id={scheme.sectionId} key={scheme.id} {...{ [SECTION_ATTR]: scheme.sectionId }}>
         <Row>
           <MiddlePanel>
             <H2>

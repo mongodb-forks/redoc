@@ -1,5 +1,5 @@
 import * as styledComponents from 'styled-components';
-import { css } from '@emotion/react';
+import { css, keyframes } from '@emotion/react';
 import emotionStyled from '@emotion/styled';
 
 import type { ResolvedThemeInterface } from './theme';
@@ -13,14 +13,9 @@ const {
   // default: styled,
   css: styledCss,
   createGlobalStyle,
-  keyframes,
+  // keyframes,
   ThemeProvider,
 } = styledComponents as unknown as styledComponents.ThemedStyledComponentsModule<ResolvedThemeInterface>;
-
-// declare module '@emotion/react' {
-//   interface EmotionTheme extends Theme
-// export type Theme = ResolvedThemeInterface{};
-// }
 
 export const media = {
   lessThan(breakpoint, print?: boolean, extra?: string) {
