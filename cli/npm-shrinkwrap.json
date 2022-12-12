@@ -8023,7 +8023,7 @@
       }
     },
     "redoc": {
-      "version": "git+ssh://git@github.com/mongodb-forks/redoc.git#673c6654c6f4a453e83dfc208ba07844a9a49a7f",
+      "version": "git+https://git@github.com/mongodb-forks/redoc.git#673c6654c6f4a453e83dfc208ba07844a9a49a7f",
       "from": "redoc@github:mongodb-forks/redoc#dop-test",
       "requires": {
         "@emotion/css": "^11.0.0",
