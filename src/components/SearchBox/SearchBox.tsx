@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { Theme } from '@emotion/react';
+// import { Theme } from '@emotion/react';
+import { ResolvedThemeInterface } from '../../theme';
 
 import type { IMenuItem, SearchResult } from '../../services/types';
 import type { SearchStore } from '../../services/SearchStore';
@@ -23,7 +24,7 @@ export interface SearchBoxProps {
   marker: MarkerService;
   getItemById: (id: string) => IMenuItem | undefined;
   onActivate: (item: IMenuItem) => void;
-  theme: Theme;
+  theme: ResolvedThemeInterface;
   className?: string;
 }
 

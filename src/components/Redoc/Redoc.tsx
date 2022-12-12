@@ -1,7 +1,7 @@
 import * as PropTypes from 'prop-types';
 import * as React from 'react';
 
-import { ThemeProvider } from '../../styled-components';
+// import { ThemeProvider } from '../../styled-components';
 import { ThemeProvider as EmotionThemeProvider } from '@emotion/react';
 import { OptionsProvider } from '../OptionsProvider';
 
@@ -49,35 +49,35 @@ export class Redoc extends React.Component<RedocProps> {
     const store = this.props.store;
     console.log('REDOC new store => ', options);
     return (
-      <ThemeProvider theme={options.theme}>
-        <EmotionThemeProvider theme={options.theme}>
-          <StoreProvider value={store}>
-            <OptionsProvider value={options}>
-              <RedocWrap className="redoc-wrap">
-                {/* <StickyResponsiveSidebar menu={menu} className="menu-content"> */}
-                {/* <ApiLogo info={spec.info} /> */}
-                {(!options.disableSearch && (
-                  <SearchBox
-                    search={search!}
-                    marker={marker}
-                    getItemById={menu.getItemById}
-                    onActivate={menu.activateAndScroll}
-                    theme={options.theme}
-                  />
-                )) ||
-                  null}
-                <SideMenu menu={menu} />
-                {/* </StickyResponsiveSidebar> */}
-                {/* <ApiContentWrap className="api-content">
+      // <ThemeProvider theme={options.theme}>
+      <EmotionThemeProvider theme={options.theme}>
+        <StoreProvider value={store}>
+          <OptionsProvider value={options}>
+            <RedocWrap className="redoc-wrap">
+              {/* <StickyResponsiveSidebar menu={menu} className="menu-content"> */}
+              {/* <ApiLogo info={spec.info} /> */}
+              {(!options.disableSearch && (
+                <SearchBox
+                  search={search!}
+                  marker={marker}
+                  getItemById={menu.getItemById}
+                  onActivate={menu.activateAndScroll}
+                  theme={options.theme}
+                />
+              )) ||
+                null}
+              <SideMenu menu={menu} />
+              {/* </StickyResponsiveSidebar> */}
+              {/* <ApiContentWrap className="api-content">
                 <ApiInfo store={store} />
                 <ContentItems items={menu.items as any} />
               </ApiContentWrap>
               <BackgroundStub /> */}
-              </RedocWrap>
-            </OptionsProvider>
-          </StoreProvider>
-        </EmotionThemeProvider>
-      </ThemeProvider>
+            </RedocWrap>
+          </OptionsProvider>
+        </StoreProvider>
+      </EmotionThemeProvider>
+      // </ThemeProvider>
     );
   }
 }

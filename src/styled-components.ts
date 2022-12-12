@@ -17,9 +17,10 @@ const {
   ThemeProvider,
 } = styledComponents as unknown as styledComponents.ThemedStyledComponentsModule<ResolvedThemeInterface>;
 
-declare module '@emotion/react' {
-  export type Theme = ResolvedThemeInterface;
-}
+// declare module '@emotion/react' {
+//   interface EmotionTheme extends Theme
+// export type Theme = ResolvedThemeInterface{};
+// }
 
 export const media = {
   lessThan(breakpoint, print?: boolean, extra?: string) {

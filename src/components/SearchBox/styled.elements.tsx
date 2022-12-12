@@ -43,7 +43,7 @@ export const SearchWrap = emotionStyled('div')`
 //   outline: none;
 // `;
 
-export const SearchInput = emotionStyled.input<{ theme }>`
+export const SearchInput = emotionStyled.input<{ theme: ResolvedThemeInterface }>`
   width: calc(100% - ${props => props.theme.spacing.unit * 8}px);
   box-sizing: border-box;
   margin: 0 ${props => props.theme.spacing.unit * 4}px;
