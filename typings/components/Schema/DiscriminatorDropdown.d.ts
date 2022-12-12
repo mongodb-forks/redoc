@@ -2,10 +2,10 @@ import * as React from 'react';
 import { DropdownOption } from '../../common-elements/Dropdown';
 import { SchemaModel } from '../../services/models';
 export declare class DiscriminatorDropdown extends React.Component<{
-  parent: SchemaModel;
-  enumValues: string[];
+    parent: SchemaModel;
+    enumValues: string[];
 }> {
-  sortOptions(options: DropdownOption[], enumValues: string[]): void;
-  render(): JSX.Element | null;
-  changeActiveChild: (option: DropdownOption) => void;
+    sortOptions(options: DropdownOption[], enumValues: string[]): void;
+    render(): JSX.Element | null;
+    changeActiveChild: (option: DropdownOption) => void;
 }

@@ -1,18 +1,17 @@
 import * as React from 'react';
 export interface StylingMarkdownProps {
-  compact?: boolean;
-  inline?: boolean;
+    compact?: boolean;
+    inline?: boolean;
 }
 export interface BaseMarkdownProps {
-  sanitize?: boolean;
-  source: string;
+    sanitize?: boolean;
+    source: string;
 }
-export declare type MarkdownProps = BaseMarkdownProps &
-  StylingMarkdownProps & {
+export declare type MarkdownProps = BaseMarkdownProps & StylingMarkdownProps & {
     source: string;
     className?: string;
     'data-role'?: string;
-  };
+};
 export declare class Markdown extends React.Component<MarkdownProps> {
-  render(): JSX.Element;
+    render(): JSX.Element;
 }

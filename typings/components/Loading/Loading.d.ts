@@ -1,7 +1,7 @@
 import * as React from 'react';
 export interface LoadingProps {
-  color: string;
+    color: string;
 }
 export declare class Loading extends React.PureComponent<LoadingProps> {
-  render(): JSX.Element;
+    render(): JSX.Element;
 }

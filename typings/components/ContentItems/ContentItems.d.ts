@@ -2,21 +2,21 @@ import * as React from 'react';
 import type { ContentItemModel } from '../../services';
 import type { OperationModel } from '../../services/models';
 export declare class ContentItems extends React.Component<{
-  items: ContentItemModel[];
+    items: ContentItemModel[];
 }> {
-  render(): JSX.Element[] | null;
+    render(): JSX.Element[] | null;
 }
 export interface ContentItemProps {
-  item: ContentItemModel;
+    item: ContentItemModel;
 }
 export declare class ContentItem extends React.Component<ContentItemProps> {
-  render(): JSX.Element;
+    render(): JSX.Element;
 }
 export declare class SectionItem extends React.Component<ContentItemProps> {
-  render(): JSX.Element;
+    render(): JSX.Element;
 }
 export declare class OperationItem extends React.Component<{
-  item: OperationModel;
+    item: OperationModel;
 }> {
-  render(): JSX.Element;
+    render(): JSX.Element;
 }

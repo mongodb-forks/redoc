@@ -9,12 +9,12 @@ import type { ContentItemModel } from './types';
  * Store that contains all the specification related information in the form of tree
  */
 export declare class SpecStore {
-  private options;
-  parser: OpenAPIParser;
-  info: ApiInfoModel;
-  externalDocs?: OpenAPIExternalDocumentation;
-  contentItems: ContentItemModel[];
-  securitySchemes: SecuritySchemesModel;
-  webhooks?: WebhookModel;
-  constructor(spec: OpenAPISpec, specUrl: string | undefined, options: RedocNormalizedOptions);
+    private options;
+    parser: OpenAPIParser;
+    info: ApiInfoModel;
+    externalDocs?: OpenAPIExternalDocumentation;
+    contentItems: ContentItemModel[];
+    securitySchemes: SecuritySchemesModel;
+    webhooks?: WebhookModel;
+    constructor(spec: OpenAPISpec, specUrl: string | undefined, options: RedocNormalizedOptions);
 }

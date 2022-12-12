@@ -7,7 +7,4 @@ import type { HTTPBadgeColors } from '../theme';
  * @param colorTheme
  * @returns string
  */
-export declare function getBadgeStyles(
-  badgeColors: HTTPBadgeColors | string,
-  colorTheme: string,
-): string;
+export declare function getBadgeStyles(badgeColors: HTTPBadgeColors | string, colorTheme: string): string;

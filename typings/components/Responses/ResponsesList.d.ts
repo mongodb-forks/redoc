@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { ResponseModel } from '../../services/models';
 export interface ResponseListProps {
-  responses: ResponseModel[];
-  isCallback?: boolean;
+    responses: ResponseModel[];
+    isCallback?: boolean;
 }
 export declare class ResponsesList extends React.PureComponent<ResponseListProps> {
-  render(): JSX.Element | null;
+    render(): JSX.Element | null;
 }
