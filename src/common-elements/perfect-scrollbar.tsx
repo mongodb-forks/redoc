@@ -3,7 +3,7 @@ import * as React from 'react';
 import PerfectScrollbarType, * as PerfectScrollbarNamespace from 'perfect-scrollbar';
 
 import { OptionsContext } from '../components/OptionsProvider';
-import styled, { createGlobalStyle } from '../styled-components';
+import styled, { Global, css } from '../styled-components';
 import { IS_BROWSER } from '../utils';
 
 /*
@@ -21,7 +21,8 @@ if (IS_BROWSER) {
   psStyles = psStyles === '[object Object]' ? '' : psStyles;
 }
 
-const PSStyling = createGlobalStyle`${psStyles}`;
+// const PSStyling = createGlobalStyle`${psStyles}`;
+// const PSStyling = <Global styles={css`${psStyles}`}/>;
 
 const StyledScrollWrapper = styled.div`
   position: relative;
@@ -66,7 +67,13 @@ export class PerfectScrollbar extends React.Component<PerfectScrollbarProps> {
 
     return (
       <>
-        {psStyles && <PSStyling />}
+        {psStyles && (
+          <Global
+            styles={css`
+              ${psStyles}
+            `}
+          />
+        )}
         <StyledScrollWrapper className={`scrollbar-container ${className}`} ref={this.handleRef}>
           {children}
         </StyledScrollWrapper>

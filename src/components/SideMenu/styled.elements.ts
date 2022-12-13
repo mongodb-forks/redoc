@@ -144,7 +144,22 @@ export const MenuItemLabel = styled.label<MenuItemLabelType>`
   display: flex;
   justify-content: space-between;
   font-family: ${props => props.theme.typography.headings.fontFamily};
-  ${props => menuItemDepth[props.depth]};
+  ${props => {
+    const menuItemDepth = {
+      0: css`
+        opacity: 0.7;
+        font-size: 0.8em;
+        padding-bottom: 0;
+        cursor: default;
+        text-transform: ${props.theme.sidebar.groupItems.textTransform};
+      `,
+      1: css`
+        font-size: 0.929em;
+        text-transform: ${props.theme.sidebar.level1Items.textTransform};
+      `,
+    };
+    return menuItemDepth[props.depth];
+  }};
   background-color: ${props =>
     props.active
       ? menuItemActive(props.depth, props, 'activeBackgroundColor')

@@ -1,5 +1,5 @@
 import * as styledComponents from 'styled-components';
-import { css, keyframes } from '@emotion/react';
+import { css, keyframes, Global } from '@emotion/react';
 import emotionStyled from '@emotion/styled';
 
 import type { ResolvedThemeInterface } from './theme';
@@ -46,7 +46,7 @@ export const media = {
   },
 };
 
-export { css, createGlobalStyle, keyframes, ThemeProvider };
+export { css, createGlobalStyle, Global, keyframes, ThemeProvider };
 export default styled;
 
 export function extensionsHook(styledName: string) {
