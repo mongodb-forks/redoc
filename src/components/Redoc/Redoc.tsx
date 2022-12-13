@@ -27,6 +27,11 @@ export class Redoc extends React.Component<RedocProps> {
 
   componentDidMount() {
     this.props.store.onDidMount();
+    console.log('MOUNTED ');
+  }
+
+  componentDidUpdate() {
+    console.log('UPDATED');
   }
 
   componentWillUnmount() {
