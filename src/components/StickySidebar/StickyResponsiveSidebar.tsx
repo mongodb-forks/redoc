@@ -99,7 +99,6 @@ export class StickyResponsiveSidebar extends React.Component<
     if (stickyfill) {
       stickyfill.add(this.stickyElement);
     }
-    console.log('hello mount sidebar sticky');
 
     // rerender when hydrating from SSR
     // see https://github.com/facebook/react/issues/8017#issuecomment-256351955
@@ -115,7 +114,6 @@ export class StickyResponsiveSidebar extends React.Component<
   }
 
   getScrollYOffset(options: RedocNormalizedOptions) {
-    console.log('getscrollyoffset');
     let top;
     if (this.props.scrollYOffset !== undefined) {
       top = RedocNormalizedOptions.normalizeScrollYOffset(this.props.scrollYOffset)();
@@ -130,7 +128,6 @@ export class StickyResponsiveSidebar extends React.Component<
 
     const top = this.state.offsetTop;
 
-    console.log('render sticky sidebar');
     return (
       <>
         <StyledStickySidebar

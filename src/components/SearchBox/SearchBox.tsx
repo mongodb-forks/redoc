@@ -133,7 +133,6 @@ export class SearchBox extends React.PureComponent<SearchBoxProps, SearchBoxStat
   };
 
   render() {
-    console.log('search box ', this.props);
     const { activeItemIdx } = this.state;
     const results = this.state.results
       .filter(res => this.props.getItemById(res.meta))

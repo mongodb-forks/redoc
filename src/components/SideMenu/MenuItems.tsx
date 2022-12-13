@@ -21,7 +21,6 @@ export class MenuItems extends React.Component<MenuItemsProps> {
   render() {
     const { items, root, className } = this.props;
     const expanded = this.props.expanded == null ? true : this.props.expanded;
-    console.log('MenuItems!! expanded => ', className);
     return (
       <MenuItemUl
         className={className}
