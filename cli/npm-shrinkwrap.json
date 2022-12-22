@@ -17,7 +17,7 @@
         "node-libs-browser": "^2.2.1",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
-        "redoc": "github:mongodb-forks/redoc#dop-test",
+        "redoc": "github:mongodb-forks/redoc#build-redoc",
         "styled-components": "^5.3.0",
         "update-notifier": "^5.0.1",
         "yargs": "^17.3.1"
@@ -3888,7 +3888,7 @@
     },
     "node_modules/redoc": {
       "version": "2.0.0",
-      "resolved": "git+ssh://git@github.com/mongodb-forks/redoc.git#673c6654c6f4a453e83dfc208ba07844a9a49a7f",
+      "resolved": "git+https://git@github.com/mongodb-forks/redoc.git#f95c872d444f1331a89260bb2206d20057885cdc",
       "license": "MIT",
       "dependencies": {
         "@emotion/css": "^11.0.0",
@@ -8023,8 +8023,8 @@
       }
     },
     "redoc": {
-      "version": "git+https://git@github.com/mongodb-forks/redoc.git#673c6654c6f4a453e83dfc208ba07844a9a49a7f",
-      "from": "redoc@github:mongodb-forks/redoc#dop-test",
+      "version": "git+ssh://git@github.com/mongodb-forks/redoc.git#f95c872d444f1331a89260bb2206d20057885cdc",
+      "from": "redoc@github:mongodb-forks/redoc#build-redoc",
       "requires": {
         "@emotion/css": "^11.0.0",
         "@emotion/react": "^11.10.4",
