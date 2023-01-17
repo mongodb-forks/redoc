@@ -31,6 +31,7 @@ export const EndpointInfo = styled.button<{ expanded?: boolean; inverted?: boole
   border: ${props => (props.inverted ? '0' : '1px solid transparent')};
   border-bottom: ${props => (props.inverted ? '1px solid #ccc' : '0')};
   transition: border-color 0.25s ease;
+  font-size: inherit;
 
   ${props =>
     (props.expanded && !props.inverted && `border-color: ${props.theme.colors.border.dark};`) || ''}
@@ -46,7 +47,7 @@ export const EndpointInfo = styled.button<{ expanded?: boolean; inverted?: boole
 export const HttpVerb = styled.span.attrs((props: { type: string; compact?: boolean }) => ({
   className: `http-verb ${props.type}`,
 }))<{ type: string; compact?: boolean }>`
-  font-size: ${props => (props.compact ? '0.8em' : '0.929em')};
+  font-size: 12px;
   line-height: ${props => (props.compact ? '18px' : '20px')};
   color: #ffffff;
   padding: ${props => (props.compact ? '2px 8px' : '3px 10px')};
@@ -65,7 +66,7 @@ export const ServersOverlay = styled.div<{ expanded: boolean }>`
   z-index: 100;
   background: ${props => props.theme.rightPanel.servers.overlay.backgroundColor};
   color: ${props => props.theme.rightPanel.servers.overlay.textColor};
-  font-size: 13px;
+  font-size: ${props => props.theme.typography.fontSize};
   box-sizing: border-box;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.33);
   overflow: hidden;
