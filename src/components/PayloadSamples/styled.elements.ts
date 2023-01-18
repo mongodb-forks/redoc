@@ -15,7 +15,7 @@ export const MimeLabel = styled.div`
 
 export const DropdownLabel = styled.span`
   font-family: ${({ theme }) => theme.typography.headings.fontFamily};
-  font-size: 12px;
+  font-size: 13px;
   position: absolute;
   z-index: 1;
   top: -11px;
