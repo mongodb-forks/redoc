@@ -6,15 +6,6 @@ import { setRedocLabels } from './Labels';
 import { SideNavStyleEnum } from './types';
 import type { LabelsConfigRaw, MDXComponentMeta } from './types';
 
-// Custom options needed by DOP. Add any custom options here.
-// TODO: Un-nest and remove CustomOptions interface in favor of including custom
-// options in RedocRawOptions. This will make it easier for any custom options
-// that are NOT just strings to be normalized.
-interface CustomOptions {
-  backNavigationPath?: string;
-  siteTitle?: string;
-}
-
 export interface RedocRawOptions {
   theme?: ThemeInterface;
   scrollYOffset?: number | string | (() => number);
@@ -67,8 +58,9 @@ export interface RedocRawOptions {
   showWebhookVerb?: boolean;
 
   // Custom options specific to DOP's use case. Options expected by the CLI should be added here.
-  customOptions?: CustomOptions;
+  backNavigationPath?: string;
   ignoreIncompatibleTypes?: boolean | string;
+  siteTitle?: string;
 }
 
 export function argValueToBoolean(val?: string | boolean, defaultValue?: boolean): boolean {
@@ -274,8 +266,9 @@ export class RedocNormalizedOptions {
 
   // Normalized custom options for DOP. Add custom options here if they are expected to
   // be used by the component elsewhere.
-  customOptions?: CustomOptions;
+  backNavigationPath?: string;
   ignoreIncompatibleTypes: boolean;
+  siteTitle?: string;
 
   constructor(raw: RedocRawOptions, defaults: RedocRawOptions = {}) {
     raw = { ...defaults, ...raw };
@@ -355,7 +348,8 @@ export class RedocNormalizedOptions {
     this.showWebhookVerb = argValueToBoolean(raw.showWebhookVerb);
 
     // No normalization needed for custom options at the moment, if they are strings. Expand if needed
-    this.customOptions = raw.customOptions || {};
+    this.backNavigationPath = raw.backNavigationPath;
     this.ignoreIncompatibleTypes = argValueToBoolean(raw.ignoreIncompatibleTypes);
+    this.siteTitle = raw.siteTitle;
   }
 }
