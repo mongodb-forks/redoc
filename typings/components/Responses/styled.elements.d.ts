@@ -3,3 +3,4 @@ export declare const StyledResponseTitle: import("styled-components").StyledComp
 export declare const ResponseDetailsWrap: import("styled-components").StyledComponent<"div", import("../../theme").ResolvedThemeInterface, {}, never>;
 export declare const HeadersCaption: import("styled-components").StyledComponent<"caption", import("../../theme").ResolvedThemeInterface, {}, never>;
 export declare const Code: import("styled-components").StyledComponent<"strong", import("../../theme").ResolvedThemeInterface, {}, never>;
+export declare const ResponseButton: import("styled-components").StyledComponent<"button", import("../../theme").ResolvedThemeInterface, {}, never>;
