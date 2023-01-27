@@ -347,7 +347,7 @@ export class RedocNormalizedOptions {
     this.minCharacterLengthToInitSearch = argValueToNumber(raw.minCharacterLengthToInitSearch) || 3;
     this.showWebhookVerb = argValueToBoolean(raw.showWebhookVerb);
 
-    // No normalization needed for custom options at the moment, if they are strings. Expand if needed
+    // Normalization of custom DOP options
     this.backNavigationPath = raw.backNavigationPath;
     this.ignoreIncompatibleTypes = argValueToBoolean(raw.ignoreIncompatibleTypes);
     this.siteTitle = raw.siteTitle;
