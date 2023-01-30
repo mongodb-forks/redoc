@@ -1,10 +1,6 @@
 import { ResolvedThemeInterface, ThemeInterface } from '../theme';
 import { SideNavStyleEnum } from './types';
 import type { LabelsConfigRaw, MDXComponentMeta } from './types';
-interface CustomOptions {
-    backNavigationPath?: string;
-    siteTitle?: string;
-}
 export interface RedocRawOptions {
     theme?: ThemeInterface;
     scrollYOffset?: number | string | (() => number);
@@ -50,7 +46,9 @@ export interface RedocRawOptions {
     hideFab?: boolean;
     minCharacterLengthToInitSearch?: number;
     showWebhookVerb?: boolean;
-    customOptions?: CustomOptions;
+    backNavigationPath?: string;
+    ignoreIncompatibleTypes?: boolean | string;
+    siteTitle?: string;
 }
 export declare function argValueToBoolean(val?: string | boolean, defaultValue?: boolean): boolean;
 export declare class RedocNormalizedOptions {
@@ -106,7 +104,8 @@ export declare class RedocNormalizedOptions {
     minCharacterLengthToInitSearch: number;
     showWebhookVerb: boolean;
     nonce?: string;
-    customOptions?: CustomOptions;
+    backNavigationPath?: string;
+    ignoreIncompatibleTypes: boolean;
+    siteTitle?: string;
     constructor(raw: RedocRawOptions, defaults?: RedocRawOptions);
 }
-export {};
