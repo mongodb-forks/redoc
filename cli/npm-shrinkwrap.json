@@ -3888,7 +3888,7 @@
     },
     "node_modules/redoc": {
       "version": "2.0.0",
-      "resolved": "git+https://git@github.com/mongodb-forks/redoc.git#293afa03ae1cb9cd5bbe75c1df801498ce832a1c",
+      "resolved": "git+https://git@github.com/mongodb-forks/redoc.git#ac89c9b4171d702d89c70a770044b1569a1bf2bf",
       "license": "MIT",
       "dependencies": {
         "@emotion/css": "^11.0.0",
@@ -8023,7 +8023,7 @@
       }
     },
     "redoc": {
-      "version": "git+https://git@github.com/mongodb-forks/redoc.git#293afa03ae1cb9cd5bbe75c1df801498ce832a1c",
+      "version": "git+https://git@github.com/mongodb-forks/redoc.git#ac89c9b4171d702d89c70a770044b1569a1bf2bf",
       "from": "redoc@github:mongodb-forks/redoc#build-redoc",
       "requires": {
         "@emotion/css": "^11.0.0",
