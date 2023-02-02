@@ -1,6 +1,6 @@
 {
   "name": "@dop/redoc",
-  "version": "0.0.1-test-rc.3",
+  "version": "0.0.1",
   "description": "ReDoc",
   "repository": {
     "type": "git",
