@@ -37,7 +37,7 @@ jobs:
         run: |
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           git config user.name 'github-actions[bot]'
-          git add -fn bundles/ typings/
-          git commit -m 'Add build artifacts'
+          git add -f bundles/ typings/
+          git commit --no-verify -m 'Add build artifacts'
           git tag ${{ steps.split.outputs._1 }}
           git push --tags
