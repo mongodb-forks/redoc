@@ -22,6 +22,8 @@ import {
 import { SearchBox } from '../SearchBox/SearchBox';
 import { StoreProvider } from '../StoreBuilder';
 
+import { VersionSelector } from '../VersionSelector/VersionSelector';
+
 export interface RedocProps {
   store: AppStore;
 }
@@ -60,6 +62,7 @@ export class Redoc extends React.Component<RedocProps> {
                   siteTitle={options.siteTitle}
                 />
                 <SideMenuTitle>{store.spec.info.title}</SideMenuTitle>
+                <VersionSelector options={['2022-08-10', '2022-10-11', '2022-12-02']} />
                 {(!options.disableSearch && (
                   <SearchBox
                     search={search!}
