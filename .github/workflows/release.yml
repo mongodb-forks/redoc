@@ -1,0 +1,40 @@
+name: Release
+on:
+  push:
+    branches:
+      - main
+      # TODO-3460: Delete this after testing
+      - DOP-3460
+    paths:
+      - 'package.json'
+jobs:
+  release-redoc:
+    runs-on: ubuntu-latest
+    if: ${{ startsWith(github.event.head_commit.message, '[RELEASE] - v') }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - name: Install dependencies
+        run: npm ci && npm ci --prefix=./cli
+      - name: Create bundles
+        run: npm run bundle
+      - name: Run unit tests
+        run: npm run test
+      - name: Run e2e tests
+        run: npm run e2e
+      - name: Split commit message
+        uses: jungwinter/split@v2
+        id: split
+        with:
+          msg: ${{ github.event.head_commit.message }}
+          separator: ' - '
+      - name: Push build artifacts and create tag
+        # Use build artifacts in current branch, but only push it to new tag.
+        # Build artifacts are needed by redoc-cli since the dependency is pulled from a GitHub branch/tag.
+        run: |
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git config user.name 'github-actions[bot]'
+          git add -f bundles/ typings/
+          git commit -m 'Add build artifacts'
+          git tag ${{ steps.split.outputs._1 }}
+          git push --tags
