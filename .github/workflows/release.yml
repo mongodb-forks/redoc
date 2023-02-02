@@ -11,6 +11,9 @@ jobs:
   release-redoc:
     runs-on: ubuntu-latest
     if: ${{ startsWith(github.event.head_commit.message, '[RELEASE] - v') }}
+    env:
+      NPM_BASE_64_AUTH: ${{ secrets.NPM_BASE_64_AUTH }}
+      NPM_EMAIL: ${{ secrets.NPM_EMAIL }}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
