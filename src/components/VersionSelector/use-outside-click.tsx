@@ -1,13 +1,10 @@
 import { useEffect } from 'react';
 
 /**
- * Hook that alerts clicks outside of the passed ref
+ * Hook that fires event on clicks outside of the passed ref
  */
 export function useOutsideClick(ref, callback) {
   useEffect(() => {
-    /**
-     * Alert if clicked on outside of element
-     */
     function handleClickOutside(event) {
       if (ref.current && !ref.current.contains(event.target)) {
         callback();
