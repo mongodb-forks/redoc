@@ -7,6 +7,7 @@ on:
       - DOP-3460
     paths:
       - 'package.json'
+      - 'cli/package.json'
 jobs:
   release-redoc:
     runs-on: ubuntu-latest
