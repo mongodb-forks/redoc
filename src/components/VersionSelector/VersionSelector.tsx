@@ -2,11 +2,8 @@ import * as React from 'react';
 import { palette } from '@leafygreen-ui/palette';
 import { transparentize } from 'polished';
 import styled, { css } from '../../styled-components';
-import {
-  ArrowIconProps,
-  VersionSelectorProps,
-  // DropdownOption
-} from './types';
+import { ArrowIconProps, VersionSelectorProps } from './types';
+import { useOutsideClick } from './use-outside-click';
 
 const ArrowSvg = ({ className, style }: ArrowIconProps): JSX.Element => (
   <svg
@@ -128,20 +125,31 @@ const transitionDuration = {
   slower: 300,
 } as const;
 
-const StyledOption = styled.li`
-  display: flex;
-  width: 100%;
-  outline: none;
-  overflow-wrap: anywhere;
-  transition: background-color ${transitionDuration.default}ms ease-in-out;
-  position: relative;
-  padding: 8px 12px;
-  cursor: pointer;
-  color: ${palette.gray.dark3};
+interface OptionProps {
+  option: string;
+  selected: boolean;
+  onClick: () => void;
+}
 
+const Option = ({ option, selected, onClick }: OptionProps) => {
+  return (
+    <StyledLi onClick={onClick} selected={selected}>
+      <span></span>
+      <StyledOptionText>{option}</StyledOptionText>
+    </StyledLi>
+  );
+};
+
+const disabledOptionStyle = css`
+  cursor: not-allowed;
+  color: ${palette.gray.base};
+`;
+
+const enabledOptionStyle = css`
   &:hover {
     background-color: ${palette.gray.light2};
   }
+
   &:focus-visible {
     color: ${palette.blue.dark2};
     background-color: ${palette.blue.light3};
@@ -152,6 +160,20 @@ const StyledOption = styled.li`
       background-color: ${palette.blue.base};
     }
   }
+`;
+
+const StyledLi = styled.li<{ selected: boolean; disabled?: boolean }>`
+  display: flex;
+  width: 100%;
+  outline: none;
+  overflow-wrap: anywhere;
+  transition: background-color ${transitionDuration.default}ms ease-in-out;
+  position: relative;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: ${palette.gray.dark3};
+
+  background-color: ${props => (props.selected ? palette.gray.light3 : palette.white)};
 
   &:before {
     content: '';
@@ -166,6 +188,8 @@ const StyledOption = styled.li`
     opacity: 0;
     transition: all ${transitionDuration.default}ms ease-in-out;
   }
+
+  ${props => (props.disabled ? disabledOptionStyle : enabledOptionStyle)}
 `;
 
 /** Make sure you use disabled prop and others for this */
@@ -196,31 +220,44 @@ const StyledOptionText = styled.span`
   align-items: center;
 `;
 
-const VersionSelectorComponent = (props: VersionSelectorProps): JSX.Element => {
-  // const { onChange, placeholder, value = '' } = props;
-  const { options, variant, description } = props;
+const openDropdownStyle = css`
+  position: absolute;
+  top: 70px;
+  left: 1px;
+  display: block;
+  width: 100%;
+  pointer-events: initial;
+  z-index: 2;
+  background-color: ${palette.white};
+`;
+
+const StyledDropdown = styled.div<{ open: boolean }>`
+  ${props => (props.open ? openDropdownStyle : `display: none;`)}
+`;
+
+const VersionSelectorComponent = ({
+  resource_versions,
+  active,
+  root_url,
+  variant,
+  description,
+}: VersionSelectorProps): JSX.Element => {
+  const initialSelectedIdx = resource_versions.indexOf(active.resource_version);
   const [open, setOpen] = React.useState<boolean>(false);
+  const [selectedIdx, setSelectedIdx] = React.useState<number>(initialSelectedIdx);
+  const menuListRef = React.useRef(null);
+  useOutsideClick(menuListRef, () => {
+    if (open) setOpen(false);
+  });
 
-  // const handleOnChange = event => {
-  //   const { selectedIndex } = event.target;
-  //   const index = placeholder ? selectedIndex - 1 : selectedIndex;
-  //   onChange(options[index]);
-  // };
+  const handleClick = (idx: number) => {
+    setSelectedIdx(idx);
+    setOpen(false);
+  };
 
-  const openDropdownStyle = css`
-    position: absolute;
-    top: 70px;
-    left: 1px;
-    display: block;
-    width: 100%;
-    pointer-events: initial;
-    z-index: 2;
-    background-color: ${palette.white};
-  `;
-
-  const StyledDropdown = styled.div`
-    ${open ? openDropdownStyle : `display: none;`}
-  `;
+  React.useEffect(() => {
+    console.log(root_url + '/' + resource_versions[selectedIdx]);
+  }, [selectedIdx, resource_versions, root_url]);
 
   return (
     <StyledWrapper>
@@ -232,7 +269,7 @@ const VersionSelectorComponent = (props: VersionSelectorProps): JSX.Element => {
             <div>
               <div>
                 <span></span>
-                Placeholder?
+                {resource_versions[selectedIdx]}
               </div>
             </div>
             <ArrowIcon open={open} variant={variant} />
@@ -240,14 +277,16 @@ const VersionSelectorComponent = (props: VersionSelectorProps): JSX.Element => {
         </StyledButton>
       </StyledButtonWrapper>
 
-      <StyledDropdown>
+      <StyledDropdown ref={menuListRef} open={open}>
         <div>
           <StyledMenuList>
-            {options.map((option, i) => (
-              <StyledOption key={`option-${i}`}>
-                <span>s </span>
-                <StyledOptionText>{option}</StyledOptionText>
-              </StyledOption>
+            {resource_versions.map((option, i) => (
+              <Option
+                key={`option-${i}`}
+                selected={i === selectedIdx}
+                option={option}
+                onClick={() => handleClick(i)}
+              />
             ))}
           </StyledMenuList>
         </div>
@@ -257,20 +296,3 @@ const VersionSelectorComponent = (props: VersionSelectorProps): JSX.Element => {
 };
 
 export const VersionSelector = React.memo<VersionSelectorProps>(VersionSelectorComponent);
-
-{
-  /* <ArrowIcon variant={variant} />
-<select onChange={handleOnChange} value={value} className="dropdown-select">
-  {placeholder && (
-    <option disabled hidden value={placeholder}>
-      {placeholder}
-    </option>
-  )}
-  {options.map(({ idx, value, title }: DropdownOption, index) => (
-    <option key={idx || value + index} value={value}>
-      {title || value}
-    </option>
-  ))}
-</select>
-<label>{value}</label> */
-}

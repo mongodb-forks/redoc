@@ -22,11 +22,21 @@ import {
 import { SearchBox } from '../SearchBox/SearchBox';
 import { StoreProvider } from '../StoreBuilder';
 
-import { VersionSelector } from '../VersionSelector/VersionSelector';
+import { VersionSelector } from '../VersionSelector';
 
 export interface RedocProps {
   store: AppStore;
 }
+
+/** Mock data that will be passed to store from cli */
+const versionData = {
+  active: {
+    api_version: '2.0',
+    resource_version: '2023-01-01',
+  },
+  root_url: 'https://mongodb.com/docs/atlas/reference/api-resources-spec/v2',
+  resource_versions: ['2021-09-09', '2022-10-18', '2023-01-01'],
+};
 
 export class Redoc extends React.Component<RedocProps> {
   static propTypes = {
@@ -62,7 +72,7 @@ export class Redoc extends React.Component<RedocProps> {
                   siteTitle={options.siteTitle}
                 />
                 <SideMenuTitle>{store.spec.info.title}</SideMenuTitle>
-                <VersionSelector options={['2022-08-10', '2022-10-11', '2022-12-02']} />
+                <VersionSelector {...versionData} />
                 {(!options.disableSearch && (
                   <SearchBox
                     search={search!}

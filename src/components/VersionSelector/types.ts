@@ -6,8 +6,14 @@ export interface VersionOption {
   label?: string;
 }
 
+export interface ActiveVersionData {
+  resource_version: string;
+  api_version: string;
+}
 export interface VersionSelectorProps {
-  options: string[];
+  resource_versions: string[];
+  active: ActiveVersionData;
+  root_url: string;
   onChange?: (option: VersionOption) => void;
   ariaLabel?: string;
   className?: string;
