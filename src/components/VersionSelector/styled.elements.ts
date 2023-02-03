@@ -127,8 +127,6 @@ export const enabledOptionStyle = css`
   }
 `;
 
-// background-color: ${props => (props.selected ? palette.blue.light3 : palette.white)};
-
 export const StyledLi = styled.li<{ selected: boolean; disabled?: boolean }>`
   display: flex;
   width: 100%;

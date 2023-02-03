@@ -6,14 +6,12 @@ export interface VersionSelectorProps {
   resource_versions: string[];
   active: ActiveVersionData;
   root_url: string;
+  description?: string;
+  variant?: 'dark' | 'light'; // Not fully implemented
   ariaLabel?: string;
   className?: string;
   placeholder?: string;
   value?: string;
-  dense?: boolean;
-  fullWidth?: boolean;
-  variant?: 'dark' | 'light';
-  description?: string;
 }
 
 export interface ArrowIconProps {

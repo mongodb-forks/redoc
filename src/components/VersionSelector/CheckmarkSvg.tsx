@@ -9,11 +9,6 @@ const StyledSvg = styled.svg`
 `;
 
 const Checkmark = () => {
-  //  const accessibleProps = generateAccessibleProps(role, 'Checkmark', {
-  //    title,
-  //    ['aria-label']: ariaLabel,
-  //    ['aria-labelledby']: ariaLabelledby,
-  //  });
   return (
     <StyledSvg height={16} width={16} role={'Checkmark'} viewBox="0 0 16 16">
       <path
