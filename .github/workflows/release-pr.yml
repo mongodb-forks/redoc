@@ -11,7 +11,8 @@ jobs:
       - name: Create PR
         uses: repo-sync/pull-request@v2
         with:
-          destination_branch: 'main'
+          # TODO-3460: Change back to "main" branch
+          destination_branch: 'DOP-3460-pr-workflow'
           pr_title: ${{ github.event.head_commit.message }}
           pr_body: |
             This is an automated PR.
