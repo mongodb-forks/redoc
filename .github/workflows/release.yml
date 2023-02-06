@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+      # TODO-3460: Remove after testing
+      - DOP-3460-pr-workflow
     paths:
       - 'package.json'
       - 'cli/package.json'
@@ -29,7 +31,6 @@ jobs:
         id: split
         with:
           msg: ${{ github.event.head_commit.message }}
-          separator: ' - '
       - name: Push build artifacts and create tag
         # Use build artifacts in current branch, but only push it to new tag.
         # Build artifacts are needed by redoc-cli since the dependency is pulled from a GitHub branch/tag.
@@ -38,11 +39,11 @@ jobs:
           git config user.name 'github-actions[bot]'
           git add -f bundles/ typings/
           git commit --no-verify -m 'Add build artifacts'
-          git tag ${{ steps.split.outputs._1 }}
+          git tag ${{ steps.split.outputs._2 }}
           git push --tags
   release-redoc-cli:
     runs-on: ubuntu-latest
-    if: ${{ startsWith(github.event.head_commit.message, '[RELEASE] - @dop/redoc-cli') }}
+    if: ${{ startsWith(github.event.head_commit.message, '[RELEASE] - @dop/redoc-cli@') }}
     env:
       NPM_BASE_64_AUTH: ${{ secrets.NPM_BASE_64_AUTH }}
       NPM_EMAIL: ${{ secrets.NPM_EMAIL }}
@@ -62,10 +63,9 @@ jobs:
         id: split
         with:
           msg: ${{ github.event.head_commit.message }}
-          separator: ' - '
       - name: Push build artifacts and create tag
         run: |
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           git config user.name 'github-actions[bot]'
-          git tag ${{ steps.split.outputs._1 }}
+          git tag ${{ steps.split.outputs._2 }}
           git push --tags
