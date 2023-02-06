@@ -9,7 +9,7 @@
       "version": "0.0.0",
       "license": "MIT",
       "dependencies": {
-        "@dop/redoc": "github:mongodb-forks/redoc#v1.0.0",
+        "@dop/redoc": "git+https://git@github.com/mongodb-forks/redoc.git#v1.0.0",
         "chokidar": "^3.5.1",
         "handlebars": "^4.7.7",
         "isarray": "^2.0.5",
@@ -5448,7 +5448,7 @@
     },
     "@dop/redoc": {
       "version": "git+https://git@github.com/mongodb-forks/redoc.git#f360abeec6feae2e3cd99465307b3f7250f80dfc",
-      "from": "@dop/redoc@git+https://github.com/mongodb-forks/redoc.git#v1.0.0",
+      "from": "@dop/redoc@git+https://git@github.com/mongodb-forks/redoc#v1.0.0",
       "requires": {
         "@emotion/css": "^11.0.0",
         "@emotion/react": "^11.10.4",
