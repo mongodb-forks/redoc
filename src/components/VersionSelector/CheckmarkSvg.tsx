@@ -10,7 +10,7 @@ const StyledSvg = styled.svg`
 
 const Checkmark = () => {
   return (
-    <StyledSvg height={16} width={16} role={'Checkmark'} viewBox="0 0 16 16">
+    <StyledSvg height={16} width={16} role="img" aria-label="Checkmark Icon" viewBox="0 0 16 16">
       <path
         fillRule="evenodd"
         clipRule="evenodd"

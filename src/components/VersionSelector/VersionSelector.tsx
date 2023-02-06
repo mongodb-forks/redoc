@@ -14,6 +14,9 @@ import { Option } from './Option';
 import { VersionSelectorProps } from './types';
 import { useOutsideClick } from './use-outside-click';
 
+/**
+ * Version Selector Dropdown component based structurally and stylistically off LG Select
+ */
 const VersionSelectorComponent = ({
   resource_versions,
   active,

@@ -45,7 +45,9 @@ export const StyledButtonWrapper = styled.div`
   }
 `;
 
-export const StyledButton = styled.button`
+export const StyledButton = styled.button.attrs({
+  'aria-labelledby': 'View a different version of documentation.',
+})`
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -127,7 +129,13 @@ export const enabledOptionStyle = css`
   }
 `;
 
-export const StyledLi = styled.li<{ selected: boolean; disabled?: boolean }>`
+export const StyledLi = styled.li.attrs<{ selected: boolean; disabled?: boolean }>(
+  ({ selected }) => ({
+    role: 'option',
+    'aria-selected': selected,
+    tabIndex: '0',
+  }),
+)<{ selected: boolean; disabled?: boolean }>`
   display: flex;
   width: 100%;
   outline: none;
@@ -173,6 +181,10 @@ export const openDropdownStyle = css`
   background-color: ${palette.white};
 `;
 
-export const StyledDropdown = styled.div<{ open: boolean }>`
+export const StyledDropdown = styled.div.attrs<{ open: boolean }>({
+  role: 'listbox',
+  'aria-labelledby': 'View a different version of documentation.',
+  tabIndex: '-1',
+})<{ open: boolean }>`
   ${props => (props.open ? openDropdownStyle : `display: none;`)}
 `;
