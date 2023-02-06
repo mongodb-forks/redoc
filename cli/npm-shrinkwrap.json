@@ -439,7 +439,7 @@
     },
     "node_modules/@dop/redoc": {
       "version": "1.0.0",
-      "resolved": "git+ssh://git@github.com/mongodb-forks/redoc.git#f360abeec6feae2e3cd99465307b3f7250f80dfc",
+      "resolved": "git+https://git@github.com/mongodb-forks/redoc.git#f360abeec6feae2e3cd99465307b3f7250f80dfc",
       "license": "MIT",
       "dependencies": {
         "@emotion/css": "^11.0.0",
@@ -721,9 +721,10 @@
       "license": "MIT"
     },
     "node_modules/@exodus/schemasafe": {
-      "version": "1.0.0-rc.6",
-      "resolved": "https://registry.npmjs.org/@exodus/schemasafe/-/schemasafe-1.0.0-rc.6.tgz",
-      "integrity": "sha512-dDnQizD94EdBwEj/fh3zPRa/HWCS9O5au2PuHhZBbuM3xWHxuaKzPBOEWze7Nn0xW68MIpZ7Xdyn1CoCpjKCuQ=="
+      "version": "1.0.0-rc.9",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@exodus/schemasafe/-/schemasafe-1.0.0-rc.9.tgz",
+      "integrity": "sha512-dGGHpb61hLwifAu7sotuHFDBw6GTdpG8aKC0fsK17EuTzMRvUrH7lEAr6LTJ+sx3AZYed9yZ77rltVDHyg2hRg==",
+      "license": "MIT"
     },
     "node_modules/@imgix/js-core": {
       "version": "3.8.0",
@@ -767,8 +768,9 @@
     },
     "node_modules/@jridgewell/source-map": {
       "version": "0.3.2",
-      "resolved": "https://registry.npmjs.org/@jridgewell/source-map/-/source-map-0.3.2.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@jridgewell/source-map/-/source-map-0.3.2.tgz",
       "integrity": "sha512-m7O9o2uR8k2ObDysZYzdfhb08VuEml5oWGiosa1VdaPZ/A6QyPkAJuwN0Q1lhULOf6B7MtQmHENS743hWtCrgw==",
+      "license": "MIT",
       "peer": true,
       "dependencies": {
         "@jridgewell/gen-mapping": "^0.3.0",
@@ -796,9 +798,9 @@
       "license": "Apache-2.0"
     },
     "node_modules/@mdb/consistent-nav": {
-      "version": "1.2.30",
-      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@mdb/consistent-nav/-/@mdb/consistent-nav-1.2.30.tgz",
-      "integrity": "sha512-j2KQq8gLpurP5eQRulFa/uPdHuL6V1DiSMqoO1wszSE+aGSpkhAko+0VDO6oanj7uo1SaaCL5+eAACilRX/NSw==",
+      "version": "1.2.31",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@mdb/consistent-nav/-/@mdb/consistent-nav-1.2.31.tgz",
+      "integrity": "sha512-lPFLcah7KsyLou8uud5rWn9V/3g7HwtoXCGca00rormug97mvv9i9ZKxZhPhvCQNhX9mf7EQbmgpLlgYTF6V3Q==",
       "license": "ISC",
       "peerDependencies": {
         "@emotion/react": ">= 11.6.0",
@@ -844,9 +846,10 @@
       }
     },
     "node_modules/@redocly/ajv": {
-      "version": "8.6.4",
-      "resolved": "https://registry.npmjs.org/@redocly/ajv/-/ajv-8.6.4.tgz",
-      "integrity": "sha512-y9qNj0//tZtWB2jfXNK3BX18BSBp9zNR7KE7lMysVHwbZtY392OJCjm6Rb/h4UHH2r1AqjNEHFD6bRn+DqU9Mw==",
+      "version": "8.11.0",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@redocly/ajv/-/ajv-8.11.0.tgz",
+      "integrity": "sha512-9GWx27t7xWhDIR02PA18nzBdLcKQRgc46xNQvjFkrYk4UOmvKhJ/dawwiX0cCOeetN5LcaaiqQbVOWYK62SGHw==",
+      "license": "MIT",
       "dependencies": {
         "fast-deep-equal": "^3.1.1",
         "json-schema-traverse": "^1.0.0",
@@ -859,11 +862,12 @@
       }
     },
     "node_modules/@redocly/openapi-core": {
-      "version": "1.0.0-beta.105",
-      "resolved": "https://registry.npmjs.org/@redocly/openapi-core/-/openapi-core-1.0.0-beta.105.tgz",
-      "integrity": "sha512-8uYDMcqBOPhFgjRlg5uetW/E2uTVVRpk+YsJhaH78ZNuzBkQP5Waw5s8P8ym6myvHs5me8l5AdniY/ePLMT5xg==",
+      "version": "1.0.0-beta.123",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@redocly/openapi-core/-/openapi-core-1.0.0-beta.123.tgz",
+      "integrity": "sha512-W6MbUWpb/VaV+Kf0c3jmMIJw3WwwF7iK5nAfcOS+ZwrlbxtIl37+1hEydFlJ209vCR9HL12PaMwdh2Vpihj6Jw==",
+      "license": "MIT",
       "dependencies": {
-        "@redocly/ajv": "^8.6.4",
+        "@redocly/ajv": "^8.11.0",
         "@types/node": "^14.11.8",
         "colorette": "^1.2.0",
         "js-levenshtein": "^1.1.6",
@@ -879,9 +883,10 @@
       }
     },
     "node_modules/@redocly/openapi-core/node_modules/@types/node": {
-      "version": "14.18.22",
-      "resolved": "https://registry.npmjs.org/@types/node/-/node-14.18.22.tgz",
-      "integrity": "sha512-qzaYbXVzin6EPjghf/hTdIbnVW1ErMx8rPzwRNJhlbyJhu2SyqlvjGOY/tbUt6VFyzg56lROcOeSQRInpt63Yw=="
+      "version": "14.18.36",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@types/node/-/node-14.18.36.tgz",
+      "integrity": "sha512-FXKWbsJ6a1hIrRxv+FoukuHnGTgEzKYGi7kilfMae96AL9UNkPFNWJEEYWzdRI9ooIkbr4AKldyuSTLql06vLQ==",
+      "license": "MIT"
     },
     "node_modules/@sindresorhus/is": {
       "version": "0.14.0",
@@ -1143,9 +1148,10 @@
       }
     },
     "node_modules/@types/eslint": {
-      "version": "8.4.6",
-      "resolved": "https://registry.npmjs.org/@types/eslint/-/eslint-8.4.6.tgz",
-      "integrity": "sha512-/fqTbjxyFUaYNO7VcW5g+4npmqVACz1bB7RTHYuLj+PRjw9hrCwrUXVQFpChUS0JsyEFvMZ7U/PfmvWgxJhI9g==",
+      "version": "8.21.0",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@types/eslint/-/eslint-8.21.0.tgz",
+      "integrity": "sha512-35EhHNOXgxnUgh4XCJsGhE7zdlDhYDN/aMG6UbkByCFFNgQ7b3U+uVoqBpicFydR8JEfgdjCF7SJ7MiJfzuiTA==",
+      "license": "MIT",
       "peer": true,
       "dependencies": {
         "@types/estree": "*",
@@ -1154,8 +1160,9 @@
     },
     "node_modules/@types/eslint-scope": {
       "version": "3.7.4",
-      "resolved": "https://registry.npmjs.org/@types/eslint-scope/-/eslint-scope-3.7.4.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@types/eslint-scope/-/eslint-scope-3.7.4.tgz",
       "integrity": "sha512-9K4zoImiZc3HlIp6AVUDE4CWYx22a+lhSZMYNpbjW04+YF0KWj4pJXnEMjdnFTiQibFFmElcsasJXDbdI/EPhA==",
+      "license": "MIT",
       "peer": true,
       "dependencies": {
         "@types/eslint": "*",
@@ -1163,14 +1170,16 @@
       }
     },
     "node_modules/@types/estree": {
-      "version": "0.0.51",
-      "resolved": "https://registry.npmjs.org/@types/estree/-/estree-0.0.51.tgz",
-      "integrity": "sha512-CuPgU6f3eT/XgKKPqKd/gLZV1Xmvf1a2R5POBOGQa6uv82xpls89HU5zKeVoyR8XzHd1RGNOlQlvUe3CFkjWNQ=="
+      "version": "1.0.0",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@types/estree/-/estree-1.0.0.tgz",
+      "integrity": "sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ==",
+      "license": "MIT"
     },
     "node_modules/@types/json-schema": {
-      "version": "7.0.9",
-      "resolved": "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.9.tgz",
-      "integrity": "sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ=="
+      "version": "7.0.11",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@types/json-schema/-/json-schema-7.0.11.tgz",
+      "integrity": "sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==",
+      "license": "MIT"
     },
     "node_modules/@types/mkdirp": {
       "version": "1.0.1",
@@ -1212,8 +1221,9 @@
     },
     "node_modules/@webassemblyjs/ast": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/ast/-/ast-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/ast/-/ast-1.11.1.tgz",
       "integrity": "sha512-ukBh14qFLjxTQNTXocdyksN5QdM28S1CxHt2rdskFyL+xFV7VremuBLVbmCePj+URalXBENx/9Lm7lnhihtCSw==",
+      "license": "MIT",
       "peer": true,
       "dependencies": {
         "@webassemblyjs/helper-numbers": "1.11.1",
@@ -1222,26 +1232,30 @@
     },
     "node_modules/@webassemblyjs/floating-point-hex-parser": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/floating-point-hex-parser/-/floating-point-hex-parser-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/floating-point-hex-parser/-/floating-point-hex-parser-1.11.1.tgz",
       "integrity": "sha512-iGRfyc5Bq+NnNuX8b5hwBrRjzf0ocrJPI6GWFodBFzmFnyvrQ83SHKhmilCU/8Jv67i4GJZBMhEzltxzcNagtQ==",
+      "license": "MIT",
       "peer": true
     },
     "node_modules/@webassemblyjs/helper-api-error": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/helper-api-error/-/helper-api-error-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/helper-api-error/-/helper-api-error-1.11.1.tgz",
       "integrity": "sha512-RlhS8CBCXfRUR/cwo2ho9bkheSXG0+NwooXcc3PAILALf2QLdFyj7KGsKRbVc95hZnhnERon4kW/D3SZpp6Tcg==",
+      "license": "MIT",
       "peer": true
     },
     "node_modules/@webassemblyjs/helper-buffer": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/helper-buffer/-/helper-buffer-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/helper-buffer/-/helper-buffer-1.11.1.tgz",
       "integrity": "sha512-gwikF65aDNeeXa8JxXa2BAk+REjSyhrNC9ZwdT0f8jc4dQQeDQ7G4m0f2QCLPJiMTTO6wfDmRmj/pW0PsUvIcA==",
+      "license": "MIT",
       "peer": true
     },
     "node_modules/@webassemblyjs/helper-numbers": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/helper-numbers/-/helper-numbers-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/helper-numbers/-/helper-numbers-1.11.1.tgz",
       "integrity": "sha512-vDkbxiB8zfnPdNK9Rajcey5C0w+QJugEglN0of+kmO8l7lDb77AnlKYQF7aarZuCrv+l0UvqL+68gSDr3k9LPQ==",
+      "license": "MIT",
       "peer": true,
       "dependencies": {
         "@webassemblyjs/floating-point-hex-parser": "1.11.1",
@@ -1251,14 +1265,16 @@
     },
     "node_modules/@webassemblyjs/helper-wasm-bytecode": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/helper-wasm-bytecode/-/helper-wasm-bytecode-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/helper-wasm-bytecode/-/helper-wasm-bytecode-1.11.1.tgz",
       "integrity": "sha512-PvpoOGiJwXeTrSf/qfudJhwlvDQxFgelbMqtq52WWiXC6Xgg1IREdngmPN3bs4RoO83PnL/nFrxucXj1+BX62Q==",
+      "license": "MIT",
       "peer": true
     },
     "node_modules/@webassemblyjs/helper-wasm-section": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/helper-wasm-section/-/helper-wasm-section-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/helper-wasm-section/-/helper-wasm-section-1.11.1.tgz",
       "integrity": "sha512-10P9No29rYX1j7F3EVPX3JvGPQPae+AomuSTPiF9eBQeChHI6iqjMIwR9JmOJXwpnn/oVGDk7I5IlskuMwU/pg==",
+      "license": "MIT",
       "peer": true,
       "dependencies": {
         "@webassemblyjs/ast": "1.11.1",
@@ -1269,8 +1285,9 @@
     },
     "node_modules/@webassemblyjs/ieee754": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/ieee754/-/ieee754-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/ieee754/-/ieee754-1.11.1.tgz",
       "integrity": "sha512-hJ87QIPtAMKbFq6CGTkZYJivEwZDbQUgYd3qKSadTNOhVY7p+gfP6Sr0lLRVTaG1JjFj+r3YchoqRYxNH3M0GQ==",
+      "license": "MIT",
       "peer": true,
       "dependencies": {
         "@xtuc/ieee754": "^1.2.0"
@@ -1278,8 +1295,9 @@
     },
     "node_modules/@webassemblyjs/leb128": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/leb128/-/leb128-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/leb128/-/leb128-1.11.1.tgz",
       "integrity": "sha512-BJ2P0hNZ0u+Th1YZXJpzW6miwqQUGcIHT1G/sf72gLVD9DZ5AdYTqPNbHZh6K1M5VmKvFXwGSWZADz+qBWxeRw==",
+      "license": "Apache-2.0",
       "peer": true,
       "dependencies": {
         "@xtuc/long": "4.2.2"
@@ -1287,14 +1305,16 @@
     },
     "node_modules/@webassemblyjs/utf8": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/utf8/-/utf8-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/utf8/-/utf8-1.11.1.tgz",
       "integrity": "sha512-9kqcxAEdMhiwQkHpkNiorZzqpGrodQQ2IGrHHxCy+Ozng0ofyMA0lTqiLkVs1uzTRejX+/O0EOT7KxqVPuXosQ==",
+      "license": "MIT",
       "peer": true
     },
     "node_modules/@webassemblyjs/wasm-edit": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/wasm-edit/-/wasm-edit-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/wasm-edit/-/wasm-edit-1.11.1.tgz",
       "integrity": "sha512-g+RsupUC1aTHfR8CDgnsVRVZFJqdkFHpsHMfJuWQzWU3tvnLC07UqHICfP+4XyL2tnr1amvl1Sdp06TnYCmVkA==",
+      "license": "MIT",
       "peer": true,
       "dependencies": {
         "@webassemblyjs/ast": "1.11.1",
@@ -1309,8 +1329,9 @@
     },
     "node_modules/@webassemblyjs/wasm-gen": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/wasm-gen/-/wasm-gen-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/wasm-gen/-/wasm-gen-1.11.1.tgz",
       "integrity": "sha512-F7QqKXwwNlMmsulj6+O7r4mmtAlCWfO/0HdgOxSklZfQcDu0TpLiD1mRt/zF25Bk59FIjEuGAIyn5ei4yMfLhA==",
+      "license": "MIT",
       "peer": true,
       "dependencies": {
         "@webassemblyjs/ast": "1.11.1",
@@ -1322,8 +1343,9 @@
     },
     "node_modules/@webassemblyjs/wasm-opt": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/wasm-opt/-/wasm-opt-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/wasm-opt/-/wasm-opt-1.11.1.tgz",
       "integrity": "sha512-VqnkNqnZlU5EB64pp1l7hdm3hmQw7Vgqa0KF/KCNO9sIpI6Fk6brDEiX+iCOYrvMuBWDws0NkTOxYEb85XQHHw==",
+      "license": "MIT",
       "peer": true,
       "dependencies": {
         "@webassemblyjs/ast": "1.11.1",
@@ -1334,8 +1356,9 @@
     },
     "node_modules/@webassemblyjs/wasm-parser": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/wasm-parser/-/wasm-parser-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/wasm-parser/-/wasm-parser-1.11.1.tgz",
       "integrity": "sha512-rrBujw+dJu32gYB7/Lup6UhdkPx9S9SnobZzRVL7VcBH9Bt9bCBLEuX/YXOOtBsOZ4NQrRykKhffRWHvigQvOA==",
+      "license": "MIT",
       "peer": true,
       "dependencies": {
         "@webassemblyjs/ast": "1.11.1",
@@ -1348,8 +1371,9 @@
     },
     "node_modules/@webassemblyjs/wast-printer": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/wast-printer/-/wast-printer-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/wast-printer/-/wast-printer-1.11.1.tgz",
       "integrity": "sha512-IQboUWM4eKzWW+N/jij2sRatKMh99QEelo3Eb2q0qXkvPRISAj8Qxtmw5itwqK+TTkBuUIE45AxYPToqPtL5gg==",
+      "license": "MIT",
       "peer": true,
       "dependencies": {
         "@webassemblyjs/ast": "1.11.1",
@@ -1358,20 +1382,23 @@
     },
     "node_modules/@xtuc/ieee754": {
       "version": "1.2.0",
-      "resolved": "https://registry.npmjs.org/@xtuc/ieee754/-/ieee754-1.2.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@xtuc/ieee754/-/ieee754-1.2.0.tgz",
       "integrity": "sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA==",
+      "license": "BSD-3-Clause",
       "peer": true
     },
     "node_modules/@xtuc/long": {
       "version": "4.2.2",
-      "resolved": "https://registry.npmjs.org/@xtuc/long/-/long-4.2.2.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@xtuc/long/-/long-4.2.2.tgz",
       "integrity": "sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==",
+      "license": "Apache-2.0",
       "peer": true
     },
     "node_modules/acorn": {
-      "version": "8.8.0",
-      "resolved": "https://registry.npmjs.org/acorn/-/acorn-8.8.0.tgz",
-      "integrity": "sha512-QOxyigPVrpZ2GXT+PFyZTl6TtOFc5egxHIP9IlQ+RbupQuX4RkT/Bee4/kQuC02Xkzg84JcT7oLYtDIQxp+v7w==",
+      "version": "8.8.2",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/acorn/-/acorn-8.8.2.tgz",
+      "integrity": "sha512-xjIYgE8HBrkpd/sJqOGNspf8uHG+NOHGOw6a/Urj8taM2EXfdNAH2oFcPeIFfsv3+kz/mJrS5VuMqbNLjCa2vw==",
+      "license": "MIT",
       "peer": true,
       "bin": {
         "acorn": "bin/acorn"
@@ -1382,8 +1409,9 @@
     },
     "node_modules/acorn-import-assertions": {
       "version": "1.8.0",
-      "resolved": "https://registry.npmjs.org/acorn-import-assertions/-/acorn-import-assertions-1.8.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/acorn-import-assertions/-/acorn-import-assertions-1.8.0.tgz",
       "integrity": "sha512-m7VZ3jwz4eK6A4Vtt8Ew1/mNbP24u0FhdyfA7fSvnJR6LMdfOYnmuIrrJAgrYfYJ10F/otaHTtrtrtmHdMNzEw==",
+      "license": "MIT",
       "peer": true,
       "peerDependencies": {
         "acorn": "^8"
@@ -1391,8 +1419,9 @@
     },
     "node_modules/ajv": {
       "version": "6.12.6",
-      "resolved": "https://registry.npmjs.org/ajv/-/ajv-6.12.6.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/ajv/-/ajv-6.12.6.tgz",
       "integrity": "sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==",
+      "license": "MIT",
       "peer": true,
       "dependencies": {
         "fast-deep-equal": "^3.1.1",
@@ -1407,8 +1436,9 @@
     },
     "node_modules/ajv-keywords": {
       "version": "3.5.2",
-      "resolved": "https://registry.npmjs.org/ajv-keywords/-/ajv-keywords-3.5.2.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/ajv-keywords/-/ajv-keywords-3.5.2.tgz",
       "integrity": "sha512-5p6WTN0DdTGVQk6VjcEju19IgaHudalcfabD7yhDGeA6bcQnmL+CpveLJq/3hvfwd1aof6L386Ougkx6RfyMIQ==",
+      "license": "MIT",
       "peer": true,
       "peerDependencies": {
         "ajv": "^6.9.1"
@@ -1416,8 +1446,9 @@
     },
     "node_modules/ajv/node_modules/json-schema-traverse": {
       "version": "0.4.1",
-      "resolved": "https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz",
       "integrity": "sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg==",
+      "license": "MIT",
       "peer": true
     },
     "node_modules/ansi-align": {
@@ -1462,8 +1493,9 @@
     },
     "node_modules/argparse": {
       "version": "2.0.1",
-      "resolved": "https://registry.npmjs.org/argparse/-/argparse-2.0.1.tgz",
-      "integrity": "sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q=="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/argparse/-/argparse-2.0.1.tgz",
+      "integrity": "sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==",
+      "license": "Python-2.0"
     },
     "node_modules/asn1.js": {
       "version": "5.4.1",
@@ -1539,8 +1571,9 @@
     },
     "node_modules/balanced-match": {
       "version": "1.0.2",
-      "resolved": "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz",
-      "integrity": "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw=="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/balanced-match/-/balanced-match-1.0.2.tgz",
+      "integrity": "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==",
+      "license": "MIT"
     },
     "node_modules/base64-js": {
       "version": "1.5.1",
@@ -1661,8 +1694,9 @@
     },
     "node_modules/brace-expansion": {
       "version": "2.0.1",
-      "resolved": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-2.0.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/brace-expansion/-/brace-expansion-2.0.1.tgz",
       "integrity": "sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==",
+      "license": "MIT",
       "dependencies": {
         "balanced-match": "^1.0.0"
       }
@@ -1764,9 +1798,9 @@
       }
     },
     "node_modules/browserslist": {
-      "version": "4.21.3",
-      "resolved": "https://registry.npmjs.org/browserslist/-/browserslist-4.21.3.tgz",
-      "integrity": "sha512-898rgRXLAyRkM1GryrrBHGkqA5hlpkV5MhtZwg9QXeiyLUYs2k00Un05aX5l2/yJIOObYKOpS2JNo8nJDE7fWQ==",
+      "version": "4.21.5",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/browserslist/-/browserslist-4.21.5.tgz",
+      "integrity": "sha512-tUkiguQGW7S3IhB7N+c2MV/HZPSCPAAiYBZXLsBhFB/PCy6ZKKsZrmBayHV9fdGV/ARIfJ14NkxKzRDjvp7L6w==",
       "funding": [
         {
           "type": "opencollective",
@@ -1777,12 +1811,13 @@
           "url": "https://tidelift.com/funding/github/npm/browserslist"
         }
       ],
+      "license": "MIT",
       "peer": true,
       "dependencies": {
-        "caniuse-lite": "^1.0.30001370",
-        "electron-to-chromium": "^1.4.202",
-        "node-releases": "^2.0.6",
-        "update-browserslist-db": "^1.0.5"
+        "caniuse-lite": "^1.0.30001449",
+        "electron-to-chromium": "^1.4.284",
+        "node-releases": "^2.0.8",
+        "update-browserslist-db": "^1.0.10"
       },
       "bin": {
         "browserslist": "cli.js"
@@ -1803,8 +1838,9 @@
     },
     "node_modules/buffer-from": {
       "version": "1.1.2",
-      "resolved": "https://registry.npmjs.org/buffer-from/-/buffer-from-1.1.2.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/buffer-from/-/buffer-from-1.1.2.tgz",
       "integrity": "sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==",
+      "license": "MIT",
       "peer": true
     },
     "node_modules/buffer-xor": {
@@ -1862,9 +1898,10 @@
       }
     },
     "node_modules/call-me-maybe": {
-      "version": "1.0.1",
-      "resolved": "https://registry.npmjs.org/call-me-maybe/-/call-me-maybe-1.0.1.tgz",
-      "integrity": "sha1-JtII6onje1y95gJQoV8DHBak1ms="
+      "version": "1.0.2",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/call-me-maybe/-/call-me-maybe-1.0.2.tgz",
+      "integrity": "sha512-HpX65o1Hnr9HH25ojC1YGs7HCQLq0GCOibSaWER0eNpgJ/Z1MZv2mTc7+xh6WOPxbRVcmgbv4hGU+uSQ/2xFZQ==",
+      "license": "MIT"
     },
     "node_modules/callsites": {
       "version": "3.1.0",
@@ -1892,9 +1929,9 @@
       "integrity": "sha1-FkpUg+Yw+kMh5a8HAg5TGDGyYJs="
     },
     "node_modules/caniuse-lite": {
-      "version": "1.0.30001390",
-      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001390.tgz",
-      "integrity": "sha512-sS4CaUM+/+vqQUlCvCJ2WtDlV81aWtHhqeEVkLokVJJa3ViN4zDxAGfq9R8i1m90uGHxo99cy10Od+lvn3hf0g==",
+      "version": "1.0.30001450",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/caniuse-lite/-/caniuse-lite-1.0.30001450.tgz",
+      "integrity": "sha512-qMBmvmQmFXaSxexkjjfMvD5rnDL0+m+dUMZKoDYsGG8iZN29RuYh9eRoMvKsT6uMAWlyUUGDEQGJJYjzCIO9ew==",
       "funding": [
         {
           "type": "opencollective",
@@ -1905,6 +1942,7 @@
           "url": "https://tidelift.com/funding/github/npm/caniuse-lite"
         }
       ],
+      "license": "CC-BY-4.0",
       "peer": true
     },
     "node_modules/chalk": {
@@ -1961,8 +1999,9 @@
     },
     "node_modules/chrome-trace-event": {
       "version": "1.0.3",
-      "resolved": "https://registry.npmjs.org/chrome-trace-event/-/chrome-trace-event-1.0.3.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/chrome-trace-event/-/chrome-trace-event-1.0.3.tgz",
       "integrity": "sha512-p3KULyQg4S7NIHixdwbGX+nFHkoBiA4YQmyWtjb8XngSKV124nJmRysgAeujbUVb15vh+RvFUfCPqU7rXk+hZg==",
+      "license": "MIT",
       "peer": true,
       "engines": {
         "node": ">=6.0"
@@ -1983,9 +2022,10 @@
       }
     },
     "node_modules/classnames": {
-      "version": "2.3.1",
-      "resolved": "https://registry.npmjs.org/classnames/-/classnames-2.3.1.tgz",
-      "integrity": "sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA=="
+      "version": "2.3.2",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/classnames/-/classnames-2.3.2.tgz",
+      "integrity": "sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==",
+      "license": "MIT"
     },
     "node_modules/cli-boxes": {
       "version": "2.2.1",
@@ -2020,9 +2060,10 @@
       }
     },
     "node_modules/clsx": {
-      "version": "1.1.1",
-      "resolved": "https://registry.npmjs.org/clsx/-/clsx-1.1.1.tgz",
-      "integrity": "sha512-6/bPho624p3S2pMyvP5kKBPXnI3ufHLObBFCfgx+LkeR5lg2XYy2hqZqUf45ypD8COn2bhgGJSUE+l5dhNBieA==",
+      "version": "1.2.1",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/clsx/-/clsx-1.2.1.tgz",
+      "integrity": "sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==",
+      "license": "MIT",
       "engines": {
         "node": ">=6"
       }
@@ -2059,13 +2100,15 @@
     },
     "node_modules/colorette": {
       "version": "1.4.0",
-      "resolved": "https://registry.npmjs.org/colorette/-/colorette-1.4.0.tgz",
-      "integrity": "sha512-Y2oEozpomLn7Q3HFP7dpww7AtMJplbM9lGZP6RDfHqmbeRjiwRg4n6VM6j4KLmRke85uWEI7JqF17f3pqdRA0g=="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/colorette/-/colorette-1.4.0.tgz",
+      "integrity": "sha512-Y2oEozpomLn7Q3HFP7dpww7AtMJplbM9lGZP6RDfHqmbeRjiwRg4n6VM6j4KLmRke85uWEI7JqF17f3pqdRA0g==",
+      "license": "MIT"
     },
     "node_modules/commander": {
       "version": "2.20.3",
-      "resolved": "https://registry.npmjs.org/commander/-/commander-2.20.3.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/commander/-/commander-2.20.3.tgz",
       "integrity": "sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==",
+      "license": "MIT",
       "peer": true
     },
     "node_modules/configstore": {
@@ -2101,10 +2144,11 @@
       "license": "MIT"
     },
     "node_modules/core-js": {
-      "version": "3.25.0",
-      "resolved": "https://registry.npmjs.org/core-js/-/core-js-3.25.0.tgz",
-      "integrity": "sha512-CVU1xvJEfJGhyCpBrzzzU1kjCfgsGUxhEvwUV2e/cOedYWHdmluamx+knDnmhqALddMG16fZvIqvs9aijsHHaA==",
+      "version": "3.27.2",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/core-js/-/core-js-3.27.2.tgz",
+      "integrity": "sha512-9ashVQskuh5AZEZ1JdQWp1GqSoC1e1G87MzRqg2gIfVAQ7Qn9K+uFj8EcniUFA4P2NLZfV+TOlX1SzoKfo+s7w==",
       "hasInstallScript": true,
+      "license": "MIT",
       "peer": true,
       "funding": {
         "type": "opencollective",
@@ -2251,8 +2295,8 @@
     },
     "node_modules/decko": {
       "version": "1.2.0",
-      "resolved": "https://registry.npmjs.org/decko/-/decko-1.2.0.tgz",
-      "integrity": "sha1-/UPHNelnuAEzBohKVvvmZZlraBc="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/decko/-/decko-1.2.0.tgz",
+      "integrity": "sha512-m8FnyHXV1QX+S1cl+KPFDIl6NMkxtKsy6+U/aYyjrOqWMuwAwYWu7ePqrsUHtDR5Y8Yk2pi/KIDSgF+vT4cPOQ=="
     },
     "node_modules/decompress-response": {
       "version": "3.3.0",
@@ -2321,9 +2365,10 @@
       }
     },
     "node_modules/dompurify": {
-      "version": "2.3.5",
-      "resolved": "https://registry.npmjs.org/dompurify/-/dompurify-2.3.5.tgz",
-      "integrity": "sha512-kD+f8qEaa42+mjdOpKeztu9Mfx5bv9gVLO6K9jRx4uGvh6Wv06Srn4jr1wPNY2OOUGGSKHNFN+A8MA3v0E0QAQ=="
+      "version": "2.4.3",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/dompurify/-/dompurify-2.4.3.tgz",
+      "integrity": "sha512-q6QaLcakcRjebxjg8/+NP+h0rPfatOgOzc46Fst9VAA3jF2ApfKBNKMzdP4DYTqtUMXSCd5pRS/8Po/OmoCHZQ==",
+      "license": "(MPL-2.0 OR Apache-2.0)"
     },
     "node_modules/dot-prop": {
       "version": "5.3.0",
@@ -2342,9 +2387,10 @@
       "integrity": "sha512-1A8za6ws41LQgv9HrE/66jyC5yuSjQ3L/KOpFtoBilsAK2iA2wuS5rTt1OCzIvtS2V7nVmedsUU+DGRcjBmOYA=="
     },
     "node_modules/electron-to-chromium": {
-      "version": "1.4.242",
-      "resolved": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.242.tgz",
-      "integrity": "sha512-nPdgMWtjjWGCtreW/2adkrB2jyHjClo9PtVhR6rW+oxa4E4Wom642Tn+5LslHP3XPL5MCpkn5/UEY60EXylNeQ==",
+      "version": "1.4.286",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/electron-to-chromium/-/electron-to-chromium-1.4.286.tgz",
+      "integrity": "sha512-Vp3CVhmYpgf4iXNKAucoQUDcCrBQX3XLBtwgFqP9BUXuucgvAV9zWp1kYU7LL9j4++s9O+12cb3wMtN4SJy6UQ==",
+      "license": "ISC",
       "peer": true
     },
     "node_modules/elliptic": {
@@ -2380,9 +2426,10 @@
       }
     },
     "node_modules/enhanced-resolve": {
-      "version": "5.10.0",
-      "resolved": "https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.10.0.tgz",
-      "integrity": "sha512-T0yTFjdpldGY8PmuXXR0PyQ1ufZpEGiHVrp7zHKB7jdR4qlmZHhONVM5AQOAWXuF/w3dnHbEQVrNptJgt7F+cQ==",
+      "version": "5.12.0",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/enhanced-resolve/-/enhanced-resolve-5.12.0.tgz",
+      "integrity": "sha512-QHTXI/sZQmko1cbDoNAa3mJ5qhWUUNAq3vR0/YiD379fWQrcfuoX1+HW2S0MTt7XmoPLapdaDKUtelUSPic7hQ==",
+      "license": "MIT",
       "peer": true,
       "dependencies": {
         "graceful-fs": "^4.2.4",
@@ -2403,14 +2450,16 @@
     },
     "node_modules/es-module-lexer": {
       "version": "0.9.3",
-      "resolved": "https://registry.npmjs.org/es-module-lexer/-/es-module-lexer-0.9.3.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/es-module-lexer/-/es-module-lexer-0.9.3.tgz",
       "integrity": "sha512-1HQ2M2sPtxwnvOvT1ZClHyQDiggdNjURWpY2we6aMKCQiUVxTmVs2UYPLIrD84sS+kMdUwfBSylbJPwNnBrnHQ==",
+      "license": "MIT",
       "peer": true
     },
     "node_modules/es6-promise": {
       "version": "3.3.1",
-      "resolved": "https://registry.npmjs.org/es6-promise/-/es6-promise-3.3.1.tgz",
-      "integrity": "sha1-oIzd6EzNvzTQJ6FFG8kdS80ophM="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/es6-promise/-/es6-promise-3.3.1.tgz",
+      "integrity": "sha512-SOp9Phqvqn7jtEUxPWdWfWoLmyt2VaJ6MpvP9Comy1MceMXqE6bxvaTu4iaxpYYPzhny28Lc+M87/c2cPK6lDg==",
+      "license": "MIT"
     },
     "node_modules/escalade": {
       "version": "3.1.1",
@@ -2442,8 +2491,9 @@
     },
     "node_modules/eslint-scope": {
       "version": "5.1.1",
-      "resolved": "https://registry.npmjs.org/eslint-scope/-/eslint-scope-5.1.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/eslint-scope/-/eslint-scope-5.1.1.tgz",
       "integrity": "sha512-2NxwbF/hZ0KpepYN0cNbo+FN6XoK7GaHlQhgx/hIZl6Va0bF45RQOOwhLIy8lQDbuCiadSLCBnH2CFYquit5bw==",
+      "license": "BSD-2-Clause",
       "peer": true,
       "dependencies": {
         "esrecurse": "^4.3.0",
@@ -2455,8 +2505,9 @@
     },
     "node_modules/esrecurse": {
       "version": "4.3.0",
-      "resolved": "https://registry.npmjs.org/esrecurse/-/esrecurse-4.3.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/esrecurse/-/esrecurse-4.3.0.tgz",
       "integrity": "sha512-KmfKL3b6G+RXvP8N1vr3Tq1kL/oCFgn2NYXEtqP8/L3pKapUA4G8cFVaoF3SU323CD4XypR/ffioHmkti6/Tag==",
+      "license": "BSD-2-Clause",
       "peer": true,
       "dependencies": {
         "estraverse": "^5.2.0"
@@ -2467,8 +2518,9 @@
     },
     "node_modules/esrecurse/node_modules/estraverse": {
       "version": "5.3.0",
-      "resolved": "https://registry.npmjs.org/estraverse/-/estraverse-5.3.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/estraverse/-/estraverse-5.3.0.tgz",
       "integrity": "sha512-MMdARuVEQziNTeJD8DgMqmhwR11BRQ/cBP+pLtYdSTnf3MIO8fFeiINEbX36ZdNlfU/7A9f3gUw49B3oQsvwBA==",
+      "license": "BSD-2-Clause",
       "peer": true,
       "engines": {
         "node": ">=4.0"
@@ -2476,8 +2528,9 @@
     },
     "node_modules/estraverse": {
       "version": "4.3.0",
-      "resolved": "https://registry.npmjs.org/estraverse/-/estraverse-4.3.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/estraverse/-/estraverse-4.3.0.tgz",
       "integrity": "sha512-39nnKffWz8xN1BU/2c79n9nB9HDzo0niYUqx6xyqUnyoAnQyyWpOTdZEeiCch8BBu515t4wp9ZmgVfVhn9EBpw==",
+      "license": "BSD-2-Clause",
       "peer": true,
       "engines": {
         "node": ">=4.0"
@@ -2485,8 +2538,9 @@
     },
     "node_modules/eventemitter3": {
       "version": "4.0.7",
-      "resolved": "https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz",
-      "integrity": "sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw=="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/eventemitter3/-/eventemitter3-4.0.7.tgz",
+      "integrity": "sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==",
+      "license": "MIT"
     },
     "node_modules/events": {
       "version": "3.3.0",
@@ -2507,19 +2561,22 @@
     },
     "node_modules/fast-deep-equal": {
       "version": "3.1.3",
-      "resolved": "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz",
-      "integrity": "sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q=="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz",
+      "integrity": "sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==",
+      "license": "MIT"
     },
     "node_modules/fast-json-stable-stringify": {
       "version": "2.1.0",
-      "resolved": "https://registry.npmjs.org/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz",
       "integrity": "sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==",
+      "license": "MIT",
       "peer": true
     },
     "node_modules/fast-safe-stringify": {
       "version": "2.1.1",
-      "resolved": "https://registry.npmjs.org/fast-safe-stringify/-/fast-safe-stringify-2.1.1.tgz",
-      "integrity": "sha512-W+KJc2dmILlPplD/H4K9l9LcAHAfPtP6BY84uVLXQ6Evcz9Lcg33Y2z1IVblT6xdY54PXYVHEv+0Wpq8Io6zkA=="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/fast-safe-stringify/-/fast-safe-stringify-2.1.1.tgz",
+      "integrity": "sha512-W+KJc2dmILlPplD/H4K9l9LcAHAfPtP6BY84uVLXQ6Evcz9Lcg33Y2z1IVblT6xdY54PXYVHEv+0Wpq8Io6zkA==",
+      "license": "MIT"
     },
     "node_modules/fill-range": {
       "version": "7.0.1",
@@ -2540,8 +2597,9 @@
     },
     "node_modules/foreach": {
       "version": "2.0.6",
-      "resolved": "https://registry.npmjs.org/foreach/-/foreach-2.0.6.tgz",
-      "integrity": "sha512-k6GAGDyqLe9JaebCsFCoudPPWfihKu8pylYXRlqP1J7ms39iPoTtk2fviNglIeQEwdh0bQeKJ01ZPyuyQvKzwg=="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/foreach/-/foreach-2.0.6.tgz",
+      "integrity": "sha512-k6GAGDyqLe9JaebCsFCoudPPWfihKu8pylYXRlqP1J7ms39iPoTtk2fviNglIeQEwdh0bQeKJ01ZPyuyQvKzwg==",
+      "license": "MIT"
     },
     "node_modules/fsevents": {
       "version": "2.3.2",
@@ -2602,8 +2660,9 @@
     },
     "node_modules/glob-to-regexp": {
       "version": "0.4.1",
-      "resolved": "https://registry.npmjs.org/glob-to-regexp/-/glob-to-regexp-0.4.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/glob-to-regexp/-/glob-to-regexp-0.4.1.tgz",
       "integrity": "sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==",
+      "license": "BSD-2-Clause",
       "peer": true
     },
     "node_modules/global-dirs": {
@@ -2767,8 +2826,9 @@
     },
     "node_modules/http2-client": {
       "version": "1.3.5",
-      "resolved": "https://registry.npmjs.org/http2-client/-/http2-client-1.3.5.tgz",
-      "integrity": "sha512-EC2utToWl4RKfs5zd36Mxq7nzHHBuomZboI0yYL6Y0RmBgT7Sgkq4rQ0ezFTYoIsSs7Tm9SJe+o2FcAg6GBhGA=="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/http2-client/-/http2-client-1.3.5.tgz",
+      "integrity": "sha512-EC2utToWl4RKfs5zd36Mxq7nzHHBuomZboI0yYL6Y0RmBgT7Sgkq4rQ0ezFTYoIsSs7Tm9SJe+o2FcAg6GBhGA==",
+      "license": "MIT"
     },
     "node_modules/https-browserify": {
       "version": "1.0.0",
@@ -2979,8 +3039,9 @@
     },
     "node_modules/jest-worker": {
       "version": "27.5.1",
-      "resolved": "https://registry.npmjs.org/jest-worker/-/jest-worker-27.5.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/jest-worker/-/jest-worker-27.5.1.tgz",
       "integrity": "sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==",
+      "license": "MIT",
       "peer": true,
       "dependencies": {
         "@types/node": "*",
@@ -2993,8 +3054,9 @@
     },
     "node_modules/jest-worker/node_modules/has-flag": {
       "version": "4.0.0",
-      "resolved": "https://registry.npmjs.org/has-flag/-/has-flag-4.0.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/has-flag/-/has-flag-4.0.0.tgz",
       "integrity": "sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==",
+      "license": "MIT",
       "peer": true,
       "engines": {
         "node": ">=8"
@@ -3002,8 +3064,9 @@
     },
     "node_modules/jest-worker/node_modules/supports-color": {
       "version": "8.1.1",
-      "resolved": "https://registry.npmjs.org/supports-color/-/supports-color-8.1.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/supports-color/-/supports-color-8.1.1.tgz",
       "integrity": "sha512-MpUEN2OodtUzxvKQl72cUF7RQ5EiHsGvSsVG0ia9c5RbWGL2CI4C7EpPS8UTBIplnlzZiNuV56w+FuNxy3ty2Q==",
+      "license": "MIT",
       "peer": true,
       "dependencies": {
         "has-flag": "^4.0.0"
@@ -3023,8 +3086,9 @@
     },
     "node_modules/js-levenshtein": {
       "version": "1.1.6",
-      "resolved": "https://registry.npmjs.org/js-levenshtein/-/js-levenshtein-1.1.6.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/js-levenshtein/-/js-levenshtein-1.1.6.tgz",
       "integrity": "sha512-X2BB11YZtrRqY4EnQcLX5Rh373zbK4alC1FW7D7MBhL2gtcC17cTnr6DmfHZeS0s2rTHjUTMMHfG7gO8SSdw+g==",
+      "license": "MIT",
       "engines": {
         "node": ">=0.10.0"
       }
@@ -3036,8 +3100,9 @@
     },
     "node_modules/js-yaml": {
       "version": "4.1.0",
-      "resolved": "https://registry.npmjs.org/js-yaml/-/js-yaml-4.1.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/js-yaml/-/js-yaml-4.1.0.tgz",
       "integrity": "sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==",
+      "license": "MIT",
       "dependencies": {
         "argparse": "^2.0.1"
       },
@@ -3063,21 +3128,24 @@
     },
     "node_modules/json-parse-even-better-errors": {
       "version": "2.3.1",
-      "resolved": "https://registry.npmjs.org/json-parse-even-better-errors/-/json-parse-even-better-errors-2.3.1.tgz",
-      "integrity": "sha512-xyFwyhro/JEof6Ghe2iz2NcXoj2sloNsWr/XsERDK/oiPCfaNhl5ONfp+jQdAZRQQ0IJWNzH9zIZF7li91kh2w=="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/json-parse-even-better-errors/-/json-parse-even-better-errors-2.3.1.tgz",
+      "integrity": "sha512-xyFwyhro/JEof6Ghe2iz2NcXoj2sloNsWr/XsERDK/oiPCfaNhl5ONfp+jQdAZRQQ0IJWNzH9zIZF7li91kh2w==",
+      "license": "MIT"
     },
     "node_modules/json-pointer": {
       "version": "0.6.2",
-      "resolved": "https://registry.npmjs.org/json-pointer/-/json-pointer-0.6.2.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/json-pointer/-/json-pointer-0.6.2.tgz",
       "integrity": "sha512-vLWcKbOaXlO+jvRy4qNd+TI1QUPZzfJj1tpJ3vAXDych5XJf93ftpUKe5pKCrzyIIwgBJcOcCVRUfqQP25afBw==",
+      "license": "MIT",
       "dependencies": {
         "foreach": "^2.0.4"
       }
     },
     "node_modules/json-schema-traverse": {
       "version": "1.0.0",
-      "resolved": "https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-1.0.0.tgz",
-      "integrity": "sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug=="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/json-schema-traverse/-/json-schema-traverse-1.0.0.tgz",
+      "integrity": "sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==",
+      "license": "MIT"
     },
     "node_modules/json5": {
       "version": "2.2.3",
@@ -3125,8 +3193,9 @@
     },
     "node_modules/loader-runner": {
       "version": "4.3.0",
-      "resolved": "https://registry.npmjs.org/loader-runner/-/loader-runner-4.3.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/loader-runner/-/loader-runner-4.3.0.tgz",
       "integrity": "sha512-3R/1M+yS3j5ou80Me59j7F9IMs4PXs3VqRrm0TU3AbKPxlmpoY1TNscJV/oGJXo8qCatFGTfDbY6W6ipGOYXfg==",
+      "license": "MIT",
       "peer": true,
       "engines": {
         "node": ">=6.11.5"
@@ -3139,8 +3208,9 @@
     },
     "node_modules/lodash.isequal": {
       "version": "4.5.0",
-      "resolved": "https://registry.npmjs.org/lodash.isequal/-/lodash.isequal-4.5.0.tgz",
-      "integrity": "sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ=="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/lodash.isequal/-/lodash.isequal-4.5.0.tgz",
+      "integrity": "sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==",
+      "license": "MIT"
     },
     "node_modules/loose-envify": {
       "version": "1.4.0",
@@ -3174,8 +3244,9 @@
     },
     "node_modules/lunr": {
       "version": "2.3.9",
-      "resolved": "https://registry.npmjs.org/lunr/-/lunr-2.3.9.tgz",
-      "integrity": "sha512-zTU3DaZaF3Rt9rhN3uBMGQD3dD2/vFQqnvZCDv4dl5iOzq2IZQqTxu90r4E5J+nP70J3ilqVCrbho2eWaeW8Ow=="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/lunr/-/lunr-2.3.9.tgz",
+      "integrity": "sha512-zTU3DaZaF3Rt9rhN3uBMGQD3dD2/vFQqnvZCDv4dl5iOzq2IZQqTxu90r4E5J+nP70J3ilqVCrbho2eWaeW8Ow==",
+      "license": "MIT"
     },
     "node_modules/make-dir": {
       "version": "3.1.0",
@@ -3201,13 +3272,15 @@
     },
     "node_modules/mark.js": {
       "version": "8.11.1",
-      "resolved": "https://registry.npmjs.org/mark.js/-/mark.js-8.11.1.tgz",
-      "integrity": "sha1-GA8fnr74sOY45BZq1S24eb6y/8U="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/mark.js/-/mark.js-8.11.1.tgz",
+      "integrity": "sha512-1I+1qpDt4idfgLQG+BNWmrqku+7/2bi5nLf4YwF8y8zXvmfiTBY3PV3ZibfrjBueCByROpuBjLLFCajqkgYoLQ==",
+      "license": "MIT"
     },
     "node_modules/marked": {
-      "version": "4.0.15",
-      "resolved": "https://registry.npmjs.org/marked/-/marked-4.0.15.tgz",
-      "integrity": "sha512-esX5lPdTfG4p8LDkv+obbRCyOKzB+820ZZyMOXJZygZBHrH9b3xXR64X4kT3sPe9Nx8qQXbmcz6kFSMt4Nfk6Q==",
+      "version": "4.2.12",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/marked/-/marked-4.2.12.tgz",
+      "integrity": "sha512-yr8hSKa3Fv4D3jdZmtMMPghgVt6TWbk86WQaWhDloQjRSQhMMYCAro7jP7VDJrjjdV8pxVxMssXS8B8Y5DZ5aw==",
+      "license": "MIT",
       "bin": {
         "marked": "bin/marked.js"
       },
@@ -3238,8 +3311,9 @@
     },
     "node_modules/merge-stream": {
       "version": "2.0.0",
-      "resolved": "https://registry.npmjs.org/merge-stream/-/merge-stream-2.0.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/merge-stream/-/merge-stream-2.0.0.tgz",
       "integrity": "sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==",
+      "license": "MIT",
       "peer": true
     },
     "node_modules/miller-rabin": {
@@ -3261,8 +3335,9 @@
     },
     "node_modules/mime-db": {
       "version": "1.52.0",
-      "resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/mime-db/-/mime-db-1.52.0.tgz",
       "integrity": "sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==",
+      "license": "MIT",
       "peer": true,
       "engines": {
         "node": ">= 0.6"
@@ -3270,8 +3345,9 @@
     },
     "node_modules/mime-types": {
       "version": "2.1.35",
-      "resolved": "https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/mime-types/-/mime-types-2.1.35.tgz",
       "integrity": "sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==",
+      "license": "MIT",
       "peer": true,
       "dependencies": {
         "mime-db": "1.52.0"
@@ -3299,9 +3375,10 @@
       "integrity": "sha1-9sAMHAsIIkblxNmd+4x8CDsrWCo="
     },
     "node_modules/minimatch": {
-      "version": "5.1.0",
-      "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-5.1.0.tgz",
-      "integrity": "sha512-9TPBGGak4nHfGZsPBohm9AWg6NoT7QTCehS3BIJABslyZbzxfV78QM2Y6+i741OPZIafFAaiiEMh5OyIrJPgtg==",
+      "version": "5.1.6",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/minimatch/-/minimatch-5.1.6.tgz",
+      "integrity": "sha512-lKwV/1brpG6mBUFHtb7NUmtABCb2WZZmm2wNiOA5hAb8VdCS4B3dtMWyvcoViccwAW/COERjXLt0zP1zXUN26g==",
+      "license": "ISC",
       "dependencies": {
         "brace-expansion": "^2.0.1"
       },
@@ -3335,11 +3412,12 @@
       }
     },
     "node_modules/mobx-react": {
-      "version": "7.2.1",
-      "resolved": "https://registry.npmjs.org/mobx-react/-/mobx-react-7.2.1.tgz",
-      "integrity": "sha512-LZS99KFLn75VWDXPdRJhILzVQ7qLcRjQbzkK+wVs0Qg4kWw5hOI2USp7tmu+9zP9KYsVBmKyx2k/8cTTBfsymw==",
+      "version": "7.6.0",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/mobx-react/-/mobx-react-7.6.0.tgz",
+      "integrity": "sha512-+HQUNuh7AoQ9ZnU6c4rvbiVVl+wEkb9WqYsVDzGLng+Dqj1XntHu79PvEWKtSMoMj67vFp/ZPXcElosuJO8ckA==",
+      "license": "MIT",
       "dependencies": {
-        "mobx-react-lite": "^3.2.0"
+        "mobx-react-lite": "^3.4.0"
       },
       "funding": {
         "type": "opencollective",
@@ -3347,7 +3425,7 @@
       },
       "peerDependencies": {
         "mobx": "^6.1.0",
-        "react": "^16.8.0 || ^17"
+        "react": "^16.8.0 || ^17 || ^18"
       },
       "peerDependenciesMeta": {
         "react-dom": {
@@ -3359,16 +3437,17 @@
       }
     },
     "node_modules/mobx-react-lite": {
-      "version": "3.2.3",
-      "resolved": "https://registry.npmjs.org/mobx-react-lite/-/mobx-react-lite-3.2.3.tgz",
-      "integrity": "sha512-7exWp1FV0M9dP08H9PIeHlJqDw4IdkQVRMfLYaZFMmlbzSS6ZU6p/kx392KN+rVf81hH3IQYewvRGQ70oiwmbw==",
+      "version": "3.4.0",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/mobx-react-lite/-/mobx-react-lite-3.4.0.tgz",
+      "integrity": "sha512-bRuZp3C0itgLKHu/VNxi66DN/XVkQG7xtoBVWxpvC5FhAqbOCP21+nPhULjnzEqd7xBMybp6KwytdUpZKEgpIQ==",
+      "license": "MIT",
       "funding": {
         "type": "opencollective",
         "url": "https://opencollective.com/mobx"
       },
       "peerDependencies": {
         "mobx": "^6.1.0",
-        "react": "^16.8.0 || ^17"
+        "react": "^16.8.0 || ^17 || ^18"
       },
       "peerDependenciesMeta": {
         "react-dom": {
@@ -3390,9 +3469,10 @@
       "integrity": "sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw=="
     },
     "node_modules/node-fetch": {
-      "version": "2.6.7",
-      "resolved": "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.7.tgz",
-      "integrity": "sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==",
+      "version": "2.6.9",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/node-fetch/-/node-fetch-2.6.9.tgz",
+      "integrity": "sha512-DJm/CJkZkRjKKj4Zi4BsKVZh3ValV5IR5s7LVZnW+6YMh0W1BfNA8XSs6DLMGYlId5F3KnA70uu2qepcR08Qqg==",
+      "license": "MIT",
       "dependencies": {
         "whatwg-url": "^5.0.0"
       },
@@ -3410,8 +3490,9 @@
     },
     "node_modules/node-fetch-h2": {
       "version": "2.3.0",
-      "resolved": "https://registry.npmjs.org/node-fetch-h2/-/node-fetch-h2-2.3.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/node-fetch-h2/-/node-fetch-h2-2.3.0.tgz",
       "integrity": "sha512-ofRW94Ab0T4AOh5Fk8t0h8OBWrmjb0SSB20xh1H8YnPV9EJ+f5AMoYSUQ2zgJ4Iq2HAK0I2l5/Nequ8YzFS3Hg==",
+      "license": "MIT",
       "dependencies": {
         "http2-client": "^1.2.5"
       },
@@ -3451,16 +3532,18 @@
     },
     "node_modules/node-readfiles": {
       "version": "0.2.0",
-      "resolved": "https://registry.npmjs.org/node-readfiles/-/node-readfiles-0.2.0.tgz",
-      "integrity": "sha1-271K8SE04uY1wkXvk//Pb2BnOl0=",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/node-readfiles/-/node-readfiles-0.2.0.tgz",
+      "integrity": "sha512-SU00ZarexNlE4Rjdm83vglt5Y9yiQ+XI1XpflWlb7q7UTN1JUItm69xMeiQCTxtTfnzt+83T8Cx+vI2ED++VDA==",
+      "license": "MIT",
       "dependencies": {
         "es6-promise": "^3.2.1"
       }
     },
     "node_modules/node-releases": {
-      "version": "2.0.6",
-      "resolved": "https://registry.npmjs.org/node-releases/-/node-releases-2.0.6.tgz",
-      "integrity": "sha512-PiVXnNuFm5+iYkLBNeq5211hvO38y63T0i2KKh2KnUs3RpzJ+JtODFjkD8yjLwnDkTYF1eKXheUwdssR+NRZdg==",
+      "version": "2.0.10",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/node-releases/-/node-releases-2.0.10.tgz",
+      "integrity": "sha512-5GFldHPXVG/YZmFzJvKK2zDSzPKhEp0+ZR5SVaoSag9fsL5YgHbUHDfnG5494ISANDcK4KwPXAx2xqVEydmd7w==",
+      "license": "MIT",
       "peer": true
     },
     "node_modules/normalize-path": {
@@ -3481,16 +3564,18 @@
     },
     "node_modules/oas-kit-common": {
       "version": "1.0.8",
-      "resolved": "https://registry.npmjs.org/oas-kit-common/-/oas-kit-common-1.0.8.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/oas-kit-common/-/oas-kit-common-1.0.8.tgz",
       "integrity": "sha512-pJTS2+T0oGIwgjGpw7sIRU8RQMcUoKCDWFLdBqKB2BNmGpbBMH2sdqAaOXUg8OzonZHU0L7vfJu1mJFEiYDWOQ==",
+      "license": "BSD-3-Clause",
       "dependencies": {
         "fast-safe-stringify": "^2.0.7"
       }
     },
     "node_modules/oas-linter": {
       "version": "3.2.2",
-      "resolved": "https://registry.npmjs.org/oas-linter/-/oas-linter-3.2.2.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/oas-linter/-/oas-linter-3.2.2.tgz",
       "integrity": "sha512-KEGjPDVoU5K6swgo9hJVA/qYGlwfbFx+Kg2QB/kd7rzV5N8N5Mg6PlsoCMohVnQmo+pzJap/F610qTodKzecGQ==",
+      "license": "BSD-3-Clause",
       "dependencies": {
         "@exodus/schemasafe": "^1.0.0-rc.2",
         "should": "^13.2.1",
@@ -3502,8 +3587,9 @@
     },
     "node_modules/oas-resolver": {
       "version": "2.5.6",
-      "resolved": "https://registry.npmjs.org/oas-resolver/-/oas-resolver-2.5.6.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/oas-resolver/-/oas-resolver-2.5.6.tgz",
       "integrity": "sha512-Yx5PWQNZomfEhPPOphFbZKi9W93CocQj18NlD2Pa4GWZzdZpSJvYwoiuurRI7m3SpcChrnO08hkuQDL3FGsVFQ==",
+      "license": "BSD-3-Clause",
       "dependencies": {
         "node-fetch-h2": "^2.3.0",
         "oas-kit-common": "^1.0.8",
@@ -3520,16 +3606,18 @@
     },
     "node_modules/oas-schema-walker": {
       "version": "1.1.5",
-      "resolved": "https://registry.npmjs.org/oas-schema-walker/-/oas-schema-walker-1.1.5.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/oas-schema-walker/-/oas-schema-walker-1.1.5.tgz",
       "integrity": "sha512-2yucenq1a9YPmeNExoUa9Qwrt9RFkjqaMAA1X+U7sbb0AqBeTIdMHky9SQQ6iN94bO5NW0W4TRYXerG+BdAvAQ==",
+      "license": "BSD-3-Clause",
       "funding": {
         "url": "https://github.com/Mermade/oas-kit?sponsor=1"
       }
     },
     "node_modules/oas-validator": {
       "version": "5.0.8",
-      "resolved": "https://registry.npmjs.org/oas-validator/-/oas-validator-5.0.8.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/oas-validator/-/oas-validator-5.0.8.tgz",
       "integrity": "sha512-cu20/HE5N5HKqVygs3dt94eYJfBi0TsZvPVXDhbXQHiEityDN+RROTleefoKRKKJ9dFAF2JBkDHgvWj0sjKGmw==",
+      "license": "BSD-3-Clause",
       "dependencies": {
         "call-me-maybe": "^1.0.1",
         "oas-kit-common": "^1.0.8",
@@ -3561,9 +3649,10 @@
       }
     },
     "node_modules/openapi-sampler": {
-      "version": "1.3.0",
-      "resolved": "https://registry.npmjs.org/openapi-sampler/-/openapi-sampler-1.3.0.tgz",
-      "integrity": "sha512-2QfjK1oM9Sv0q82Ae1RrUe3yfFmAyjF548+6eAeb+h/cL1Uj51TW4UezraBEvwEdzoBgfo4AaTLVFGTKj+yYDw==",
+      "version": "1.3.1",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/openapi-sampler/-/openapi-sampler-1.3.1.tgz",
+      "integrity": "sha512-Ert9mvc2tLPmmInwSyGZS+v4Ogu9/YoZuq9oP3EdUklg2cad6+IGndP9yqJJwbgdXwZibiq5fpv6vYujchdJFg==",
+      "license": "MIT",
       "dependencies": {
         "@types/json-schema": "^7.0.7",
         "json-pointer": "0.6.2"
@@ -3688,13 +3777,15 @@
     },
     "node_modules/perfect-scrollbar": {
       "version": "1.5.5",
-      "resolved": "https://registry.npmjs.org/perfect-scrollbar/-/perfect-scrollbar-1.5.5.tgz",
-      "integrity": "sha512-dzalfutyP3e/FOpdlhVryN4AJ5XDVauVWxybSkLZmakFE2sS3y3pc4JnSprw8tGmHvkaG5Edr5T7LBTZ+WWU2g=="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/perfect-scrollbar/-/perfect-scrollbar-1.5.5.tgz",
+      "integrity": "sha512-dzalfutyP3e/FOpdlhVryN4AJ5XDVauVWxybSkLZmakFE2sS3y3pc4JnSprw8tGmHvkaG5Edr5T7LBTZ+WWU2g==",
+      "license": "MIT"
     },
     "node_modules/picocolors": {
       "version": "1.0.0",
-      "resolved": "https://registry.npmjs.org/picocolors/-/picocolors-1.0.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/picocolors/-/picocolors-1.0.0.tgz",
       "integrity": "sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==",
+      "license": "ISC",
       "peer": true
     },
     "node_modules/picomatch": {
@@ -3710,18 +3801,20 @@
     },
     "node_modules/pluralize": {
       "version": "8.0.0",
-      "resolved": "https://registry.npmjs.org/pluralize/-/pluralize-8.0.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/pluralize/-/pluralize-8.0.0.tgz",
       "integrity": "sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==",
+      "license": "MIT",
       "engines": {
         "node": ">=4"
       }
     },
     "node_modules/polished": {
-      "version": "4.1.4",
-      "resolved": "https://registry.npmjs.org/polished/-/polished-4.1.4.tgz",
-      "integrity": "sha512-Nq5Mbza+Auo7N3sQb1QMFaQiDO+4UexWuSGR7Cjb4Sw11SZIJcrrFtiZ+L0jT9MBsUsxDboHVASbCLbE1rnECg==",
+      "version": "4.2.2",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/polished/-/polished-4.2.2.tgz",
+      "integrity": "sha512-Sz2Lkdxz6F2Pgnpi9U5Ng/WdWAUZxmHrNPoVlm3aAemxoy2Qy7LGjQg4uf8qKelDAUW94F4np3iH2YPf2qefcQ==",
+      "license": "MIT",
       "dependencies": {
-        "@babel/runtime": "^7.16.7"
+        "@babel/runtime": "^7.17.8"
       },
       "engines": {
         "node": ">=10"
@@ -3741,9 +3834,10 @@
       }
     },
     "node_modules/prismjs": {
-      "version": "1.27.0",
-      "resolved": "https://registry.npmjs.org/prismjs/-/prismjs-1.27.0.tgz",
-      "integrity": "sha512-t13BGPUlFDR7wRB5kQDG4jjl7XeuH6jbJGt11JHPL96qwsEHNX2+68tFXqc1/k+/jALsbSWJKUOT/hcYAZ5LkA==",
+      "version": "1.29.0",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/prismjs/-/prismjs-1.29.0.tgz",
+      "integrity": "sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==",
+      "license": "MIT",
       "engines": {
         "node": ">=6"
       }
@@ -3763,8 +3857,9 @@
     },
     "node_modules/prop-types": {
       "version": "15.8.1",
-      "resolved": "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/prop-types/-/prop-types-15.8.1.tgz",
       "integrity": "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==",
+      "license": "MIT",
       "dependencies": {
         "loose-envify": "^1.4.0",
         "object-assign": "^4.1.1",
@@ -3773,8 +3868,9 @@
     },
     "node_modules/prop-types/node_modules/react-is": {
       "version": "16.13.1",
-      "resolved": "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz",
-      "integrity": "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/react-is/-/react-is-16.13.1.tgz",
+      "integrity": "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==",
+      "license": "MIT"
     },
     "node_modules/public-encrypt": {
       "version": "4.0.3",
@@ -3905,8 +4001,9 @@
     },
     "node_modules/react-tabs": {
       "version": "3.2.3",
-      "resolved": "https://registry.npmjs.org/react-tabs/-/react-tabs-3.2.3.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/react-tabs/-/react-tabs-3.2.3.tgz",
       "integrity": "sha512-jx325RhRVnS9DdFbeF511z0T0WEqEoMl1uCE3LoZ6VaZZm7ytatxbum0B8bCTmaiV0KsU+4TtLGTGevCic7SWg==",
+      "license": "MIT",
       "dependencies": {
         "clsx": "^1.1.0",
         "prop-types": "^15.5.0"
@@ -3960,8 +4057,9 @@
     },
     "node_modules/reftools": {
       "version": "1.1.9",
-      "resolved": "https://registry.npmjs.org/reftools/-/reftools-1.1.9.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/reftools/-/reftools-1.1.9.tgz",
       "integrity": "sha512-OVede/NQE13xBQ+ob5CKd5KyeJYU2YInb1bmV4nRoOfquZPkAkxuOXicSe1PvqIuZZ4kD13sPKBbR7UFDmli6w==",
+      "license": "BSD-3-Clause",
       "funding": {
         "url": "https://github.com/Mermade/oas-kit?sponsor=1"
       }
@@ -4004,8 +4102,9 @@
     },
     "node_modules/require-from-string": {
       "version": "2.0.2",
-      "resolved": "https://registry.npmjs.org/require-from-string/-/require-from-string-2.0.2.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/require-from-string/-/require-from-string-2.0.2.tgz",
       "integrity": "sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==",
+      "license": "MIT",
       "engines": {
         "node": ">=0.10.0"
       }
@@ -4088,8 +4187,9 @@
     },
     "node_modules/schema-utils": {
       "version": "3.1.1",
-      "resolved": "https://registry.npmjs.org/schema-utils/-/schema-utils-3.1.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/schema-utils/-/schema-utils-3.1.1.tgz",
       "integrity": "sha512-Y5PQxS4ITlC+EahLuXaY86TXfR7Dc5lw294alXOq86JAHCihAIZfqv8nNCWvaEJvaC51uN9hbLGeV0cFBdH+Fw==",
+      "license": "MIT",
       "peer": true,
       "dependencies": {
         "@types/json-schema": "^7.0.8",
@@ -4138,9 +4238,10 @@
       }
     },
     "node_modules/serialize-javascript": {
-      "version": "6.0.0",
-      "resolved": "https://registry.npmjs.org/serialize-javascript/-/serialize-javascript-6.0.0.tgz",
-      "integrity": "sha512-Qr3TosvguFt8ePWqsvRfrKyQXIiW+nGbYpy8XK24NQHE83caxWt+mIymTT19DGFbNWNLfEwsrkSmN64lVWB9ag==",
+      "version": "6.0.1",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/serialize-javascript/-/serialize-javascript-6.0.1.tgz",
+      "integrity": "sha512-owoXEFjWRllis8/M1Q+Cw5k8ZH40e3zhp/ovX+Xr/vi1qj6QesbyXXViFbpNvWvPNAD62SutwEXavefrLJWj7w==",
+      "license": "BSD-3-Clause",
       "peer": true,
       "dependencies": {
         "randombytes": "^2.1.0"
@@ -4170,8 +4271,9 @@
     },
     "node_modules/should": {
       "version": "13.2.3",
-      "resolved": "https://registry.npmjs.org/should/-/should-13.2.3.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/should/-/should-13.2.3.tgz",
       "integrity": "sha512-ggLesLtu2xp+ZxI+ysJTmNjh2U0TsC+rQ/pfED9bUZZ4DKefP27D+7YJVVTvKsmjLpIi9jAa7itwDGkDDmt1GQ==",
+      "license": "MIT",
       "dependencies": {
         "should-equal": "^2.0.0",
         "should-format": "^3.0.3",
@@ -4182,16 +4284,18 @@
     },
     "node_modules/should-equal": {
       "version": "2.0.0",
-      "resolved": "https://registry.npmjs.org/should-equal/-/should-equal-2.0.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/should-equal/-/should-equal-2.0.0.tgz",
       "integrity": "sha512-ZP36TMrK9euEuWQYBig9W55WPC7uo37qzAEmbjHz4gfyuXrEUgF8cUvQVO+w+d3OMfPvSRQJ22lSm8MQJ43LTA==",
+      "license": "MIT",
       "dependencies": {
         "should-type": "^1.4.0"
       }
     },
     "node_modules/should-format": {
       "version": "3.0.3",
-      "resolved": "https://registry.npmjs.org/should-format/-/should-format-3.0.3.tgz",
-      "integrity": "sha1-m/yPdPo5IFxT04w01xcwPidxJPE=",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/should-format/-/should-format-3.0.3.tgz",
+      "integrity": "sha512-hZ58adtulAk0gKtua7QxevgUaXTTXxIi8t41L3zo9AHvjXO1/7sdLECuHeIN2SRtYXpNkmhoUP2pdeWgricQ+Q==",
+      "license": "MIT",
       "dependencies": {
         "should-type": "^1.3.0",
         "should-type-adaptors": "^1.0.1"
@@ -4199,13 +4303,15 @@
     },
     "node_modules/should-type": {
       "version": "1.4.0",
-      "resolved": "https://registry.npmjs.org/should-type/-/should-type-1.4.0.tgz",
-      "integrity": "sha1-B1bYzoRt/QmEOmlHcZ36DUz/XPM="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/should-type/-/should-type-1.4.0.tgz",
+      "integrity": "sha512-MdAsTu3n25yDbIe1NeN69G4n6mUnJGtSJHygX3+oN0ZbO3DTiATnf7XnYJdGT42JCXurTb1JI0qOBR65shvhPQ==",
+      "license": "MIT"
     },
     "node_modules/should-type-adaptors": {
       "version": "1.1.0",
-      "resolved": "https://registry.npmjs.org/should-type-adaptors/-/should-type-adaptors-1.1.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/should-type-adaptors/-/should-type-adaptors-1.1.0.tgz",
       "integrity": "sha512-JA4hdoLnN+kebEp2Vs8eBe9g7uy0zbRo+RMcU0EsNy+R+k049Ki+N5tT5Jagst2g7EAja+euFuoXFCa8vIklfA==",
+      "license": "MIT",
       "dependencies": {
         "should-type": "^1.3.0",
         "should-util": "^1.0.0"
@@ -4213,8 +4319,9 @@
     },
     "node_modules/should-util": {
       "version": "1.0.1",
-      "resolved": "https://registry.npmjs.org/should-util/-/should-util-1.0.1.tgz",
-      "integrity": "sha512-oXF8tfxx5cDk8r2kYqlkUJzZpDBqVY/II2WhvU0n9Y3XYvAYRmeaf1PvvIvTgPnv4KJ+ES5M0PyDq5Jp+Ygy2g=="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/should-util/-/should-util-1.0.1.tgz",
+      "integrity": "sha512-oXF8tfxx5cDk8r2kYqlkUJzZpDBqVY/II2WhvU0n9Y3XYvAYRmeaf1PvvIvTgPnv4KJ+ES5M0PyDq5Jp+Ygy2g==",
+      "license": "MIT"
     },
     "node_modules/signal-exit": {
       "version": "3.0.7",
@@ -4223,8 +4330,9 @@
     },
     "node_modules/slugify": {
       "version": "1.4.7",
-      "resolved": "https://registry.npmjs.org/slugify/-/slugify-1.4.7.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/slugify/-/slugify-1.4.7.tgz",
       "integrity": "sha512-tf+h5W1IrjNm/9rKKj0JU2MDMruiopx0jjVA5zCdBtcGjfp0+c5rHw/zADLC3IeKlGHtVbHtpfzvYA0OYT+HKg==",
+      "license": "MIT",
       "engines": {
         "node": ">=8.0.0"
       }
@@ -4239,8 +4347,9 @@
     },
     "node_modules/source-map-support": {
       "version": "0.5.21",
-      "resolved": "https://registry.npmjs.org/source-map-support/-/source-map-support-0.5.21.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/source-map-support/-/source-map-support-0.5.21.tgz",
       "integrity": "sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==",
+      "license": "MIT",
       "peer": true,
       "dependencies": {
         "buffer-from": "^1.0.0",
@@ -4249,8 +4358,8 @@
     },
     "node_modules/stickyfill": {
       "version": "1.1.1",
-      "resolved": "https://registry.npmjs.org/stickyfill/-/stickyfill-1.1.1.tgz",
-      "integrity": "sha1-OUE/7p0CXHSn5ZzuyyN4TMDxfwI="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/stickyfill/-/stickyfill-1.1.1.tgz",
+      "integrity": "sha512-GCp7vHAfpao+Qh/3Flh9DXEJ/qSi0KJwJw6zYlZOtRYXWUIpMM6mC2rIep/dK8RQqwW0KxGJIllmjPIBOGN8AA=="
     },
     "node_modules/stream-browserify": {
       "version": "2.0.2",
@@ -4315,8 +4424,9 @@
     },
     "node_modules/style-loader": {
       "version": "3.3.1",
-      "resolved": "https://registry.npmjs.org/style-loader/-/style-loader-3.3.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/style-loader/-/style-loader-3.3.1.tgz",
       "integrity": "sha512-GPcQ+LDJbrcxHORTRes6Jy2sfvK2kS6hpSfI/fXhPt+spVzxF6LJ1dHLN9zIGmVaaP044YKaIatFaufENRiDoQ==",
+      "license": "MIT",
       "engines": {
         "node": ">= 12.13.0"
       },
@@ -4409,8 +4519,9 @@
     },
     "node_modules/swagger2openapi": {
       "version": "7.0.8",
-      "resolved": "https://registry.npmjs.org/swagger2openapi/-/swagger2openapi-7.0.8.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/swagger2openapi/-/swagger2openapi-7.0.8.tgz",
       "integrity": "sha512-upi/0ZGkYgEcLeGieoz8gT74oWHA0E7JivX7aN9mAf+Tc7BQoRBvnIGHoPDw+f9TXTW4s6kGYCZJtauP6OYp7g==",
+      "license": "BSD-3-Clause",
       "dependencies": {
         "call-me-maybe": "^1.0.1",
         "node-fetch": "^2.6.1",
@@ -4435,17 +4546,19 @@
     },
     "node_modules/tapable": {
       "version": "2.2.1",
-      "resolved": "https://registry.npmjs.org/tapable/-/tapable-2.2.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/tapable/-/tapable-2.2.1.tgz",
       "integrity": "sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==",
+      "license": "MIT",
       "peer": true,
       "engines": {
         "node": ">=6"
       }
     },
     "node_modules/terser": {
-      "version": "5.15.0",
-      "resolved": "https://registry.npmjs.org/terser/-/terser-5.15.0.tgz",
-      "integrity": "sha512-L1BJiXVmheAQQy+as0oF3Pwtlo4s3Wi1X2zNZ2NxOB4wx9bdS9Vk67XQENLFdLYGCK/Z2di53mTj/hBafR+dTA==",
+      "version": "5.16.3",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/terser/-/terser-5.16.3.tgz",
+      "integrity": "sha512-v8wWLaS/xt3nE9dgKEWhNUFP6q4kngO5B8eYFUuebsu7Dw/UNAnpUod6UHo04jSSkv8TzKHjZDSd7EXdDQAl8Q==",
+      "license": "BSD-2-Clause",
       "peer": true,
       "dependencies": {
         "@jridgewell/source-map": "^0.3.2",
@@ -4462,8 +4575,9 @@
     },
     "node_modules/terser-webpack-plugin": {
       "version": "5.3.6",
-      "resolved": "https://registry.npmjs.org/terser-webpack-plugin/-/terser-webpack-plugin-5.3.6.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/terser-webpack-plugin/-/terser-webpack-plugin-5.3.6.tgz",
       "integrity": "sha512-kfLFk+PoLUQIbLmB1+PZDMRSZS99Mp+/MHqDNmMA6tOItzRt+Npe3E+fsMs5mfcM0wCtrrdU387UnV+vnSffXQ==",
+      "license": "MIT",
       "peer": true,
       "dependencies": {
         "@jridgewell/trace-mapping": "^0.3.14",
@@ -4557,8 +4671,9 @@
     },
     "node_modules/tr46": {
       "version": "0.0.3",
-      "resolved": "https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz",
-      "integrity": "sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/tr46/-/tr46-0.0.3.tgz",
+      "integrity": "sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==",
+      "license": "MIT"
     },
     "node_modules/tty-browserify": {
       "version": "0.0.0",
@@ -4614,9 +4729,9 @@
       }
     },
     "node_modules/update-browserslist-db": {
-      "version": "1.0.7",
-      "resolved": "https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.0.7.tgz",
-      "integrity": "sha512-iN/XYesmZ2RmmWAiI4Z5rq0YqSiv0brj9Ce9CfhNE4xIW2h+MFxcgkxIzZ+ShkFPUkjU3gQ+3oypadD3RAMtrg==",
+      "version": "1.0.10",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/update-browserslist-db/-/update-browserslist-db-1.0.10.tgz",
+      "integrity": "sha512-OztqDenkfFkbSG+tRxBeAnCVPckDBcvibKd35yDONx6OU8N7sqgwc7rCbkJ/WcYtVRZ4ba68d6byhC21GFh7sQ==",
       "funding": [
         {
           "type": "opencollective",
@@ -4627,6 +4742,7 @@
           "url": "https://tidelift.com/funding/github/npm/browserslist"
         }
       ],
+      "license": "MIT",
       "peer": true,
       "dependencies": {
         "escalade": "^3.1.1",
@@ -4732,16 +4848,18 @@
     },
     "node_modules/uri-js": {
       "version": "4.4.1",
-      "resolved": "https://registry.npmjs.org/uri-js/-/uri-js-4.4.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/uri-js/-/uri-js-4.4.1.tgz",
       "integrity": "sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==",
+      "license": "BSD-2-Clause",
       "dependencies": {
         "punycode": "^2.1.0"
       }
     },
     "node_modules/uri-js/node_modules/punycode": {
-      "version": "2.1.1",
-      "resolved": "https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz",
-      "integrity": "sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==",
+      "version": "2.3.0",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/punycode/-/punycode-2.3.0.tgz",
+      "integrity": "sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==",
+      "license": "MIT",
       "engines": {
         "node": ">=6"
       }
@@ -4768,8 +4886,9 @@
     },
     "node_modules/url-template": {
       "version": "2.0.8",
-      "resolved": "https://registry.npmjs.org/url-template/-/url-template-2.0.8.tgz",
-      "integrity": "sha1-/FZaPMy/93MMd19WQflVV5FDnyE="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/url-template/-/url-template-2.0.8.tgz",
+      "integrity": "sha512-XdVKMF4SJ0nP/O7XIPB0JwAEuT9lDIYnNsK8yGVe43y0AWoKeJNdv3ZNWh7ksJ6KqQFjOO6ox/VEitLnaVNufw==",
+      "license": "BSD"
     },
     "node_modules/url/node_modules/punycode": {
       "version": "1.3.2",
@@ -4801,8 +4920,9 @@
     },
     "node_modules/watchpack": {
       "version": "2.4.0",
-      "resolved": "https://registry.npmjs.org/watchpack/-/watchpack-2.4.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/watchpack/-/watchpack-2.4.0.tgz",
       "integrity": "sha512-Lcvm7MGST/4fup+ifyKi2hjyIAwcdI4HRgtvTpIUxBRhB+RFtUh8XtDOxUfctVCnhVi+QQj49i91OyvzkJl6cg==",
+      "license": "MIT",
       "peer": true,
       "dependencies": {
         "glob-to-regexp": "^0.4.1",
@@ -4814,13 +4934,15 @@
     },
     "node_modules/webidl-conversions": {
       "version": "3.0.1",
-      "resolved": "https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz",
-      "integrity": "sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/webidl-conversions/-/webidl-conversions-3.0.1.tgz",
+      "integrity": "sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==",
+      "license": "BSD-2-Clause"
     },
     "node_modules/webpack": {
-      "version": "5.74.0",
-      "resolved": "https://registry.npmjs.org/webpack/-/webpack-5.74.0.tgz",
-      "integrity": "sha512-A2InDwnhhGN4LYctJj6M1JEaGL7Luj6LOmyBHjcI8529cm5p6VXiTIW2sn6ffvEAKmveLzvu4jrihwXtPojlAA==",
+      "version": "5.75.0",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/webpack/-/webpack-5.75.0.tgz",
+      "integrity": "sha512-piaIaoVJlqMsPtX/+3KTTO6jfvrSYgauFVdt8cr9LTHKmcq/AMd4mhzsiP7ZF/PGRNPGA8336jldh9l2Kt2ogQ==",
+      "license": "MIT",
       "peer": true,
       "dependencies": {
         "@types/eslint-scope": "^3.7.3",
@@ -4866,17 +4988,26 @@
     },
     "node_modules/webpack-sources": {
       "version": "3.2.3",
-      "resolved": "https://registry.npmjs.org/webpack-sources/-/webpack-sources-3.2.3.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/webpack-sources/-/webpack-sources-3.2.3.tgz",
       "integrity": "sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==",
+      "license": "MIT",
       "peer": true,
       "engines": {
         "node": ">=10.13.0"
       }
     },
+    "node_modules/webpack/node_modules/@types/estree": {
+      "version": "0.0.51",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@types/estree/-/estree-0.0.51.tgz",
+      "integrity": "sha512-CuPgU6f3eT/XgKKPqKd/gLZV1Xmvf1a2R5POBOGQa6uv82xpls89HU5zKeVoyR8XzHd1RGNOlQlvUe3CFkjWNQ==",
+      "license": "MIT",
+      "peer": true
+    },
     "node_modules/whatwg-url": {
       "version": "5.0.0",
-      "resolved": "https://registry.npmjs.org/whatwg-url/-/whatwg-url-5.0.0.tgz",
-      "integrity": "sha1-lmRU6HZUYuN2RNNib2dCzotwll0=",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/whatwg-url/-/whatwg-url-5.0.0.tgz",
+      "integrity": "sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==",
+      "license": "MIT",
       "dependencies": {
         "tr46": "~0.0.3",
         "webidl-conversions": "^3.0.0"
@@ -4991,16 +5122,18 @@
     },
     "node_modules/yaml": {
       "version": "1.10.2",
-      "resolved": "https://registry.npmjs.org/yaml/-/yaml-1.10.2.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/yaml/-/yaml-1.10.2.tgz",
       "integrity": "sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==",
+      "license": "ISC",
       "engines": {
         "node": ">= 6"
       }
     },
     "node_modules/yaml-ast-parser": {
       "version": "0.0.43",
-      "resolved": "https://registry.npmjs.org/yaml-ast-parser/-/yaml-ast-parser-0.0.43.tgz",
-      "integrity": "sha512-2PTINUwsRqSd+s8XxKaJWQlUuEMHJQyEuh2edBbW8KNJz0SJPwUSD2zRWqezFEdN7IzAgeuYHFUCF7o8zRdZ0A=="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/yaml-ast-parser/-/yaml-ast-parser-0.0.43.tgz",
+      "integrity": "sha512-2PTINUwsRqSd+s8XxKaJWQlUuEMHJQyEuh2edBbW8KNJz0SJPwUSD2zRWqezFEdN7IzAgeuYHFUCF7o8zRdZ0A==",
+      "license": "Apache-2.0"
     },
     "node_modules/yargs": {
       "version": "17.3.1",
@@ -5314,8 +5447,8 @@
       }
     },
     "@dop/redoc": {
-      "version": "git+ssh://git@github.com/mongodb-forks/redoc.git#f360abeec6feae2e3cd99465307b3f7250f80dfc",
-      "from": "@dop/redoc@github:mongodb-forks/redoc#v1.0.0",
+      "version": "git+https://git@github.com/mongodb-forks/redoc.git#f360abeec6feae2e3cd99465307b3f7250f80dfc",
+      "from": "@dop/redoc@git+https://github.com/mongodb-forks/redoc.git#v1.0.0",
       "requires": {
         "@emotion/css": "^11.0.0",
         "@emotion/react": "^11.10.4",
@@ -5535,9 +5668,9 @@
       "integrity": "sha512-AHPmaAx+RYfZz0eYu6Gviiagpmiyw98ySSlQvCUhVGDRtDFe4DBS0x1bSjdF3gqUDYOczB+yYvBTtEylYSdRhg=="
     },
     "@exodus/schemasafe": {
-      "version": "1.0.0-rc.6",
-      "resolved": "https://registry.npmjs.org/@exodus/schemasafe/-/schemasafe-1.0.0-rc.6.tgz",
-      "integrity": "sha512-dDnQizD94EdBwEj/fh3zPRa/HWCS9O5au2PuHhZBbuM3xWHxuaKzPBOEWze7Nn0xW68MIpZ7Xdyn1CoCpjKCuQ=="
+      "version": "1.0.0-rc.9",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@exodus/schemasafe/-/schemasafe-1.0.0-rc.9.tgz",
+      "integrity": "sha512-dGGHpb61hLwifAu7sotuHFDBw6GTdpG8aKC0fsK17EuTzMRvUrH7lEAr6LTJ+sx3AZYed9yZ77rltVDHyg2hRg=="
     },
     "@imgix/js-core": {
       "version": "3.8.0",
@@ -5571,7 +5704,7 @@
     },
     "@jridgewell/source-map": {
       "version": "0.3.2",
-      "resolved": "https://registry.npmjs.org/@jridgewell/source-map/-/source-map-0.3.2.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@jridgewell/source-map/-/source-map-0.3.2.tgz",
       "integrity": "sha512-m7O9o2uR8k2ObDysZYzdfhb08VuEml5oWGiosa1VdaPZ/A6QyPkAJuwN0Q1lhULOf6B7MtQmHENS743hWtCrgw==",
       "peer": true,
       "requires": {
@@ -5599,9 +5732,9 @@
       "integrity": "sha512-AsvPlbvF7CERiZbAQR8hy3lAJ2/rieXI3cO0jsOwV8ztDqYNotKAdLujyr/NviudrRUenYiXrLizIKVlSPUMuA=="
     },
     "@mdb/consistent-nav": {
-      "version": "1.2.30",
-      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@mdb/consistent-nav/-/@mdb/consistent-nav-1.2.30.tgz",
-      "integrity": "sha512-j2KQq8gLpurP5eQRulFa/uPdHuL6V1DiSMqoO1wszSE+aGSpkhAko+0VDO6oanj7uo1SaaCL5+eAACilRX/NSw==",
+      "version": "1.2.31",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@mdb/consistent-nav/-/@mdb/consistent-nav-1.2.31.tgz",
+      "integrity": "sha512-lPFLcah7KsyLou8uud5rWn9V/3g7HwtoXCGca00rormug97mvv9i9ZKxZhPhvCQNhX9mf7EQbmgpLlgYTF6V3Q==",
       "requires": {}
     },
     "@mdb/flora": {
@@ -5622,9 +5755,9 @@
       "requires": {}
     },
     "@redocly/ajv": {
-      "version": "8.6.4",
-      "resolved": "https://registry.npmjs.org/@redocly/ajv/-/ajv-8.6.4.tgz",
-      "integrity": "sha512-y9qNj0//tZtWB2jfXNK3BX18BSBp9zNR7KE7lMysVHwbZtY392OJCjm6Rb/h4UHH2r1AqjNEHFD6bRn+DqU9Mw==",
+      "version": "8.11.0",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@redocly/ajv/-/ajv-8.11.0.tgz",
+      "integrity": "sha512-9GWx27t7xWhDIR02PA18nzBdLcKQRgc46xNQvjFkrYk4UOmvKhJ/dawwiX0cCOeetN5LcaaiqQbVOWYK62SGHw==",
       "requires": {
         "fast-deep-equal": "^3.1.1",
         "json-schema-traverse": "^1.0.0",
@@ -5633,11 +5766,11 @@
       }
     },
     "@redocly/openapi-core": {
-      "version": "1.0.0-beta.105",
-      "resolved": "https://registry.npmjs.org/@redocly/openapi-core/-/openapi-core-1.0.0-beta.105.tgz",
-      "integrity": "sha512-8uYDMcqBOPhFgjRlg5uetW/E2uTVVRpk+YsJhaH78ZNuzBkQP5Waw5s8P8ym6myvHs5me8l5AdniY/ePLMT5xg==",
+      "version": "1.0.0-beta.123",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@redocly/openapi-core/-/openapi-core-1.0.0-beta.123.tgz",
+      "integrity": "sha512-W6MbUWpb/VaV+Kf0c3jmMIJw3WwwF7iK5nAfcOS+ZwrlbxtIl37+1hEydFlJ209vCR9HL12PaMwdh2Vpihj6Jw==",
       "requires": {
-        "@redocly/ajv": "^8.6.4",
+        "@redocly/ajv": "^8.11.0",
         "@types/node": "^14.11.8",
         "colorette": "^1.2.0",
         "js-levenshtein": "^1.1.6",
@@ -5650,9 +5783,9 @@
       },
       "dependencies": {
         "@types/node": {
-          "version": "14.18.22",
-          "resolved": "https://registry.npmjs.org/@types/node/-/node-14.18.22.tgz",
-          "integrity": "sha512-qzaYbXVzin6EPjghf/hTdIbnVW1ErMx8rPzwRNJhlbyJhu2SyqlvjGOY/tbUt6VFyzg56lROcOeSQRInpt63Yw=="
+          "version": "14.18.36",
+          "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@types/node/-/node-14.18.36.tgz",
+          "integrity": "sha512-FXKWbsJ6a1hIrRxv+FoukuHnGTgEzKYGi7kilfMae96AL9UNkPFNWJEEYWzdRI9ooIkbr4AKldyuSTLql06vLQ=="
         }
       }
     },
@@ -5858,9 +5991,9 @@
       }
     },
     "@types/eslint": {
-      "version": "8.4.6",
-      "resolved": "https://registry.npmjs.org/@types/eslint/-/eslint-8.4.6.tgz",
-      "integrity": "sha512-/fqTbjxyFUaYNO7VcW5g+4npmqVACz1bB7RTHYuLj+PRjw9hrCwrUXVQFpChUS0JsyEFvMZ7U/PfmvWgxJhI9g==",
+      "version": "8.21.0",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@types/eslint/-/eslint-8.21.0.tgz",
+      "integrity": "sha512-35EhHNOXgxnUgh4XCJsGhE7zdlDhYDN/aMG6UbkByCFFNgQ7b3U+uVoqBpicFydR8JEfgdjCF7SJ7MiJfzuiTA==",
       "peer": true,
       "requires": {
         "@types/estree": "*",
@@ -5869,7 +6002,7 @@
     },
     "@types/eslint-scope": {
       "version": "3.7.4",
-      "resolved": "https://registry.npmjs.org/@types/eslint-scope/-/eslint-scope-3.7.4.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@types/eslint-scope/-/eslint-scope-3.7.4.tgz",
       "integrity": "sha512-9K4zoImiZc3HlIp6AVUDE4CWYx22a+lhSZMYNpbjW04+YF0KWj4pJXnEMjdnFTiQibFFmElcsasJXDbdI/EPhA==",
       "peer": true,
       "requires": {
@@ -5878,14 +6011,14 @@
       }
     },
     "@types/estree": {
-      "version": "0.0.51",
-      "resolved": "https://registry.npmjs.org/@types/estree/-/estree-0.0.51.tgz",
-      "integrity": "sha512-CuPgU6f3eT/XgKKPqKd/gLZV1Xmvf1a2R5POBOGQa6uv82xpls89HU5zKeVoyR8XzHd1RGNOlQlvUe3CFkjWNQ=="
+      "version": "1.0.0",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@types/estree/-/estree-1.0.0.tgz",
+      "integrity": "sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ=="
     },
     "@types/json-schema": {
-      "version": "7.0.9",
-      "resolved": "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.9.tgz",
-      "integrity": "sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ=="
+      "version": "7.0.11",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@types/json-schema/-/json-schema-7.0.11.tgz",
+      "integrity": "sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ=="
     },
     "@types/mkdirp": {
       "version": "1.0.1",
@@ -5924,7 +6057,7 @@
     },
     "@webassemblyjs/ast": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/ast/-/ast-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/ast/-/ast-1.11.1.tgz",
       "integrity": "sha512-ukBh14qFLjxTQNTXocdyksN5QdM28S1CxHt2rdskFyL+xFV7VremuBLVbmCePj+URalXBENx/9Lm7lnhihtCSw==",
       "peer": true,
       "requires": {
@@ -5934,25 +6067,25 @@
     },
     "@webassemblyjs/floating-point-hex-parser": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/floating-point-hex-parser/-/floating-point-hex-parser-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/floating-point-hex-parser/-/floating-point-hex-parser-1.11.1.tgz",
       "integrity": "sha512-iGRfyc5Bq+NnNuX8b5hwBrRjzf0ocrJPI6GWFodBFzmFnyvrQ83SHKhmilCU/8Jv67i4GJZBMhEzltxzcNagtQ==",
       "peer": true
     },
     "@webassemblyjs/helper-api-error": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/helper-api-error/-/helper-api-error-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/helper-api-error/-/helper-api-error-1.11.1.tgz",
       "integrity": "sha512-RlhS8CBCXfRUR/cwo2ho9bkheSXG0+NwooXcc3PAILALf2QLdFyj7KGsKRbVc95hZnhnERon4kW/D3SZpp6Tcg==",
       "peer": true
     },
     "@webassemblyjs/helper-buffer": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/helper-buffer/-/helper-buffer-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/helper-buffer/-/helper-buffer-1.11.1.tgz",
       "integrity": "sha512-gwikF65aDNeeXa8JxXa2BAk+REjSyhrNC9ZwdT0f8jc4dQQeDQ7G4m0f2QCLPJiMTTO6wfDmRmj/pW0PsUvIcA==",
       "peer": true
     },
     "@webassemblyjs/helper-numbers": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/helper-numbers/-/helper-numbers-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/helper-numbers/-/helper-numbers-1.11.1.tgz",
       "integrity": "sha512-vDkbxiB8zfnPdNK9Rajcey5C0w+QJugEglN0of+kmO8l7lDb77AnlKYQF7aarZuCrv+l0UvqL+68gSDr3k9LPQ==",
       "peer": true,
       "requires": {
@@ -5963,13 +6096,13 @@
     },
     "@webassemblyjs/helper-wasm-bytecode": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/helper-wasm-bytecode/-/helper-wasm-bytecode-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/helper-wasm-bytecode/-/helper-wasm-bytecode-1.11.1.tgz",
       "integrity": "sha512-PvpoOGiJwXeTrSf/qfudJhwlvDQxFgelbMqtq52WWiXC6Xgg1IREdngmPN3bs4RoO83PnL/nFrxucXj1+BX62Q==",
       "peer": true
     },
     "@webassemblyjs/helper-wasm-section": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/helper-wasm-section/-/helper-wasm-section-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/helper-wasm-section/-/helper-wasm-section-1.11.1.tgz",
       "integrity": "sha512-10P9No29rYX1j7F3EVPX3JvGPQPae+AomuSTPiF9eBQeChHI6iqjMIwR9JmOJXwpnn/oVGDk7I5IlskuMwU/pg==",
       "peer": true,
       "requires": {
@@ -5981,7 +6114,7 @@
     },
     "@webassemblyjs/ieee754": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/ieee754/-/ieee754-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/ieee754/-/ieee754-1.11.1.tgz",
       "integrity": "sha512-hJ87QIPtAMKbFq6CGTkZYJivEwZDbQUgYd3qKSadTNOhVY7p+gfP6Sr0lLRVTaG1JjFj+r3YchoqRYxNH3M0GQ==",
       "peer": true,
       "requires": {
@@ -5990,7 +6123,7 @@
     },
     "@webassemblyjs/leb128": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/leb128/-/leb128-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/leb128/-/leb128-1.11.1.tgz",
       "integrity": "sha512-BJ2P0hNZ0u+Th1YZXJpzW6miwqQUGcIHT1G/sf72gLVD9DZ5AdYTqPNbHZh6K1M5VmKvFXwGSWZADz+qBWxeRw==",
       "peer": true,
       "requires": {
@@ -5999,13 +6132,13 @@
     },
     "@webassemblyjs/utf8": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/utf8/-/utf8-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/utf8/-/utf8-1.11.1.tgz",
       "integrity": "sha512-9kqcxAEdMhiwQkHpkNiorZzqpGrodQQ2IGrHHxCy+Ozng0ofyMA0lTqiLkVs1uzTRejX+/O0EOT7KxqVPuXosQ==",
       "peer": true
     },
     "@webassemblyjs/wasm-edit": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/wasm-edit/-/wasm-edit-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/wasm-edit/-/wasm-edit-1.11.1.tgz",
       "integrity": "sha512-g+RsupUC1aTHfR8CDgnsVRVZFJqdkFHpsHMfJuWQzWU3tvnLC07UqHICfP+4XyL2tnr1amvl1Sdp06TnYCmVkA==",
       "peer": true,
       "requires": {
@@ -6021,7 +6154,7 @@
     },
     "@webassemblyjs/wasm-gen": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/wasm-gen/-/wasm-gen-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/wasm-gen/-/wasm-gen-1.11.1.tgz",
       "integrity": "sha512-F7QqKXwwNlMmsulj6+O7r4mmtAlCWfO/0HdgOxSklZfQcDu0TpLiD1mRt/zF25Bk59FIjEuGAIyn5ei4yMfLhA==",
       "peer": true,
       "requires": {
@@ -6034,7 +6167,7 @@
     },
     "@webassemblyjs/wasm-opt": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/wasm-opt/-/wasm-opt-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/wasm-opt/-/wasm-opt-1.11.1.tgz",
       "integrity": "sha512-VqnkNqnZlU5EB64pp1l7hdm3hmQw7Vgqa0KF/KCNO9sIpI6Fk6brDEiX+iCOYrvMuBWDws0NkTOxYEb85XQHHw==",
       "peer": true,
       "requires": {
@@ -6046,7 +6179,7 @@
     },
     "@webassemblyjs/wasm-parser": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/wasm-parser/-/wasm-parser-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/wasm-parser/-/wasm-parser-1.11.1.tgz",
       "integrity": "sha512-rrBujw+dJu32gYB7/Lup6UhdkPx9S9SnobZzRVL7VcBH9Bt9bCBLEuX/YXOOtBsOZ4NQrRykKhffRWHvigQvOA==",
       "peer": true,
       "requires": {
@@ -6060,7 +6193,7 @@
     },
     "@webassemblyjs/wast-printer": {
       "version": "1.11.1",
-      "resolved": "https://registry.npmjs.org/@webassemblyjs/wast-printer/-/wast-printer-1.11.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@webassemblyjs/wast-printer/-/wast-printer-1.11.1.tgz",
       "integrity": "sha512-IQboUWM4eKzWW+N/jij2sRatKMh99QEelo3Eb2q0qXkvPRISAj8Qxtmw5itwqK+TTkBuUIE45AxYPToqPtL5gg==",
       "peer": true,
       "requires": {
@@ -6070,32 +6203,32 @@
     },
     "@xtuc/ieee754": {
       "version": "1.2.0",
-      "resolved": "https://registry.npmjs.org/@xtuc/ieee754/-/ieee754-1.2.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@xtuc/ieee754/-/ieee754-1.2.0.tgz",
       "integrity": "sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA==",
       "peer": true
     },
     "@xtuc/long": {
       "version": "4.2.2",
-      "resolved": "https://registry.npmjs.org/@xtuc/long/-/long-4.2.2.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@xtuc/long/-/long-4.2.2.tgz",
       "integrity": "sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==",
       "peer": true
     },
     "acorn": {
-      "version": "8.8.0",
-      "resolved": "https://registry.npmjs.org/acorn/-/acorn-8.8.0.tgz",
-      "integrity": "sha512-QOxyigPVrpZ2GXT+PFyZTl6TtOFc5egxHIP9IlQ+RbupQuX4RkT/Bee4/kQuC02Xkzg84JcT7oLYtDIQxp+v7w==",
+      "version": "8.8.2",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/acorn/-/acorn-8.8.2.tgz",
+      "integrity": "sha512-xjIYgE8HBrkpd/sJqOGNspf8uHG+NOHGOw6a/Urj8taM2EXfdNAH2oFcPeIFfsv3+kz/mJrS5VuMqbNLjCa2vw==",
       "peer": true
     },
     "acorn-import-assertions": {
       "version": "1.8.0",
-      "resolved": "https://registry.npmjs.org/acorn-import-assertions/-/acorn-import-assertions-1.8.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/acorn-import-assertions/-/acorn-import-assertions-1.8.0.tgz",
       "integrity": "sha512-m7VZ3jwz4eK6A4Vtt8Ew1/mNbP24u0FhdyfA7fSvnJR6LMdfOYnmuIrrJAgrYfYJ10F/otaHTtrtrtmHdMNzEw==",
       "peer": true,
       "requires": {}
     },
     "ajv": {
       "version": "6.12.6",
-      "resolved": "https://registry.npmjs.org/ajv/-/ajv-6.12.6.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/ajv/-/ajv-6.12.6.tgz",
       "integrity": "sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==",
       "peer": true,
       "requires": {
@@ -6107,7 +6240,7 @@
       "dependencies": {
         "json-schema-traverse": {
           "version": "0.4.1",
-          "resolved": "https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz",
+          "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz",
           "integrity": "sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg==",
           "peer": true
         }
@@ -6115,7 +6248,7 @@
     },
     "ajv-keywords": {
       "version": "3.5.2",
-      "resolved": "https://registry.npmjs.org/ajv-keywords/-/ajv-keywords-3.5.2.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/ajv-keywords/-/ajv-keywords-3.5.2.tgz",
       "integrity": "sha512-5p6WTN0DdTGVQk6VjcEju19IgaHudalcfabD7yhDGeA6bcQnmL+CpveLJq/3hvfwd1aof6L386Ougkx6RfyMIQ==",
       "peer": true,
       "requires": {}
@@ -6152,7 +6285,7 @@
     },
     "argparse": {
       "version": "2.0.1",
-      "resolved": "https://registry.npmjs.org/argparse/-/argparse-2.0.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/argparse/-/argparse-2.0.1.tgz",
       "integrity": "sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q=="
     },
     "asn1.js": {
@@ -6225,7 +6358,7 @@
     },
     "balanced-match": {
       "version": "1.0.2",
-      "resolved": "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/balanced-match/-/balanced-match-1.0.2.tgz",
       "integrity": "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw=="
     },
     "base64-js": {
@@ -6305,7 +6438,7 @@
     },
     "brace-expansion": {
       "version": "2.0.1",
-      "resolved": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-2.0.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/brace-expansion/-/brace-expansion-2.0.1.tgz",
       "integrity": "sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==",
       "requires": {
         "balanced-match": "^1.0.0"
@@ -6404,15 +6537,15 @@
       }
     },
     "browserslist": {
-      "version": "4.21.3",
-      "resolved": "https://registry.npmjs.org/browserslist/-/browserslist-4.21.3.tgz",
-      "integrity": "sha512-898rgRXLAyRkM1GryrrBHGkqA5hlpkV5MhtZwg9QXeiyLUYs2k00Un05aX5l2/yJIOObYKOpS2JNo8nJDE7fWQ==",
+      "version": "4.21.5",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/browserslist/-/browserslist-4.21.5.tgz",
+      "integrity": "sha512-tUkiguQGW7S3IhB7N+c2MV/HZPSCPAAiYBZXLsBhFB/PCy6ZKKsZrmBayHV9fdGV/ARIfJ14NkxKzRDjvp7L6w==",
       "peer": true,
       "requires": {
-        "caniuse-lite": "^1.0.30001370",
-        "electron-to-chromium": "^1.4.202",
-        "node-releases": "^2.0.6",
-        "update-browserslist-db": "^1.0.5"
+        "caniuse-lite": "^1.0.30001449",
+        "electron-to-chromium": "^1.4.284",
+        "node-releases": "^2.0.8",
+        "update-browserslist-db": "^1.0.10"
       }
     },
     "buffer": {
@@ -6434,7 +6567,7 @@
     },
     "buffer-from": {
       "version": "1.1.2",
-      "resolved": "https://registry.npmjs.org/buffer-from/-/buffer-from-1.1.2.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/buffer-from/-/buffer-from-1.1.2.tgz",
       "integrity": "sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==",
       "peer": true
     },
@@ -6478,9 +6611,9 @@
       }
     },
     "call-me-maybe": {
-      "version": "1.0.1",
-      "resolved": "https://registry.npmjs.org/call-me-maybe/-/call-me-maybe-1.0.1.tgz",
-      "integrity": "sha1-JtII6onje1y95gJQoV8DHBak1ms="
+      "version": "1.0.2",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/call-me-maybe/-/call-me-maybe-1.0.2.tgz",
+      "integrity": "sha512-HpX65o1Hnr9HH25ojC1YGs7HCQLq0GCOibSaWER0eNpgJ/Z1MZv2mTc7+xh6WOPxbRVcmgbv4hGU+uSQ/2xFZQ=="
     },
     "callsites": {
       "version": "3.1.0",
@@ -6498,9 +6631,9 @@
       "integrity": "sha1-FkpUg+Yw+kMh5a8HAg5TGDGyYJs="
     },
     "caniuse-lite": {
-      "version": "1.0.30001390",
-      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001390.tgz",
-      "integrity": "sha512-sS4CaUM+/+vqQUlCvCJ2WtDlV81aWtHhqeEVkLokVJJa3ViN4zDxAGfq9R8i1m90uGHxo99cy10Od+lvn3hf0g==",
+      "version": "1.0.30001450",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/caniuse-lite/-/caniuse-lite-1.0.30001450.tgz",
+      "integrity": "sha512-qMBmvmQmFXaSxexkjjfMvD5rnDL0+m+dUMZKoDYsGG8iZN29RuYh9eRoMvKsT6uMAWlyUUGDEQGJJYjzCIO9ew==",
       "peer": true
     },
     "chalk": {
@@ -6542,7 +6675,7 @@
     },
     "chrome-trace-event": {
       "version": "1.0.3",
-      "resolved": "https://registry.npmjs.org/chrome-trace-event/-/chrome-trace-event-1.0.3.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/chrome-trace-event/-/chrome-trace-event-1.0.3.tgz",
       "integrity": "sha512-p3KULyQg4S7NIHixdwbGX+nFHkoBiA4YQmyWtjb8XngSKV124nJmRysgAeujbUVb15vh+RvFUfCPqU7rXk+hZg==",
       "peer": true
     },
@@ -6561,9 +6694,9 @@
       }
     },
     "classnames": {
-      "version": "2.3.1",
-      "resolved": "https://registry.npmjs.org/classnames/-/classnames-2.3.1.tgz",
-      "integrity": "sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA=="
+      "version": "2.3.2",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/classnames/-/classnames-2.3.2.tgz",
+      "integrity": "sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw=="
     },
     "cli-boxes": {
       "version": "2.2.1",
@@ -6589,9 +6722,9 @@
       }
     },
     "clsx": {
-      "version": "1.1.1",
-      "resolved": "https://registry.npmjs.org/clsx/-/clsx-1.1.1.tgz",
-      "integrity": "sha512-6/bPho624p3S2pMyvP5kKBPXnI3ufHLObBFCfgx+LkeR5lg2XYy2hqZqUf45ypD8COn2bhgGJSUE+l5dhNBieA=="
+      "version": "1.2.1",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/clsx/-/clsx-1.2.1.tgz",
+      "integrity": "sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg=="
     },
     "codemirror": {
       "version": "5.65.11",
@@ -6621,12 +6754,12 @@
     },
     "colorette": {
       "version": "1.4.0",
-      "resolved": "https://registry.npmjs.org/colorette/-/colorette-1.4.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/colorette/-/colorette-1.4.0.tgz",
       "integrity": "sha512-Y2oEozpomLn7Q3HFP7dpww7AtMJplbM9lGZP6RDfHqmbeRjiwRg4n6VM6j4KLmRke85uWEI7JqF17f3pqdRA0g=="
     },
     "commander": {
       "version": "2.20.3",
-      "resolved": "https://registry.npmjs.org/commander/-/commander-2.20.3.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/commander/-/commander-2.20.3.tgz",
       "integrity": "sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==",
       "peer": true
     },
@@ -6659,9 +6792,9 @@
       "integrity": "sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A=="
     },
     "core-js": {
-      "version": "3.25.0",
-      "resolved": "https://registry.npmjs.org/core-js/-/core-js-3.25.0.tgz",
-      "integrity": "sha512-CVU1xvJEfJGhyCpBrzzzU1kjCfgsGUxhEvwUV2e/cOedYWHdmluamx+knDnmhqALddMG16fZvIqvs9aijsHHaA==",
+      "version": "3.27.2",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/core-js/-/core-js-3.27.2.tgz",
+      "integrity": "sha512-9ashVQskuh5AZEZ1JdQWp1GqSoC1e1G87MzRqg2gIfVAQ7Qn9K+uFj8EcniUFA4P2NLZfV+TOlX1SzoKfo+s7w==",
       "peer": true
     },
     "core-util-is": {
@@ -6780,8 +6913,8 @@
     },
     "decko": {
       "version": "1.2.0",
-      "resolved": "https://registry.npmjs.org/decko/-/decko-1.2.0.tgz",
-      "integrity": "sha1-/UPHNelnuAEzBohKVvvmZZlraBc="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/decko/-/decko-1.2.0.tgz",
+      "integrity": "sha512-m8FnyHXV1QX+S1cl+KPFDIl6NMkxtKsy6+U/aYyjrOqWMuwAwYWu7ePqrsUHtDR5Y8Yk2pi/KIDSgF+vT4cPOQ=="
     },
     "decompress-response": {
       "version": "3.3.0",
@@ -6838,9 +6971,9 @@
       "integrity": "sha512-jnjyiM6eRyZl2H+W8Q/zLMA481hzi0eszAaBUzIVnmYVDBbnLxVNnfu1HgEBvCbL+71FrxMl3E6lpKH7Ge3OXA=="
     },
     "dompurify": {
-      "version": "2.3.5",
-      "resolved": "https://registry.npmjs.org/dompurify/-/dompurify-2.3.5.tgz",
-      "integrity": "sha512-kD+f8qEaa42+mjdOpKeztu9Mfx5bv9gVLO6K9jRx4uGvh6Wv06Srn4jr1wPNY2OOUGGSKHNFN+A8MA3v0E0QAQ=="
+      "version": "2.4.3",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/dompurify/-/dompurify-2.4.3.tgz",
+      "integrity": "sha512-q6QaLcakcRjebxjg8/+NP+h0rPfatOgOzc46Fst9VAA3jF2ApfKBNKMzdP4DYTqtUMXSCd5pRS/8Po/OmoCHZQ=="
     },
     "dot-prop": {
       "version": "5.3.0",
@@ -6856,9 +6989,9 @@
       "integrity": "sha512-1A8za6ws41LQgv9HrE/66jyC5yuSjQ3L/KOpFtoBilsAK2iA2wuS5rTt1OCzIvtS2V7nVmedsUU+DGRcjBmOYA=="
     },
     "electron-to-chromium": {
-      "version": "1.4.242",
-      "resolved": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.242.tgz",
-      "integrity": "sha512-nPdgMWtjjWGCtreW/2adkrB2jyHjClo9PtVhR6rW+oxa4E4Wom642Tn+5LslHP3XPL5MCpkn5/UEY60EXylNeQ==",
+      "version": "1.4.286",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/electron-to-chromium/-/electron-to-chromium-1.4.286.tgz",
+      "integrity": "sha512-Vp3CVhmYpgf4iXNKAucoQUDcCrBQX3XLBtwgFqP9BUXuucgvAV9zWp1kYU7LL9j4++s9O+12cb3wMtN4SJy6UQ==",
       "peer": true
     },
     "elliptic": {
@@ -6896,9 +7029,9 @@
       }
     },
     "enhanced-resolve": {
-      "version": "5.10.0",
-      "resolved": "https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.10.0.tgz",
-      "integrity": "sha512-T0yTFjdpldGY8PmuXXR0PyQ1ufZpEGiHVrp7zHKB7jdR4qlmZHhONVM5AQOAWXuF/w3dnHbEQVrNptJgt7F+cQ==",
+      "version": "5.12.0",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/enhanced-resolve/-/enhanced-resolve-5.12.0.tgz",
+      "integrity": "sha512-QHTXI/sZQmko1cbDoNAa3mJ5qhWUUNAq3vR0/YiD379fWQrcfuoX1+HW2S0MTt7XmoPLapdaDKUtelUSPic7hQ==",
       "peer": true,
       "requires": {
         "graceful-fs": "^4.2.4",
@@ -6915,14 +7048,14 @@
     },
     "es-module-lexer": {
       "version": "0.9.3",
-      "resolved": "https://registry.npmjs.org/es-module-lexer/-/es-module-lexer-0.9.3.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/es-module-lexer/-/es-module-lexer-0.9.3.tgz",
       "integrity": "sha512-1HQ2M2sPtxwnvOvT1ZClHyQDiggdNjURWpY2we6aMKCQiUVxTmVs2UYPLIrD84sS+kMdUwfBSylbJPwNnBrnHQ==",
       "peer": true
     },
     "es6-promise": {
       "version": "3.3.1",
-      "resolved": "https://registry.npmjs.org/es6-promise/-/es6-promise-3.3.1.tgz",
-      "integrity": "sha1-oIzd6EzNvzTQJ6FFG8kdS80ophM="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/es6-promise/-/es6-promise-3.3.1.tgz",
+      "integrity": "sha512-SOp9Phqvqn7jtEUxPWdWfWoLmyt2VaJ6MpvP9Comy1MceMXqE6bxvaTu4iaxpYYPzhny28Lc+M87/c2cPK6lDg=="
     },
     "escalade": {
       "version": "3.1.1",
@@ -6941,7 +7074,7 @@
     },
     "eslint-scope": {
       "version": "5.1.1",
-      "resolved": "https://registry.npmjs.org/eslint-scope/-/eslint-scope-5.1.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/eslint-scope/-/eslint-scope-5.1.1.tgz",
       "integrity": "sha512-2NxwbF/hZ0KpepYN0cNbo+FN6XoK7GaHlQhgx/hIZl6Va0bF45RQOOwhLIy8lQDbuCiadSLCBnH2CFYquit5bw==",
       "peer": true,
       "requires": {
@@ -6951,7 +7084,7 @@
     },
     "esrecurse": {
       "version": "4.3.0",
-      "resolved": "https://registry.npmjs.org/esrecurse/-/esrecurse-4.3.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/esrecurse/-/esrecurse-4.3.0.tgz",
       "integrity": "sha512-KmfKL3b6G+RXvP8N1vr3Tq1kL/oCFgn2NYXEtqP8/L3pKapUA4G8cFVaoF3SU323CD4XypR/ffioHmkti6/Tag==",
       "peer": true,
       "requires": {
@@ -6960,7 +7093,7 @@
       "dependencies": {
         "estraverse": {
           "version": "5.3.0",
-          "resolved": "https://registry.npmjs.org/estraverse/-/estraverse-5.3.0.tgz",
+          "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/estraverse/-/estraverse-5.3.0.tgz",
           "integrity": "sha512-MMdARuVEQziNTeJD8DgMqmhwR11BRQ/cBP+pLtYdSTnf3MIO8fFeiINEbX36ZdNlfU/7A9f3gUw49B3oQsvwBA==",
           "peer": true
         }
@@ -6968,13 +7101,13 @@
     },
     "estraverse": {
       "version": "4.3.0",
-      "resolved": "https://registry.npmjs.org/estraverse/-/estraverse-4.3.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/estraverse/-/estraverse-4.3.0.tgz",
       "integrity": "sha512-39nnKffWz8xN1BU/2c79n9nB9HDzo0niYUqx6xyqUnyoAnQyyWpOTdZEeiCch8BBu515t4wp9ZmgVfVhn9EBpw==",
       "peer": true
     },
     "eventemitter3": {
       "version": "4.0.7",
-      "resolved": "https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/eventemitter3/-/eventemitter3-4.0.7.tgz",
       "integrity": "sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw=="
     },
     "events": {
@@ -6993,18 +7126,18 @@
     },
     "fast-deep-equal": {
       "version": "3.1.3",
-      "resolved": "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz",
       "integrity": "sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q=="
     },
     "fast-json-stable-stringify": {
       "version": "2.1.0",
-      "resolved": "https://registry.npmjs.org/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz",
       "integrity": "sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==",
       "peer": true
     },
     "fast-safe-stringify": {
       "version": "2.1.1",
-      "resolved": "https://registry.npmjs.org/fast-safe-stringify/-/fast-safe-stringify-2.1.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/fast-safe-stringify/-/fast-safe-stringify-2.1.1.tgz",
       "integrity": "sha512-W+KJc2dmILlPplD/H4K9l9LcAHAfPtP6BY84uVLXQ6Evcz9Lcg33Y2z1IVblT6xdY54PXYVHEv+0Wpq8Io6zkA=="
     },
     "fill-range": {
@@ -7022,7 +7155,7 @@
     },
     "foreach": {
       "version": "2.0.6",
-      "resolved": "https://registry.npmjs.org/foreach/-/foreach-2.0.6.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/foreach/-/foreach-2.0.6.tgz",
       "integrity": "sha512-k6GAGDyqLe9JaebCsFCoudPPWfihKu8pylYXRlqP1J7ms39iPoTtk2fviNglIeQEwdh0bQeKJ01ZPyuyQvKzwg=="
     },
     "fsevents": {
@@ -7065,7 +7198,7 @@
     },
     "glob-to-regexp": {
       "version": "0.4.1",
-      "resolved": "https://registry.npmjs.org/glob-to-regexp/-/glob-to-regexp-0.4.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/glob-to-regexp/-/glob-to-regexp-0.4.1.tgz",
       "integrity": "sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==",
       "peer": true
     },
@@ -7198,7 +7331,7 @@
     },
     "http2-client": {
       "version": "1.3.5",
-      "resolved": "https://registry.npmjs.org/http2-client/-/http2-client-1.3.5.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/http2-client/-/http2-client-1.3.5.tgz",
       "integrity": "sha512-EC2utToWl4RKfs5zd36Mxq7nzHHBuomZboI0yYL6Y0RmBgT7Sgkq4rQ0ezFTYoIsSs7Tm9SJe+o2FcAg6GBhGA=="
     },
     "https-browserify": {
@@ -7338,7 +7471,7 @@
     },
     "jest-worker": {
       "version": "27.5.1",
-      "resolved": "https://registry.npmjs.org/jest-worker/-/jest-worker-27.5.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/jest-worker/-/jest-worker-27.5.1.tgz",
       "integrity": "sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==",
       "peer": true,
       "requires": {
@@ -7349,13 +7482,13 @@
       "dependencies": {
         "has-flag": {
           "version": "4.0.0",
-          "resolved": "https://registry.npmjs.org/has-flag/-/has-flag-4.0.0.tgz",
+          "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/has-flag/-/has-flag-4.0.0.tgz",
           "integrity": "sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==",
           "peer": true
         },
         "supports-color": {
           "version": "8.1.1",
-          "resolved": "https://registry.npmjs.org/supports-color/-/supports-color-8.1.1.tgz",
+          "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/supports-color/-/supports-color-8.1.1.tgz",
           "integrity": "sha512-MpUEN2OodtUzxvKQl72cUF7RQ5EiHsGvSsVG0ia9c5RbWGL2CI4C7EpPS8UTBIplnlzZiNuV56w+FuNxy3ty2Q==",
           "peer": true,
           "requires": {
@@ -7371,7 +7504,7 @@
     },
     "js-levenshtein": {
       "version": "1.1.6",
-      "resolved": "https://registry.npmjs.org/js-levenshtein/-/js-levenshtein-1.1.6.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/js-levenshtein/-/js-levenshtein-1.1.6.tgz",
       "integrity": "sha512-X2BB11YZtrRqY4EnQcLX5Rh373zbK4alC1FW7D7MBhL2gtcC17cTnr6DmfHZeS0s2rTHjUTMMHfG7gO8SSdw+g=="
     },
     "js-tokens": {
@@ -7381,7 +7514,7 @@
     },
     "js-yaml": {
       "version": "4.1.0",
-      "resolved": "https://registry.npmjs.org/js-yaml/-/js-yaml-4.1.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/js-yaml/-/js-yaml-4.1.0.tgz",
       "integrity": "sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==",
       "requires": {
         "argparse": "^2.0.1"
@@ -7399,12 +7532,12 @@
     },
     "json-parse-even-better-errors": {
       "version": "2.3.1",
-      "resolved": "https://registry.npmjs.org/json-parse-even-better-errors/-/json-parse-even-better-errors-2.3.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/json-parse-even-better-errors/-/json-parse-even-better-errors-2.3.1.tgz",
       "integrity": "sha512-xyFwyhro/JEof6Ghe2iz2NcXoj2sloNsWr/XsERDK/oiPCfaNhl5ONfp+jQdAZRQQ0IJWNzH9zIZF7li91kh2w=="
     },
     "json-pointer": {
       "version": "0.6.2",
-      "resolved": "https://registry.npmjs.org/json-pointer/-/json-pointer-0.6.2.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/json-pointer/-/json-pointer-0.6.2.tgz",
       "integrity": "sha512-vLWcKbOaXlO+jvRy4qNd+TI1QUPZzfJj1tpJ3vAXDych5XJf93ftpUKe5pKCrzyIIwgBJcOcCVRUfqQP25afBw==",
       "requires": {
         "foreach": "^2.0.4"
@@ -7412,7 +7545,7 @@
     },
     "json-schema-traverse": {
       "version": "1.0.0",
-      "resolved": "https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-1.0.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/json-schema-traverse/-/json-schema-traverse-1.0.0.tgz",
       "integrity": "sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug=="
     },
     "json5": {
@@ -7449,7 +7582,7 @@
     },
     "loader-runner": {
       "version": "4.3.0",
-      "resolved": "https://registry.npmjs.org/loader-runner/-/loader-runner-4.3.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/loader-runner/-/loader-runner-4.3.0.tgz",
       "integrity": "sha512-3R/1M+yS3j5ou80Me59j7F9IMs4PXs3VqRrm0TU3AbKPxlmpoY1TNscJV/oGJXo8qCatFGTfDbY6W6ipGOYXfg==",
       "peer": true
     },
@@ -7460,7 +7593,7 @@
     },
     "lodash.isequal": {
       "version": "4.5.0",
-      "resolved": "https://registry.npmjs.org/lodash.isequal/-/lodash.isequal-4.5.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/lodash.isequal/-/lodash.isequal-4.5.0.tgz",
       "integrity": "sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ=="
     },
     "loose-envify": {
@@ -7486,7 +7619,7 @@
     },
     "lunr": {
       "version": "2.3.9",
-      "resolved": "https://registry.npmjs.org/lunr/-/lunr-2.3.9.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/lunr/-/lunr-2.3.9.tgz",
       "integrity": "sha512-zTU3DaZaF3Rt9rhN3uBMGQD3dD2/vFQqnvZCDv4dl5iOzq2IZQqTxu90r4E5J+nP70J3ilqVCrbho2eWaeW8Ow=="
     },
     "make-dir": {
@@ -7506,13 +7639,13 @@
     },
     "mark.js": {
       "version": "8.11.1",
-      "resolved": "https://registry.npmjs.org/mark.js/-/mark.js-8.11.1.tgz",
-      "integrity": "sha1-GA8fnr74sOY45BZq1S24eb6y/8U="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/mark.js/-/mark.js-8.11.1.tgz",
+      "integrity": "sha512-1I+1qpDt4idfgLQG+BNWmrqku+7/2bi5nLf4YwF8y8zXvmfiTBY3PV3ZibfrjBueCByROpuBjLLFCajqkgYoLQ=="
     },
     "marked": {
-      "version": "4.0.15",
-      "resolved": "https://registry.npmjs.org/marked/-/marked-4.0.15.tgz",
-      "integrity": "sha512-esX5lPdTfG4p8LDkv+obbRCyOKzB+820ZZyMOXJZygZBHrH9b3xXR64X4kT3sPe9Nx8qQXbmcz6kFSMt4Nfk6Q=="
+      "version": "4.2.12",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/marked/-/marked-4.2.12.tgz",
+      "integrity": "sha512-yr8hSKa3Fv4D3jdZmtMMPghgVt6TWbk86WQaWhDloQjRSQhMMYCAro7jP7VDJrjjdV8pxVxMssXS8B8Y5DZ5aw=="
     },
     "md5": {
       "version": "2.3.0",
@@ -7536,7 +7669,7 @@
     },
     "merge-stream": {
       "version": "2.0.0",
-      "resolved": "https://registry.npmjs.org/merge-stream/-/merge-stream-2.0.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/merge-stream/-/merge-stream-2.0.0.tgz",
       "integrity": "sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==",
       "peer": true
     },
@@ -7558,13 +7691,13 @@
     },
     "mime-db": {
       "version": "1.52.0",
-      "resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/mime-db/-/mime-db-1.52.0.tgz",
       "integrity": "sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==",
       "peer": true
     },
     "mime-types": {
       "version": "2.1.35",
-      "resolved": "https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/mime-types/-/mime-types-2.1.35.tgz",
       "integrity": "sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==",
       "peer": true,
       "requires": {
@@ -7587,9 +7720,9 @@
       "integrity": "sha1-9sAMHAsIIkblxNmd+4x8CDsrWCo="
     },
     "minimatch": {
-      "version": "5.1.0",
-      "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-5.1.0.tgz",
-      "integrity": "sha512-9TPBGGak4nHfGZsPBohm9AWg6NoT7QTCehS3BIJABslyZbzxfV78QM2Y6+i741OPZIafFAaiiEMh5OyIrJPgtg==",
+      "version": "5.1.6",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/minimatch/-/minimatch-5.1.6.tgz",
+      "integrity": "sha512-lKwV/1brpG6mBUFHtb7NUmtABCb2WZZmm2wNiOA5hAb8VdCS4B3dtMWyvcoViccwAW/COERjXLt0zP1zXUN26g==",
       "requires": {
         "brace-expansion": "^2.0.1"
       }
@@ -7610,17 +7743,17 @@
       "integrity": "sha512-xGPM9dIE1qkK9Nrhevp0gzpsmELKU4MFUJRORW/jqxVFIHHWIoQrjDjL8vkwoJYY3C2CeVJqgvl38hgKTalTWg=="
     },
     "mobx-react": {
-      "version": "7.2.1",
-      "resolved": "https://registry.npmjs.org/mobx-react/-/mobx-react-7.2.1.tgz",
-      "integrity": "sha512-LZS99KFLn75VWDXPdRJhILzVQ7qLcRjQbzkK+wVs0Qg4kWw5hOI2USp7tmu+9zP9KYsVBmKyx2k/8cTTBfsymw==",
+      "version": "7.6.0",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/mobx-react/-/mobx-react-7.6.0.tgz",
+      "integrity": "sha512-+HQUNuh7AoQ9ZnU6c4rvbiVVl+wEkb9WqYsVDzGLng+Dqj1XntHu79PvEWKtSMoMj67vFp/ZPXcElosuJO8ckA==",
       "requires": {
-        "mobx-react-lite": "^3.2.0"
+        "mobx-react-lite": "^3.4.0"
       }
     },
     "mobx-react-lite": {
-      "version": "3.2.3",
-      "resolved": "https://registry.npmjs.org/mobx-react-lite/-/mobx-react-lite-3.2.3.tgz",
-      "integrity": "sha512-7exWp1FV0M9dP08H9PIeHlJqDw4IdkQVRMfLYaZFMmlbzSS6ZU6p/kx392KN+rVf81hH3IQYewvRGQ70oiwmbw==",
+      "version": "3.4.0",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/mobx-react-lite/-/mobx-react-lite-3.4.0.tgz",
+      "integrity": "sha512-bRuZp3C0itgLKHu/VNxi66DN/XVkQG7xtoBVWxpvC5FhAqbOCP21+nPhULjnzEqd7xBMybp6KwytdUpZKEgpIQ==",
       "requires": {}
     },
     "ms": {
@@ -7634,16 +7767,16 @@
       "integrity": "sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw=="
     },
     "node-fetch": {
-      "version": "2.6.7",
-      "resolved": "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.7.tgz",
-      "integrity": "sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==",
+      "version": "2.6.9",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/node-fetch/-/node-fetch-2.6.9.tgz",
+      "integrity": "sha512-DJm/CJkZkRjKKj4Zi4BsKVZh3ValV5IR5s7LVZnW+6YMh0W1BfNA8XSs6DLMGYlId5F3KnA70uu2qepcR08Qqg==",
       "requires": {
         "whatwg-url": "^5.0.0"
       }
     },
     "node-fetch-h2": {
       "version": "2.3.0",
-      "resolved": "https://registry.npmjs.org/node-fetch-h2/-/node-fetch-h2-2.3.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/node-fetch-h2/-/node-fetch-h2-2.3.0.tgz",
       "integrity": "sha512-ofRW94Ab0T4AOh5Fk8t0h8OBWrmjb0SSB20xh1H8YnPV9EJ+f5AMoYSUQ2zgJ4Iq2HAK0I2l5/Nequ8YzFS3Hg==",
       "requires": {
         "http2-client": "^1.2.5"
@@ -7681,16 +7814,16 @@
     },
     "node-readfiles": {
       "version": "0.2.0",
-      "resolved": "https://registry.npmjs.org/node-readfiles/-/node-readfiles-0.2.0.tgz",
-      "integrity": "sha1-271K8SE04uY1wkXvk//Pb2BnOl0=",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/node-readfiles/-/node-readfiles-0.2.0.tgz",
+      "integrity": "sha512-SU00ZarexNlE4Rjdm83vglt5Y9yiQ+XI1XpflWlb7q7UTN1JUItm69xMeiQCTxtTfnzt+83T8Cx+vI2ED++VDA==",
       "requires": {
         "es6-promise": "^3.2.1"
       }
     },
     "node-releases": {
-      "version": "2.0.6",
-      "resolved": "https://registry.npmjs.org/node-releases/-/node-releases-2.0.6.tgz",
-      "integrity": "sha512-PiVXnNuFm5+iYkLBNeq5211hvO38y63T0i2KKh2KnUs3RpzJ+JtODFjkD8yjLwnDkTYF1eKXheUwdssR+NRZdg==",
+      "version": "2.0.10",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/node-releases/-/node-releases-2.0.10.tgz",
+      "integrity": "sha512-5GFldHPXVG/YZmFzJvKK2zDSzPKhEp0+ZR5SVaoSag9fsL5YgHbUHDfnG5494ISANDcK4KwPXAx2xqVEydmd7w==",
       "peer": true
     },
     "normalize-path": {
@@ -7705,7 +7838,7 @@
     },
     "oas-kit-common": {
       "version": "1.0.8",
-      "resolved": "https://registry.npmjs.org/oas-kit-common/-/oas-kit-common-1.0.8.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/oas-kit-common/-/oas-kit-common-1.0.8.tgz",
       "integrity": "sha512-pJTS2+T0oGIwgjGpw7sIRU8RQMcUoKCDWFLdBqKB2BNmGpbBMH2sdqAaOXUg8OzonZHU0L7vfJu1mJFEiYDWOQ==",
       "requires": {
         "fast-safe-stringify": "^2.0.7"
@@ -7713,7 +7846,7 @@
     },
     "oas-linter": {
       "version": "3.2.2",
-      "resolved": "https://registry.npmjs.org/oas-linter/-/oas-linter-3.2.2.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/oas-linter/-/oas-linter-3.2.2.tgz",
       "integrity": "sha512-KEGjPDVoU5K6swgo9hJVA/qYGlwfbFx+Kg2QB/kd7rzV5N8N5Mg6PlsoCMohVnQmo+pzJap/F610qTodKzecGQ==",
       "requires": {
         "@exodus/schemasafe": "^1.0.0-rc.2",
@@ -7723,7 +7856,7 @@
     },
     "oas-resolver": {
       "version": "2.5.6",
-      "resolved": "https://registry.npmjs.org/oas-resolver/-/oas-resolver-2.5.6.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/oas-resolver/-/oas-resolver-2.5.6.tgz",
       "integrity": "sha512-Yx5PWQNZomfEhPPOphFbZKi9W93CocQj18NlD2Pa4GWZzdZpSJvYwoiuurRI7m3SpcChrnO08hkuQDL3FGsVFQ==",
       "requires": {
         "node-fetch-h2": "^2.3.0",
@@ -7735,12 +7868,12 @@
     },
     "oas-schema-walker": {
       "version": "1.1.5",
-      "resolved": "https://registry.npmjs.org/oas-schema-walker/-/oas-schema-walker-1.1.5.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/oas-schema-walker/-/oas-schema-walker-1.1.5.tgz",
       "integrity": "sha512-2yucenq1a9YPmeNExoUa9Qwrt9RFkjqaMAA1X+U7sbb0AqBeTIdMHky9SQQ6iN94bO5NW0W4TRYXerG+BdAvAQ=="
     },
     "oas-validator": {
       "version": "5.0.8",
-      "resolved": "https://registry.npmjs.org/oas-validator/-/oas-validator-5.0.8.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/oas-validator/-/oas-validator-5.0.8.tgz",
       "integrity": "sha512-cu20/HE5N5HKqVygs3dt94eYJfBi0TsZvPVXDhbXQHiEityDN+RROTleefoKRKKJ9dFAF2JBkDHgvWj0sjKGmw==",
       "requires": {
         "call-me-maybe": "^1.0.1",
@@ -7767,9 +7900,9 @@
       }
     },
     "openapi-sampler": {
-      "version": "1.3.0",
-      "resolved": "https://registry.npmjs.org/openapi-sampler/-/openapi-sampler-1.3.0.tgz",
-      "integrity": "sha512-2QfjK1oM9Sv0q82Ae1RrUe3yfFmAyjF548+6eAeb+h/cL1Uj51TW4UezraBEvwEdzoBgfo4AaTLVFGTKj+yYDw==",
+      "version": "1.3.1",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/openapi-sampler/-/openapi-sampler-1.3.1.tgz",
+      "integrity": "sha512-Ert9mvc2tLPmmInwSyGZS+v4Ogu9/YoZuq9oP3EdUklg2cad6+IGndP9yqJJwbgdXwZibiq5fpv6vYujchdJFg==",
       "requires": {
         "@types/json-schema": "^7.0.7",
         "json-pointer": "0.6.2"
@@ -7868,12 +8001,12 @@
     },
     "perfect-scrollbar": {
       "version": "1.5.5",
-      "resolved": "https://registry.npmjs.org/perfect-scrollbar/-/perfect-scrollbar-1.5.5.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/perfect-scrollbar/-/perfect-scrollbar-1.5.5.tgz",
       "integrity": "sha512-dzalfutyP3e/FOpdlhVryN4AJ5XDVauVWxybSkLZmakFE2sS3y3pc4JnSprw8tGmHvkaG5Edr5T7LBTZ+WWU2g=="
     },
     "picocolors": {
       "version": "1.0.0",
-      "resolved": "https://registry.npmjs.org/picocolors/-/picocolors-1.0.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/picocolors/-/picocolors-1.0.0.tgz",
       "integrity": "sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==",
       "peer": true
     },
@@ -7884,15 +8017,15 @@
     },
     "pluralize": {
       "version": "8.0.0",
-      "resolved": "https://registry.npmjs.org/pluralize/-/pluralize-8.0.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/pluralize/-/pluralize-8.0.0.tgz",
       "integrity": "sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA=="
     },
     "polished": {
-      "version": "4.1.4",
-      "resolved": "https://registry.npmjs.org/polished/-/polished-4.1.4.tgz",
-      "integrity": "sha512-Nq5Mbza+Auo7N3sQb1QMFaQiDO+4UexWuSGR7Cjb4Sw11SZIJcrrFtiZ+L0jT9MBsUsxDboHVASbCLbE1rnECg==",
+      "version": "4.2.2",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/polished/-/polished-4.2.2.tgz",
+      "integrity": "sha512-Sz2Lkdxz6F2Pgnpi9U5Ng/WdWAUZxmHrNPoVlm3aAemxoy2Qy7LGjQg4uf8qKelDAUW94F4np3iH2YPf2qefcQ==",
       "requires": {
-        "@babel/runtime": "^7.16.7"
+        "@babel/runtime": "^7.17.8"
       }
     },
     "postcss-value-parser": {
@@ -7906,9 +8039,9 @@
       "integrity": "sha512-ravE6m9Atw9Z/jjttRUZ+clIXogdghyZAuWJ3qEzjT+jI/dL1ifAqhZeC5VHzQp1MSt1+jxKkFNemj/iO7tVUA=="
     },
     "prismjs": {
-      "version": "1.27.0",
-      "resolved": "https://registry.npmjs.org/prismjs/-/prismjs-1.27.0.tgz",
-      "integrity": "sha512-t13BGPUlFDR7wRB5kQDG4jjl7XeuH6jbJGt11JHPL96qwsEHNX2+68tFXqc1/k+/jALsbSWJKUOT/hcYAZ5LkA=="
+      "version": "1.29.0",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/prismjs/-/prismjs-1.29.0.tgz",
+      "integrity": "sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q=="
     },
     "process": {
       "version": "0.11.10",
@@ -7922,7 +8055,7 @@
     },
     "prop-types": {
       "version": "15.8.1",
-      "resolved": "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/prop-types/-/prop-types-15.8.1.tgz",
       "integrity": "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==",
       "requires": {
         "loose-envify": "^1.4.0",
@@ -7932,7 +8065,7 @@
       "dependencies": {
         "react-is": {
           "version": "16.13.1",
-          "resolved": "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz",
+          "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/react-is/-/react-is-16.13.1.tgz",
           "integrity": "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
         }
       }
@@ -8051,7 +8184,7 @@
     },
     "react-tabs": {
       "version": "3.2.3",
-      "resolved": "https://registry.npmjs.org/react-tabs/-/react-tabs-3.2.3.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/react-tabs/-/react-tabs-3.2.3.tgz",
       "integrity": "sha512-jx325RhRVnS9DdFbeF511z0T0WEqEoMl1uCE3LoZ6VaZZm7ytatxbum0B8bCTmaiV0KsU+4TtLGTGevCic7SWg==",
       "requires": {
         "clsx": "^1.1.0",
@@ -8102,7 +8235,7 @@
     },
     "reftools": {
       "version": "1.1.9",
-      "resolved": "https://registry.npmjs.org/reftools/-/reftools-1.1.9.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/reftools/-/reftools-1.1.9.tgz",
       "integrity": "sha512-OVede/NQE13xBQ+ob5CKd5KyeJYU2YInb1bmV4nRoOfquZPkAkxuOXicSe1PvqIuZZ4kD13sPKBbR7UFDmli6w=="
     },
     "regenerator-runtime": {
@@ -8133,7 +8266,7 @@
     },
     "require-from-string": {
       "version": "2.0.2",
-      "resolved": "https://registry.npmjs.org/require-from-string/-/require-from-string-2.0.2.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/require-from-string/-/require-from-string-2.0.2.tgz",
       "integrity": "sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw=="
     },
     "resolve": {
@@ -8189,7 +8322,7 @@
     },
     "schema-utils": {
       "version": "3.1.1",
-      "resolved": "https://registry.npmjs.org/schema-utils/-/schema-utils-3.1.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/schema-utils/-/schema-utils-3.1.1.tgz",
       "integrity": "sha512-Y5PQxS4ITlC+EahLuXaY86TXfR7Dc5lw294alXOq86JAHCihAIZfqv8nNCWvaEJvaC51uN9hbLGeV0cFBdH+Fw==",
       "peer": true,
       "requires": {
@@ -8222,9 +8355,9 @@
       }
     },
     "serialize-javascript": {
-      "version": "6.0.0",
-      "resolved": "https://registry.npmjs.org/serialize-javascript/-/serialize-javascript-6.0.0.tgz",
-      "integrity": "sha512-Qr3TosvguFt8ePWqsvRfrKyQXIiW+nGbYpy8XK24NQHE83caxWt+mIymTT19DGFbNWNLfEwsrkSmN64lVWB9ag==",
+      "version": "6.0.1",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/serialize-javascript/-/serialize-javascript-6.0.1.tgz",
+      "integrity": "sha512-owoXEFjWRllis8/M1Q+Cw5k8ZH40e3zhp/ovX+Xr/vi1qj6QesbyXXViFbpNvWvPNAD62SutwEXavefrLJWj7w==",
       "peer": true,
       "requires": {
         "randombytes": "^2.1.0"
@@ -8251,7 +8384,7 @@
     },
     "should": {
       "version": "13.2.3",
-      "resolved": "https://registry.npmjs.org/should/-/should-13.2.3.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/should/-/should-13.2.3.tgz",
       "integrity": "sha512-ggLesLtu2xp+ZxI+ysJTmNjh2U0TsC+rQ/pfED9bUZZ4DKefP27D+7YJVVTvKsmjLpIi9jAa7itwDGkDDmt1GQ==",
       "requires": {
         "should-equal": "^2.0.0",
@@ -8263,7 +8396,7 @@
     },
     "should-equal": {
       "version": "2.0.0",
-      "resolved": "https://registry.npmjs.org/should-equal/-/should-equal-2.0.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/should-equal/-/should-equal-2.0.0.tgz",
       "integrity": "sha512-ZP36TMrK9euEuWQYBig9W55WPC7uo37qzAEmbjHz4gfyuXrEUgF8cUvQVO+w+d3OMfPvSRQJ22lSm8MQJ43LTA==",
       "requires": {
         "should-type": "^1.4.0"
@@ -8271,8 +8404,8 @@
     },
     "should-format": {
       "version": "3.0.3",
-      "resolved": "https://registry.npmjs.org/should-format/-/should-format-3.0.3.tgz",
-      "integrity": "sha1-m/yPdPo5IFxT04w01xcwPidxJPE=",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/should-format/-/should-format-3.0.3.tgz",
+      "integrity": "sha512-hZ58adtulAk0gKtua7QxevgUaXTTXxIi8t41L3zo9AHvjXO1/7sdLECuHeIN2SRtYXpNkmhoUP2pdeWgricQ+Q==",
       "requires": {
         "should-type": "^1.3.0",
         "should-type-adaptors": "^1.0.1"
@@ -8280,12 +8413,12 @@
     },
     "should-type": {
       "version": "1.4.0",
-      "resolved": "https://registry.npmjs.org/should-type/-/should-type-1.4.0.tgz",
-      "integrity": "sha1-B1bYzoRt/QmEOmlHcZ36DUz/XPM="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/should-type/-/should-type-1.4.0.tgz",
+      "integrity": "sha512-MdAsTu3n25yDbIe1NeN69G4n6mUnJGtSJHygX3+oN0ZbO3DTiATnf7XnYJdGT42JCXurTb1JI0qOBR65shvhPQ=="
     },
     "should-type-adaptors": {
       "version": "1.1.0",
-      "resolved": "https://registry.npmjs.org/should-type-adaptors/-/should-type-adaptors-1.1.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/should-type-adaptors/-/should-type-adaptors-1.1.0.tgz",
       "integrity": "sha512-JA4hdoLnN+kebEp2Vs8eBe9g7uy0zbRo+RMcU0EsNy+R+k049Ki+N5tT5Jagst2g7EAja+euFuoXFCa8vIklfA==",
       "requires": {
         "should-type": "^1.3.0",
@@ -8294,7 +8427,7 @@
     },
     "should-util": {
       "version": "1.0.1",
-      "resolved": "https://registry.npmjs.org/should-util/-/should-util-1.0.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/should-util/-/should-util-1.0.1.tgz",
       "integrity": "sha512-oXF8tfxx5cDk8r2kYqlkUJzZpDBqVY/II2WhvU0n9Y3XYvAYRmeaf1PvvIvTgPnv4KJ+ES5M0PyDq5Jp+Ygy2g=="
     },
     "signal-exit": {
@@ -8304,7 +8437,7 @@
     },
     "slugify": {
       "version": "1.4.7",
-      "resolved": "https://registry.npmjs.org/slugify/-/slugify-1.4.7.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/slugify/-/slugify-1.4.7.tgz",
       "integrity": "sha512-tf+h5W1IrjNm/9rKKj0JU2MDMruiopx0jjVA5zCdBtcGjfp0+c5rHw/zADLC3IeKlGHtVbHtpfzvYA0OYT+HKg=="
     },
     "source-map": {
@@ -8314,7 +8447,7 @@
     },
     "source-map-support": {
       "version": "0.5.21",
-      "resolved": "https://registry.npmjs.org/source-map-support/-/source-map-support-0.5.21.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/source-map-support/-/source-map-support-0.5.21.tgz",
       "integrity": "sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==",
       "peer": true,
       "requires": {
@@ -8324,8 +8457,8 @@
     },
     "stickyfill": {
       "version": "1.1.1",
-      "resolved": "https://registry.npmjs.org/stickyfill/-/stickyfill-1.1.1.tgz",
-      "integrity": "sha1-OUE/7p0CXHSn5ZzuyyN4TMDxfwI="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/stickyfill/-/stickyfill-1.1.1.tgz",
+      "integrity": "sha512-GCp7vHAfpao+Qh/3Flh9DXEJ/qSi0KJwJw6zYlZOtRYXWUIpMM6mC2rIep/dK8RQqwW0KxGJIllmjPIBOGN8AA=="
     },
     "stream-browserify": {
       "version": "2.0.2",
@@ -8381,7 +8514,7 @@
     },
     "style-loader": {
       "version": "3.3.1",
-      "resolved": "https://registry.npmjs.org/style-loader/-/style-loader-3.3.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/style-loader/-/style-loader-3.3.1.tgz",
       "integrity": "sha512-GPcQ+LDJbrcxHORTRes6Jy2sfvK2kS6hpSfI/fXhPt+spVzxF6LJ1dHLN9zIGmVaaP044YKaIatFaufENRiDoQ==",
       "requires": {}
     },
@@ -8442,7 +8575,7 @@
     },
     "swagger2openapi": {
       "version": "7.0.8",
-      "resolved": "https://registry.npmjs.org/swagger2openapi/-/swagger2openapi-7.0.8.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/swagger2openapi/-/swagger2openapi-7.0.8.tgz",
       "integrity": "sha512-upi/0ZGkYgEcLeGieoz8gT74oWHA0E7JivX7aN9mAf+Tc7BQoRBvnIGHoPDw+f9TXTW4s6kGYCZJtauP6OYp7g==",
       "requires": {
         "call-me-maybe": "^1.0.1",
@@ -8460,14 +8593,14 @@
     },
     "tapable": {
       "version": "2.2.1",
-      "resolved": "https://registry.npmjs.org/tapable/-/tapable-2.2.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/tapable/-/tapable-2.2.1.tgz",
       "integrity": "sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==",
       "peer": true
     },
     "terser": {
-      "version": "5.15.0",
-      "resolved": "https://registry.npmjs.org/terser/-/terser-5.15.0.tgz",
-      "integrity": "sha512-L1BJiXVmheAQQy+as0oF3Pwtlo4s3Wi1X2zNZ2NxOB4wx9bdS9Vk67XQENLFdLYGCK/Z2di53mTj/hBafR+dTA==",
+      "version": "5.16.3",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/terser/-/terser-5.16.3.tgz",
+      "integrity": "sha512-v8wWLaS/xt3nE9dgKEWhNUFP6q4kngO5B8eYFUuebsu7Dw/UNAnpUod6UHo04jSSkv8TzKHjZDSd7EXdDQAl8Q==",
       "peer": true,
       "requires": {
         "@jridgewell/source-map": "^0.3.2",
@@ -8478,7 +8611,7 @@
     },
     "terser-webpack-plugin": {
       "version": "5.3.6",
-      "resolved": "https://registry.npmjs.org/terser-webpack-plugin/-/terser-webpack-plugin-5.3.6.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/terser-webpack-plugin/-/terser-webpack-plugin-5.3.6.tgz",
       "integrity": "sha512-kfLFk+PoLUQIbLmB1+PZDMRSZS99Mp+/MHqDNmMA6tOItzRt+Npe3E+fsMs5mfcM0wCtrrdU387UnV+vnSffXQ==",
       "peer": true,
       "requires": {
@@ -8535,8 +8668,8 @@
     },
     "tr46": {
       "version": "0.0.3",
-      "resolved": "https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz",
-      "integrity": "sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/tr46/-/tr46-0.0.3.tgz",
+      "integrity": "sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw=="
     },
     "tty-browserify": {
       "version": "0.0.0",
@@ -8576,9 +8709,9 @@
       }
     },
     "update-browserslist-db": {
-      "version": "1.0.7",
-      "resolved": "https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.0.7.tgz",
-      "integrity": "sha512-iN/XYesmZ2RmmWAiI4Z5rq0YqSiv0brj9Ce9CfhNE4xIW2h+MFxcgkxIzZ+ShkFPUkjU3gQ+3oypadD3RAMtrg==",
+      "version": "1.0.10",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/update-browserslist-db/-/update-browserslist-db-1.0.10.tgz",
+      "integrity": "sha512-OztqDenkfFkbSG+tRxBeAnCVPckDBcvibKd35yDONx6OU8N7sqgwc7rCbkJ/WcYtVRZ4ba68d6byhC21GFh7sQ==",
       "peer": true,
       "requires": {
         "escalade": "^3.1.1",
@@ -8653,16 +8786,16 @@
     },
     "uri-js": {
       "version": "4.4.1",
-      "resolved": "https://registry.npmjs.org/uri-js/-/uri-js-4.4.1.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/uri-js/-/uri-js-4.4.1.tgz",
       "integrity": "sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==",
       "requires": {
         "punycode": "^2.1.0"
       },
       "dependencies": {
         "punycode": {
-          "version": "2.1.1",
-          "resolved": "https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz",
-          "integrity": "sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A=="
+          "version": "2.3.0",
+          "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/punycode/-/punycode-2.3.0.tgz",
+          "integrity": "sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA=="
         }
       }
     },
@@ -8692,8 +8825,8 @@
     },
     "url-template": {
       "version": "2.0.8",
-      "resolved": "https://registry.npmjs.org/url-template/-/url-template-2.0.8.tgz",
-      "integrity": "sha1-/FZaPMy/93MMd19WQflVV5FDnyE="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/url-template/-/url-template-2.0.8.tgz",
+      "integrity": "sha512-XdVKMF4SJ0nP/O7XIPB0JwAEuT9lDIYnNsK8yGVe43y0AWoKeJNdv3ZNWh7ksJ6KqQFjOO6ox/VEitLnaVNufw=="
     },
     "util": {
       "version": "0.11.1",
@@ -8722,7 +8855,7 @@
     },
     "watchpack": {
       "version": "2.4.0",
-      "resolved": "https://registry.npmjs.org/watchpack/-/watchpack-2.4.0.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/watchpack/-/watchpack-2.4.0.tgz",
       "integrity": "sha512-Lcvm7MGST/4fup+ifyKi2hjyIAwcdI4HRgtvTpIUxBRhB+RFtUh8XtDOxUfctVCnhVi+QQj49i91OyvzkJl6cg==",
       "peer": true,
       "requires": {
@@ -8732,13 +8865,13 @@
     },
     "webidl-conversions": {
       "version": "3.0.1",
-      "resolved": "https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz",
-      "integrity": "sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE="
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/webidl-conversions/-/webidl-conversions-3.0.1.tgz",
+      "integrity": "sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ=="
     },
     "webpack": {
-      "version": "5.74.0",
-      "resolved": "https://registry.npmjs.org/webpack/-/webpack-5.74.0.tgz",
-      "integrity": "sha512-A2InDwnhhGN4LYctJj6M1JEaGL7Luj6LOmyBHjcI8529cm5p6VXiTIW2sn6ffvEAKmveLzvu4jrihwXtPojlAA==",
+      "version": "5.75.0",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/webpack/-/webpack-5.75.0.tgz",
+      "integrity": "sha512-piaIaoVJlqMsPtX/+3KTTO6jfvrSYgauFVdt8cr9LTHKmcq/AMd4mhzsiP7ZF/PGRNPGA8336jldh9l2Kt2ogQ==",
       "peer": true,
       "requires": {
         "@types/eslint-scope": "^3.7.3",
@@ -8765,18 +8898,26 @@
         "terser-webpack-plugin": "^5.1.3",
         "watchpack": "^2.4.0",
         "webpack-sources": "^3.2.3"
+      },
+      "dependencies": {
+        "@types/estree": {
+          "version": "0.0.51",
+          "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@types/estree/-/estree-0.0.51.tgz",
+          "integrity": "sha512-CuPgU6f3eT/XgKKPqKd/gLZV1Xmvf1a2R5POBOGQa6uv82xpls89HU5zKeVoyR8XzHd1RGNOlQlvUe3CFkjWNQ==",
+          "peer": true
+        }
       }
     },
     "webpack-sources": {
       "version": "3.2.3",
-      "resolved": "https://registry.npmjs.org/webpack-sources/-/webpack-sources-3.2.3.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/webpack-sources/-/webpack-sources-3.2.3.tgz",
       "integrity": "sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==",
       "peer": true
     },
     "whatwg-url": {
       "version": "5.0.0",
-      "resolved": "https://registry.npmjs.org/whatwg-url/-/whatwg-url-5.0.0.tgz",
-      "integrity": "sha1-lmRU6HZUYuN2RNNib2dCzotwll0=",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/whatwg-url/-/whatwg-url-5.0.0.tgz",
+      "integrity": "sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==",
       "requires": {
         "tr46": "~0.0.3",
         "webidl-conversions": "^3.0.0"
@@ -8866,12 +9007,12 @@
     },
     "yaml": {
       "version": "1.10.2",
-      "resolved": "https://registry.npmjs.org/yaml/-/yaml-1.10.2.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/yaml/-/yaml-1.10.2.tgz",
       "integrity": "sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg=="
     },
     "yaml-ast-parser": {
       "version": "0.0.43",
-      "resolved": "https://registry.npmjs.org/yaml-ast-parser/-/yaml-ast-parser-0.0.43.tgz",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/yaml-ast-parser/-/yaml-ast-parser-0.0.43.tgz",
       "integrity": "sha512-2PTINUwsRqSd+s8XxKaJWQlUuEMHJQyEuh2edBbW8KNJz0SJPwUSD2zRWqezFEdN7IzAgeuYHFUCF7o8zRdZ0A=="
     },
     "yargs": {
