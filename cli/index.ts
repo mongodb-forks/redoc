@@ -12,7 +12,7 @@ import { dirname, join, resolve, extname as getExtName } from 'path';
 import * as zlib from 'zlib';
 
 // @ts-ignore
-import { createStore, loadAndBundleSpec, Redoc } from 'redoc';
+import { createStore, loadAndBundleSpec, Redoc } from '@dop/redoc';
 
 import { watch } from 'chokidar';
 import {
@@ -64,7 +64,7 @@ export const mimeTypes = {
   '.wasm': 'application/wasm',
 };
 
-const BUNDLES_DIR = dirname(require.resolve('redoc'));
+const BUNDLES_DIR = dirname(require.resolve('@dop/redoc'));
 
 const builderForBuildCommand = yargs => {
   yargs.positional('spec', {
