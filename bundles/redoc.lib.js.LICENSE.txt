@@ -1,0 +1,6 @@
+/*!
+ * ReDoc - OpenAPI/Swagger-generated API Reference Documentation
+ * -------------------------------------------------------------
+ *   Version: "0.0.1-dop-3460.0"
+ *   Repo: https://github.com/Redocly/redoc
+ */
