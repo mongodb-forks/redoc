@@ -1,13 +1,12 @@
 export interface ActiveVersionData {
-  resource_version: string;
-  api_version: string;
+  resourceVersion: string;
+  apiVersion: string;
 }
 export interface VersionSelectorProps {
-  resource_versions: string[];
+  resourceVersions: string[];
   active: ActiveVersionData;
-  root_url: string;
+  rootUrl: string;
   description?: string;
-  variant?: 'dark' | 'light'; // Not fully implemented
 }
 
 export interface OptionProps {
@@ -18,7 +17,4 @@ export interface OptionProps {
 
 export interface ArrowIconProps {
   open: boolean;
-  className?: string;
-  variant?: 'light' | 'dark';
-  style?: React.CSSProperties;
 }

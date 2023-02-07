@@ -1,10 +1,7 @@
 import * as React from 'react';
-import { ArrowIconProps } from './types';
 
-export const ArrowSvg = ({ className, style }: ArrowIconProps): JSX.Element => (
+export const ArrowSvg = (): JSX.Element => (
   <svg
-    className={className}
-    style={style}
     xmlns="http://www.w3.org/2000/svg"
     width="16"
     height="16"

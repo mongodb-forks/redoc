@@ -2,6 +2,7 @@ import { palette } from '@leafygreen-ui/palette';
 import { transparentize } from 'polished';
 import styled, { css } from '../../styled-components';
 import { ArrowSvg } from './ArrowSvg';
+import { ArrowIconProps } from './types';
 
 const transitionDuration = {
   faster: 100,
@@ -14,16 +15,15 @@ export const ArrowIcon = styled(ArrowSvg)`
   pointer-events: none;
   z-index: 1;
   top: 50%;
-  -webkit-transform: ${props =>
+  -webkit-transform: ${(props: ArrowIconProps) =>
     props.open ? `translateY(-50%) rotate(180deg)` : `translateY(-50%)`};
-  -ms-transform: ${props => (props.open ? `translateY(-50%) rotate(180deg)` : `translateY(-50%)`)};
-  transform: ${props => (props.open ? `translateY(-50%) rotate(180deg)` : `translateY(-50%)`)};
+  -ms-transform: ${(props: ArrowIconProps) =>
+    props.open ? `translateY(-50%) rotate(180deg)` : `translateY(-50%)`};
+  transform: ${(props: ArrowIconProps) =>
+    props.open ? `translateY(-50%) rotate(180deg)` : `translateY(-50%)`};
   right: 8px;
   margin: auto;
   text-align: center;
-  polyline {
-    color: ${props => props.variant === 'dark' && 'white'};
-  }
 `;
 
 export const StyledWrapper = styled.div`

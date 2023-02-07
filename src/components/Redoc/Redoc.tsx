@@ -32,11 +32,11 @@ export interface RedocProps {
 /** Mock data that will be passed to store from cli */
 export const versionData = {
   active: {
-    api_version: '2.0',
-    resource_version: '2023-01-01',
+    apiVersion: '2.0',
+    resourceVersion: '2023-01-01',
   },
-  root_url: 'https://mongodb.com/docs/atlas/reference/api-resources-spec/v2',
-  resource_versions: ['2021-09-09', '2022-10-18', '2023-01-01'],
+  rootUrl: 'https://mongodb.com/docs/atlas/reference/api-resources-spec/v2',
+  resourceVersions: ['2021-09-09', '2022-10-18', '2023-01-01'],
 };
 
 export class Redoc extends React.Component<RedocProps> {
