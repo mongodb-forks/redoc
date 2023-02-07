@@ -35,7 +35,7 @@ export const StyledWrapper = styled.div`
   position: relative;
 `;
 
-export const StyledButtonWrapper = styled.div`
+export const StyledSelectWrapper = styled.div`
   display: flex;
   flex-direction: column;
 

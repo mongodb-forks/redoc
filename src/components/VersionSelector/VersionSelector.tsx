@@ -2,7 +2,7 @@ import * as React from 'react';
 import {
   ArrowIcon,
   StyledWrapper,
-  StyledButtonWrapper,
+  StyledSelectWrapper,
   StyledButton,
   StyledLabel,
   StyledDescription,
@@ -37,7 +37,7 @@ const VersionSelectorComponent = ({
 
   return (
     <StyledWrapper ref={menuListRef}>
-      <StyledButtonWrapper>
+      <StyledSelectWrapper>
         <StyledLabel>Version Selector: v{active.apiVersion}</StyledLabel>
         {description && <StyledDescription>{description}</StyledDescription>}
         <StyledButton onClick={() => setOpen(!open)}>
@@ -48,7 +48,7 @@ const VersionSelectorComponent = ({
             <ArrowIcon open={open} />
           </StyledDisplay>
         </StyledButton>
-      </StyledButtonWrapper>
+      </StyledSelectWrapper>
 
       <StyledDropdown open={open}>
         <div>
