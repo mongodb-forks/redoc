@@ -28,6 +28,7 @@ export interface RedocProps {
   store: AppStore;
 }
 
+/** WILL REMOVE BEFORE MERGING!!! */
 /** Mock data that will be passed to store from cli */
 export const versionData = {
   active: {
@@ -72,6 +73,7 @@ export class Redoc extends React.Component<RedocProps> {
                   siteTitle={options.siteTitle}
                 />
                 <SideMenuTitle>{store.spec.info.title}</SideMenuTitle>
+                {/* WILL REMOVE BEFORE MERGING */}
                 <VersionSelector {...versionData} />
                 {(!options.disableSearch && (
                   <SearchBox

@@ -4,6 +4,7 @@ describe('Menu', () => {
   });
 
   it('should have valid items count', () => {
+    /** WILL REMOVE CHANGE BEFORE MERGING */
     cy.get('.menu-content').find('li').not('[role="option"]').should('have.length', 35);
   });
 
@@ -99,23 +100,5 @@ describe('Menu', () => {
     cy.get('li').contains('OperationId with backslash').click({ multiple: true, force: true });
     cy.get('h2').contains('OperationId with backslash').should('be.visible');
     cy.url().should('include', 'delete%5CPetById');
-  });
-
-  it('should change versions in VersionSelector', () => {
-    cy.get('div[role="listbox"]').should('not.be.visible');
-
-    cy.get('button[aria-labelledby="View a different version of documentation."]')
-      .contains('2023-01-01')
-      .click();
-
-    cy.get('div[role="listbox"]').should('be.visible');
-
-    cy.get('div[role="listbox"] li[role="option"]:first').click();
-
-    cy.get('div[role="listbox"]').should('not.be.visible');
-
-    cy.get('button[aria-labelledby="View a different version of documentation."]').contains(
-      '2021-09-09',
-    );
   });
 });
