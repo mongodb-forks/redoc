@@ -188,3 +188,9 @@ export const StyledDropdown = styled.div.attrs<{ open: boolean }>({
 })<{ open: boolean }>`
   ${props => (props.open ? openDropdownStyle : `display: none;`)}
 `;
+
+export const StyledPlaceholder = styled.span`
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+`;

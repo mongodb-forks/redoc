@@ -8,10 +8,12 @@ export interface VersionSelectorProps {
   root_url: string;
   description?: string;
   variant?: 'dark' | 'light'; // Not fully implemented
-  ariaLabel?: string;
-  className?: string;
-  placeholder?: string;
-  value?: string;
+}
+
+export interface OptionProps {
+  option: string;
+  selected: boolean;
+  onClick: () => void;
 }
 
 export interface ArrowIconProps {
