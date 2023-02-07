@@ -29,7 +29,7 @@ export interface RedocProps {
 }
 
 /** Mock data that will be passed to store from cli */
-const versionData = {
+export const versionData = {
   active: {
     api_version: '2.0',
     resource_version: '2023-01-01',
