@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from '../../styled-components';
 import { ArrowIconProps, DropdownProps, DropdownOption } from './types';
 
-export const ArrowSvg = ({ className, style }: ArrowIconProps): JSX.Element => (
+const ArrowSvg = ({ className, style }: ArrowIconProps): JSX.Element => (
   <svg
     className={className}
     style={style}
