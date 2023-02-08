@@ -1,7 +1,8 @@
+/* eslint-disable import/no-internal-modules */
 import * as React from 'react';
 import { render } from 'enzyme';
 import { VersionSelector } from '../VersionSelector';
-import { versionData } from '../Redoc/Redoc';
+import * as versionData from './data/mockVersionData.json';
 
 describe('VersionSelector', () => {
   it('should correctly render VersionSelector', () => {
