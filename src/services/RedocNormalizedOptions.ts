@@ -61,6 +61,16 @@ export interface RedocRawOptions {
   backNavigationPath?: string;
   ignoreIncompatibleTypes?: boolean | string;
   siteTitle?: string;
+  versionData?: string;
+}
+
+export interface VersionData {
+  active: {
+    apiVersion: string;
+    resourceVersion: string;
+  };
+  rootUrl: string;
+  resourceVersions: string[];
 }
 
 export function argValueToBoolean(val?: string | boolean, defaultValue?: boolean): boolean {
@@ -106,6 +116,14 @@ export class RedocNormalizedOptions {
       );
     }
     return {};
+  }
+
+  static handleJSON(value?: RedocRawOptions['versionData']): VersionData | undefined {
+    if (value) {
+      const versionData = JSON.parse(value);
+      return versionData;
+    }
+    return undefined;
   }
 
   static normalizeHideHostname(value: RedocRawOptions['hideHostname']): boolean {
@@ -269,6 +287,7 @@ export class RedocNormalizedOptions {
   backNavigationPath?: string;
   ignoreIncompatibleTypes: boolean;
   siteTitle?: string;
+  versionData?: VersionData;
 
   constructor(raw: RedocRawOptions, defaults: RedocRawOptions = {}) {
     raw = { ...defaults, ...raw };
@@ -351,5 +370,6 @@ export class RedocNormalizedOptions {
     this.backNavigationPath = raw.backNavigationPath;
     this.ignoreIncompatibleTypes = argValueToBoolean(raw.ignoreIncompatibleTypes);
     this.siteTitle = raw.siteTitle;
+    this.versionData = RedocNormalizedOptions.handleJSON(raw.versionData);
   }
 }
