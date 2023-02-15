@@ -450,7 +450,7 @@ function getObjectOrJSON(options) {
           }
         } catch (e) {
           console.log(
-            `Encountered error:\n\n${versionPath}\n\nis neither a file with a valid JSON object.`,
+            `Encountered error:\n\n${versionPath}\n\nis not a file with a valid JSON object.`,
           );
           handleError(e);
         }

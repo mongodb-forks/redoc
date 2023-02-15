@@ -61,7 +61,7 @@ export interface RedocRawOptions {
   backNavigationPath?: string;
   ignoreIncompatibleTypes?: boolean | string;
   siteTitle?: string;
-  versionData?: string | VersionData;
+  versionData?: string;
 }
 
 export interface VersionData {
