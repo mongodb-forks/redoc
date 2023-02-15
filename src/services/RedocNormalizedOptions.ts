@@ -99,6 +99,18 @@ function argValueToExpandLevel(value?: number | string | undefined, defaultValue
   return argValueToNumber(value) || defaultValue;
 }
 
+function argValueToVersionData(value?: RedocRawOptions['versionData']): VersionData | undefined {
+  if (value) {
+    try {
+      return JSON.parse(value);
+    } catch (error) {
+      console.log(`Invalid JSON format of option "versionData"\n${error}`);
+      throw new Error(error);
+    }
+  }
+  return undefined;
+}
+
 export class RedocNormalizedOptions {
   static normalizeExpandResponses(value: RedocRawOptions['expandResponses']) {
     if (value === 'all') {
@@ -116,14 +128,6 @@ export class RedocNormalizedOptions {
       );
     }
     return {};
-  }
-
-  static handleJSON(value?: RedocRawOptions['versionData']): VersionData | undefined {
-    if (value) {
-      const versionData = JSON.parse(value);
-      return versionData;
-    }
-    return undefined;
   }
 
   static normalizeHideHostname(value: RedocRawOptions['hideHostname']): boolean {
@@ -370,6 +374,6 @@ export class RedocNormalizedOptions {
     this.backNavigationPath = raw.backNavigationPath;
     this.ignoreIncompatibleTypes = argValueToBoolean(raw.ignoreIncompatibleTypes);
     this.siteTitle = raw.siteTitle;
-    this.versionData = RedocNormalizedOptions.handleJSON(raw.versionData);
+    this.versionData = argValueToVersionData(raw.versionData);
   }
 }
