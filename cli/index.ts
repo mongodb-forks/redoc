@@ -431,7 +431,7 @@ function escapeUnicode(str) {
   return str.replace(/\u2028|\u2029/g, m => '\\u202' + (m === '\u2028' ? '8' : '9'));
 }
 
-function handleError(error: Error) {
+export function handleError(error: Error) {
   console.error(error.stack);
   process.exit(1);
 }
@@ -439,6 +439,20 @@ function handleError(error: Error) {
 function getObjectOrJSON(options) {
   switch (typeof options) {
     case 'object':
+      if (options.versionData) {
+        const { versionData: versionPath } = options;
+        try {
+          if (existsSync(versionPath) && lstatSync(versionPath).isFile()) {
+            const versionData = JSON.parse(readFileSync(versionPath, 'utf-8'));
+            options.versionData = versionData;
+          }
+        } catch (e) {
+          console.log(
+            `Encountered error:\n\n${versionPath}\n\nis neither a file with a valid JSON object.`,
+          );
+          handleError(e);
+        }
+      }
       return options;
     case 'string':
       try {

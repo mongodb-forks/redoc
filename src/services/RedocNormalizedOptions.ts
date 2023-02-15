@@ -61,7 +61,7 @@ export interface RedocRawOptions {
   backNavigationPath?: string;
   ignoreIncompatibleTypes?: boolean | string;
   siteTitle?: string;
-  versionData?: string;
+  versionData?: string | VersionData;
 }
 
 export interface VersionData {
@@ -97,18 +97,6 @@ function argValueToExpandLevel(value?: number | string | undefined, defaultValue
   if (value === 'all') return Infinity;
 
   return argValueToNumber(value) || defaultValue;
-}
-
-function argValueToVersionData(value?: RedocRawOptions['versionData']): VersionData | undefined {
-  if (value) {
-    try {
-      return JSON.parse(value);
-    } catch (error) {
-      console.log(`Invalid JSON format of option "versionData"\n${error}`);
-      throw new Error(error);
-    }
-  }
-  return undefined;
 }
 
 export class RedocNormalizedOptions {
@@ -291,7 +279,7 @@ export class RedocNormalizedOptions {
   backNavigationPath?: string;
   ignoreIncompatibleTypes: boolean;
   siteTitle?: string;
-  versionData?: VersionData;
+  versionData?: string | VersionData;
 
   constructor(raw: RedocRawOptions, defaults: RedocRawOptions = {}) {
     raw = { ...defaults, ...raw };
@@ -374,6 +362,6 @@ export class RedocNormalizedOptions {
     this.backNavigationPath = raw.backNavigationPath;
     this.ignoreIncompatibleTypes = argValueToBoolean(raw.ignoreIncompatibleTypes);
     this.siteTitle = raw.siteTitle;
-    this.versionData = argValueToVersionData(raw.versionData);
+    this.versionData = raw.versionData;
   }
 }
