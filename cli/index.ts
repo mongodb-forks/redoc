@@ -439,7 +439,7 @@ function handleError(error: Error) {
 function getObjectOrJSON(options) {
   switch (typeof options) {
     case 'object':
-      if (options.versionData) {
+      if (options?.versionData) {
         const { versionData: versionPath } = options;
         const versionFilePath = resolve(__dirname, versionPath);
         try {
