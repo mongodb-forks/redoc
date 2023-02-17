@@ -441,9 +441,6 @@ function getObjectOrJSON(options) {
     case 'object':
       return options;
     case 'string':
-      console.log(__dirname);
-      console.log(existsSync(options));
-      console.log(options);
       try {
         if (existsSync(options) && lstatSync(options).isFile()) {
           return JSON.parse(readFileSync(options, 'utf-8'));
