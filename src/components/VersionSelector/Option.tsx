@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { KeyboardEvent } from 'react';
 import { StyledLi, StyledOptionText, StyledPlaceholder } from './styled.elements';
 import Checkmark from './CheckmarkSvg';
 import { OptionProps } from './types';
@@ -8,7 +7,7 @@ export const Option = ({ option, selected, onClick }: OptionProps) => {
   const KEY_ENTER = 'ENTER';
   const KEY_SPACE = 'SPACE';
 
-  const handleKeyPress = (event: KeyboardEvent) => {
+  const handleKeyPress = (event: React.KeyboardEvent) => {
     if (event.key === KEY_ENTER || event.key === KEY_SPACE) {
       onClick(option);
     }
