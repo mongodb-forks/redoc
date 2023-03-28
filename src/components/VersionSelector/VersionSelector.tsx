@@ -37,6 +37,7 @@ const VersionSelectorComponent = ({
     // navigate to resource version spec
     const selectedResourceVersionUrl = `${rootUrl}/${resourceVersion}`;
     window.location.href = selectedResourceVersionUrl;
+    return setOpen(false);
   };
 
   return (
