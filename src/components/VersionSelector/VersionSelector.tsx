@@ -9,6 +9,7 @@ import {
   StyledMenuList,
   StyledDisplay,
   StyledDropdown,
+  StyledSelected,
 } from './styled.elements';
 import { Option } from './Option';
 import { VersionSelectorProps } from './types';
@@ -21,6 +22,7 @@ const VersionSelectorComponent = ({
   resourceVersions,
   active,
   description,
+  rootUrl,
 }: VersionSelectorProps): JSX.Element => {
   const initialSelectedIdx = resourceVersions.indexOf(active.resourceVersion);
   const [open, setOpen] = React.useState<boolean>(false);
@@ -34,26 +36,32 @@ const VersionSelectorComponent = ({
       <Option
         key={`option-${i}`}
         selected={i === selectedIdx}
+        value={option}
+        option={`${option}${i === resourceVersions.length - 1 ? ' (latest)' : ''}`}
+        onClick={option => handleClick(i, option)}
         focused={i === focusedIdx}
-        option={option}
-        onClick={() => handleClick(i)}
       />
     );
   });
 
   useOutsideClick(menuListRef, () => {
-    console.log('outside click');
     if (open) setOpen(false);
     setFocusedIdx(0);
   });
 
-  const handleClick = (idx: number) => {
+  const handleClick = (idx: number, resourceVersion: string) => {
+    if (idx === selectedIdx) return setOpen(false);
+
+    // navigate to resource version spec
+    const selectedResourceVersionUrl = `${rootUrl}/${resourceVersion}`;
+    window.location.href = selectedResourceVersionUrl;
     setSelectedIdx(idx);
-    setOpen(false);
+    return setOpen(false);
   };
 
   const handleFocusChange = (event: React.KeyboardEvent<HTMLDivElement>) => {
     const { key, shiftKey } = event;
+    console.log(focusedIdx);
 
     if (key === 'ArrowDown' || (key === 'Tab' && !shiftKey)) {
       // if we go down when we are already past the end, don't do anything
@@ -94,9 +102,7 @@ const VersionSelectorComponent = ({
         {description && <StyledDescription>{description}</StyledDescription>}
         <StyledButton onClick={() => setOpen(!open)}>
           <StyledDisplay>
-            <div>
-              <div>{resourceVersions[selectedIdx]}</div>
-            </div>
+            <StyledSelected>{resourceVersions[selectedIdx]}</StyledSelected>
             <ArrowIcon open={open} />
           </StyledDisplay>
         </StyledButton>

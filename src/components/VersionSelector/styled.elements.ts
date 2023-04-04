@@ -10,7 +10,7 @@ const transitionDuration = {
   slower: 300,
 } as const;
 
-export const ArrowIcon = styled(ArrowSvg)`
+export const ArrowIcon = styled(ArrowSvg)<{ open: boolean }>`
   position: absolute;
   pointer-events: none;
   z-index: 1;
@@ -101,10 +101,15 @@ export const StyledMenuList = styled.ul`
 `;
 
 export const StyledDisplay = styled.div`
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 16px;
   gap: 6px;
   padding: 0 4px 0 12px;
+`;
+
+export const StyledSelected = styled.div`
+  display: flex;
 `;
 
 export const disabledOptionStyle = css`
@@ -141,7 +146,6 @@ export const StyledLi = styled.li.attrs<{
     `color: ${palette.blue.dark2};
     background-color: ${palette.blue.light3};`}
   font-weight: ${props => (props.selected ? `bold` : `normal`)};
-
   &:before {
     content: '';
     position: absolute;
@@ -162,7 +166,6 @@ export const StyledLi = styled.li.attrs<{
       background-color: ${palette.blue.base};
       `}
   }
-
   ${props => (props.disabled ? disabledOptionStyle : enabledOptionStyle)}
 `;
 

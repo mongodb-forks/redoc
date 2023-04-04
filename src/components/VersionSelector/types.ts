@@ -1,5 +1,3 @@
-import { CSSProperties } from 'react';
-
 export interface ActiveVersionData {
   resourceVersion: string;
   apiVersion: string;
@@ -12,10 +10,11 @@ export interface VersionSelectorProps {
 }
 
 export interface OptionProps {
-  option: string;
-  selected: boolean;
-  onClick: () => void;
   focused: boolean;
+  option: string;
+  value: string;
+  selected: boolean;
+  onClick: (option: string) => void;
 }
 
 export interface ArrowIconProps {

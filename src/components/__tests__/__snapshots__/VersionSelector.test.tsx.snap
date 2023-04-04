@@ -10,19 +10,32 @@ exports[`VersionSelector should correctly render VersionSelector 1`] = `
     <label
       class="sc-eCApnc kkTJUz"
     >
+<<<<<<< HEAD
       Version Selector: v2.0
+=======
+      Resource Version:
+>>>>>>> DOP-3497Fixed
     </label>
     <button
       aria-labelledby="View a different version of documentation."
       class="sc-hKFxyN hYrDYQ"
     >
       <div
+<<<<<<< HEAD
         class="sc-iCoGMd fgtoGu"
       >
         <div>
           <div>
             2023-01-01
           </div>
+=======
+        class="sc-iCoGMd gojxeT"
+      >
+        <div
+          class="sc-fujyAs hQJiDC"
+        >
+          2023-01-01
+>>>>>>> DOP-3497Fixed
         </div>
         <svg
           fill="none"
@@ -44,7 +57,11 @@ exports[`VersionSelector should correctly render VersionSelector 1`] = `
   </div>
   <div
     aria-labelledby="View a different version of documentation."
+<<<<<<< HEAD
     class="sc-jrsJWt ofjNY"
+=======
+    class="sc-kEqXSa litKaz"
+>>>>>>> DOP-3497Fixed
     role="listbox"
     tabindex="-1"
   >
@@ -54,44 +71,74 @@ exports[`VersionSelector should correctly render VersionSelector 1`] = `
       >
         <li
           aria-selected="false"
+<<<<<<< HEAD
           class="sc-fujyAs iIVhNL"
+=======
+          class="sc-pNWdM glxGCd"
+>>>>>>> DOP-3497Fixed
           role="option"
           tabindex="0"
         >
           <span
+<<<<<<< HEAD
             class="sc-kEqXSa cBTyJc"
           />
           <span
             class="sc-pNWdM irvinq"
+=======
+            class="sc-iqAclL dXUzZL"
+          />
+          <span
+            class="sc-jrsJWt hDLwjI"
+>>>>>>> DOP-3497Fixed
           >
             2021-09-09
           </span>
         </li>
         <li
           aria-selected="false"
+<<<<<<< HEAD
           class="sc-fujyAs iIVhNL"
+=======
+          class="sc-pNWdM glxGCd"
+>>>>>>> DOP-3497Fixed
           role="option"
           tabindex="0"
         >
           <span
+<<<<<<< HEAD
             class="sc-kEqXSa cBTyJc"
           />
           <span
             class="sc-pNWdM irvinq"
+=======
+            class="sc-iqAclL dXUzZL"
+          />
+          <span
+            class="sc-jrsJWt hDLwjI"
+>>>>>>> DOP-3497Fixed
           >
             2022-10-18
           </span>
         </li>
         <li
           aria-selected="true"
+<<<<<<< HEAD
           class="sc-fujyAs Ywdfd"
+=======
+          class="sc-pNWdM jlRKTH"
+>>>>>>> DOP-3497Fixed
           role="option"
           selected=""
           tabindex="0"
         >
           <svg
             aria-label="Checkmark Icon"
+<<<<<<< HEAD
             class="sc-iqAclL ejyrfD"
+=======
+            class="sc-crzoAE gdYtkZ"
+>>>>>>> DOP-3497Fixed
             height="16"
             role="img"
             viewBox="0 0 16 16"
@@ -105,9 +152,15 @@ exports[`VersionSelector should correctly render VersionSelector 1`] = `
             />
           </svg>
           <span
+<<<<<<< HEAD
             class="sc-pNWdM irvinq"
           >
             2023-01-01
+=======
+            class="sc-jrsJWt hDLwjI"
+          >
+            2023-01-01 (latest)
+>>>>>>> DOP-3497Fixed
           </span>
         </li>
       </ul>

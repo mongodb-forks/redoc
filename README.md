@@ -37,7 +37,36 @@ Make sure to run `npm run bundle` on the root folder of this repo before running
 With `node` installed, run by doing the following:
 
 ```
-node <path/to/redoc/cli/index.js> build <path/to/spec/file/or/url> --options=<path/to/options.json> --output=<path/to/custom/output/file/name.html>
+node <path/to/redoc/cli/index.js> build <path/to/spec/file/or/url> --options <path/to/options.json> --output=<path/to/custom/output/file/name.html>
+```
+
+#### Options Available to include
+
+Custom DOP options are available to include within a local JSON file.
+
+Within your `options.json` in the root directory, specify the `siteTitle`, `backNavigationPath`, `versionData`, and/or `ignoreIncompatibleTypes` flag. 
+
+The `siteTitle` and `backNavigationPath` properties are used to personalize the `SideMenuBackButton` UI and navigation.
+
+The `ignoreIncompatibleTypes` flag will silence only "Incompatible Types" errors in the build process.
+
+The `versionData` property enables and populates the `VersionSelector` dropdown for versioned OpenAPI specs. The structure is as follows:
+
+```
+{
+  "active": {
+    "apiVersion": "2.0",
+    "resourceVersion": "2023-02-14"
+  },
+  "rootUrl": "https://mongodb.com/docs/atlas/reference/api-resources-spec/v2",
+  "resourceVersions": ["2022-09-09", "2022-10-18", "2023-02-14"]
+}
+```
+
+After specifying all options, run the build:
+
+```
+node <path/to/redoc/cli/index.js> build <path/to/spec/file/or/url> --options options.json
 ```
 
 ### Releasing

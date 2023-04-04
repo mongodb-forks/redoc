@@ -21,6 +21,7 @@ import {
 
 import { SearchBox } from '../SearchBox/SearchBox';
 import { StoreProvider } from '../StoreBuilder';
+import { VersionSelector } from '../VersionSelector';
 
 export interface RedocProps {
   store: AppStore;
@@ -59,7 +60,10 @@ export class Redoc extends React.Component<RedocProps> {
                   backNavigationPath={options.backNavigationPath}
                   siteTitle={options.siteTitle}
                 />
-                <SideMenuTitle>{store.spec.info.title}</SideMenuTitle>
+                <SideMenuTitle>
+                  {store.spec.info.title}
+                  {options.versionData && ` ${options.versionData.active.apiVersion}`}
+                </SideMenuTitle>
                 {(!options.disableSearch && (
                   <SearchBox
                     search={search!}
@@ -69,6 +73,7 @@ export class Redoc extends React.Component<RedocProps> {
                   />
                 )) ||
                   null}
+                {options.versionData && <VersionSelector {...options.versionData} />}
                 <SideMenu menu={menu} />
               </StickyResponsiveSidebar>
               <ApiContentWrap className="api-content">
