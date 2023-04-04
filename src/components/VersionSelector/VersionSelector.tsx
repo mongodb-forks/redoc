@@ -61,7 +61,6 @@ const VersionSelectorComponent = ({
 
   const handleFocusChange = (event: React.KeyboardEvent<HTMLDivElement>) => {
     const { key, shiftKey } = event;
-    console.log(focusedIdx);
 
     if (key === 'ArrowDown' || (key === 'Tab' && !shiftKey)) {
       // if we go down when we are already past the end, don't do anything
@@ -98,7 +97,7 @@ const VersionSelectorComponent = ({
   return (
     <StyledWrapper onKeyDown={handleFocusChange} ref={menuListRef}>
       <StyledSelectWrapper>
-        <StyledLabel>Version Selector: v{active.apiVersion}</StyledLabel>
+        <StyledLabel>Resource Version:</StyledLabel>
         {description && <StyledDescription>{description}</StyledDescription>}
         <StyledButton onClick={() => setOpen(!open)}>
           <StyledDisplay>
