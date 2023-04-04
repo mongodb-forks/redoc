@@ -45,7 +45,6 @@ const VersionSelectorComponent = ({
   });
 
   useOutsideClick(menuListRef, () => {
-    console.log('outside click');
     if (open) setOpen(false);
     setFocusedIdx(0);
   });
