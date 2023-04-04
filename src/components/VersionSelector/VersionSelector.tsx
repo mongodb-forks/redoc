@@ -38,9 +38,9 @@ const VersionSelectorComponent = ({
 
     // navigate to resource version spec
     let selectedResourceVersionUrl = `${rootUrl}/${resourceVersion}`;
-    const isPageTag = window.location.href.indexOf('#tag');
-    if (isPageTag > -1) {
-      selectedResourceVersionUrl += window.location.href.slice(isPageTag);
+    const anchorTagIdx = window.location.href.indexOf('#tag');
+    if (anchorTagIdx > -1) {
+      selectedResourceVersionUrl += window.location.href.slice(anchorTagIdx);
     }
     window.location.href = selectedResourceVersionUrl;
     setSelectedIdx(idx);
