@@ -37,7 +37,11 @@ const VersionSelectorComponent = ({
     if (idx === selectedIdx) return setOpen(false);
 
     // navigate to resource version spec
-    const selectedResourceVersionUrl = `${rootUrl}/${resourceVersion}`;
+    let selectedResourceVersionUrl = `${rootUrl}/${resourceVersion}`;
+    const isPageTag = window.location.href.indexOf('#tag');
+    if (isPageTag > -1) {
+      selectedResourceVersionUrl += window.location.href.slice(isPageTag);
+    }
     window.location.href = selectedResourceVersionUrl;
     setSelectedIdx(idx);
     return setOpen(false);
