@@ -79,9 +79,7 @@ export class Redoc extends React.Component<RedocProps> {
               <ApiContentWrap className="api-content">
                 <ApiInfo
                   store={store}
-                  resourceVersion={
-                    options.versionData && options.versionData.active?.resourceVersion
-                  }
+                  resourceVersion={options.versionData?.active?.resourceVersion}
                 />
                 <ContentItems items={menu.items as any} />
               </ApiContentWrap>
