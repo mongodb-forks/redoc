@@ -8,7 +8,9 @@ export const Option = ({ option, value, selected, onClick, focused }: OptionProp
   const KEY_SPACE = ' ';
 
   const handleKeyPress = (event: React.KeyboardEvent) => {
+    console.log('key press ', event.key);
     if (event.key === KEY_ENTER || event.key === KEY_SPACE) {
+      console.log('we are keying', value);
       onClick(value);
     }
   };
@@ -16,7 +18,7 @@ export const Option = ({ option, value, selected, onClick, focused }: OptionProp
   return (
     <StyledLi
       onClick={() => onClick(value)}
-      onKeyPress={handleKeyPress}
+      onKeyUp={handleKeyPress}
       selected={selected}
       focused={focused}
     >
