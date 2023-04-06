@@ -27,15 +27,17 @@ const VersionSelectorComponent = ({
   const descendingResourceVersions = resourceVersions.slice().reverse();
   const initialSelectedIdx = descendingResourceVersions.indexOf(active.resourceVersion);
   const [open, setOpen] = React.useState<boolean>(false);
-  const [focusedIdx, setFocusedIdx] = React.useState<number>(initialSelectedIdx);
+  const [focusedIdx, setFocusedIdx] = React.useState<number>(-1);
   const [selectedIdx, setSelectedIdx] = React.useState<number>(initialSelectedIdx);
 
   const menuListRef = React.useRef(null);
   useOutsideClick(menuListRef, () => {
     if (open) setOpen(false);
+    setFocusedIdx(-1);
   });
 
   const handleKeyDownSelect = React.useCallback(() => {
+    if (focusedIdx < 0) return;
     if (focusedIdx === selectedIdx) return setOpen(false);
     const resourceVersionReal = descendingResourceVersions[focusedIdx];
 
@@ -53,6 +55,7 @@ const VersionSelectorComponent = ({
 
   const handleClick = (idx: number, resourceVersion: string) => {
     if (idx === selectedIdx) return setOpen(false);
+    if (resourceVersion === undefined) return setOpen(false);
 
     // navigate to resource version spec
     let selectedResourceVersionUrl = `${rootUrl}/${resourceVersion}`;
@@ -70,23 +73,47 @@ const VersionSelectorComponent = ({
   const handleFocusChange = React.useCallback(
     (event: React.KeyboardEvent<HTMLDivElement>) => {
       const { key, shiftKey } = event;
-      if (key === 'Enter' || key === ' ') {
-        handleKeyDownSelect();
-      } else if (key === 'ArrowDown' || (key === 'Tab' && !shiftKey)) {
+      if (key === 'ArrowDown' || (key === 'Tab' && !shiftKey)) {
         // if we go down when we are already past the end, don't do anything
-        if (focusedIdx === descendingResourceVersions.length - 1) setOpen(false);
-        else if (focusedIdx === -1) {
+        // if (focusedIdx === descendingResourceVersions.length - 1) setOpen(false);
+        if (focusedIdx === descendingResourceVersions.length) return;
+        // else if (focusedIdx === -1) {
+        //   // when first entering the dropdown via the down arrow key or tab,
+        //   // we want to open the modal
+        //   setOpen(true);
+        // }
+
+        if (focusedIdx === -1) {
           // when first entering the dropdown via the down arrow key or tab,
           // we want to open the modal
           setOpen(true);
+        } else if (focusedIdx === descendingResourceVersions.length - 1) {
+          // if we are at the last element of the dropdown, and attempt to go
+          // down again, we want to close the dropdown
+          setOpen(false);
         }
 
         setFocusedIdx(focusedIdx + 1);
       } else if (key === 'ArrowUp' || (key === 'Tab' && shiftKey)) {
-        // if at top, close VersionSelector
-        if (focusedIdx === 0) return setOpen(false);
+        // // if at top, close VersionSelector
+        // if (focusedIdx === 0) return setOpen(false);
+
+        // if we go down when we are already past the end, don't do anything
+        if (focusedIdx === -1) return;
+
+        if (focusedIdx === descendingResourceVersions.length) {
+          // in this scenario, we are entering the dropdown from below
+          // we open the dropdown and start from the bottom
+          setOpen(true);
+        } else if (focusedIdx === 0) {
+          // if we reach the first element in the drop down, and we attempt to go up again,
+          // we want to close the dropdown
+          setOpen(false);
+        }
 
         setFocusedIdx(focusedIdx - 1);
+      } else if (key === 'Enter' || key === ' ') {
+        handleKeyDownSelect();
       }
     },
     [focusedIdx, descendingResourceVersions, handleKeyDownSelect],
