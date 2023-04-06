@@ -5,12 +5,7 @@ import { OptionProps } from './types';
 
 export const Option = ({ option, value, selected, onClick, focused }: OptionProps) => {
   return (
-    <StyledLi
-      onClick={() => onClick(value)}
-      selected={selected}
-      focused={focused}
-      id={`option-${value}`}
-    >
+    <StyledLi onClick={() => onClick(value)} selected={selected} focused={focused}>
       {selected ? <Checkmark /> : <StyledPlaceholder />}
       <StyledOptionText>{option}</StyledOptionText>
     </StyledLi>

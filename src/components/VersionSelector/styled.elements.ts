@@ -26,9 +26,7 @@ export const ArrowIcon = styled(ArrowSvg)<{ open: boolean }>`
   text-align: center;
 `;
 
-export const StyledWrapper = styled.div.attrs({
-  id: 'version-selector',
-})`
+export const StyledWrapper = styled.div`
   font-family: 'Euclid Circular A', Akzidenz, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 13px;
 
