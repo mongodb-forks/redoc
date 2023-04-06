@@ -47,6 +47,7 @@ const VersionSelectorComponent = ({
     if (anchorTagIdx > -1) {
       selectedResourceVersionUrl += window.location.href.slice(anchorTagIdx);
     }
+    console.log(selectedResourceVersionUrl);
     window.location.href = selectedResourceVersionUrl;
     setSelectedIdx(focusedIdx);
     return setOpen(false);
