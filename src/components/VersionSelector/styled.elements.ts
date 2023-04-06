@@ -26,7 +26,9 @@ export const ArrowIcon = styled(ArrowSvg)<{ open: boolean }>`
   text-align: center;
 `;
 
-export const StyledWrapper = styled.div`
+export const StyledWrapper = styled.div.attrs({
+  id: 'version-selector',
+})`
   font-family: 'Euclid Circular A', Akzidenz, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 13px;
 
@@ -188,7 +190,7 @@ export const openDropdownStyle = css`
 export const StyledDropdown = styled.div.attrs<{ open: boolean }>({
   role: 'listbox',
   'aria-labelledby': 'View a different version of documentation.',
-  tabIndex: '-1',
+  tabIndex: '0',
 })<{ open: boolean }>`
   ${props => (props.open ? openDropdownStyle : `display: none;`)}
 `;

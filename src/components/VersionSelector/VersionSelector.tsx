@@ -33,7 +33,7 @@ const VersionSelectorComponent = ({
   const menuListRef = React.useRef(null);
   useOutsideClick(menuListRef, () => {
     if (open) setOpen(false);
-    setFocusedIdx(-1);
+    setFocusedIdx(0);
   });
 
   const handleKeyDownSelect = React.useCallback(() => {
@@ -47,8 +47,7 @@ const VersionSelectorComponent = ({
     if (anchorTagIdx > -1) {
       selectedResourceVersionUrl += window.location.href.slice(anchorTagIdx);
     }
-    console.log(selectedResourceVersionUrl);
-    // window.location.href = selectedResourceVersionUrl;
+    window.location.href = selectedResourceVersionUrl;
     setSelectedIdx(focusedIdx);
     return setOpen(false);
   }, [selectedIdx, rootUrl, focusedIdx, descendingResourceVersions]);
@@ -63,8 +62,7 @@ const VersionSelectorComponent = ({
     if (anchorTagIdx > -1) {
       selectedResourceVersionUrl += window.location.href.slice(anchorTagIdx);
     }
-    console.log(selectedResourceVersionUrl);
-    // window.location.href = selectedResourceVersionUrl;
+    window.location.href = selectedResourceVersionUrl;
     setFocusedIdx(idx);
     setSelectedIdx(idx);
     return setOpen(false);
@@ -75,13 +73,7 @@ const VersionSelectorComponent = ({
       const { key, shiftKey } = event;
       if (key === 'ArrowDown' || (key === 'Tab' && !shiftKey)) {
         // if we go down when we are already past the end, don't do anything
-        // if (focusedIdx === descendingResourceVersions.length - 1) setOpen(false);
         if (focusedIdx === descendingResourceVersions.length) return;
-        // else if (focusedIdx === -1) {
-        //   // when first entering the dropdown via the down arrow key or tab,
-        //   // we want to open the modal
-        //   setOpen(true);
-        // }
 
         if (focusedIdx === -1) {
           // when first entering the dropdown via the down arrow key or tab,
@@ -95,9 +87,6 @@ const VersionSelectorComponent = ({
 
         setFocusedIdx(focusedIdx + 1);
       } else if (key === 'ArrowUp' || (key === 'Tab' && shiftKey)) {
-        // // if at top, close VersionSelector
-        // if (focusedIdx === 0) return setOpen(false);
-
         // if we go down when we are already past the end, don't do anything
         if (focusedIdx === -1) return;
 
