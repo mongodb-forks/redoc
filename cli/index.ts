@@ -340,8 +340,6 @@ async function getPageHTML(
     const sheet = new ServerStyleSheet();
     // @ts-ignore
     html = renderToString(sheet.collectStyles(React.createElement(Redoc, { store })));
-    console.log('render');
-
     css = sheet.getStyleTags();
     state = await store.toJS();
 
