@@ -335,12 +335,9 @@ async function getPageHTML(
   let state;
   let redocStandaloneSrc;
   if (ssr) {
-    console.log('Prerendering docs');
-
     const specUrl = redocOptions.specUrl || (isURL(pathToSpec) ? pathToSpec : undefined);
     const store = await createStore(spec, specUrl, redocOptions);
     const sheet = new ServerStyleSheet();
-    console.log('server style sheet');
     // @ts-ignore
     html = renderToString(sheet.collectStyles(React.createElement(Redoc, { store })));
     console.log('render');
@@ -358,7 +355,6 @@ async function getPageHTML(
   return template({
     redocHTML: `
     <div id="redoc">${(ssr && html) || ''}</div>
-    <script>!function(e,n){var t=document.createElement("script"),o=null,x="pathway";t.async=!0,t.src='https://'+x+'.mongodb.com/'+(e?x+'-debug.js':''),document.head.append(t),t.addEventListener("load",function(){o=window.pathway.default,(n&&o.configure(n)),o.createProfile("mongodbcom").load(),window.segment=o})}();</script>
     <script>
     ${(ssr && `const __redoc_state = ${sanitizeJSONString(JSON.stringify(state))};`) || ''}
 
