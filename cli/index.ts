@@ -335,6 +335,8 @@ async function getPageHTML(
   let state;
   let redocStandaloneSrc;
   if (ssr) {
+    console.log('Prerendering docs');
+
     const specUrl = redocOptions.specUrl || (isURL(pathToSpec) ? pathToSpec : undefined);
     const store = await createStore(spec, specUrl, redocOptions);
     const sheet = new ServerStyleSheet();
