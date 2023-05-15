@@ -56,6 +56,20 @@ const VersionSelectorComponent = ({
     if (idx === selectedIdx) return setOpen(false);
     if (resourceVersion === undefined) return setOpen(false);
 
+    // Account for staging links
+    if (window.location.pathname.includes('/docsworker-xlarge/')) {
+      const origin = new URL(rootUrl).origin;
+      const pathToVersion = rootUrl.split('/docs/atlas/')[1];
+
+      const splitPath = window.location.pathname.split('/');
+      const groundingIndex = splitPath.findIndex(el => el === 'docsworker-xlarge');
+
+      // stagingPath is as follows: <repo>/docsworker-xlarge/<gitBranchName>
+      const stagingPath = splitPath.slice(groundingIndex - 1, groundingIndex + 2).join('/');
+      if (rootUrl[rootUrl.length - 1] === '/') rootUrl = rootUrl.slice(0, rootUrl.length - 1);
+      rootUrl = `${origin}/${stagingPath}/${pathToVersion}`;
+    }
+
     // navigate to resource version spec
     let selectedResourceVersionUrl = `${rootUrl}/${resourceVersion}`;
     const anchorTagIdx = window.location.href.indexOf('#tag');
