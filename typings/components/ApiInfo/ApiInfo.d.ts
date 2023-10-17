@@ -1,0 +1,10 @@
+import * as React from 'react';
+import { AppStore } from '../../services/AppStore';
+export interface ApiInfoProps {
+    store: AppStore;
+    resourceVersion?: string;
+}
+export declare class ApiInfo extends React.Component<ApiInfoProps> {
+    handleDownloadClick: (e: any) => void;
+    render(): JSX.Element;
+}
