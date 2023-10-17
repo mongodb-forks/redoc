@@ -75,13 +75,14 @@ The Redoc React component and the Redoc CLI have 2 separate release processes. B
 
 See the sections below for release steps for each component. A pull request will be made with the necessary release changes. After merging the PR, a release commit will be pushed to the `main` branch of `mongodb-forks/redoc` after following the steps, which will trigger a GitHub workflow. The workflow is responsible for testing, building artifacts (for the Redoc component, if applicable), and creating a tag.
 
-:warning: Note: Ensure that your local clone of the `mongodb-forks/redoc` repo is clean and up-to-date with the `main` branch. Please check your remotes to ensure that the `upstream` remote is set to the `mongodb-forks/redoc` repo. Example:
+:warning: Note: Ensure that your local clone of the `mongodb-forks/redoc` repo is clean and up-to-date with the `main` branch by running `git remote add upstream https://github.com/mongodb-forks/redoc.git`. Please check your remotes to ensure that the `upstream` remote is set to the `mongodb-forks/redoc` repo. Example:
 
 ```
 $ git remote -v
 upstream	https://github.com/mongodb-forks/redoc.git (fetch)
 upstream	https://github.com/mongodb-forks/redoc.git (push)
 ```
+
 
 #### Redoc
 
