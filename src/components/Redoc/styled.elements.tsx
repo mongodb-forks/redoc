@@ -4,6 +4,14 @@ export const StyledHeader = styled.header`
   position: relative;
   width: 100%;
   z-index: 99;
+
+  // Overwrite padding to match docs site's padding
+  nav > div > div {
+    ${media.greaterThan('medium')`
+      padding-left: 32px;
+      padding-right: 32px;
+    `};
+  }
 `;
 
 export const SideMenuTitle = styled.div`
