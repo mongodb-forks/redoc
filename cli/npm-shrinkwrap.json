@@ -1,15 +1,15 @@
 {
   "name": "@dop/redoc-cli",
-  "version": "1.2.3-rc.0",
+  "version": "1.2.3",
   "lockfileVersion": 2,
   "requires": true,
   "packages": {
     "": {
       "name": "@dop/redoc-cli",
-      "version": "1.2.3-rc.0",
+      "version": "1.2.3",
       "license": "MIT",
       "dependencies": {
-        "@dop/redoc": "git+https://git@github.com/mongodb-forks/redoc.git#v1.2.3-rc.4",
+        "@dop/redoc": "git+https://git@github.com/mongodb-forks/redoc.git#v1.2.3",
         "chokidar": "^3.5.1",
         "handlebars": "^4.7.7",
         "isarray": "^2.0.5",
@@ -426,15 +426,15 @@
       }
     },
     "node_modules/@dop/redoc": {
-      "version": "1.2.3-rc.4",
-      "resolved": "git+https://git@github.com/mongodb-forks/redoc.git#5f9f8d92c993564b8f3eb4ab5b9e20a178989429",
+      "version": "1.2.3",
+      "resolved": "git+https://git@github.com/mongodb-forks/redoc.git#b5c1c444855374d6614eab976b1c5a5e20a3e6fc",
       "license": "MIT",
       "dependencies": {
         "@emotion/css": "^11.0.0",
         "@emotion/react": "^11.10.4",
         "@emotion/styled": "^11.10.4",
         "@leafygreen-ui/palette": "^3.4.4",
-        "@mdb/consistent-nav": "^1.2.39",
+        "@mdb/consistent-nav": "^2.0.3-rc.15",
         "@mdb/flora": "^1.5.6",
         "@mdx-js/react": "^1.6.22",
         "@redocly/openapi-core": "^1.0.0-beta.104",
@@ -757,13 +757,13 @@
       "license": "Apache-2.0"
     },
     "node_modules/@mdb/consistent-nav": {
-      "version": "1.2.39",
-      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@mdb/consistent-nav/-/@mdb/consistent-nav-1.2.39.tgz",
-      "integrity": "sha512-YTRRsNF3Vf42rw3ESYp5RUgFUZehO23M1ujHB1KKvndHS5pp9mXobZfz9rTroL0rKgJprT+9E6dQOqs6+yK5JA==",
+      "version": "2.0.3-rc.16",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@mdb/consistent-nav/-/@mdb/consistent-nav-2.0.3-rc.16.tgz",
+      "integrity": "sha512-xiHvBlFEa1tjkFcSmIBLCfjmMu9XDvAH+q/8wG+m5AIHbYK0+fYquge26GznDRLpDzqsTx/tUiOoQGgpeQRe6w==",
       "peerDependencies": {
         "@emotion/react": ">= 11.6.0",
         "@emotion/styled": ">= 11.6.0",
-        "@mdb/flora": ">= 0.20.5",
+        "@mdb/flora": "^1.7.1",
         "@mdx-js/react": "^1.6.22",
         "react": ">= 16.8",
         "react-dom": ">= 16.8",
@@ -771,9 +771,9 @@
       }
     },
     "node_modules/@mdb/flora": {
-      "version": "1.6.0",
-      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@mdb/flora/-/@mdb/flora-1.6.0.tgz",
-      "integrity": "sha512-2JpOFPjIM324Y+sN5Z+iVgT3/itmdeo+JVGqF3dTJq1XsZa/poSSfLE5SkEHWV1+yITN8PfBvMhpR75l7wQRsA==",
+      "version": "1.7.15",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@mdb/flora/-/@mdb/flora-1.7.15.tgz",
+      "integrity": "sha512-bBzpaO7lmpW+pgE5dqssHzdSCe+CJQR79TbnyM/eIpbUzPk8RhqFivCYhD7QTiKpXOYbcVfg7g9tjD+94Un7kg==",
       "dependencies": {
         "@imgix/js-core": "3.7.1",
         "codemirror": "5.62.2",
@@ -1113,17 +1113,17 @@
       "license": "MIT"
     },
     "node_modules/@types/styled-system": {
-      "version": "5.1.16",
-      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@types/styled-system/-/styled-system-5.1.16.tgz",
-      "integrity": "sha512-+dyGs2n2o6QStsexh87NeaRmXYnKOnEe7iOEkcYOwKwI5a1gFL0+Mt/hZKi+4KD1qDMkLkGb0lpDrffb/vSkDQ==",
+      "version": "5.1.22",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@types/styled-system/-/styled-system-5.1.22.tgz",
+      "integrity": "sha512-NbRp37zWcrf/+Qf2NumdyZfhSx1dzJ50zgfKvnezYJx1HTRUMVYY8jtWvK1eoIAa6F5sXwHLhE8oXNu15ThBAA==",
       "dependencies": {
         "csstype": "^3.0.2"
       }
     },
     "node_modules/@types/tern": {
-      "version": "0.23.4",
-      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@types/tern/-/tern-0.23.4.tgz",
-      "integrity": "sha512-JAUw1iXGO1qaWwEOzxTKJZ/5JxVeON9kvGZ/osgZaJImBnyjyn0cjovPsf6FNLmyGY8Vw9DoXZCMlfMkMwHRWg==",
+      "version": "0.23.9",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@types/tern/-/tern-0.23.9.tgz",
+      "integrity": "sha512-ypzHFE/wBzh+BlH6rrBgS5I/Z7RD21pGhZ2rltb/+ZrVM1awdZwjx7hE5XfuYgHWk9uvV5HLZN3SloevCAp3Bw==",
       "dependencies": {
         "@types/estree": "*"
       }
@@ -3935,9 +3935,9 @@
       "integrity": "sha1-oVe6QC2iTpv5V/mqadUk7tQpAaY="
     },
     "node_modules/ufo": {
-      "version": "1.1.2",
-      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/ufo/-/ufo-1.1.2.tgz",
-      "integrity": "sha512-TrY6DsjTQQgyS3E3dBaOXf0TpPD8u9FVrVYmKVegJuFw51n/YB9XPt+U6ydzFG5ZIN7+DIjPbNmXoBj9esYhgQ=="
+      "version": "1.3.2",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/ufo/-/ufo-1.3.2.tgz",
+      "integrity": "sha512-o+ORpgGwaYQXgqGDwd+hkS4PuZ3QnmqMMxRuajK/a38L6fTpcE5GPIfrf+L/KemFzfUpeUQc1rRS1iDBozvnFA=="
     },
     "node_modules/uglify-js": {
       "version": "3.13.9",
@@ -4528,14 +4528,14 @@
       }
     },
     "@dop/redoc": {
-      "version": "git+https://git@github.com/mongodb-forks/redoc.git#5f9f8d92c993564b8f3eb4ab5b9e20a178989429",
-      "from": "@dop/redoc@git+https://git@github.com/mongodb-forks/redoc#v1.2.3-rc.4",
+      "version": "git+https://git@github.com/mongodb-forks/redoc.git#b5c1c444855374d6614eab976b1c5a5e20a3e6fc",
+      "from": "@dop/redoc@git+https://git@github.com/mongodb-forks/redoc.git#v1.2.3",
       "requires": {
         "@emotion/css": "^11.0.0",
         "@emotion/react": "^11.10.4",
         "@emotion/styled": "^11.10.4",
         "@leafygreen-ui/palette": "^3.4.4",
-        "@mdb/consistent-nav": "^1.2.39",
+        "@mdb/consistent-nav": "^2.0.3-rc.15",
         "@mdb/flora": "^1.5.6",
         "@mdx-js/react": "^1.6.22",
         "@redocly/openapi-core": "^1.0.0-beta.104",
@@ -4812,15 +4812,15 @@
       "integrity": "sha512-AsvPlbvF7CERiZbAQR8hy3lAJ2/rieXI3cO0jsOwV8ztDqYNotKAdLujyr/NviudrRUenYiXrLizIKVlSPUMuA=="
     },
     "@mdb/consistent-nav": {
-      "version": "1.2.39",
-      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@mdb/consistent-nav/-/@mdb/consistent-nav-1.2.39.tgz",
-      "integrity": "sha512-YTRRsNF3Vf42rw3ESYp5RUgFUZehO23M1ujHB1KKvndHS5pp9mXobZfz9rTroL0rKgJprT+9E6dQOqs6+yK5JA==",
+      "version": "2.0.3-rc.16",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@mdb/consistent-nav/-/@mdb/consistent-nav-2.0.3-rc.16.tgz",
+      "integrity": "sha512-xiHvBlFEa1tjkFcSmIBLCfjmMu9XDvAH+q/8wG+m5AIHbYK0+fYquge26GznDRLpDzqsTx/tUiOoQGgpeQRe6w==",
       "requires": {}
     },
     "@mdb/flora": {
-      "version": "1.6.0",
-      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@mdb/flora/-/@mdb/flora-1.6.0.tgz",
-      "integrity": "sha512-2JpOFPjIM324Y+sN5Z+iVgT3/itmdeo+JVGqF3dTJq1XsZa/poSSfLE5SkEHWV1+yITN8PfBvMhpR75l7wQRsA==",
+      "version": "1.7.15",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@mdb/flora/-/@mdb/flora-1.7.15.tgz",
+      "integrity": "sha512-bBzpaO7lmpW+pgE5dqssHzdSCe+CJQR79TbnyM/eIpbUzPk8RhqFivCYhD7QTiKpXOYbcVfg7g9tjD+94Un7kg==",
       "requires": {
         "@imgix/js-core": "3.7.1",
         "codemirror": "5.62.2",
@@ -5107,17 +5107,17 @@
       "integrity": "sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA=="
     },
     "@types/styled-system": {
-      "version": "5.1.16",
-      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@types/styled-system/-/styled-system-5.1.16.tgz",
-      "integrity": "sha512-+dyGs2n2o6QStsexh87NeaRmXYnKOnEe7iOEkcYOwKwI5a1gFL0+Mt/hZKi+4KD1qDMkLkGb0lpDrffb/vSkDQ==",
+      "version": "5.1.22",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@types/styled-system/-/styled-system-5.1.22.tgz",
+      "integrity": "sha512-NbRp37zWcrf/+Qf2NumdyZfhSx1dzJ50zgfKvnezYJx1HTRUMVYY8jtWvK1eoIAa6F5sXwHLhE8oXNu15ThBAA==",
       "requires": {
         "csstype": "^3.0.2"
       }
     },
     "@types/tern": {
-      "version": "0.23.4",
-      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@types/tern/-/tern-0.23.4.tgz",
-      "integrity": "sha512-JAUw1iXGO1qaWwEOzxTKJZ/5JxVeON9kvGZ/osgZaJImBnyjyn0cjovPsf6FNLmyGY8Vw9DoXZCMlfMkMwHRWg==",
+      "version": "0.23.9",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/@types/tern/-/tern-0.23.9.tgz",
+      "integrity": "sha512-ypzHFE/wBzh+BlH6rrBgS5I/Z7RD21pGhZ2rltb/+ZrVM1awdZwjx7hE5XfuYgHWk9uvV5HLZN3SloevCAp3Bw==",
       "requires": {
         "@types/estree": "*"
       }
@@ -7272,9 +7272,9 @@
       "integrity": "sha1-oVe6QC2iTpv5V/mqadUk7tQpAaY="
     },
     "ufo": {
-      "version": "1.1.2",
-      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/ufo/-/ufo-1.1.2.tgz",
-      "integrity": "sha512-TrY6DsjTQQgyS3E3dBaOXf0TpPD8u9FVrVYmKVegJuFw51n/YB9XPt+U6ydzFG5ZIN7+DIjPbNmXoBj9esYhgQ=="
+      "version": "1.3.2",
+      "resolved": "https://artifactory.corp.mongodb.com/artifactory/api/npm/npm/ufo/-/ufo-1.3.2.tgz",
+      "integrity": "sha512-o+ORpgGwaYQXgqGDwd+hkS4PuZ3QnmqMMxRuajK/a38L6fTpcE5GPIfrf+L/KemFzfUpeUQc1rRS1iDBozvnFA=="
     },
     "uglify-js": {
       "version": "3.13.9",
