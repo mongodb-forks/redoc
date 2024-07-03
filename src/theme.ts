@@ -1,4 +1,4 @@
-import { cssVar, darken, lighten, readableColor, transparentize } from 'polished';
+import { darken, lighten, readableColor, transparentize } from 'polished';
 import { palette } from '@leafygreen-ui/palette';
 
 const textFontFamily =
@@ -47,9 +47,8 @@ const defaultTheme: ThemeInterface = {
       100: '#F5F5F5',
     },
     text: {
-      primary: cssVar('--text-primary-color', '#1C2D38') as string,
-      // secondary: ({ colors }) => lighten(colors.tonalOffset, colors.text.primary),
-      secondary: lighten(0.2, cssVar('--text-primary-color', '#1C2D38') as string),
+      primary: palette.gray.dark3,
+      secondary: ({ colors }) => lighten(colors.tonalOffset, colors.text.primary),
     },
     border: {
       dark: 'rgba(0,0,0, 0.1)',
@@ -191,8 +190,6 @@ const defaultTheme: ThemeInterface = {
   },
   sidebar: {
     width: '268px',
-    backgroundColor: cssVar('--sidebar-bg-color', '#F9FBFA') as string,
-    textColor: cssVar('--sidebar-text-color', '#112733') as string,
     // backgroundColor: palette.gray.light3,
     // textColor: palette.black,
     activeTextColor: palette.green.dark3,
@@ -209,6 +206,7 @@ const defaultTheme: ThemeInterface = {
     arrow: {
       size: '1.5em',
       // color: theme => theme.sidebar.textColor,
+
       color: 'var(--sidebar-text-color)',
     },
   },

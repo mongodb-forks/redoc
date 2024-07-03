@@ -21,7 +21,7 @@ export const SearchInput = styled.input.attrs(() => ({
   font-family: ${({ theme }) => theme.typography.fontFamily};
   font-weight: bold;
   font-size: 13px;
-  color: ${props => props.theme.sidebar.textColor};
+  color: var(--sidebar-text-color);
   background-color: transparent;
   outline: none;
 `;
@@ -52,14 +52,14 @@ export const SearchIcon = styled((props: { className?: string }) => (
   width: 0.9em;
 
   path {
-    fill: ${props => props.theme.sidebar.textColor};
+    fill: var(--sidebar-text-color);
   }
 `;
 
 export const SearchResultsBox = styled.div`
   padding: ${props => props.theme.spacing.unit}px 0;
   background-color: var(--sidebar-bg-color);
-  color: ${props => props.theme.sidebar.textColor};
+  color: var(--sidebar-text-color);
   min-height: 150px;
   max-height: 250px;
   margin-top: 10px;

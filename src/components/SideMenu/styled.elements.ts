@@ -166,13 +166,11 @@ export const RedocAttribution = styled.div`
     position: sticky;
     width: ${theme.sidebar.width};
     bottom: 0;
-    // background: ${theme.sidebar.backgroundColor};
     background: var(--sidebar-bg-color);
 
     a,
     a:visited,
     a:hover {
-      // /* color: ${theme.sidebar.textColor} !important; */
       color: var(--sidebar-text-color) !important;
       padding: ${theme.spacing.unit}px 0;
       text-decoration: none;
