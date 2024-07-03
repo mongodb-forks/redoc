@@ -66,6 +66,7 @@ function navigate(history: HistoryService, event: React.MouseEvent<HTMLAnchorEle
     event.button === 0 && // ignore everything but left clicks
     !isModifiedEvent(event) // ignore clicks with modifier keys
   ) {
+    console.log('preventing!!');
     event.preventDefault();
     history.replace(encodeURI(to));
   }

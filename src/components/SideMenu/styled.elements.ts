@@ -1,6 +1,6 @@
 import { palette } from '@leafygreen-ui/palette';
 import { default as classnames } from 'classnames';
-import { darken } from 'polished';
+// import { darken } from 'polished';
 
 import { deprecatedCss, ShelfIcon } from '../../common-elements';
 import styled, { css, media, ResolvedThemeInterface } from '../../styled-components';
@@ -49,9 +49,10 @@ function menuItemActive(
 function selectMenuLabelColor(
   props: MenuItemLabelType & { theme: ResolvedThemeInterface },
 ): string {
-  const { active, depth, isBackButton, theme } = props;
+  const { active, depth, isBackButton } = props;
   if (isBackButton) return palette.gray.dark1;
-  return active ? menuItemActive(depth, props, 'activeTextColor') : theme.sidebar.textColor;
+  // return active ? menuItemActive(depth, props, 'activeTextColor') : theme.sidebar.textColor;
+  return active ? menuItemActive(depth, props, 'activeTextColor') : 'var(--sidebar-text-color)';
 }
 
 export const MenuItemUl = styled.ul<{ expanded: boolean }>`
@@ -119,7 +120,8 @@ export const MenuItemLabel = styled.label.attrs((props: MenuItemLabelType) => ({
   background-color: ${props =>
     props.active
       ? menuItemActive(props.depth, props, 'activeBackgroundColor')
-      : props.theme.sidebar.backgroundColor};
+      : // : props.theme.sidebar.backgroundColor};
+        'var(--sidebar-bg-color)'};
 
   ${props => (props.deprecated && deprecatedCss) || ''};
 
@@ -164,14 +166,15 @@ export const RedocAttribution = styled.div`
     position: sticky;
     width: ${theme.sidebar.width};
     bottom: 0;
-    background: ${theme.sidebar.backgroundColor};
+    // background: ${theme.sidebar.backgroundColor};
+    background: var(--sidebar-bg-color);
 
     a,
     a:visited,
     a:hover {
-      color: ${theme.sidebar.textColor} !important;
+      // /* color: ${theme.sidebar.textColor} !important; */
+      color: var(--sidebar-text-color) !important;
       padding: ${theme.spacing.unit}px 0;
-      border-top: 1px solid ${darken(0.1, theme.sidebar.backgroundColor)};
       text-decoration: none;
       display: flex;
       align-items: center;

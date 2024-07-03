@@ -1,4 +1,12 @@
+// import { palette } from '@leafygreen-ui/palette';
 import styled, { media } from '../../styled-components';
+
+export const DarkModeSwitchContainer = styled.div`
+  display: flex;
+  margin: 10px auto;
+  justify-content: space-between;
+  gap: 20px;
+`;
 
 export const StyledHeader = styled.header`
   position: relative;
@@ -27,7 +35,7 @@ export const RedocWrap = styled.div`
   font-size: ${theme.typography.fontSize};
   font-weight: ${theme.typography.fontWeightRegular};
   line-height: ${theme.typography.lineHeight};
-  color: ${theme.colors.text.primary};
+  color: var(--text-primary-color);
   display: flex;
   position: relative;
   text-align: left;

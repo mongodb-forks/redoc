@@ -8,6 +8,7 @@ import type { LabelsConfigRaw, MDXComponentMeta } from './types';
 
 export interface RedocRawOptions {
   theme?: ThemeInterface;
+  darkTheme?: ThemeInterface;
   scrollYOffset?: number | string | (() => number);
   hideHostname?: boolean | string;
   expandResponses?: string | 'all';
@@ -227,6 +228,7 @@ export class RedocNormalizedOptions {
   }
 
   theme: ResolvedThemeInterface;
+  darkTheme: ResolvedThemeInterface;
   scrollYOffset: () => number;
   hideHostname: boolean;
   expandResponses: { [code: string]: boolean } | 'all';
@@ -301,6 +303,12 @@ export class RedocNormalizedOptions {
     );
 
     this.theme.extensionsHook = hook as any;
+
+    // this.darkTheme = resolveTheme(
+    //   mergeObjects({} as any, darkTheme, { ...raw.theme, extensionsHook: undefined }),
+    // );
+
+    // this.darkTheme.extensionsHook = hook as any;
 
     // do not support dynamic labels changes. Labels should be configured before
     setRedocLabels(raw.labels);

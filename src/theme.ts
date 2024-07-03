@@ -1,4 +1,4 @@
-import { darken, lighten, readableColor, transparentize } from 'polished';
+import { cssVar, darken, lighten, readableColor, transparentize } from 'polished';
 import { palette } from '@leafygreen-ui/palette';
 
 const textFontFamily =
@@ -47,8 +47,9 @@ const defaultTheme: ThemeInterface = {
       100: '#F5F5F5',
     },
     text: {
-      primary: palette.gray.dark3,
-      secondary: ({ colors }) => lighten(colors.tonalOffset, colors.text.primary),
+      primary: cssVar('--text-primary-color', '#1C2D38') as string,
+      // secondary: ({ colors }) => lighten(colors.tonalOffset, colors.text.primary),
+      secondary: lighten(0.2, cssVar('--text-primary-color', '#1C2D38') as string),
     },
     border: {
       dark: 'rgba(0,0,0, 0.1)',
@@ -190,8 +191,10 @@ const defaultTheme: ThemeInterface = {
   },
   sidebar: {
     width: '268px',
-    backgroundColor: palette.gray.light3,
-    textColor: palette.black,
+    backgroundColor: cssVar('--sidebar-bg-color', '#F9FBFA') as string,
+    textColor: cssVar('--sidebar-text-color', '#112733') as string,
+    // backgroundColor: palette.gray.light3,
+    // textColor: palette.black,
     activeTextColor: palette.green.dark3,
     groupItems: {
       activeBackgroundColor: palette.green.light3,
@@ -205,7 +208,8 @@ const defaultTheme: ThemeInterface = {
     },
     arrow: {
       size: '1.5em',
-      color: theme => theme.sidebar.textColor,
+      // color: theme => theme.sidebar.textColor,
+      color: 'var(--sidebar-text-color)',
     },
   },
   logo: {
@@ -239,6 +243,241 @@ const defaultTheme: ThemeInterface = {
     borderRadius: '5px',
   },
 };
+
+// export const darkTheme: ThemeInterface = {
+//   spacing: {
+//     unit: 4,
+//     sectionHorizontal: ({ spacing }) => spacing.unit * 8,
+//     sectionVertical: 16,
+//   },
+//   breakpoints: {
+//     small: '768px',
+//     medium: '1024px',
+//     large: '1200px',
+//   },
+//   colors: {
+//     tonalOffset: 0.2,
+//     primary: {
+//       main: palette.black,
+//       light: ({ colors }) => lighten(colors.tonalOffset, colors.primary.main),
+//       dark: ({ colors }) => darken(colors.tonalOffset, colors.primary.main),
+//       contrastText: ({ colors }) => readableColor(colors.primary.main),
+//     },
+//     success: {
+//       main: '#1d8127',
+//       light: ({ colors }) => lighten(colors.tonalOffset * 2, colors.success.main),
+//       dark: ({ colors }) => darken(colors.tonalOffset, colors.success.main),
+//       contrastText: ({ colors }) => readableColor(colors.success.main),
+//     },
+//     warning: {
+//       main: palette.gray.light1,
+//       light: ({ colors }) => lighten(colors.tonalOffset, colors.warning.main),
+//       dark: ({ colors }) => darken(colors.tonalOffset, colors.warning.main),
+//       contrastText: palette.gray.dark1,
+//     },
+//     error: {
+//       main: palette.red.base,
+//       light: ({ colors }) => lighten(colors.tonalOffset, colors.error.main),
+//       dark: ({ colors }) => darken(colors.tonalOffset, colors.error.main),
+//       contrastText: ({ colors }) => readableColor(colors.error.main),
+//     },
+//     gray: {
+//       50: '#FAFAFA',
+//       100: '#F5F5F5',
+//     },
+//     text: {
+//       primary: palette.gray.dark3,
+//       secondary: ({ colors }) => lighten(colors.tonalOffset, colors.text.primary),
+//     },
+//     border: {
+//       dark: 'rgba(0,0,0, 0.1)',
+//       light: '#ffffff',
+//     },
+//     responses: {
+//       success: {
+//         color: palette.green.dark2,
+//         backgroundColor: palette.green.light3,
+//         tabTextColor: palette.green.base,
+//       },
+//       error: {
+//         color: palette.red.base,
+//         backgroundColor: palette.red.light3,
+//         tabTextColor: palette.red.base,
+//       },
+//       redirect: {
+//         color: ({ colors }) => colors.warning.main,
+//         backgroundColor: ({ colors }) => transparentize(0.9, colors.responses.redirect.color),
+//         tabTextColor: ({ colors }) => colors.responses.redirect.color,
+//       },
+//       info: {
+//         color: '#87ceeb',
+//         backgroundColor: ({ colors }) => transparentize(0.9, colors.responses.info.color),
+//         tabTextColor: ({ colors }) => colors.responses.info.color,
+//       },
+//     },
+//     http: {
+//       get: {
+//         light: {
+//           backgroundColor: palette.blue.light3,
+//           borderColor: palette.blue.light2,
+//           color: palette.blue.dark1,
+//         },
+//         dark: {
+//           backgroundColor: palette.blue.dark2,
+//           borderColor: palette.blue.dark1,
+//           color: palette.blue.light2,
+//         },
+//       },
+//       post: {
+//         light: {
+//           backgroundColor: palette.green.light3,
+//           borderColor: palette.green.light2,
+//           color: palette.green.dark2,
+//         },
+//         dark: {
+//           backgroundColor: palette.green.dark3,
+//           borderColor: palette.green.dark2,
+//           color: palette.green.base,
+//         },
+//       },
+//       put: {
+//         light: {
+//           backgroundColor: palette.yellow.light3,
+//           borderColor: palette.yellow.light2,
+//           color: palette.yellow.dark2,
+//         },
+//         dark: {
+//           backgroundColor: palette.yellow.dark3,
+//           borderColor: palette.yellow.dark2,
+//           color: palette.yellow.light2,
+//         },
+//       },
+//       options: '#947014',
+//       patch: {
+//         light: {
+//           backgroundColor: palette.yellow.light3,
+//           borderColor: palette.yellow.light2,
+//           color: palette.yellow.dark2,
+//         },
+//         dark: {
+//           backgroundColor: palette.yellow.dark3,
+//           borderColor: palette.yellow.dark2,
+//           color: palette.yellow.light2,
+//         },
+//       },
+//       delete: {
+//         light: {
+//           backgroundColor: palette.red.light3,
+//           borderColor: palette.red.light2,
+//           color: palette.red.dark2,
+//         },
+//         dark: {
+//           backgroundColor: palette.red.dark3,
+//           borderColor: palette.red.dark2,
+//           color: palette.red.light2,
+//         },
+//       },
+//       basic: '#707070',
+//       link: '#07818F',
+//       head: '#A23DAD',
+//     },
+//   },
+//   schema: {
+//     linesColor: palette.black,
+//     defaultDetailsWidth: '75%',
+//     typeNameColor: palette.gray.dark3,
+//     typeTitleColor: theme => theme.schema.typeNameColor,
+//     requireLabelColor: palette.red.base,
+//     labelsTextSize: '0.9em',
+//     nestingSpacing: '1em',
+//     nestedBackground: '#fafafa',
+//     arrow: {
+//       size: '1.1em',
+//       color: theme => theme.colors.text.secondary,
+//     },
+//   },
+//   typography: {
+//     fontSize: '16px',
+//     lineHeight: '24px',
+//     fontWeightRegular: '400',
+//     fontWeightBold: '600',
+//     fontWeightLight: '300',
+//     fontFamily: textFontFamily,
+//     smoothing: 'antialiased',
+//     optimizeSpeed: true,
+//     headings: {
+//       fontFamily: textFontFamily,
+//       fontWeight: '400',
+//       lineHeight: '1.6em',
+//     },
+//     code: {
+//       fontSize: '13px',
+//       fontFamily: codeFontFamily,
+//       lineHeight: ({ typography }) => typography.lineHeight,
+//       fontWeight: ({ typography }) => typography.fontWeightRegular,
+//       color: palette.gray.dark3,
+//       backgroundColor: palette.gray.light3,
+//       wrap: false,
+//     },
+//     links: {
+//       color: palette.blue.base,
+//       visited: palette.blue.base,
+//       hover: palette.blue.base,
+//       textDecoration: 'auto',
+//       hoverTextDecoration: 'auto',
+//     },
+//   },
+//   sidebar: {
+//     width: '268px',
+//     backgroundColor: palette.gray.dark4,
+//     textColor: palette.gray.light2,
+//     activeTextColor: palette.green.dark3,
+//     groupItems: {
+//       activeBackgroundColor: palette.green.light3,
+//       activeTextColor: theme => theme.sidebar.activeTextColor,
+//       textTransform: 'uppercase',
+//     },
+//     level1Items: {
+//       activeBackgroundColor: palette.green.light3,
+//       activeTextColor: theme => theme.sidebar.activeTextColor,
+//       textTransform: 'none',
+//     },
+//     arrow: {
+//       size: '1.5em',
+//       color: theme => theme.sidebar.textColor,
+//     },
+//   },
+//   logo: {
+//     maxHeight: ({ sidebar }) => sidebar.width,
+//     maxWidth: ({ sidebar }) => sidebar.width,
+//     gutter: '2px',
+//   },
+//   rightPanel: {
+//     backgroundColor: palette.black,
+//     width: '40%',
+//     textColor: '#ffffff',
+//     servers: {
+//       overlay: {
+//         backgroundColor: palette.gray.dark3,
+//         textColor: palette.white,
+//       },
+//       url: {
+//         backgroundColor: palette.gray.dark3,
+//       },
+//     },
+//   },
+//   codeBlock: {
+//     backgroundColor: palette.gray.dark3,
+//   },
+//   fab: {
+//     backgroundColor: '#f2f2f2',
+//     color: '#0065FB',
+//   },
+//   badges: {
+//     border: '1px solid',
+//     borderRadius: '5px',
+//   },
+// };
 
 export default defaultTheme;
 

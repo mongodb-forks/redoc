@@ -1,4 +1,4 @@
-import { transparentize } from 'polished';
+import { cssVar, lighten, transparentize } from 'polished';
 import { palette } from '@leafygreen-ui/palette';
 
 import styled, { extensionsHook, css } from '../styled-components';
@@ -14,7 +14,7 @@ export const ClickablePropertyNameCell = styled(PropertyNameCell)`
     font-family: ${props => props.theme.typography.code.fontFamily};
     cursor: pointer;
     padding: 0;
-    color: ${props => props.theme.colors.text.primary};
+    color: var(--text-primary-color);
     &:focus {
       font-weight: ${({ theme }) => theme.typography.fontWeightBold};
     }
@@ -133,7 +133,7 @@ export const ConstraintItem = styled(FieldLabel)`
 export const ToggleButton = styled.button`
   background-color: transparent;
   border: 0;
-  color: ${({ theme }) => theme.colors.text.secondary};
+  color: ${lighten(0.2, cssVar('--text-primary-color', '#1C2D38') as string)};
   margin-left: ${({ theme }) => theme.spacing.unit}px;
   border-radius: 2px;
   cursor: pointer;

@@ -15,7 +15,7 @@ export const headerCommonMixin = level => css`
 
 export const H1 = styled.h1`
   ${headerCommonMixin(1)};
-  color: ${({ theme }) => theme.colors.text.primary};
+  color: var(--text-primary-color);
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
@@ -25,7 +25,7 @@ export const H1 = styled.h1`
 
 export const H2 = styled.h2`
   ${headerCommonMixin(2)};
-  color: ${({ theme }) => theme.colors.text.primary};
+  color: var(--text-primary-color);
   margin: 0 0 20px;
   font-weight: 600;
   font-size: 18px;
@@ -36,7 +36,7 @@ export const H2 = styled.h2`
 
 export const H3 = styled.h2`
   ${headerCommonMixin(3)};
-  color: ${({ theme }) => theme.colors.text.primary};
+  color: var(--text-primary-color);
 
   ${extensionsHook('H3')};
 `;
