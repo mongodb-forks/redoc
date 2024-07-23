@@ -190,7 +190,7 @@ const defaultTheme: ThemeInterface = {
   },
   sidebar: {
     width: '268px',
-    backgroundColor: palette.gray.light3,
+    backgroundColor: 'var(--sidebar-bg-color)',
     textColor: palette.black,
     activeTextColor: palette.green.dark3,
     groupItems: {

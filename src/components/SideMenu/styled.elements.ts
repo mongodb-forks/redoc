@@ -1,6 +1,5 @@
 import { palette } from '@leafygreen-ui/palette';
 import { default as classnames } from 'classnames';
-import { darken } from 'polished';
 
 import { deprecatedCss, ShelfIcon } from '../../common-elements';
 import styled, { css, media, ResolvedThemeInterface } from '../../styled-components';
@@ -171,7 +170,7 @@ export const RedocAttribution = styled.div`
     a:hover {
       color: ${theme.sidebar.textColor} !important;
       padding: ${theme.spacing.unit}px 0;
-      border-top: 1px solid ${darken(0.1, theme.sidebar.backgroundColor)};
+      border-top: 1px solid ${theme.sidebar.backgroundColor};
       text-decoration: none;
       display: flex;
       align-items: center;

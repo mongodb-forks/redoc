@@ -14,6 +14,7 @@ import { StickyResponsiveSidebar } from '../StickySidebar/StickyResponsiveSideba
 import {
   ApiContentWrap,
   BackgroundStub,
+  DarkModeSwitchContainer,
   RedocWrap,
   SideMenuTitle,
   StyledHeader,
@@ -27,7 +28,59 @@ export interface RedocProps {
   store: AppStore;
 }
 
-export class Redoc extends React.Component<RedocProps> {
+export const DARK_THEME_CLASSNAME = 'dark-theme';
+export const LIGHT_THEME_CLASSNAME = 'light-theme';
+export const SYSTEM_THEME_CLASSNAME = 'system';
+
+function changeClass(darkMode: 'dark-theme' | 'light-theme') {
+  console.log('window ', typeof window);
+  const docClassList =
+    typeof window !== 'undefined' && window?.document?.documentElement?.classList;
+  console.log('doc class list ', docClassList);
+  if (!docClassList) return;
+  docClassList.add(darkMode);
+  const removeClassnames = new Set([
+    LIGHT_THEME_CLASSNAME,
+    DARK_THEME_CLASSNAME,
+    SYSTEM_THEME_CLASSNAME,
+  ]);
+  removeClassnames.delete(darkMode);
+  // if (darkMode === 'system') {
+  //   const themeClass = darkPref ? DARK_THEME_CLASSNAME : LIGHT_THEME_CLASSNAME;
+  //   docClassList.add(themeClass);
+  //   removeClassnames.delete(themeClass);
+  // }
+  removeClassnames.forEach(className => {
+    if (className !== darkMode) docClassList.remove(className);
+  });
+
+  const localStorageDarkMode = JSON.parse(localStorage.getItem('mongodb-docs') ?? '{}');
+  console.log('change local ', darkMode);
+  console.log('to this ', JSON.stringify({ ...localStorageDarkMode, theme: darkMode }));
+  localStorage.setItem(
+    'mongodb-docs',
+    JSON.stringify({ ...localStorageDarkMode, theme: darkMode }),
+  );
+}
+
+export class Redoc extends React.Component<RedocProps, { darkMode: boolean }> {
+  constructor(props) {
+    super(props);
+    let initialDarkMode = false;
+    if (typeof window !== 'undefined') {
+      const localStorageDarkMode = JSON.parse(localStorage?.getItem('mongodb-docs') ?? '{}')?.[
+        'theme'
+      ];
+      initialDarkMode = localStorageDarkMode === 'dark-theme';
+    }
+    console.log('constructor ', initialDarkMode);
+    this.state = { darkMode: initialDarkMode };
+    console.log('made to be initialDark ', initialDarkMode);
+    changeClass(initialDarkMode ? 'dark-theme' : 'light-theme');
+
+    this.onToggleDarkMode = this.onToggleDarkMode.bind(this);
+  }
+
   static propTypes = {
     store: PropTypes.instanceOf(AppStore).isRequired,
   };
@@ -38,6 +91,18 @@ export class Redoc extends React.Component<RedocProps> {
 
   componentWillUnmount() {
     this.props.store.dispose();
+  }
+
+  onToggleDarkMode(darkMode: boolean) {
+    // console.log('is it checked?? ', e.target.checked)
+    // console.log('in toggle ', typeof window)
+    // console.log(e)
+    // console.log('toggle to ', e.target.checked)
+    // const darkMode = e.target.checked;
+    this.setState({ darkMode });
+    // const localStorageDarkMode = JSON.parse(localStorage.getItem('mongodb-docs') ?? '{}');
+    // localStorage.setItem('mongodb-docs', JSON.stringify({ ...localStorageDarkMode, theme: darkMode ? 'dark-theme': 'light-theme' }))
+    changeClass(darkMode ? 'dark-theme' : 'light-theme');
   }
 
   render() {
@@ -60,6 +125,10 @@ export class Redoc extends React.Component<RedocProps> {
                   backNavigationPath={options.backNavigationPath}
                   siteTitle={options.siteTitle}
                 />
+                <DarkModeSwitchContainer>
+                  <button onClick={() => this.onToggleDarkMode(false)}>Light</button>
+                  <button onClick={() => this.onToggleDarkMode(true)}>Dark</button>
+                </DarkModeSwitchContainer>
                 <SideMenuTitle>
                   {store.spec.info.title}
                   {options.versionData && ` ${options.versionData.active.apiVersion}`}

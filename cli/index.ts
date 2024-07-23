@@ -369,7 +369,49 @@ async function getPageHTML(
     redocHead: ssr
       ? (cdn
           ? '<script src="https://unpkg.com/redoc@latest/bundles/redoc.standalone.js"></script>'
-          : `<script>${redocStandaloneSrc}</script>`) + css
+          : `<script>${redocStandaloneSrc}</script>`) +
+        css +
+        `
+          <script>
+            !function () {
+              try {
+                var d = document.documentElement.classList;
+                d.remove("light-theme", "dark-theme");
+                var e = JSON.parse(localStorage.getItem("mongodb-docs"))?.["theme"];
+                if ("system" === e || (!e)) {
+                  var t = "(prefers-color-scheme: dark)",
+                    m = window.matchMedia(t);
+                  m.media !== t || m.matches ? d.add("dark-theme", "system") : d.add("light-theme", "system");
+                } else if (e) {
+                  var x = { "light-theme": "light-theme", "dark-theme": "dark-theme" };
+                  x[e] && d.add(x[e]);
+                }
+              } catch (e) {
+                console.error(e);
+              }
+            }();
+          </script>` +
+        `
+          <style>
+            :root {
+              --sidebar-bg-color: #F9FBFA;
+              --darken-tenth-sidebar-bg-color: #dae7e1;
+              --lighten-tenth-border-bottom: #aaaaaa; // wrong
+              --search-input-border-bottom: #dae7e1;
+              --sidebar-text-color: black;
+              --text-primary-color: #1C2D38;
+            }
+
+            .dark-theme {
+              --sidebar-bg-color: #112733;
+              --darken-tenth-sidebar-bg-color: #040a0d;
+              --lighten-tenth-sidebar-bg-color: #1e4459;
+              --search-input-border-bottom: #1e4459;
+              --sidebar-text-color: #E8EDEB;
+              --text-primary-color: #C1C7C6;
+            }
+          </style>
+          `
       : '<script src="redoc.standalone.js"></script>',
     title: title || spec.info.title || 'ReDoc documentation',
     disableGoogleFont,
