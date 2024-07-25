@@ -1,5 +1,3 @@
-import { palette } from '@leafygreen-ui/palette';
-import { transparentize } from 'polished';
 import styled, { css } from '../../styled-components';
 import { ArrowSvg } from './ArrowSvg';
 import { ArrowIconProps } from './types';
@@ -56,22 +54,20 @@ export const StyledButton = styled.button.attrs({
   height: 36px;
   margin: 8px 0;
 
-  background-color: white;
-  color: ${palette.black};
+  background-color: var(--select-btn-bg);
+  color: var(--select-btn-color);
   border: 1px solid transparent;
   border-radius: 6px;
-  border-color: ${palette.gray.base};
+  border-color: var(--select-btn-border);
 
   &:hover,
   &:active {
-    color: ${palette.black};
-    background-color: ${palette.white};
-    box-shadow: 0 0 0 3px ${palette.gray.light2};
+    box-shadow: 0 0 0 3px var(--select-btn-hover-shadow-color);
   }
 
   &:focus-visible {
-    box-shadow: 0 0 0 3px ${palette.blue.light1};
-    border-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 3px var(--select-btn-focus-shadow-color);
+    border-color: white;
   }
 `;
 
@@ -95,9 +91,10 @@ export const StyledMenuList = styled.ul`
   list-style: none;
   margin: 0;
   padding: 8px 0px;
+  box-shadow: 0 4px 7px 0 var(--select-ul-shadow-color);
+  border: 1px solid var(--select-ul-border);
   overflow: auto;
-  box-shadow: 0 4px 7px 0 ${transparentize(0.75, palette.black)};
-  border: ${palette.gray.light2};
+  max-height: 274px;
 `;
 
 export const StyledDisplay = styled.div`
@@ -114,12 +111,12 @@ export const StyledSelected = styled.div`
 
 export const disabledOptionStyle = css`
   cursor: not-allowed;
-  color: ${palette.gray.base};
+  color: var(--select-disabled-color);
 `;
 
 export const enabledOptionStyle = css`
   &:hover {
-    background-color: ${palette.gray.light2};
+    background-color: var(--select-enabled-hover-bg);
   }
 `;
 
@@ -140,11 +137,11 @@ export const StyledLi = styled.li.attrs<{
   position: relative;
   padding: 8px 12px;
   cursor: pointer;
-  color: ${palette.gray.dark3};
+  color: var(--select-li-color);
   ${props =>
     props.focused &&
-    `color: ${palette.blue.dark2};
-    background-color: ${palette.blue.light3};`}
+    `color: var(--select-li-focus-color);
+    background-color: var(--select-li-focus-bg);`}
   font-weight: ${props => (props.selected ? `bold` : `normal`)};
   &:before {
     content: '';
@@ -163,7 +160,7 @@ export const StyledLi = styled.li.attrs<{
       `
       opacity: 1;
       transform: scaleY(1);
-      background-color: ${palette.blue.base};
+      background-color: var(--select-li-before-focus-bg);
       `}
   }
   ${props => (props.disabled ? disabledOptionStyle : enabledOptionStyle)}
@@ -182,7 +179,7 @@ export const openDropdownStyle = css`
   width: 100%;
   pointer-events: initial;
   z-index: 2;
-  background-color: ${palette.white};
+  background-color: var(--select-ul-bg);
 `;
 
 export const StyledDropdown = styled.div.attrs<{ open: boolean }>({

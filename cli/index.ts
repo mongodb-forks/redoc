@@ -415,6 +415,7 @@ async function getPageHTML(
               --colors-success-main-dark: #0a2e0e;
 
               --absolute-border-color: none;
+              --section-divider-color: rgba(0, 0, 0, 0.2);
 
               --sidebar-hover: #E8EDEB;
               --sidebar-active-bg: #E3FCF7;
@@ -469,6 +470,24 @@ async function getPageHTML(
 
               --typography-code-color: #1C2D38;
               --typography-code-bg: #F9FBFA;
+
+              --select-btn-color: #001e2b;
+              --select-btn-bg: white;
+              --select-btn-border: #889397;
+              --select-btn-hover-shadow-color: #E8EDEB;
+              --select-btn-focus-shadow-color: #0498EC;
+
+              --select-ul-border: #E8EDEB;
+              --select-ul-shadow-color: rgba(0,30,43,0.25);
+              --select-ul-bg: white;
+
+              --select-disabled-color: #889397;
+              --select-enabled-hover-bg: #E8EDEB;
+
+              --select-li-color: #1C2D38;
+              --select-li-focus-color: #083C90;
+              --select-li-focus-bg: #E1F7FF;
+              --select-li-before-focus-bg: #016BF8;
             }
 
             .dark-theme {
@@ -493,6 +512,7 @@ async function getPageHTML(
               --colors-success-main-dark: #023430;
 
               --absolute-border-color: #3D4F58;
+              --section-divider-color: rgba(232, 237, 235, 0.2);
 
               --sidebar-hover: #1C2D38;
               --sidebar-active-bg: #023430;
@@ -547,6 +567,24 @@ async function getPageHTML(
 
               --typography-code-color: #f9fbfa;
               --typography-code-bg: #5c6c75;
+
+              --select-btn-color: #e8edeb;
+              --select-btn-bg: #112733;
+              --select-btn-border: #889397;
+              --select-btn-hover-shadow-color: #3d4f58;
+              --select-btn-focus-shadow-color: #0497ec;
+
+              --select-ul-border: #3d4f58;
+              --select-ul-shadow-color: rgba(0, 0, 0, 0.15);
+              --select-ul-bg: #112733;
+
+              --select-disabled-color: #5c6c75;
+              --select-enabled-hover-bg: #3d4f58;
+
+              --select-li-color: #e8edeb;
+              --select-li-focus-color: rgb(225, 247, 255);
+              --select-li-focus-bg: rgb(12, 38, 87);
+              --select-li-before-focus-bg: rgb(1, 107, 248);
             }
           </style>
           `
@@ -556,6 +594,8 @@ async function getPageHTML(
     templateOptions,
   });
 }
+
+// TODO: Not sure if sleect enabled hover bg is right on dark mode...
 
 // credits: https://stackoverflow.com/a/9238214/1749888
 function respondWithGzip(
