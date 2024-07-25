@@ -12,6 +12,7 @@ import { ContentItems } from '../ContentItems/ContentItems';
 import { SideMenu, SideMenuBackButton } from '../SideMenu';
 import { StickyResponsiveSidebar } from '../StickySidebar/StickyResponsiveSidebar';
 import {
+  AbsoluteBorder,
   ApiContentWrap,
   BackgroundStub,
   DarkModeSwitchContainer,
@@ -152,6 +153,7 @@ export class Redoc extends React.Component<RedocProps, { darkMode: boolean }> {
                 />
                 <ContentItems items={menu.items as any} />
               </ApiContentWrap>
+              <AbsoluteBorder />
               <BackgroundStub />
             </RedocWrap>
             <UnifiedFooter hideLocale={true} />

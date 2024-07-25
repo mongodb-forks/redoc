@@ -1,5 +1,5 @@
 import styled from '../styled-components';
-import { darken } from 'polished';
+import { darken, cssVar } from 'polished';
 import { deprecatedCss } from './mixins';
 
 export const OneOfList = styled.div`
@@ -38,7 +38,7 @@ export const OneOfButton = styled.button<{ active: boolean; deprecated: boolean 
       background-color: ${props.theme.colors.primary.main};
       &:focus {
         box-shadow: none;
-        background-color: ${darken(0.15, props.theme.colors.primary.main)};
+        background-color: ${darken(0.15, cssVar('--colors-primary-main', '#001E2B') as string)};
       }
       `;
     } else {

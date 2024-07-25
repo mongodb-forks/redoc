@@ -96,5 +96,5 @@ export const MimeLabel = styled.span`
   margin-left: 10px;
   text-transform: none;
   font-size: 0.929em;
-  color: black;
+  color: var(--text-primary-color);
 `;

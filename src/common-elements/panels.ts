@@ -4,6 +4,7 @@ import styled, { media } from '../styled-components';
 export const MiddlePanel = styled.div<{ compact?: boolean }>`
   width: calc(100% - ${props => props.theme.rightPanel.width});
   padding: 0 ${props => props.theme.spacing.sectionHorizontal}px;
+  background: var(--middle-panel-bg-color);
 
   ${({ compact, theme }) =>
     media.lessThan('medium', true)`

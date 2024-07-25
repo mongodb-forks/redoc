@@ -1,6 +1,3 @@
-import { transparentize } from 'polished';
-import { palette } from '@leafygreen-ui/palette';
-
 import styled, { extensionsHook, css } from '../styled-components';
 import { PropertyNameCell } from './fields-layout';
 import { ShelfIcon } from './shelfs';
@@ -56,7 +53,7 @@ export const FieldLabel = styled.span`
 `;
 
 export const TypePrefix = styled(FieldLabel)`
-  color: ${props => transparentize(0.1, props.theme.schema.typeNameColor)};
+  color: var(--type-prefix-color);
 `;
 
 export const TypeName = styled(FieldLabel)`
@@ -88,7 +85,7 @@ export const RecursiveLabel = styled(FieldLabel)`
 `;
 
 export const PatternLabel = styled(FieldLabel)`
-  color: ${palette.gray.dark3};
+  color: var('--text-primary-color');
   &::before,
   &::after {
     font-weight: bold;
@@ -99,11 +96,11 @@ export const ExampleValue = styled(FieldLabel)`
   border-radius: 2px;
   word-break: break-word;
   ${({ theme }) => `
-    background-color: ${palette.gray.light3};
-    color: ${palette.gray.dark3};
+    background-color: var(--gray-pill-bg);
+    color: var(--gray-pill-color);
 
     padding: 0 ${theme.spacing.unit}px;
-    border: 1px solid ${palette.gray.light2};
+    border: 1px solid var(--gray-pill-border);
     font-family: ${theme.typography.code.fontFamily};
 }`};
   & + & {
@@ -117,12 +114,12 @@ export const ExtensionValue = styled(ExampleValue)``;
 export const ConstraintItem = styled(FieldLabel)`
   border-radius: 2px;
   ${({ theme }) => `
-    background-color: ${palette.blue.light3};
-    color: ${palette.blue.base};
+    background-color: var(--blue-pill-bg);
+    color: var(--blue-pill-color);
 
     margin: 0 ${theme.spacing.unit}px;
     padding: 0 ${theme.spacing.unit}px;
-    border: 1px solid ${palette.blue.light2};
+    border: 1px solid var(--blue-pill-border);
 }`};
   & + & {
     margin-left: 0;

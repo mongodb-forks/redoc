@@ -58,6 +58,7 @@ export const ApiContentWrap = styled.div`
   position: relative;
   overflow: hidden;
   width: calc(100% - ${props => props.theme.sidebar.width});
+  background: var(--middle-panel-bg-color);
   ${media.lessThan('small', true)`
     width: 100%;
   `};
@@ -72,6 +73,26 @@ export const BackgroundStub = styled.div`
   bottom: 0;
   right: 0;
   width: ${({ theme }) => {
+    if (theme.rightPanel.width.endsWith('%')) {
+      const percents = parseInt(theme.rightPanel.width, 10);
+      return `calc((100% - ${theme.sidebar.width}) * ${percents / 100})`;
+    } else {
+      return theme.rightPanel.width;
+    }
+  }};
+  ${media.lessThan('medium', true)`
+    display: none;
+  `};
+`;
+
+export const AbsoluteBorder = styled.div`
+  background: ${({ theme }) => theme.rightPanel.backgroundColor};
+  position: absolute;
+  top: 0;
+  border-left: 1px solid var(--absolute-border-color);
+  height: 100%;
+  z-index: 2;
+  right: ${({ theme }) => {
     if (theme.rightPanel.width.endsWith('%')) {
       const percents = parseInt(theme.rightPanel.width, 10);
       return `calc((100% - ${theme.sidebar.width}) * ${percents / 100})`;

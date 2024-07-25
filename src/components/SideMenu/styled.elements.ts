@@ -1,5 +1,6 @@
 import { palette } from '@leafygreen-ui/palette';
 import { default as classnames } from 'classnames';
+import { cssVar, darken } from 'polished';
 
 import { deprecatedCss, ShelfIcon } from '../../common-elements';
 import styled, { css, media, ResolvedThemeInterface } from '../../styled-components';
@@ -49,7 +50,7 @@ function selectMenuLabelColor(
   props: MenuItemLabelType & { theme: ResolvedThemeInterface },
 ): string {
   const { active, depth, isBackButton, theme } = props;
-  if (isBackButton) return palette.gray.dark1;
+  if (isBackButton) return 'var(--back-btn-label-color)';
   return active ? menuItemActive(depth, props, 'activeTextColor') : theme.sidebar.textColor;
 }
 
@@ -127,7 +128,7 @@ export const MenuItemLabel = styled.label.attrs((props: MenuItemLabelType) => ({
       props.isBackButton
         ? palette.gray.dark1
         : menuItemActive(props.depth, props, 'activeTextColor')};
-    background-color: ${palette.gray.light2};
+    background-color: var(--sidebar-hover);
   }
 
   ${ShelfIcon} {
@@ -141,7 +142,7 @@ export const MenuItemLabel = styled.label.attrs((props: MenuItemLabelType) => ({
 
 export const MenuBreak = styled.hr`
   border: unset;
-  border-bottom: 1px solid ${palette.gray.light2};
+  border-bottom: 1px solid var(--sidebar-hl);
   margin: 16px 0;
   width: 100%;
 `;
@@ -170,7 +171,7 @@ export const RedocAttribution = styled.div`
     a:hover {
       color: ${theme.sidebar.textColor} !important;
       padding: ${theme.spacing.unit}px 0;
-      border-top: 1px solid ${theme.sidebar.backgroundColor};
+      border-top: 1px solid ${darken(0.1, cssVar('--sidebar-bg-color', '#F9FBFA') as string)};
       text-decoration: none;
       display: flex;
       align-items: center;
