@@ -1,4 +1,3 @@
-import { palette } from '@leafygreen-ui/palette';
 import { default as classnames } from 'classnames';
 import { cssVar, darken } from 'polished';
 
@@ -65,6 +64,19 @@ export const MenuItemUl = styled.ul<{ expanded: boolean }>`
   ${props => (props.expanded ? '' : 'display: none;')};
 `;
 
+export const MenuItemBackButtonLi = styled.li`
+  list-style: none inside none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const MenuItemBackButtonContainer = styled.div`
+  overflow: hidden;
+  text-overflow: ellipsis;
+`;
+
 export const MenuItemLi = styled.li<{ depth: number }>`
   list-style: none inside none;
   overflow: hidden;
@@ -124,10 +136,7 @@ export const MenuItemLabel = styled.label.attrs((props: MenuItemLabelType) => ({
   ${props => (props.deprecated && deprecatedCss) || ''};
 
   &:hover {
-    color: ${props =>
-      props.isBackButton
-        ? palette.gray.dark1
-        : menuItemActive(props.depth, props, 'activeTextColor')};
+    color: ${props => menuItemActive(props.depth, props, 'activeTextColor')};
     background-color: var(--sidebar-hover);
   }
 

@@ -9,7 +9,7 @@ export const ToggleButton = styled.button`
   background-color: rgba(255, 255, 255, 0);
   height: 28px;
   width: 28px;
-  color: rgb(193, 199, 198);
+  color: var(--button-color);
   border-width: initial;
   border-style: none;
   border-color: initial;
@@ -27,6 +27,16 @@ export const ToggleButton = styled.button`
     border-radius: 100%;
     opacity: 0;
     transform: scale(0.8);
+  }
+
+  &:hover {
+    color: var(--button-color-on-hover);
+  }
+
+  &:hover::before {
+    opacity: 1;
+    transform: scale(1);
+    background-color: var(--button-bg-on-hover);
   }
 `;
 
@@ -48,4 +58,10 @@ export const IconContainer = styled.div`
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+`;
+
+export const Placeholder = styled.div`
+  width: 16px;
+  height: 16px;
+  margin: 0 16px;
 `;

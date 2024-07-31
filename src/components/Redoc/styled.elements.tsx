@@ -1,12 +1,5 @@
 import styled, { media } from '../../styled-components';
 
-export const DarkModeSwitchContainer = styled.div`
-  display: flex;
-  margin: 10px auto;
-  justify-content: space-between;
-  gap: 20px;
-`;
-
 export const StyledHeader = styled.header`
   position: relative;
   width: 100%;
