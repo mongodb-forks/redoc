@@ -32,7 +32,7 @@ export interface RedocProps {
 
 const GlobalCss = createGlobalStyle`${globalStyles}`;
 
-export class Redoc extends React.Component<RedocProps, { darkMode: boolean; isMounted: boolean }> {
+export class Redoc extends React.Component<RedocProps> {
   static propTypes = {
     store: PropTypes.instanceOf(AppStore).isRequired,
   };
