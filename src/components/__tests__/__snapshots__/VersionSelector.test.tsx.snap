@@ -14,7 +14,7 @@ exports[`VersionSelector should correctly render VersionSelector 1`] = `
     </label>
     <button
       aria-labelledby="View a different version of documentation."
-      class="sc-hKFxyN hYrDYQ"
+      class="sc-hKFxyN cxwBbz"
     >
       <div
         class="sc-iCoGMd gojxeT"
@@ -50,11 +50,11 @@ exports[`VersionSelector should correctly render VersionSelector 1`] = `
   >
     <div>
       <ul
-        class="sc-gKAaRy iQghMf"
+        class="sc-gKAaRy eAupuT"
       >
         <li
           aria-selected="true"
-          class="sc-pNWdM derVNM"
+          class="sc-pNWdM dkiLFg"
           role="option"
           selected=""
           tabindex="0"
@@ -82,7 +82,7 @@ exports[`VersionSelector should correctly render VersionSelector 1`] = `
         </li>
         <li
           aria-selected="false"
-          class="sc-pNWdM kSTcTW"
+          class="sc-pNWdM gTBAEC"
           role="option"
           tabindex="0"
         >
@@ -97,7 +97,7 @@ exports[`VersionSelector should correctly render VersionSelector 1`] = `
         </li>
         <li
           aria-selected="false"
-          class="sc-pNWdM kSTcTW"
+          class="sc-pNWdM gTBAEC"
           role="option"
           tabindex="0"
         >
