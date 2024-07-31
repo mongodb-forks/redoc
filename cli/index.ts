@@ -488,6 +488,18 @@ async function getPageHTML(
               --select-li-focus-color: #083C90;
               --select-li-focus-bg: #E1F7FF;
               --select-li-before-focus-bg: #016BF8;
+
+              --html-select-bg: white;
+              --html-select-color: #263238;
+              --html-select-border: rgba(38, 50, 56, 0.5);
+
+              --arrow-icon: initial;
+
+              --one-of-btn-bg: white;
+              --one-of-btn-color: #001E2B;
+
+              --one-of-btn-bg-active: #001E2B;
+              --one-of-btn-color-active: white;
             }
 
             .dark-theme {
@@ -585,6 +597,18 @@ async function getPageHTML(
               --select-li-focus-color: rgb(225, 247, 255);
               --select-li-focus-bg: rgb(12, 38, 87);
               --select-li-before-focus-bg: rgb(1, 107, 248);
+
+              --html-select-bg: #112733;
+              --html-select-color: #889397;
+              --html-select-border: #889397;
+
+              --arrow-icon: #C1C7C6;
+
+              --one-of-btn-bg: #001E2B;
+              --one-of-btn-color: #C1C7C6;
+
+              --one-of-btn-bg-active: #ffffff;
+              --one-of-btn-color-active: #001E2B;
             }
           </style>
           `
@@ -594,8 +618,6 @@ async function getPageHTML(
     templateOptions,
   });
 }
-
-// TODO: Not sure if sleect enabled hover bg is right on dark mode...
 
 // credits: https://stackoverflow.com/a/9238214/1749888
 function respondWithGzip(

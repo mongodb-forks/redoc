@@ -32,6 +32,7 @@ const ArrowIcon = styled(ArrowSvg)`
   margin: auto;
   text-align: center;
   polyline {
+    color: var(--arrow-icon);
     color: ${props => props.variant === 'dark' && 'white'};
   }
 `;
