@@ -25,10 +25,21 @@ import { SearchBox } from '../SearchBox/SearchBox';
 import { StoreProvider } from '../StoreBuilder';
 import { VersionSelector } from '../VersionSelector';
 import { DarkModeToggle } from '../DarkModeToggle/DarkModeToggle';
+import { createGlobalStyle } from 'styled-components';
+import { IS_BROWSER } from '../../utils';
 
 export interface RedocProps {
   store: AppStore;
 }
+
+let globalCss = '';
+if (IS_BROWSER) {
+  globalCss = require('../../global.css');
+  globalCss = (typeof globalCss.toString === 'function' && globalCss.toString()) || '';
+  globalCss = globalCss === '[object Object]' ? '' : globalCss;
+}
+
+const GlobalCss = createGlobalStyle`${globalCss}`;
 
 export const DARK_THEME_CLASSNAME = 'dark-theme';
 export const LIGHT_THEME_CLASSNAME = 'light-theme';
@@ -99,6 +110,7 @@ export class Redoc extends React.Component<RedocProps, { darkMode: boolean }> {
       <ThemeProvider theme={options.theme}>
         <StoreProvider value={store}>
           <OptionsProvider value={options}>
+            {globalCss && <GlobalCss />}
             <StyledHeader>
               <UnifiedNav position="relative" property={{ name: 'DOCS', searchParams: [] }} />
             </StyledHeader>
