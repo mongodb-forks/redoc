@@ -11,7 +11,7 @@ exports[`Components SchemaView OneOf deprecated should match snapshot 1`] = `
     class="sc-dlMDgC EoFth"
   >
     <button
-      class="sc-fKgJPI kpGUow"
+      class="sc-fKgJPI dHriKv"
     >
       string
     </button>
