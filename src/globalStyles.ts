@@ -31,6 +31,9 @@ export const globalStyles = `
     --sidebar-hl: #E7EEEC;
     --back-btn-label-color: ${palette.gray.dark1};
 
+    --tenth-altered-sidebar-bg-color: #dae7e1;
+    --five-percent-altered-sidebar-bg-color: #eaf1ed;
+
     --underlined-header-color: rgba(38, 50, 56, 0.5);
     --underlined-header-border-color: rgba(38, 50, 56, 0.3);
     --link-blue: ${palette.blue.base};
@@ -143,6 +146,9 @@ export const globalStyles = `
     --sidebar-active-color: ${palette.green.light3};
     --sidebar-hl: ${palette.gray.dark2};
     --back-btn-label-color: ${palette.gray.base};
+
+    --tenth-altered-sidebar-bg-color: #1e4459;
+    --five-percent-altered-sidebar-bg-color: #173646;
 
     --underlined-header-color: ${palette.gray.light1};
     --underlined-header-border-color: ${palette.gray.light1};

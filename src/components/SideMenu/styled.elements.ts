@@ -1,5 +1,4 @@
 import { default as classnames } from 'classnames';
-import { cssVar, darken } from 'polished';
 
 import { deprecatedCss, ShelfIcon } from '../../common-elements';
 import styled, { css, media, ResolvedThemeInterface } from '../../styled-components';
@@ -180,7 +179,7 @@ export const RedocAttribution = styled.div`
     a:hover {
       color: ${theme.sidebar.textColor} !important;
       padding: ${theme.spacing.unit}px 0;
-      border-top: 1px solid ${darken(0.1, cssVar('--sidebar-bg-color', '#F9FBFA') as string)};
+      border-top: 1px solid var(--tenth-altered-sidebar-bg-color);
       text-decoration: none;
       display: flex;
       align-items: center;

@@ -1,6 +1,5 @@
 import * as React from 'react';
 
-import { cssVar, darken } from 'polished';
 import styled from '../../styled-components';
 import { MenuItemLabel } from '../SideMenu/styled.elements';
 
@@ -52,16 +51,16 @@ export const SearchIcon = styled((props: { className?: string }) => (
 
 export const SearchResultsBox = styled.div`
   padding: ${props => props.theme.spacing.unit}px 0;
-  background-color: ${({ theme }) => darken(0.05, theme.sidebar.backgroundColor)}};
+  background-color: var(--five-percent-altered-sidebar-bg-color);
   color: ${props => props.theme.sidebar.textColor};
   min-height: 150px;
   max-height: 250px;
-  border-top: ${darken(0.1, cssVar('--sidebar-bg-color', '#F9FBFA') as string)};
-  border-bottom: ${darken(0.1, cssVar('--sidebar-bg-color', '#F9FBFA') as string)};
+  border-top: var(--tenth-altered-sidebar-bg-color);
+  border-bottom: var(--tenth-altered-sidebar-bg-color);
   margin-top: 10px;
   line-height: 1.4;
   font-size: 0.9em;
-  
+
   li {
     background-color: inherit;
   }
@@ -72,7 +71,7 @@ export const SearchResultsBox = styled.div`
 
     &:hover,
     &.active {
-      background-color: ${darken(0.1, cssVar('--sidebar-bg-color', '#F9FBFA') as string)};
+      background-color: var(--tenth-altered-sidebar-bg-color);
     }
 
     > svg {

@@ -1,5 +1,4 @@
 import styled from '../styled-components';
-import { darken, cssVar } from 'polished';
 import { deprecatedCss } from './mixins';
 
 export const OneOfList = styled.div`
@@ -38,7 +37,7 @@ export const OneOfButton = styled.button<{ active: boolean; deprecated: boolean 
       background-color: var(--one-of-btn-bg-active);
       &:focus {
         box-shadow: none;
-        background-color: ${darken(0.15, cssVar('--one-of-btn-bg-active', '#001E2B') as string)};
+        background-color: var(--one-of-btn-bg-active);
       }
       `;
     } else {
