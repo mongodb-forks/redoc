@@ -115,7 +115,7 @@ export class ApiInfo extends React.Component<ApiInfoProps> {
             <Markdown source={store.spec.info.description} data-role="redoc-description" />
             {externalDocs && <ExternalDocumentation externalDocs={externalDocs} />}
           </MiddlePanel>
-          <DarkRightPanel></DarkRightPanel>
+          <DarkRightPanel />
         </Row>
       </Section>
     );

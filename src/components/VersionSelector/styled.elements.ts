@@ -1,3 +1,4 @@
+import { palette } from '@leafygreen-ui/palette';
 import styled, { css } from '../../styled-components';
 import { ArrowSvg } from './ArrowSvg';
 import { ArrowIconProps } from './types';
@@ -58,7 +59,7 @@ export const StyledButton = styled.button.attrs({
   color: var(--select-btn-color);
   border: 1px solid transparent;
   border-radius: 6px;
-  border-color: var(--select-btn-border);
+  border-color: ${palette.gray.base};
 
   &:hover,
   &:active {

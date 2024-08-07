@@ -48,6 +48,7 @@ const CallbackTitleWrapper = styled.button`
 const CallbackName = styled.span<{ deprecated?: boolean }>`
   text-decoration: ${props => (props.deprecated ? 'line-through' : 'none')};
   margin-right: 8px;
+  color: var(--text-primary-color);
 `;
 
 const OperationBadgeStyled = styled(OperationBadge)`

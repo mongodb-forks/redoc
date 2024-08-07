@@ -4,7 +4,6 @@ export const globalStyles = `
   :root {
     --middle-panel-bg-color: unset;
     --sidebar-bg-color: ${palette.gray.light3};
-    --right-panel-bg-color: ${palette.black};
     --sidebar-text-color: black;
     --text-primary-color: ${palette.gray.dark3};
     --text-secondary-color: #3e647c;
@@ -34,7 +33,7 @@ export const globalStyles = `
     --tenth-altered-sidebar-bg-color: #dae7e1;
     --five-percent-altered-sidebar-bg-color: #eaf1ed;
 
-    --underlined-header-color: rgba(38, 50, 56, 0.5);
+    --underlined-header-color: ${palette.gray.dark1};
     --underlined-header-border-color: rgba(38, 50, 56, 0.3);
     --link-blue: ${palette.blue.base};
     --schema-lines-color: ${palette.black};
@@ -60,10 +59,6 @@ export const globalStyles = `
     --http-patch-border: ${palette.yellow.light2};
     --http-patch-color: ${palette.yellow.dark2};
 
-    --http-put-bg: ${palette.yellow.light3};
-    --http-put-border: ${palette.yellow.light2};
-    --http-put-color: ${palette.yellow.dark2};
-
     --http-delete-bg: ${palette.red.light3};
     --http-delete-border: ${palette.red.light2};
     --http-delete-color: ${palette.red.dark2};
@@ -84,7 +79,6 @@ export const globalStyles = `
 
     --select-btn-color: ${palette.black};
     --select-btn-bg: ${palette.white};
-    --select-btn-border: ${palette.gray.base};
     --select-btn-hover-shadow-color: ${palette.gray.light2};
     --select-btn-focus-shadow-color: ${palette.blue.light1};
 
@@ -115,12 +109,15 @@ export const globalStyles = `
     --button-color: ${palette.gray.dark1};
     --button-color-on-hover: ${palette.black};
     --button-bg-on-hover: ${palette.gray.light2};
+
+    --callbacks-title-bg: #F5F5F5;
+    --callbacks-title-outline: #C2C2C2;
+    --callbacks-details-bg: #FAFAFA;
   }
 
   .dark-theme {
     --middle-panel-bg-color: ${palette.black};
     --sidebar-bg-color: ${palette.gray.dark4};
-    --right-panel-bg-color: ${palette.black};
     --sidebar-text-color: ${palette.gray.light2};
     --text-primary-color: ${palette.gray.light2};
     --text-secondary-color: #f7f7f7;
@@ -176,10 +173,6 @@ export const globalStyles = `
     --http-patch-border: ${palette.yellow.dark2};
     --http-patch-color: ${palette.yellow.light2};
 
-    --http-put-bg: ${palette.yellow.dark3};
-    --http-put-border: ${palette.yellow.dark2};
-    --http-put-color: ${palette.yellow.light2};
-
     --http-delete-bg: ${palette.red.dark3};
     --http-delete-border: ${palette.red.dark2};
     --http-delete-color: ${palette.red.light2};
@@ -200,7 +193,6 @@ export const globalStyles = `
 
     --select-btn-color: ${palette.gray.light2};
     --select-btn-bg: ${palette.gray.dark4};
-    --select-btn-border: ${palette.gray.base};
     --select-btn-hover-shadow-color: ${palette.gray.dark2};
     --select-btn-focus-shadow-color: #0497ec;
 
@@ -231,5 +223,9 @@ export const globalStyles = `
     --button-color: ${palette.gray.light1};
     --button-color-on-hover: ${palette.gray.light3};
     --button-bg-on-hover: ${palette.gray.dark2};
+
+    --callbacks-title-bg: ${palette.gray.dark3};
+    --callbacks-title-outline: #3e647c;
+    --callbacks-details-bg: ${palette.gray.dark3};
   }
 `;

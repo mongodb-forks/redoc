@@ -103,9 +103,9 @@ const defaultTheme: ThemeInterface = {
       },
       put: {
         light: {
-          backgroundColor: 'var(--http-put-bg)',
-          borderColor: 'var(--http-put-border)',
-          color: 'var(--http-put-color)',
+          backgroundColor: 'var(--http-patch-bg)',
+          borderColor: 'var(--http-patch-border)',
+          color: 'var(--http-patch-color)',
         },
         dark: {
           backgroundColor: palette.yellow.dark3,

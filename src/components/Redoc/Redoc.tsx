@@ -55,7 +55,7 @@ export class Redoc extends React.Component<RedocProps> {
       <ThemeProvider theme={options.theme}>
         <StoreProvider value={store}>
           <OptionsProvider value={options}>
-            {GlobalCss && <GlobalCss />}
+            <GlobalCss />
             <StyledHeader>
               <UnifiedNav position="relative" property={{ name: 'DOCS', searchParams: [] }} />
             </StyledHeader>
