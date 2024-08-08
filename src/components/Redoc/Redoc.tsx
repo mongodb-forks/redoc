@@ -12,6 +12,7 @@ import { ContentItems } from '../ContentItems/ContentItems';
 import { SideMenu, SideMenuBackButton } from '../SideMenu';
 import { StickyResponsiveSidebar } from '../StickySidebar/StickyResponsiveSidebar';
 import {
+  AbsoluteBorder,
   ApiContentWrap,
   BackgroundStub,
   RedocWrap,
@@ -22,10 +23,14 @@ import {
 import { SearchBox } from '../SearchBox/SearchBox';
 import { StoreProvider } from '../StoreBuilder';
 import { VersionSelector } from '../VersionSelector';
+import { createGlobalStyle } from 'styled-components';
+import { globalStyles } from '../../globalStyles';
 
 export interface RedocProps {
   store: AppStore;
 }
+
+const GlobalCss = createGlobalStyle`${globalStyles}`;
 
 export class Redoc extends React.Component<RedocProps> {
   static propTypes = {
@@ -50,6 +55,7 @@ export class Redoc extends React.Component<RedocProps> {
       <ThemeProvider theme={options.theme}>
         <StoreProvider value={store}>
           <OptionsProvider value={options}>
+            <GlobalCss />
             <StyledHeader>
               <UnifiedNav position="relative" property={{ name: 'DOCS', searchParams: [] }} />
             </StyledHeader>
@@ -83,6 +89,7 @@ export class Redoc extends React.Component<RedocProps> {
                 />
                 <ContentItems items={menu.items as any} />
               </ApiContentWrap>
+              <AbsoluteBorder />
               <BackgroundStub />
             </RedocWrap>
             <UnifiedFooter hideLocale={true} />

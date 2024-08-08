@@ -83,7 +83,7 @@ export const SecuritiesColumn = styled.div<{ expanded?: boolean }>`
   overflow: hidden;
   ${p =>
     p.expanded &&
-    `background: ${p.theme.colors.gray['100']};
+    `background: var(--securities-col-bg);
      padding: 8px 9.6px;
      margin: 20px 0;
      width: 100%;

@@ -1,12 +1,14 @@
 import * as React from 'react';
 import {
   MenuItemLabel,
-  MenuItemLi,
   MenuItemTitle,
   MenuItemUl,
   MenuLink,
   MenuBreak,
+  MenuItemBackButtonLi,
+  MenuItemBackButtonContainer,
 } from './styled.elements';
+import { DarkModeToggle } from '../DarkModeToggle/DarkModeToggle';
 
 interface SideMenuBackButtonProps {
   backNavigationPath?: string;
@@ -24,13 +26,16 @@ export const SideMenuBackButton = ({ backNavigationPath, siteTitle }: SideMenuBa
   return (
     <>
       <MenuItemUl expanded={true}>
-        <MenuItemLi depth={depth}>
-          <MenuLink href={href}>
-            <MenuItemLabel depth={depth} active={false} isBackButton={true}>
-              <MenuItemTitle>&#8592; {text}</MenuItemTitle>
-            </MenuItemLabel>
-          </MenuLink>
-        </MenuItemLi>
+        <MenuItemBackButtonLi>
+          <MenuItemBackButtonContainer>
+            <MenuLink href={href}>
+              <MenuItemLabel depth={depth} active={false} isBackButton={true}>
+                <MenuItemTitle>&#8592; {text}</MenuItemTitle>
+              </MenuItemLabel>
+            </MenuLink>
+          </MenuItemBackButtonContainer>
+          <DarkModeToggle />
+        </MenuItemBackButtonLi>
       </MenuItemUl>
       <MenuBreak />
     </>

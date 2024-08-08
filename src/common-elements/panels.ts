@@ -4,6 +4,7 @@ import styled, { media } from '../styled-components';
 export const MiddlePanel = styled.div<{ compact?: boolean }>`
   width: calc(100% - ${props => props.theme.rightPanel.width});
   padding: 0 ${props => props.theme.spacing.sectionHorizontal}px;
+  background: var(--middle-panel-bg-color);
 
   ${({ compact, theme }) =>
     media.lessThan('medium', true)`
@@ -43,7 +44,7 @@ export const Section = styled.div.attrs(props => ({
       width: 100%;
       display: block;
       content: '';
-      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      border-bottom: 1px solid var(--section-divider-color);
     }
   `) ||
     ''}

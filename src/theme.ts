@@ -19,10 +19,10 @@ const defaultTheme: ThemeInterface = {
   colors: {
     tonalOffset: 0.2,
     primary: {
-      main: palette.black,
-      light: ({ colors }) => lighten(colors.tonalOffset, colors.primary.main),
-      dark: ({ colors }) => darken(colors.tonalOffset, colors.primary.main),
-      contrastText: ({ colors }) => readableColor(colors.primary.main),
+      main: 'var(--colors-primary-main)',
+      light: 'var(--colors-primary-main-light)',
+      dark: 'var(--colors-primary-main-dark)',
+      contrastText: 'var(--colors-primary-main-dark)',
     },
     success: {
       main: '#1d8127',
@@ -47,8 +47,8 @@ const defaultTheme: ThemeInterface = {
       100: '#F5F5F5',
     },
     text: {
-      primary: palette.gray.dark3,
-      secondary: ({ colors }) => lighten(colors.tonalOffset, colors.text.primary),
+      primary: 'var(--text-primary-color)',
+      secondary: 'var(--text-secondary-color)',
     },
     border: {
       dark: 'rgba(0,0,0, 0.1)',
@@ -56,13 +56,13 @@ const defaultTheme: ThemeInterface = {
     },
     responses: {
       success: {
-        color: palette.green.dark2,
-        backgroundColor: palette.green.light3,
+        color: 'var(--responses-success-color)',
+        backgroundColor: 'var(--responses-success-bg)',
         tabTextColor: palette.green.base,
       },
       error: {
-        color: palette.red.base,
-        backgroundColor: palette.red.light3,
+        color: 'var(--responses-error-color)',
+        backgroundColor: 'var(--responses-error-bg)',
         tabTextColor: palette.red.base,
       },
       redirect: {
@@ -79,9 +79,9 @@ const defaultTheme: ThemeInterface = {
     http: {
       get: {
         light: {
-          backgroundColor: palette.blue.light3,
-          borderColor: palette.blue.light2,
-          color: palette.blue.dark1,
+          backgroundColor: 'var(--http-get-bg)',
+          borderColor: 'var(--http-get-border)',
+          color: 'var(--http-get-color)',
         },
         dark: {
           backgroundColor: palette.blue.dark2,
@@ -91,9 +91,9 @@ const defaultTheme: ThemeInterface = {
       },
       post: {
         light: {
-          backgroundColor: palette.green.light3,
-          borderColor: palette.green.light2,
-          color: palette.green.dark2,
+          backgroundColor: 'var(--http-post-bg)',
+          borderColor: 'var(--http-post-border)',
+          color: 'var(--http-post-color)',
         },
         dark: {
           backgroundColor: palette.green.dark3,
@@ -103,9 +103,9 @@ const defaultTheme: ThemeInterface = {
       },
       put: {
         light: {
-          backgroundColor: palette.yellow.light3,
-          borderColor: palette.yellow.light2,
-          color: palette.yellow.dark2,
+          backgroundColor: 'var(--http-patch-bg)',
+          borderColor: 'var(--http-patch-border)',
+          color: 'var(--http-patch-color)',
         },
         dark: {
           backgroundColor: palette.yellow.dark3,
@@ -116,9 +116,9 @@ const defaultTheme: ThemeInterface = {
       options: '#947014',
       patch: {
         light: {
-          backgroundColor: palette.yellow.light3,
-          borderColor: palette.yellow.light2,
-          color: palette.yellow.dark2,
+          backgroundColor: 'var(--http-patch-bg)',
+          borderColor: 'var(--http-patch-border)',
+          color: 'var(--http-patch-color)',
         },
         dark: {
           backgroundColor: palette.yellow.dark3,
@@ -128,9 +128,9 @@ const defaultTheme: ThemeInterface = {
       },
       delete: {
         light: {
-          backgroundColor: palette.red.light3,
-          borderColor: palette.red.light2,
-          color: palette.red.dark2,
+          backgroundColor: 'var(--http-delete-bg)',
+          borderColor: 'var(--http-delete-border)',
+          color: 'var(--http-delete-color)',
         },
         dark: {
           backgroundColor: palette.red.dark3,
@@ -144,11 +144,11 @@ const defaultTheme: ThemeInterface = {
     },
   },
   schema: {
-    linesColor: palette.black,
+    linesColor: 'var(--schema-lines-color)',
     defaultDetailsWidth: '75%',
-    typeNameColor: palette.gray.dark3,
+    typeNameColor: 'var(--type-name-color)',
     typeTitleColor: theme => theme.schema.typeNameColor,
-    requireLabelColor: palette.red.base,
+    requireLabelColor: 'var(--require-label-color)',
     labelsTextSize: '0.9em',
     nestingSpacing: '1em',
     nestedBackground: '#fafafa',
@@ -176,30 +176,31 @@ const defaultTheme: ThemeInterface = {
       fontFamily: codeFontFamily,
       lineHeight: ({ typography }) => typography.lineHeight,
       fontWeight: ({ typography }) => typography.fontWeightRegular,
-      color: palette.gray.dark3,
-      backgroundColor: palette.gray.light3,
+      color: 'var(--typography-code-color)',
+      backgroundColor: 'var(--typography-code-bg)',
       wrap: false,
     },
     links: {
-      color: palette.blue.base,
-      visited: palette.blue.base,
-      hover: palette.blue.base,
+      color: 'var(--link-blue)',
+      visited: 'var(--link-blue)',
+      hover: 'var(--link-blue)',
       textDecoration: 'auto',
       hoverTextDecoration: 'auto',
     },
   },
   sidebar: {
     width: '268px',
-    backgroundColor: palette.gray.light3,
-    textColor: palette.black,
-    activeTextColor: palette.green.dark3,
+    backgroundColor: 'var(--sidebar-bg-color)',
+    textColor: 'var(--sidebar-text-color)',
+    activeTextColor: 'var(--sidebar-active-color)',
+    backButtonLabelColor: 'var(--back-btn-label-color)',
     groupItems: {
-      activeBackgroundColor: palette.green.light3,
+      activeBackgroundColor: 'var(--sidebar-active-bg)',
       activeTextColor: theme => theme.sidebar.activeTextColor,
       textTransform: 'uppercase',
     },
     level1Items: {
-      activeBackgroundColor: palette.green.light3,
+      activeBackgroundColor: 'var(--sidebar-active-bg)',
       activeTextColor: theme => theme.sidebar.activeTextColor,
       textTransform: 'none',
     },
@@ -413,6 +414,7 @@ export interface ResolvedThemeInterface {
     backgroundColor: string;
     textColor: string;
     activeTextColor: string;
+    backButtonLabelColor: string;
     groupItems: {
       activeBackgroundColor: string;
       activeTextColor: string;

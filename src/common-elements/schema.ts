@@ -1,5 +1,4 @@
 import styled from '../styled-components';
-import { darken } from 'polished';
 import { deprecatedCss } from './mixins';
 
 export const OneOfList = styled.div`
@@ -34,17 +33,17 @@ export const OneOfButton = styled.button<{ active: boolean; deprecated: boolean 
   ${props => {
     if (props.active) {
       return `
-      color: white;
-      background-color: ${props.theme.colors.primary.main};
+      color: var(--one-of-btn-color-active);
+      background-color: var(--one-of-btn-bg-active);
       &:focus {
         box-shadow: none;
-        background-color: ${darken(0.15, props.theme.colors.primary.main)};
+        background-color: var(--one-of-btn-bg-active);
       }
       `;
     } else {
       return `
-        color: ${props.theme.colors.primary.main};
-        background-color: white;
+        color: var(--one-of-btn-color);
+        background-color: var(--one-of-btn-bg);
       `;
     }
   }}

@@ -1,6 +1,5 @@
 import * as React from 'react';
 
-import { darken, getLuminance, lighten } from 'polished';
 import styled from '../../styled-components';
 import { MenuItemLabel } from '../SideMenu/styled.elements';
 
@@ -17,12 +16,7 @@ export const SearchInput = styled.input.attrs(() => ({
   padding: 5px ${props => props.theme.spacing.unit * 2}px 5px
     ${props => props.theme.spacing.unit * 4}px;
   border: 0;
-  border-bottom: 1px solid
-    ${({ theme }) =>
-      (getLuminance(theme.sidebar.backgroundColor) > 0.5 ? darken : lighten)(
-        0.1,
-        theme.sidebar.backgroundColor,
-      )};
+  border-bottom: 1px solid var(--sidebar-hl);
   font-family: ${({ theme }) => theme.typography.fontFamily};
   font-weight: bold;
   font-size: 13px;
@@ -57,16 +51,16 @@ export const SearchIcon = styled((props: { className?: string }) => (
 
 export const SearchResultsBox = styled.div`
   padding: ${props => props.theme.spacing.unit}px 0;
-  background-color: ${({ theme }) => darken(0.05, theme.sidebar.backgroundColor)}};
+  background-color: var(--five-percent-altered-sidebar-bg-color);
   color: ${props => props.theme.sidebar.textColor};
   min-height: 150px;
   max-height: 250px;
-  border-top: ${({ theme }) => darken(0.1, theme.sidebar.backgroundColor)}};
-  border-bottom: ${({ theme }) => darken(0.1, theme.sidebar.backgroundColor)}};
+  border-top: var(--tenth-altered-sidebar-bg-color);
+  border-bottom: var(--tenth-altered-sidebar-bg-color);
   margin-top: 10px;
   line-height: 1.4;
   font-size: 0.9em;
-  
+
   li {
     background-color: inherit;
   }
@@ -77,7 +71,7 @@ export const SearchResultsBox = styled.div`
 
     &:hover,
     &.active {
-      background-color: ${({ theme }) => darken(0.1, theme.sidebar.backgroundColor)};
+      background-color: var(--tenth-altered-sidebar-bg-color);
     }
 
     > svg {

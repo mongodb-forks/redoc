@@ -1,4 +1,3 @@
-import { palette } from '@leafygreen-ui/palette';
 import styled from 'styled-components';
 
 import { Dropdown as DropdownComponent } from './Dropdown';
@@ -35,28 +34,28 @@ export const Dropdown = styled(DropdownComponent)<{
     border: none;
     appearance: none;
     cursor: pointer;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 
     color: ${({ theme }) => theme.colors.text.primary};
     line-height: inherit;
     font-family: inherit;
-    background-color: ${palette.gray.dark2};
-
-    :hover {
-      background-color: ${palette.gray.dark2};
-    }
+    background-color: var(--html-select-bg);
   }
   box-sizing: border-box;
   min-width: 100px;
   outline: none;
   display: inline-block;
   border-radius: 2px;
-  border: 1px solid rgba(38, 50, 56, 0.5);
+  border: 1px solid var(--html-select-border);
   vertical-align: bottom;
   padding: 2px 0px 2px 6px;
   position: relative;
   width: auto;
-  background: white;
-  color: #263238;
+  background: var(--html-select-bg);
+  color: var(--html-select-color);
   font-family: ${props => props.theme.typography.headings.fontFamily};
   font-size: 13px;
   line-height: 20px;
@@ -96,5 +95,5 @@ export const MimeLabel = styled.span`
   margin-left: 10px;
   text-transform: none;
   font-size: 0.929em;
-  color: black;
+  color: var(--text-primary-color);
 `;

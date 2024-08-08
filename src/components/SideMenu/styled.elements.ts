@@ -1,6 +1,4 @@
-import { palette } from '@leafygreen-ui/palette';
 import { default as classnames } from 'classnames';
-import { darken } from 'polished';
 
 import { deprecatedCss, ShelfIcon } from '../../common-elements';
 import styled, { css, media, ResolvedThemeInterface } from '../../styled-components';
@@ -50,7 +48,7 @@ function selectMenuLabelColor(
   props: MenuItemLabelType & { theme: ResolvedThemeInterface },
 ): string {
   const { active, depth, isBackButton, theme } = props;
-  if (isBackButton) return palette.gray.dark1;
+  if (isBackButton) return 'var(--back-btn-label-color)';
   return active ? menuItemActive(depth, props, 'activeTextColor') : theme.sidebar.textColor;
 }
 
@@ -63,6 +61,19 @@ export const MenuItemUl = styled.ul<{ expanded: boolean }>`
   }
 
   ${props => (props.expanded ? '' : 'display: none;')};
+`;
+
+export const MenuItemBackButtonLi = styled.li`
+  list-style: none inside none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const MenuItemBackButtonContainer = styled.div`
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 
 export const MenuItemLi = styled.li<{ depth: number }>`
@@ -124,11 +135,8 @@ export const MenuItemLabel = styled.label.attrs((props: MenuItemLabelType) => ({
   ${props => (props.deprecated && deprecatedCss) || ''};
 
   &:hover {
-    color: ${props =>
-      props.isBackButton
-        ? palette.gray.dark1
-        : menuItemActive(props.depth, props, 'activeTextColor')};
-    background-color: ${palette.gray.light2};
+    color: ${props => menuItemActive(props.depth, props, 'activeTextColor')};
+    background-color: var(--sidebar-hover);
   }
 
   ${ShelfIcon} {
@@ -142,7 +150,7 @@ export const MenuItemLabel = styled.label.attrs((props: MenuItemLabelType) => ({
 
 export const MenuBreak = styled.hr`
   border: unset;
-  border-bottom: 1px solid ${palette.gray.light2};
+  border-bottom: 1px solid var(--sidebar-hl);
   margin: 16px 0;
   width: 100%;
 `;
@@ -171,16 +179,22 @@ export const RedocAttribution = styled.div`
     a:hover {
       color: ${theme.sidebar.textColor} !important;
       padding: ${theme.spacing.unit}px 0;
-      border-top: 1px solid ${darken(0.1, theme.sidebar.backgroundColor)};
+      border-top: 1px solid var(--tenth-altered-sidebar-bg-color);
       text-decoration: none;
       display: flex;
       align-items: center;
       justify-content: center;
     }
   `};
-  img {
+  svg {
     width: 15px;
+    height: 15px;
     margin-right: 5px;
+    fill: var(--redocly-logo);
+
+    path {
+      fill: var(--redocly-logo);
+    }
   }
 
   ${media.lessThan('small')`

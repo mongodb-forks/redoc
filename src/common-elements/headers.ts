@@ -48,9 +48,9 @@ export const RightPanelHeader = styled.h3`
 `;
 
 export const UnderlinedHeader = styled.h5`
-  border-bottom: 1px solid rgba(38, 50, 56, 0.3);
+  border-bottom: 1px solid var(--underlined-header-border-color);
   margin: 1em 0 1em 0;
-  color: rgba(38, 50, 56, 0.5);
+  color: var(--underlined-header-color);
   font-weight: normal;
   text-transform: uppercase;
   font-size: 0.929em;

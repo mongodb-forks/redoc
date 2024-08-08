@@ -1,4 +1,3 @@
-import { palette } from '@leafygreen-ui/palette';
 import { H1, MiddlePanel } from '../../common-elements';
 import styled, { extensionsHook } from '../../styled-components';
 
@@ -9,7 +8,7 @@ export const ApiInfoWrap = MiddlePanel;
 export const ApiHeader = styled(H1)`
   margin-top: 0;
   margin-bottom: 0.5em;
-  color: ${palette.green.dark2};
+  color: var(--api-header-color);
   font-family: 'MongoDB Value Serif';
   font-size: 32px;
   font-weight: 400;
@@ -21,12 +20,13 @@ export const ApiHeader = styled(H1)`
 export const ResourceVersionPill = styled.p`
   width: fit-content;
   padding: 1px 10px;
-  background-color: ${palette.gray.light2};
+  background-color: var(--resource-version-pill-bg);
+  color: var(--resource-version-pill-color);
   border-radius: 0.5rem;
 `;
 
 export const DownloadButton = styled.a`
-  border: 1px solid ${props => props.theme.colors.primary.main};
+  border: 1px solid var(--download-btn-border-color);
   color: ${props => props.theme.colors.primary.main};
   font-weight: normal;
   margin-left: 0.5em;

@@ -369,7 +369,28 @@ async function getPageHTML(
     redocHead: ssr
       ? (cdn
           ? '<script src="https://unpkg.com/redoc@latest/bundles/redoc.standalone.js"></script>'
-          : `<script>${redocStandaloneSrc}</script>`) + css
+          : `<script>${redocStandaloneSrc}</script>`) +
+        css +
+        `
+          <script>
+            !function () {
+              try {
+                var d = document.documentElement.classList;
+                d.remove("light-theme", "dark-theme");
+                var e = JSON.parse(localStorage.getItem("mongodb-docs"))?.["theme"];
+                if ("system" === e || (!e)) {
+                  var t = "(prefers-color-scheme: dark)",
+                    m = window.matchMedia(t);
+                  m.media !== t || m.matches ? d.add("dark-theme", "system") : d.add("light-theme", "system");
+                } else if (e) {
+                  var x = { "light-theme": "light-theme", "dark-theme": "dark-theme" };
+                  x[e] && d.add(x[e]);
+                }
+              } catch (e) {
+                console.error(e);
+              }
+            }();
+          </script>`
       : '<script src="redoc.standalone.js"></script>',
     title: title || spec.info.title || 'ReDoc documentation',
     disableGoogleFont,

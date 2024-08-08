@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import { AppStore } from '../../services/AppStore';
 
-import { MiddlePanel, Row, Section } from '../../common-elements/';
+import { DarkRightPanel, MiddlePanel, Row, Section } from '../../common-elements/';
 import { ExternalDocumentation } from '../ExternalDocumentation/ExternalDocumentation';
 import { Markdown } from '../Markdown/Markdown';
 import { StyledMarkdownBlock } from '../Markdown/styled.elements';
@@ -115,6 +115,7 @@ export class ApiInfo extends React.Component<ApiInfoProps> {
             <Markdown source={store.spec.info.description} data-role="redoc-description" />
             {externalDocs && <ExternalDocumentation externalDocs={externalDocs} />}
           </MiddlePanel>
+          <DarkRightPanel />
         </Row>
       </Section>
     );
