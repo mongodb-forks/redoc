@@ -617,10 +617,7 @@ export function normalizeServers(
     ];
   }
 
-  console.log('base url ', baseUrl);
-
   function normalizeUrl(url: string): string {
-    console.log('url ', url);
     return resolveUrl(baseUrl, url);
   }
 
