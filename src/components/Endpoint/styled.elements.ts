@@ -15,6 +15,7 @@ export const ServerRelativeURL = styled.span`
   flex: 1;
   overflow-x: hidden;
   text-overflow: ellipsis;
+  color: #ffffff;
 `;
 
 export const EndpointInfo = styled.button<{ expanded?: boolean; inverted?: boolean }>`
@@ -36,9 +37,6 @@ export const EndpointInfo = styled.button<{ expanded?: boolean; inverted?: boole
   ${props =>
     (props.expanded && !props.inverted && `border-color: ${props.theme.colors.border.dark};`) || ''}
 
-  .${ServerRelativeURL} {
-    color: ${props => (props.inverted ? props.theme.colors.text.primary : '#ffffff')};
-  }
   &:focus {
     box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.45), 0 2px 0 rgba(128, 128, 128, 0.25);
   }

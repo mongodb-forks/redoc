@@ -29,6 +29,7 @@ export const globalStyles = `
     --sidebar-active-color: ${palette.green.dark3};
     --sidebar-hl: #E7EEEC;
     --back-btn-label-color: ${palette.gray.dark1};
+    --redocly-logo: #0044d4;
 
     --tenth-altered-sidebar-bg-color: #dae7e1;
     --five-percent-altered-sidebar-bg-color: #eaf1ed;
@@ -143,6 +144,7 @@ export const globalStyles = `
     --sidebar-active-color: ${palette.green.light3};
     --sidebar-hl: ${palette.gray.dark2};
     --back-btn-label-color: ${palette.gray.base};
+    --redocly-logo: ${palette.blue.light1};
 
     --tenth-altered-sidebar-bg-color: #1e4459;
     --five-percent-altered-sidebar-bg-color: #173646;

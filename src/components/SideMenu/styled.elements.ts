@@ -186,9 +186,15 @@ export const RedocAttribution = styled.div`
       justify-content: center;
     }
   `};
-  img {
+  svg {
     width: 15px;
+    height: 15px;
     margin-right: 5px;
+    fill: var(--redocly-logo);
+
+    path {
+      fill: var(--redocly-logo);
+    }
   }
 
   ${media.lessThan('small')`
