@@ -14,7 +14,7 @@ exports[`VersionSelector should correctly render VersionSelector 1`] = `
     </label>
     <button
       aria-labelledby="View a different version of documentation."
-      class="sc-hKFxyN cxwBbz"
+      class="sc-hKFxyN cPLxqX"
     >
       <div
         class="sc-iCoGMd gojxeT"
