@@ -230,4 +230,20 @@ export const globalStyles = `
     --callbacks-title-outline: #3e647c;
     --callbacks-details-bg: ${palette.gray.dark3};
   }
+
+  .nav-dark {
+    display: none;
+  }
+
+  .nav-light {
+    display: initial;
+  }
+
+  .dark-theme .nav-dark {
+    display: initial;
+  }
+
+  .dark-theme .nav-light {
+    display: none;
+  }
 `;
