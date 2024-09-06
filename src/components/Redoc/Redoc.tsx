@@ -57,7 +57,22 @@ export class Redoc extends React.Component<RedocProps> {
           <OptionsProvider value={options}>
             <GlobalCss />
             <StyledHeader>
-              <UnifiedNav position="relative" property={{ name: 'DOCS', searchParams: [] }} />
+              <UnifiedNav
+                position="relative"
+                property={{ name: 'DOCS', searchParams: [] }}
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-ignore
+                darkMode={false}
+                className="nav-light"
+              />
+              <UnifiedNav
+                position="relative"
+                property={{ name: 'DOCS', searchParams: [] }}
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-ignore
+                darkMode={true}
+                className="nav-dark"
+              />
             </StyledHeader>
             <RedocWrap className="redoc-wrap">
               <StickyResponsiveSidebar menu={menu} className="menu-content">
