@@ -155,6 +155,9 @@ export const PropertiesTable = styled.table`
   border-spacing: 0;
   width: 100%;
 
+  // Extra padding for overflow scroll
+  padding-right: 32px;
+
   > tr {
     vertical-align: middle;
   }
