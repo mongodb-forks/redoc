@@ -7,6 +7,11 @@ import { FieldModel } from '../../services/models';
 import { Field } from '../Fields/Field';
 
 import { mapWithLast } from '../../utils';
+import styled from '../../styled-components';
+
+const ParametersGroupContainer = styled.div`
+  overflow-x: auto;
+`;
 
 export interface ParametersGroupProps {
   place: string;
@@ -21,7 +26,7 @@ export class ParametersGroup extends React.PureComponent<ParametersGroupProps, a
     }
 
     return (
-      <div key={place}>
+      <ParametersGroupContainer key={place}>
         <UnderlinedHeader>{place} Parameters</UnderlinedHeader>
         <PropertiesTable>
           <tbody>
@@ -30,7 +35,7 @@ export class ParametersGroup extends React.PureComponent<ParametersGroupProps, a
             ))}
           </tbody>
         </PropertiesTable>
-      </div>
+      </ParametersGroupContainer>
     );
   }
 }
