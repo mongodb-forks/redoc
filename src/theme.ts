@@ -151,7 +151,7 @@ const defaultTheme: ThemeInterface = {
     requireLabelColor: 'var(--require-label-color)',
     labelsTextSize: '0.9em',
     nestingSpacing: '1em',
-    nestedBackground: '#fafafa',
+    nestedBackground: 'var(--sidebar-bg-color)',
     arrow: {
       size: '1.1em',
       color: theme => theme.colors.text.secondary,
