@@ -118,6 +118,7 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                     "sortPropsAlphabetically": false,
                     "sortTagsAlphabetically": false,
                     "theme": Object {
+                      "background": "var(--table)",
                       "badges": Object {
                         "border": "1px solid",
                         "borderRadius": "5px",
@@ -453,6 +454,7 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                     "sortPropsAlphabetically": false,
                     "sortTagsAlphabetically": false,
                     "theme": Object {
+                      "background": "var(--table)",
                       "badges": Object {
                         "border": "1px solid",
                         "borderRadius": "5px",
@@ -775,6 +777,7 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
               "sortPropsAlphabetically": false,
               "sortTagsAlphabetically": false,
               "theme": Object {
+                "background": "var(--table)",
                 "badges": Object {
                   "border": "1px solid",
                   "borderRadius": "5px",
@@ -1159,6 +1162,7 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                     "sortPropsAlphabetically": false,
                     "sortTagsAlphabetically": false,
                     "theme": Object {
+                      "background": "var(--table)",
                       "badges": Object {
                         "border": "1px solid",
                         "borderRadius": "5px",
@@ -1506,6 +1510,7 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
                     "sortPropsAlphabetically": false,
                     "sortTagsAlphabetically": false,
                     "theme": Object {
+                      "background": "var(--table)",
                       "badges": Object {
                         "border": "1px solid",
                         "borderRadius": "5px",
@@ -1824,6 +1829,7 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
               "sortPropsAlphabetically": false,
               "sortTagsAlphabetically": false,
               "theme": Object {
+                "background": "var(--table)",
                 "badges": Object {
                   "border": "1px solid",
                   "borderRadius": "5px",
@@ -2167,6 +2173,7 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
           "sortPropsAlphabetically": false,
           "sortTagsAlphabetically": false,
           "theme": Object {
+            "background": "var(--table)",
             "badges": Object {
               "border": "1px solid",
               "borderRadius": "5px",
@@ -2540,6 +2547,7 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
               "sortPropsAlphabetically": false,
               "sortTagsAlphabetically": false,
               "theme": Object {
+                "background": "var(--table)",
                 "badges": Object {
                   "border": "1px solid",
                   "borderRadius": "5px",
@@ -2875,6 +2883,7 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
               "sortPropsAlphabetically": false,
               "sortTagsAlphabetically": false,
               "theme": Object {
+                "background": "var(--table)",
                 "badges": Object {
                   "border": "1px solid",
                   "borderRadius": "5px",
@@ -3197,6 +3206,7 @@ exports[`Components SchemaView discriminator should correctly render SchemaView 
         "sortPropsAlphabetically": false,
         "sortTagsAlphabetically": false,
         "theme": Object {
+          "background": "var(--table)",
           "badges": Object {
             "border": "1px solid",
             "borderRadius": "5px",
