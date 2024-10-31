@@ -16,6 +16,7 @@ const defaultTheme: ThemeInterface = {
     medium: '1024px',
     large: '1200px',
   },
+  background: 'var(--table)',
   colors: {
     tonalOffset: 0.2,
     primary: {
@@ -330,6 +331,7 @@ export interface ResolvedThemeInterface {
     medium: string;
     large: string;
   };
+  background: string;
   colors: {
     tonalOffset: number;
     primary: ColorSetting;

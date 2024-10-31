@@ -114,6 +114,8 @@ export const globalStyles = `
     --callbacks-title-bg: #F5F5F5;
     --callbacks-title-outline: #C2C2C2;
     --callbacks-details-bg: #FAFAFA;
+
+    --table: ${palette.white};
   }
 
   .dark-theme {
@@ -229,6 +231,8 @@ export const globalStyles = `
     --callbacks-title-bg: ${palette.gray.dark3};
     --callbacks-title-outline: #3e647c;
     --callbacks-details-bg: ${palette.gray.dark3};
+
+    --table: ${palette.black};
   }
 
   .nav-dark {
