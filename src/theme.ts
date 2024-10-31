@@ -16,7 +16,7 @@ const defaultTheme: ThemeInterface = {
     medium: '1024px',
     large: '1200px',
   },
-  background: 'var(--table)',
+  background: 'var(--background)',
   colors: {
     tonalOffset: 0.2,
     primary: {
