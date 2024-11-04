@@ -115,7 +115,7 @@ export const globalStyles = `
     --callbacks-title-outline: #C2C2C2;
     --callbacks-details-bg: #FAFAFA;
 
-    --table: ${palette.white};
+    --background: ${palette.white};
   }
 
   .dark-theme {
@@ -232,7 +232,7 @@ export const globalStyles = `
     --callbacks-title-outline: #3e647c;
     --callbacks-details-bg: ${palette.gray.dark3};
 
-    --table: ${palette.black};
+    --background: ${palette.black};
   }
 
   .nav-dark {
