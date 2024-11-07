@@ -16,6 +16,7 @@ const defaultTheme: ThemeInterface = {
     medium: '1024px',
     large: '1200px',
   },
+  background: 'var(--background)',
   colors: {
     tonalOffset: 0.2,
     primary: {
@@ -151,7 +152,7 @@ const defaultTheme: ThemeInterface = {
     requireLabelColor: 'var(--require-label-color)',
     labelsTextSize: '0.9em',
     nestingSpacing: '1em',
-    nestedBackground: '#fafafa',
+    nestedBackground: 'var(--sidebar-bg-color)',
     arrow: {
       size: '1.1em',
       color: theme => theme.colors.text.secondary,
@@ -330,6 +331,7 @@ export interface ResolvedThemeInterface {
     medium: string;
     large: string;
   };
+  background: string;
   colors: {
     tonalOffset: number;
     primary: ColorSetting;

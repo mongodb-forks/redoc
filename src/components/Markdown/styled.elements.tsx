@@ -141,7 +141,7 @@ export const StyledMarkdownBlock = styled(
   }
 
   table tr {
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.background};
     border-top: 1px solid #ccc;
 
     &:nth-child(2n) {
