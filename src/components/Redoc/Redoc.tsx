@@ -25,7 +25,6 @@ import { StoreProvider } from '../StoreBuilder';
 import { VersionSelector } from '../VersionSelector';
 import { createGlobalStyle } from 'styled-components';
 import { globalStyles } from '../../globalStyles';
-import { AVAILABLE_LANGUAGES, getCurrLocale, onSelectLocale } from '../../utils/locale';
 
 export interface RedocProps {
   store: AppStore;
@@ -52,8 +51,6 @@ export class Redoc extends React.Component<RedocProps> {
     } = this.props;
     const store = this.props.store;
 
-    const enabledLocales = AVAILABLE_LANGUAGES.map(language => language.localeCode);
-
     return (
       <ThemeProvider theme={options.theme}>
         <StoreProvider value={store}>
@@ -63,14 +60,6 @@ export class Redoc extends React.Component<RedocProps> {
               <UnifiedNav
                 position="relative"
                 property={{ name: 'DOCS', searchParams: [] }}
-                showLanguageSelector={true}
-                onSelectLocale={onSelectLocale}
-                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                // @ts-ignore
-                locale={getCurrLocale()}
-                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                // @ts-ignore
-                enabledLocales={enabledLocales}
                 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                 // @ts-ignore
                 darkMode={false}
@@ -79,14 +68,6 @@ export class Redoc extends React.Component<RedocProps> {
               <UnifiedNav
                 position="relative"
                 property={{ name: 'DOCS', searchParams: [] }}
-                showLanguageSelector={true}
-                onSelectLocale={onSelectLocale}
-                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                // @ts-ignore
-                locale={getCurrLocale()}
-                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                // @ts-ignore
-                enabledLocales={enabledLocales}
                 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                 // @ts-ignore
                 darkMode={true}
