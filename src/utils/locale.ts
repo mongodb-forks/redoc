@@ -1,6 +1,6 @@
 /**
  * Mainly copied from Snooty locale.js and other snooty utils
- * Nov 14, 2023
+ * Nov 14, 2024
  */
 
 /**
@@ -9,8 +9,6 @@
 export const STORAGE_KEY_PREF_LOCALE = 'preferredLocale';
 
 // Update this as more languages are introduced
-// Because the client-side redirect script cannot use an import, PLEASE remember to update the list of supported languages
-// in redirect-based-on-lang.js
 export const AVAILABLE_LANGUAGES = [
   { language: 'English', localeCode: 'en-us' },
   { language: '简体中文', localeCode: 'zh-cn', fontFamily: 'Noto Sans SC' },
@@ -21,7 +19,7 @@ export const AVAILABLE_LANGUAGES = [
 
 const isBrowser = typeof window !== 'undefined';
 
-export const setLocalValue = (key: string, value: any) => {
+const setLocalValue = (key: string, value: any) => {
   try {
     if (isBrowser) {
       const prevState = JSON.parse(window.localStorage.getItem('mongodb-docs') ?? '');
